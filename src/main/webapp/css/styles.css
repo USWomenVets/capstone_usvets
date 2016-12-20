@@ -20,7 +20,8 @@
     text-align: center;
 }
 body{
-    background-color: #333;
+    background-image: url("image/pexels-photo-66997.jpeg");
+
 }
 #nav_search{
     float: left;

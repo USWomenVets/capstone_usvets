@@ -23,8 +23,8 @@
                         <br><br>
                         <p class="lead"> The premier service for finding the opportunities you seek.</p>
                         <p class="lead">
-                            <a href="#" class="btn btn-lg btn-default">BROWSE ADS</a>
-                            <a href="#" class="btn btn-lg btn-default">SIGN-UP</a>
+                            <a href="/ads" class="btn btn-lg btn-default">BROWSE ADS</a>
+                            <a href="/register" class="btn btn-lg btn-default">SIGN-UP</a>
                         </p>
                     </div>
 

@@ -20,6 +20,7 @@
     text-align: center;
 }
 body{
+
     /*background-image: url("image/pexels-photo-66997.jpeg");*/
     background-color: #333;
 }
@@ -32,6 +33,7 @@ body{
     position: relative;
     top: 50%;
     transform: translateY(50%);
+
 }
 #middle_headline {
 
@@ -64,4 +66,5 @@ body{
 }
 input{
     text-align: left;
+
 }

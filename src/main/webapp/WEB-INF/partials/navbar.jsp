@@ -10,6 +10,8 @@
         </div>
 
         <ul class="nav navbar-nav navbar-right">
+            <li><a class="success" href="/ads/create">Create AD</a></li>
+            <li><a class="primary" href="/profile">Profile</a></li>
             <li><a id="sign_up" href="/register">Sign-up!</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>

@@ -10,7 +10,7 @@
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a id="sign_up" href="/login">Sign-up!</a></li>
+            <li><a id="sign_up" href="/register">Sign-up!</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>

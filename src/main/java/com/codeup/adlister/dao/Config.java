@@ -8,7 +8,7 @@ package com.codeup.adlister.dao;
 
 
 public class Config {
-    private String url = "jdbc:mysql://localhost/mysql";
+    private String url = "jdbc:mysql://localhost:3306/adlister_db";
     private String user = "root";
     private String password = "codeup";
 

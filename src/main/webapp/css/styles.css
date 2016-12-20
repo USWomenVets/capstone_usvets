@@ -20,8 +20,7 @@
     text-align: center;
 }
 body{
-    background-image: url("image/pexels-photo-66997.jpeg");
-
+    background-color: #333;
 }
 #nav_search{
     float: left;
@@ -32,33 +31,4 @@ body{
     position: relative;
     top: 50%;
     transform: translateY(50%);
-}
-.middle_headline {
-
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -1px;
-    color: #444;
-}
-
-.cust_paragraph_text {
-
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #444;
-}
-
-.large_headline {
-
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 48px;
-    line-height: 40px;
-    letter-spacing: -1px;
-    color: #444;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    font-weight: 100;
 }

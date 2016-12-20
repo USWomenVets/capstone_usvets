@@ -28,10 +28,6 @@ CREATE TABLE IF NOT EXISTS ads (
 INSERT into users (username, email, password)
 values ('admin', 'admin@admin.com', '$2a$12$qvN2lmHtrbpwBABUKezD8.uYc/KgyaXlBnQmzzULG4HnfO1/Gq6.2');
 
-select ads.* , users.username from ads join users ON users.id = ads.user_id;
+INSERT INTO ads (user_id, title, description) VALUES (1, 'sample ad title', 'sample ad description advertising stuff to sell with random text that is coming off the top of my head to fill in pace to simulate a decent sized description');
 
-/*
-SELECT users.name as user_name, roles.name as role_name
-FROM users
-JOIN roles ON users.role_id = roles.id;
- */
+select ads.* , users.username from ads join users ON users.id = ads.user_id;

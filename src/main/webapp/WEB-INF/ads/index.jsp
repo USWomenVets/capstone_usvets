@@ -13,7 +13,7 @@
     <h1>AD LIST</h1>
     <br><br>
     <c:forEach var="ad" items="${ads}">
-        <div class="col-md-6">
+        <div class="col-md-6 ad_div">
             <h2 id="large_headline">${ad.title}</h2>
             <h4>${ad.timestamp}</h4>
             <p id="cust_paragraph_text">${ad.description}</p>

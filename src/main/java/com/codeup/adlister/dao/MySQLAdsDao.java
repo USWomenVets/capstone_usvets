@@ -35,6 +35,20 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
+    public List<Ad> specAd(String adId) {
+        PreparedStatement stmt = null;
+        int adID = Integer.valueOf(adId);
+        try {
+            stmt = connection.prepareStatement("SELECT ads.* , users.username FROM ads JOIN users ON users.id = ads.user_id where ads.id = ?;");
+            stmt.setLong(1, adID);
+            ResultSet rs = stmt.executeQuery();
+            return createAdsFromResults(rs);
+        } catch (SQLException e) {
+            throw new RuntimeException("error retrieving selected ad");
+        }
+    }
+
+
     @Override
     public List<Ad> all(String q) {
         PreparedStatement stmt = null;

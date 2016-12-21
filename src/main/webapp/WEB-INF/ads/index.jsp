@@ -13,15 +13,25 @@
     <h1>AD LIST</h1>
     <br><br>
     <c:forEach var="ad" items="${ads}">
-        <a href="/ad_individ">
-           <div class="col-md-6 ad_div">
-            <h2>${ad.title}</h2>
-            <h4>${ad.timestamp}</h4>
-            <p>${ad.description}</p>
-            <h4>${ad.getUsername()}</h4>
+        <div class="col-md-6 ad_div">
+            <form role="search" action="/ad_individ" method="get">
+                <button name="id" value=${ad.getId()}>
+                    <h2>${ad.title}</h2>
+                    <h4>${ad.timestamp}</h4>
+                    <p>${ad.description}</p>
+                    <h4>${ad.getUsername()}</h4>
+                </button>
+            </form>
         </div>
-        </a>
     </c:forEach>
+    <style>
+        button {
+            background:none!important;
+            border:1px solid #444;
+            border-radius: 5px;
+            padding:0!important;
+        }
+    </style>
 </div>
 <footer class="footer navbar-fixed-bottom navbar navbar-default">
     <div class="container-fluid">

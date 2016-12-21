@@ -11,4 +11,6 @@ public interface Ads {
     Long insert(Ad ad);
 
     List <Ad> userAd(long userId);
+
+    List <Ad> specAd(String adId);
 }

@@ -35,15 +35,6 @@ public class MySQLAdsDao implements Ads {
         }
     }
 
-
-
-
-
-
-
-
-
-
     @Override
     public List<Ad> all(String q) {
         PreparedStatement stmt = null;

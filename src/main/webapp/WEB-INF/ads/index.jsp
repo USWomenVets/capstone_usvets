@@ -15,7 +15,7 @@
     <c:forEach var="ad" items="${ads}">
         <a href="/ad_individ">
            <div class="col-md-6 ad_div">
-            <h2>${ad.title}</h2>
+            <h2> ${ad.title}</h2>
             <h4>${ad.timestamp}</h4>
             <p>${ad.description}</p>
             <h4>${ad.getUsername()}</h4>

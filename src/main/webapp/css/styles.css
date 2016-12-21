@@ -16,6 +16,9 @@ input{
 textarea{
     text-align: left;
 }
+.ad_div:hover{
+    opacity: 0.7;
+}
 .inner{
     position: relative;
     top: 50%;

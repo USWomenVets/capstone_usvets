@@ -10,15 +10,18 @@
                 <input type="text" placeholder="browse" class="form-control">
             </div>
         </div>
-
         <ul class="nav navbar-nav navbar-right">
-            <li><a id="sign_up" href="/register">Sign-up!</a></li>
-            <li><a href="/login">Login</a></li>
-            <c:if test="${sessionScope.user != null}">
-                <li><a class="primary" href="/profile">Profile</a></li>
+            <c:choose>
+            <c:when test="${sessionScope.user != null}">
                 <li><a class="success" href="/ads/create">Create AD</a></li>
+                <li><a class="primary" href="/profile">Profile</a></li>
                 <li><a href="/logout">Logout</a></li>
-            </c:if>
+            </c:when>
+                <c:otherwise>
+                    <li><a id="sign_up" href="/register">Sign-up!</a></li>
+                    <li><a href="/login">Login</a></li>
+                </c:otherwise>
+            </c:choose>
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

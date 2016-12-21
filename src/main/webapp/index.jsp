@@ -11,13 +11,9 @@
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <div class="container">
-
         <div class="site-wrapper">
-
             <div class="site-wrapper-inner">
-
                 <div class="cover-container">
-
                     <div class="inner cover">
                         <h1 class="cover-heading">WELCOME TO ADLSTR</h1>
                         <br><br>
@@ -27,11 +23,8 @@
                             <a href="/register" class="btn btn-lg btn-default">SIGN-UP</a>
                         </p>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </div>
 

@@ -15,27 +15,21 @@
         <a href="/ads" class="btn btn-lg btn-default">BROWSE ADS</a>
         <a href="/ads/create" class="btn btn-lg btn-default">CREATE AD</a>
 
-        <c:forEach var="ad" items="${ads}">
-            <div class="col-md-6">
-                <h2>${ad.title}</h2>
-                <h4>${ad.getUsername()}</h4>
-                <h4>${ad.timestamp}</h4>
-                <p>${ad.description}</p>
-
-            </div>
-        </c:forEach>
-
-    </div>
-    <footer class="footer navbar-fixed-bottom navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header navbar-inverted">
-                <a class="navbar-brand welcome_title" href="/index">@ Copyright 2016</a>
-                <a class="navbar-right navbar-brand welcome_title">BKJ Productions</a>
-            </div>
-        </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
         <div class="container">
+
+            <c:forEach var="ad" items="${ads}">
+                <div class="col-md-6 ad_div coupon">
+                    <h2 id="large_headline">${ad.title}</h2>
+                    <h4>${ad.timestamp}</h4>
+                    <p id="cust_paragraph_text">${ad.description}</p>
+                    <h4 id="middle_headline">${ad.getUsername()}</h4>
+                </div>
+            </c:forEach>
+        </div>
+    </div>
+
+        <div class="container">
+            <hr>
         <h1>Edit Profile</h1>
         <hr>
         <div class="row">
@@ -58,24 +52,33 @@
                 </div>
                 <h3>Personal info</h3>
 
-                <form class="form-horizontal" role="form" action="edit_profile.php" method="post">
+                <form class="form-horizontal" role="form" method="post">
 
                     <div class="form-group">
                         <label class="col-lg-3 control-label name">name:</label>
                         <div class="col-lg-8">
-                            <input class="form-control" value="<?php echo $row['name'];?>" type="text" name="name">
+                            <h4>${user.getUsername()}</h4>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-lg-3 control-label">Email:</label>
                         <div class="col-lg-8">
-                            <input class="form-control" value="<?php echo $row['email'];?>" type="text" name="email">
+                            <h4>${user.getEmail()}</h4>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         </div>
+    <footer class="footer navbar navbar-fixed-bottom navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header navbar-inverted">
+                <a class="navbar-brand welcome_title" href="/index">@ Copyright 2016</a>
+                <a class="navbar-right navbar-brand welcome_title">BKJ Productions</a>
+            </div>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </footer>
 </body>
 </html>

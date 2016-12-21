@@ -1,7 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: Calcious
+  Date: 12/20/16
+  Time: 9:25 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <title>AdShow Page</title>
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="Viewing All The Ads" />
     </jsp:include>
@@ -10,18 +17,11 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 <div class="container">
-    <h1>AD LIST</h1>
-    <br><br>
-    <c:forEach var="ad" items="${ads}">
-        <a href="ad_individ.jsp">
-           <div class="col-md-6 ad_div">
-            <h2>${ad.title}</h2>
-            <h4>${ad.timestamp}</h4>
-            <p>${ad.description}</p>
-            <h4>${ad.getUsername()}</h4>
-        </div>
-        </a>
-    </c:forEach>
+<div class="col-md-6 ad_div">
+    <h2 id="large_headline">${ad.title}</h2>
+    <h4>${ad.timestamp}</h4>
+    <p id="cust_paragraph_text">${ad.description}</p>
+    <h4 id="middle_headline">${ad.getUsername()}</h4>
 </div>
 <footer class="footer navbar-fixed-bottom navbar navbar-default">
     <div class="container-fluid">
@@ -33,6 +33,5 @@
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </footer>
-
 </body>
 </html>

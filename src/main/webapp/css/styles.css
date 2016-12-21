@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
-
-/*#welcome_title{*/
-    /*font-family: 'Allerta Stencil', sans-serif;*/
-    /*text-align: center;*/
-/*}*/
-    /*@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 *{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     color: honeydew;
+}
+body{
+    background-color: #333;
+    margin-bottom: 60px;
+}
+input{
+    text-align: left;
+}
+textarea{
+    text-align: left;
+}
+.inner{
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
 }
 #sign_up{
     color: #5bc0de;
@@ -19,52 +28,8 @@
     color: #f0ad4e;
     text-align: center;
 }
-body{
-
-    /*background-image: url("image/pexels-photo-66997.jpeg");*/
-    background-color: #333;
-}
 #nav_search{
     float: left;
     padding-top: 8px;
     width: 30%;
-}
-.inner{
-    position: relative;
-    top: 50%;
-    transform: translateY(50%);
-
-}
-#middle_headline {
-
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -1px;
-    text-align: left;
-}
-
-#cust_paragraph_text {
-
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-#large_headline {
-
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 48px;
-    line-height: 40px;
-    letter-spacing: -1px;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    font-weight: 100;
-    text-align: left;
-}
-input{
-    text-align: left;
-
 }

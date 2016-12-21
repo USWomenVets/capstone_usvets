@@ -4,9 +4,13 @@
         <div class="navbar-header">
             <a class="navbar-brand welcome_title" href="/index">BKJ Productions || ADLSTR</a>
             <a class="navbar-brand" href="/ads" id="pending_ads">BROWSE ADS</a>
-            <div class="form-group" id="nav_search">
-                <input type="text" placeholder="browse" class="form-control">
-            </div>
+
+                <div class="form-group" id="nav_search">
+                    <form role="search" action="/ads" method="get">
+                    <input type="text" placeholder="browse" class="form-control" name="q">
+                    </form>
+                </div>
+
         </div>
 
         <ul class="nav navbar-nav navbar-right">

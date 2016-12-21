@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Calcious
@@ -7,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
     <title>AdShow Page</title>
@@ -17,16 +17,13 @@
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-<c:forEach var="ad" items="${ads}">
-    <a href="/ad_individ">
-        <div class="col-md-6 ad_div">
-            <h2>${ad.title}</h2>
-            <h4>${ad.timestamp}</h4>
-            <p>${ad.description}</p>
-            <h4>${ad.getUsername()}</h4>
-        </div>
-    </a>
-</c:forEach>
+<div class="container">
+<div class="col-md-6 ad_div">
+    <h2 id="large_headline"><c:out value="${ad.title}"/></h2>
+    <h4>${ad.timestamp}</h4>
+    <p id="cust_paragraph_text">${ad.description}</p>
+    <h4 id="middle_headline">${ad.getUsername()}</h4>
+</div>
 <footer class="footer navbar-fixed-bottom navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->

@@ -14,6 +14,8 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
+        request.getSession().removeAttribute("errorMessage");
+        System.out.println(request.getSession().getAttribute("errorMessage"));
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -29,6 +31,13 @@ public class RegisterServlet extends HttpServlet {
             || (! password.equals(passwordConfirmation));
 
         if (inputHasErrors) {
+            response.sendRedirect("/register");
+            return;
+        }
+        User userExists = DaoFactory.getUsersDao().findByUsername(username);
+
+        if ( userExists != null){
+            request.getSession().setAttribute("errorMessage", "Username or email already exists");
             response.sendRedirect("/register");
             return;
         }

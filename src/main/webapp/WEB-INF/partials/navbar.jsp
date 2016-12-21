@@ -6,8 +6,8 @@
             <a class="navbar-brand" href="/ads" id="pending_ads">BROWSE ADS</a>
 
                 <div class="form-group" id="nav_search">
-                    <form role="search" action="/ads" method="get">
-                    <input type="text" placeholder="browse" class="form-control" name="q">
+                    <form role="search" action="/ads?" method="get">
+                    <input type="text" placeholder="browse" class="form-control" name="q" value="">
                     </form>
                 </div>
 

@@ -45,12 +45,26 @@ public class MySQLAdsDao implements Ads {
 
 
     @Override
-    public List<Ad> all() {
+    public List<Ad> all(String q) {
         PreparedStatement stmt = null;
         try {
-            stmt = connection.prepareStatement("SELECT ads.* , users.username FROM ads JOIN users ON users.id = ads.user_id;\n");
-            ResultSet rs = stmt.executeQuery();
-            return createAdsFromResults(rs);
+            if (q != null) {
+                String selectQuery = "SELECT ads.* , users.username FROM ads JOIN users ON users.id = ads.user_id WHERE title LIKE ? OR description LIKE ? OR users.username LIKE ? OR timestamp LIKE ?";
+                stmt = connection.prepareStatement(selectQuery, Statement.RETURN_GENERATED_KEYS);
+                String qa = "%" + q + "%";
+                stmt.setString(1, qa);
+                stmt.setString(2, qa);
+                stmt.setString(3, qa);
+                stmt.setString(4, qa);
+
+
+                ResultSet rs = stmt.executeQuery();
+                return createAdsFromResults(rs);
+            } else {
+                stmt = connection.prepareStatement("SELECT ads.* , users.username FROM ads JOIN users ON users.id = ads.user_id;");
+                ResultSet rs = stmt.executeQuery();
+                return createAdsFromResults(rs);
+            }
         } catch (SQLException e) {
             throw new RuntimeException("Error retrieving all ads.", e);
         }
@@ -59,7 +73,7 @@ public class MySQLAdsDao implements Ads {
     @Override
     public Long insert(Ad ad) {
         try {
-            String insertQuery = "INSERT INTO ads(user_id, title, description) VALUES (?, ?, ?)";
+            String insertQuery = "INSERT INTO ads(user_id, title, description) VALUES (?, ?, ?);";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
             stmt.setLong(1, ad.getUserId());
             stmt.setString(2, ad.getTitle());

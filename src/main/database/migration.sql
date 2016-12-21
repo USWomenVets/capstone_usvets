@@ -44,3 +44,4 @@ INSERT INTO ads (user_id, title, description) VALUES (2, 'user1 sample title', '
 select ads.* , users.username from ads join users ON users.id = ads.user_id;
 
 SELECT ads.* , users.username FROM ads JOIN users ON users.id = ads.user_id where users.id = 1;
+

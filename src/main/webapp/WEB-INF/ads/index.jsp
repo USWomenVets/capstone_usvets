@@ -13,7 +13,7 @@
     <h1>AD LIST</h1>
     <br><br>
     <c:forEach var="ad" items="${ads}">
-        <a href="ad_individ.jsp">
+        <a href="/ad_individ">
            <div class="col-md-6 ad_div">
             <h2>${ad.title}</h2>
             <h4>${ad.timestamp}</h4>

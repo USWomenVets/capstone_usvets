@@ -18,7 +18,7 @@
         <div class="container">
 
             <c:forEach var="ad" items="${ads}">
-                <a href="ads/ad_individ.jsp">
+                <a href="/ad_individ">
                 <div class="col-md-6 ad_div coupon">
                     <h2 id="large_headline">${ad.title}</h2>
                     <h4>${ad.timestamp}</h4>

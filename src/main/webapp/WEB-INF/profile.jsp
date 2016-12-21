@@ -16,16 +16,17 @@
         <a href="/ads/create" class="btn btn-lg btn-default">CREATE AD</a>
 
         <div class="container">
-
             <c:forEach var="ad" items="${ads}">
-                <a href="/ad_individ">
-                <div class="col-md-6 ad_div coupon">
-                    <h2 id="large_headline">${ad.title}</h2>
-                    <h4>${ad.timestamp}</h4>
-                    <p id="cust_paragraph_text">${ad.description}</p>
-                    <h4 id="middle_headline">${ad.getUsername()}</h4>
+                <div class="col-md-6 ad_div">
+                    <form role="search" action="/ad_individ" method="get">
+                        <button class="adsBtn" name="id" value=${ad.getId()}>
+                            <h2>${ad.title}</h2>
+                            <h4>${ad.timestamp}</h4>
+                            <p>${ad.description}</p>
+                            <h4>${ad.getUsername()}</h4>
+                        </button>
+                    </form>
                 </div>
-                </a>
             </c:forEach>
         </div>
     </div>

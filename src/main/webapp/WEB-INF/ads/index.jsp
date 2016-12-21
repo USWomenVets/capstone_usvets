@@ -15,7 +15,7 @@
     <c:forEach var="ad" items="${ads}">
         <div class="col-md-6 ad_div">
             <form role="search" action="/ad_individ" method="get">
-                <button name="id" value=${ad.getId()}>
+                <button class="adsBtn" name="id" value=${ad.getId()}>
                     <h2>${ad.title}</h2>
                     <h4>${ad.timestamp}</h4>
                     <p>${ad.description}</p>
@@ -24,14 +24,6 @@
             </form>
         </div>
     </c:forEach>
-    <style>
-        button {
-            background:none!important;
-            border:1px solid #444;
-            border-radius: 5px;
-            padding:0!important;
-        }
-    </style>
 </div>
 <footer class="footer navbar-fixed-bottom navbar navbar-default">
     <div class="container-fluid">

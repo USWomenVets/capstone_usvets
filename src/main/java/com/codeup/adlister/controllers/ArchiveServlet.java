@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "controllers.ArchiveServlet", urlPatterns = "/ads")
+@WebServlet(name = "controllers.ArchiveServlet", urlPatterns = "/archive")
 public class ArchiveServlet extends HttpServlet {
     protected void doGet(
             HttpServletRequest request,
@@ -17,6 +17,6 @@ public class ArchiveServlet extends HttpServlet {
     ) throws ServletException, IOException {
         String q = request.getParameter("q");
         request.setAttribute("ads", DaoFactory.getAdsDao().all(q));
-        request.getRequestDispatcher("/WEB-INF/ads/archive.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/posts/archive.jsp").forward(request, response);
     }
 }

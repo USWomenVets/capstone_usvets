@@ -74,7 +74,7 @@
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
-                    <h1>Welcome to Contact page!</h1>
+                    <h1>Welcome to Resources base page!</h1>
                     <p>Catchy tagline goes here!</p>
                 </div>
             </section>

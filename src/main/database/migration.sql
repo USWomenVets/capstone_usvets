@@ -121,8 +121,8 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`private_message` (
   `send_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `read_date` DATETIME NULL,
   PRIMARY KEY (`id`),
-  INDEX `user_id_idx` (`user_id_sender` ASC),
-  CONSTRAINT `user_id`
+  INDEX `user_id_sender_idx` (`user_id_sender` ASC),
+  CONSTRAINT `pm_user_id_sender`
   FOREIGN KEY (`user_id_sender`)
   REFERENCES `uswomenvets`.`users` (`id`)
     ON DELETE NO ACTION

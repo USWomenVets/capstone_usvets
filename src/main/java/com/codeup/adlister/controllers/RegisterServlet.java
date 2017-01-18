@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet(name = "controllers.RegisterServlet", urlPatterns = "/register")
 public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/register.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/users/register.jsp").forward(request, response);
         request.getSession().removeAttribute("errorMessage");
         System.out.println(request.getSession().getAttribute("errorMessage"));
     }

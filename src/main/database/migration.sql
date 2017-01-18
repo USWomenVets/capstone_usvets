@@ -1,14 +1,21 @@
-create database IF NOT EXISTS USWemonVets;
 
-use USWemonVets;
+CREATE SCHEMA IF NOT EXISTS `uswomenvets` ;
+USE `uswomenvets` ;
 
-CREATE TABLE IF NOT EXISTS `USWemonVets`.`roles` (
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`roles`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`roles` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `role` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`))
   ENGINE = InnoDB;
 
-CREATE TABLE IF NOT EXISTS `USWemonVets`.`users` (
+
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`users` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_name` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
@@ -29,13 +36,16 @@ CREATE TABLE IF NOT EXISTS `USWemonVets`.`users` (
   UNIQUE INDEX `email_UNIQUE` (`email` ASC),
   CONSTRAINT `role`
   FOREIGN KEY (`role_id`)
-  REFERENCES `USWemonVets`.`roles` (`id`)
+  REFERENCES `uswomenvets`.`roles` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
 
 
-CREATE TABLE IF NOT EXISTS `USWemonVets`.`private_message` (
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`private_message`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`private_message` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id_sender` INT UNSIGNED NOT NULL,
   `user_id_reciever` INT UNSIGNED NOT NULL,
@@ -47,14 +57,16 @@ CREATE TABLE IF NOT EXISTS `USWemonVets`.`private_message` (
   INDEX `user_id_idx` (`user_id_sender` ASC),
   CONSTRAINT `user_id`
   FOREIGN KEY (`user_id_sender`)
-  REFERENCES `USWemonVets`.`users` (`id`)
+  REFERENCES `uswomenvets`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
 
 
-
-CREATE TABLE IF NOT EXISTS `USWemonVets`.`posts` (
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`posts`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`posts` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` INT UNSIGNED NOT NULL,
   `title` VARCHAR(64) NOT NULL,
@@ -64,15 +76,19 @@ CREATE TABLE IF NOT EXISTS `USWemonVets`.`posts` (
   `likes` INT NULL,
   `comment_count` INT NULL,
   PRIMARY KEY (`id`),
+  INDEX `user_id_idx` (`user_id` ASC),
+  CONSTRAINT `user_id`
   FOREIGN KEY (`user_id`)
-  REFERENCES `USWemonVets`.`users` (`id`)
+  REFERENCES `uswomenvets`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
 
 
-
-CREATE TABLE IF NOT EXISTS `USWemonVets`.`comments` (
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`comments`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`comments` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `post_id` INT UNSIGNED NOT NULL,
   `user_id` INT UNSIGNED NOT NULL,
@@ -82,7 +98,8 @@ CREATE TABLE IF NOT EXISTS `USWemonVets`.`comments` (
   INDEX `post_id_idx` (`post_id` ASC),
   CONSTRAINT `post_id`
   FOREIGN KEY (`post_id`)
-  REFERENCES `USWemonVets`.`posts` (`id`)
+  REFERENCES `uswomenvets`.`posts` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
+

@@ -30,7 +30,6 @@
 
             </div>
         </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
     </footer>
 </body>
 </html>

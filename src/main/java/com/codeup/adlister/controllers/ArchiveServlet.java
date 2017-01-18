@@ -11,12 +11,8 @@ import java.io.IOException;
 
 @WebServlet(name = "controllers.ArchiveServlet", urlPatterns = "/archive")
 public class ArchiveServlet extends HttpServlet {
-    protected void doGet(
-            HttpServletRequest request,
-            HttpServletResponse response
-    ) throws ServletException, IOException {
-        String q = request.getParameter("q");
-        request.setAttribute("ads", DaoFactory.getAdsDao().all(q));
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         request.getRequestDispatcher("/WEB-INF/posts/archive.jsp").forward(request, response);
     }
 }

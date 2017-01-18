@@ -1,22 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<html>--%>
-<%--<head>--%>
-    <%--<jsp:include page="/WEB-INF/partials/head.jsp">--%>
-        <%--<jsp:param name="title" value="US Women Vets Home Page" />--%>
-    <%--</jsp:include>--%>
-
-<%--</head>--%>
-<%--<body>--%>
-<%--<jsp:include page="/WEB-INF/partials/navbar.jsp" />--%>
-<%--<h1>Hello World--Index</h1>--%>
-
-
-<%--<script src="js/foundation.min.js"></script>--%>
-<%--<script src="js/jquery.js"></script>--%>
-<%--<script src="js/app.js"></script>--%>
-<%--</body>--%>
-<%--</html>--%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,9 +14,21 @@
 
         <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
             <ul>
-                <li><a href="#">RESOURCES</a></li>
-                <li><a href="#">REGISTER</a></li>
-                <li><a href="#">LOGIN</a></li>
+            <c:choose>
+                <c:when test="${sessionScope.user != null}">
+                    <li><a href="/archive">Board</a></li>
+                    <li><a href="/resourceshome">Resources</a></li>
+                    <li><a href="/create">Post</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </c:when>
+                <c:otherwise>
+                    <li><a href="/archive">Board</a></li>
+                    <li><a href="/resourceshome">Resources</a></li>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                </c:otherwise>
+            </c:choose>
             </ul>
         </div>
 
@@ -55,10 +50,22 @@
                         <a href="#"><h3 class="site-logo">USWOMENVETS || WELCOME</h3></a>
                     </div>
                     <div class="top-bar-right">
-                        <ul class="menu menu-desktop">
-                            <li><a href="#">RESOURCES</a></li>
-                            <li><a href="#">REGISTER</a></li>
-                            <li><a href="#">LOGIN</a></li>
+                        <ul class="menu menu-desktop nav-desktop">
+                            <c:choose>
+                                <c:when test="${sessionScope.user != null}">
+                                    <li><a href="/archive">Board</a></li>
+                                    <li><a href="/resourceshome">Resources</a></li>
+                                    <li><a href="/create">Post</a></li>
+                                    <li><a href="/profile">Profile</a></li>
+                                    <li><a href="/logout">Logout</a></li>
+                                </c:when>
+                                <c:otherwise>
+                                    <li><a href="/archive">Board</a></li>
+                                    <li><a href="/resourceshome">Resources</a></li>
+                                    <li><a href="/register">Register</a></li>
+                                    <li><a href="/login">Login</a></li>
+                                </c:otherwise>
+                            </c:choose>
                         </ul>
                     </div>
                 </div>
@@ -80,15 +87,14 @@
                     <div class="column">
                         <h4>Contact Info</h4>
                         <hr>
-                        <a href="#"><span>Contact</span></a> <!--span is here to add a class for styling if possible-->
+                        <a href="/contact"><span>Contact</span></a>
+                        <a href="/about"><span>About</span></a><!--span is here to add a class for styling if possible-->
                     </div>
                     <div class="column">
                         <h4>Social Media</h4>
                         <hr>
                         <a href="http://www.facebook.com/justin.armer.52" target="_blank">Facebook</a>
                         <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
-                        <a href="https://www.linkedin.com/pub/justin-armer/99/805/164" target="_blank">LinkedIN</a>
-                        <a href="https://www.soundcloud.com/ausgraveroyalty" target="_blank">SoundCloud</a>
                         <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
                     </div>
                 </div>

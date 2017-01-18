@@ -1,7 +1,5 @@
 package com.codeup.adlister.controllers;
 
-import com.codeup.adlister.dao.DaoFactory;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,17 +8,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Calcious on 12/20/16.
+ * Created by Calcious on 1/18/17.
  */
-@WebServlet(name = "controllers.ShowServlet", urlPatterns = "/show")
-public class ShowServlet extends HttpServlet {
+@WebServlet(name = "EmpServlet", urlPatterns = "/employment")
+public class EmpServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String id = request.getParameter("id");
-        request.setAttribute("ads", DaoFactory.getAdsDao().specAd(id));
-        request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
+
+        request.getRequestDispatcher("/WEB-INF/resources/employment.jsp").forward(request, response);
     }
 }

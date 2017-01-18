@@ -12,8 +12,8 @@ import java.io.IOException;
 /**
  * Created by Calcious on 12/20/16.
  */
-@WebServlet(name = "controllers.Ad_individ_Servlet", urlPatterns = "/ad_individ")
-public class Ad_individ_Servlet extends HttpServlet {
+@WebServlet(name = "controllers.ShowServlet", urlPatterns = "/show")
+public class ShowServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
@@ -21,6 +21,6 @@ public class Ad_individ_Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
         request.setAttribute("ads", DaoFactory.getAdsDao().specAd(id));
-        request.getRequestDispatcher("/WEB-INF/ads/ad_individ.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/ads/show.jsp").forward(request, response);
     }
 }

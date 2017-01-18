@@ -28,7 +28,6 @@
                 <a class="navbar-right navbar-brand welcome_title">BKJ Productions</a>
             </div>
         </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
     </footer>
 </body>
 </html>

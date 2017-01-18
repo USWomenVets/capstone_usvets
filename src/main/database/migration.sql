@@ -103,3 +103,68 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`comments` (
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
 
+
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`tags`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`tags` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `tag` VARCHAR(32) NOT NULL,
+  PRIMARY KEY (`id`))
+  ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`tag_post`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`tag_post` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `tag_id` INT UNSIGNED NOT NULL,
+  `post_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `tag_id_idx` (`tag_id` ASC),
+  INDEX `post_id_idx` (`post_id` ASC),
+  CONSTRAINT `tag_id`
+  FOREIGN KEY (`tag_id`)
+  REFERENCES `uswomenvets`.`tags` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `post_id`
+  FOREIGN KEY (`post_id`)
+  REFERENCES `uswomenvets`.`posts` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+  ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`category`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`category` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `category` VARCHAR(32) NOT NULL,
+  PRIMARY KEY (`id`))
+  ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`category_post`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `uswomenvets`.`category_post` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `post_id` INT UNSIGNED NOT NULL,
+  `category_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `post_id_idx` (`post_id` ASC),
+  INDEX `category_id_idx` (`category_id` ASC),
+  CONSTRAINT `post_id`
+  FOREIGN KEY (`post_id`)
+  REFERENCES `uswomenvets`.`posts` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `category_id`
+  FOREIGN KEY (`category_id`)
+  REFERENCES `uswomenvets`.`category` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+  ENGINE = InnoDB;

@@ -1,38 +1,161 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-*{
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: honeydew;
+/* **************************************************************************
+GENERAL
+************************************************************************** */
+/*@import url('https://fonts.googleapis.com/css?family=Poiret+One');*/
+/*!* Wrapping content at a fixed width which stays centered *!*/
+/*body{*/
+/*font-family: 'Poiret One', cursive;*/
+/*}*/
+
+
+
+.wrap{
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
 }
-body{
-    background-color: #333;
-    margin-bottom: 60px;
+.off-canvas-wrapper{
+    background-color: #222;
 }
-input{
-    text-align: left;
+
+
+.port_name{
+    margin-top: 10px;
 }
-textarea{
-    text-align: left;
-}
-.ad_div:hover{
-    opacity: 0.7;
-}
-.inner{
-    position: relative;
-    top: 50%;
-    transform: translateY(50%);
-}
-#sign_up{
-    color: #5bc0de;
-}
-#pending_ads{
-    color: #f0ad4e;
+
+h5{
     text-align: center;
 }
-#nav_search{
-    float: left;
-    padding-top: 8px;
-    width: 30%;
+#proj_spot{
+    text-align: center;
+}
+/* **************************************************************************
+THUMBNAILS
+************************************************************************** */
+
+.thumbnail{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+/* **************************************************************************
+ NAV-MOBILE
+************************************************************************** */
+.title-bar{
+    background-color: #222;
+    height: 60px;
+    padding-top: 17px;
+}
+#mobile-menu{
+    background-color: #222;
+    padding: 10px;
+}
+#mobile-menu li{
+    list-style: none;
+}
+#mobile-menu a{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    line-height: 2;
+}
+#mobile-menu a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+.js-off-canvas-exit{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* **************************************************************************
+ NAV-DESKTOP
+************************************************************************** */
+.nav-desktop{
+    background-color: #222;
+    height: 80px;
+    padding: 0;
+}
+.site-logo{
+    color: white;
+    line-height: 80px;
+    font-size: 1.5em;
+}
+.menu-desktop{
+    background-color: red;
+}
+.nav-desktop .menu-desktop{
+    line-height: 80px;
+    background-color: transparent;
+}
+.nav-desktop a{
+
+}
+.menu > li > a{
+    display: inline-block;
+    line-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+.menu > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* **************************************************************************
+HERO
+************************************************************************** */
+.hero{
+    background-color: #999;
+    padding: 80px 0;
+    background-image: url("../img/cheap_diagonal_fabric.png");
+    height: 400px;
+}
+.hero p{
+    width: 85%;
+}
+
+
+/* **************************************************************************
+MAIN
+************************************************************************** */
+.main{
+    padding: 80px 0;
+}
+
+
+
+/* **************************************************************************
+FOOTER
+************************************************************************** */
+footer{
+    background-color: #222;
+    padding: 80px 0;
+    margin-top: 120px;
+}
+
+footer a{
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer h4{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2em;
+}
+
+footer hr{
+    color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+}
+
+/* **************************************************************************
+MEDIA QUERIES
+************************************************************************** */
+@media(max-width: 702px){
+    .nav-desktop{
+        display: none;
+    }
 }

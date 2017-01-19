@@ -226,8 +226,9 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- the PW for admin will need to be changed before website is hosted publicly
 INSERT INTO roles (id, role) VALUES (1, 'USER');
 INSERT INTO roles (id, role) VALUE  (2, 'ADMIN');
-INSERT INTO users(user_name, email, password, role_id) VALUES ('admin', 'admin@email.com', '$2a$12$XA2t4QQrC3TS1.AtTf80l.octvZiqUisKqW1p2eBTnmvQqNTIu63W', '2');
-INSERT INTO users(user_name, email, password, role_id) VALUES ('user', 'user@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1');
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('admin', 'admin@email.com', '$2a$12$XA2t4QQrC3TS1.AtTf80l.octvZiqUisKqW1p2eBTnmvQqNTIu63W', '2','admin', 'admin');
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('user', 'user@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1', 'user', 'user');
+INSERT INTO posts(user_id, title, content) VALUES ('1', 'title', 'content');
 
 
 

@@ -58,13 +58,12 @@ public class MySQLUsersDao implements Users {
             return null;
         }
         return new User(
-
+                rs.getLong("id"),
                 rs.getString("user_name"),
                 rs.getString("email"),
                 rs.getString("password"),
                 rs.getString("first_name"),
-                rs.getString("lastName"),
-                rs.getLong("id")
+                rs.getString("last_name")
         );
     }
 }

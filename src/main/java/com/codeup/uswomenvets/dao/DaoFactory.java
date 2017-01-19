@@ -1,15 +1,15 @@
 package com.codeup.uswomenvets.dao;
 
 public class DaoFactory {
-    private static Ads adsDao;
+    private static Posts postsDao;
     private static Users usersDao;
     private static Config config = new Config();
 
-    public static Ads getAdsDao() {
-        if (adsDao == null) {
-            adsDao = new MySQLAdsDao(config);
+    public static Posts getPostsDao() {
+        if (postsDao == null) {
+            postsDao = new MySQLPostsDao(config);
         }
-        return adsDao;
+        return postsDao;
     }
 
     public static Users getUsersDao() {

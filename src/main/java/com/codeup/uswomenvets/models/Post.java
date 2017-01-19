@@ -4,24 +4,24 @@ public class Post {
     private long id;
     private long userId;
     private String title;
-    private String description;
-    private String timestamp;
+    private String content;
+    private String postDate;
     private String username;
 
 
-    public Post(long id, long userId, String title, String description, String timestamp, String username) {
+    public Post(long id, long userId, String title, String content, String postDate, String username) {
         this.id = id;
         this.userId = userId;
         this.title = title;
-        this.description = description;
-        this.timestamp = timestamp;
+        this.content = content;
+        this.postDate = postDate;
         this.username = username;
     }
 
-    public Post(long userId, String title, String description) {
+    public Post(long userId, String title, String content) {
         this.userId = userId;
         this.title = title;
-        this.description = description;
+        this.content = content;
     }
 
     public long getId() {
@@ -48,17 +48,17 @@ public class Post {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getContent() {
+        return content;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getTimestamp() {return timestamp;}
+    public String getPostDate() {return postDate;}
 
-    public void setTimestamp(String timestamp) {this.timestamp = timestamp;}
+    public void setPostDate(String postDate) {this.postDate = postDate;}
 
     public String getUsername() {return username;}
 

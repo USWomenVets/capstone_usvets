@@ -58,7 +58,7 @@
                                 <c:when test="${sessionScope.user != null}">
                                     <li><a href="/archive">Board</a></li>
                                     <li><a href="/resourceshome">Resources</a></li>
-                                    <li><a href="/create">Post</a></li>
+                                    <li><a href="/create">Pt</a></li>
                                     <li><a href="/profile">Profile</a></li>
                                     <li><a href="/logout">Logout</a></li>
                                 </c:when>

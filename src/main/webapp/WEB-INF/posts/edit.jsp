@@ -51,7 +51,7 @@
             <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
                 <div class="wrap">
                     <div class="top-bar-left">
-                        <a href="/index"><h3 class="site-logo">USWOMENVETS || WELCOME</h3></a>
+                        <a href="/index"><h3 class="site-logo">USWOMENVETS || </h3></a>
                     </div>
                     <div class="top-bar-right">
                         <ul class="menu menu-desktop nav-desktop">

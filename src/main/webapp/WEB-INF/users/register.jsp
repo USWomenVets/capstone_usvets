@@ -51,7 +51,7 @@
             <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
                 <div class="wrap">
                     <div class="top-bar-left">
-                        <a href="/index"><h3 class="site-logo">USWOMENVETS || WELCOME</h3></a>
+                        <a href="/index"><h3 class="site-logo">USWOMENVETS || </h3></a>
                     </div>
                     <div class="top-bar-right">
                         <ul class="menu menu-desktop nav-desktop">
@@ -89,6 +89,14 @@
             <section class="main">
                 <div class="wrap row">
             <form action="/register" method="post">
+                <div class="form-group">
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" name="first_name" class="form-control register_field" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input id="last_name" name="last_name" class="form-control register_field" type="text">
+                </div>
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input id="username" name="username" class="form-control register_field" type="text">

@@ -6,6 +6,7 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
+    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 </head>
 <body>
 <script src="js/jquery.js"></script>

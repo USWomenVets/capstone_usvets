@@ -1,4 +1,4 @@
-package com.codeup.adlister.controllers;
+package com.codeup.uswomenvets.controllers;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Calcious on 12/20/16.
+ * Created by Calcious on 1/18/17.
  */
-@WebServlet(name = "IndexServlet", urlPatterns = "/index")
-public class IndexServlet extends HttpServlet {
+@WebServlet(name = "ContactServlet", urlPatterns = "/contact")
+public class ContactServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/users/contact.jsp").forward(request, response);
     }
 }

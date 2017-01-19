@@ -1,6 +1,6 @@
-package com.codeup.adlister.models;
+package com.codeup.uswomenvets.models;
 
-public class Ad {
+public class Post {
     private long id;
     private long userId;
     private String title;
@@ -9,7 +9,7 @@ public class Ad {
     private String username;
 
 
-    public Ad(long id, long userId, String title, String description, String timestamp, String username) {
+    public Post(long id, long userId, String title, String description, String timestamp, String username) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -18,7 +18,7 @@ public class Ad {
         this.username = username;
     }
 
-    public Ad(long userId, String title, String description) {
+    public Post(long userId, String title, String description) {
         this.userId = userId;
         this.title = title;
         this.description = description;

@@ -1,6 +1,6 @@
-package com.codeup.adlister.dao;
+package com.codeup.uswomenvets.dao;
 
-import com.codeup.adlister.models.Ad;
+import com.codeup.uswomenvets.models.Ad;
 import com.mysql.cj.jdbc.Driver;
 
 import java.sql.*;

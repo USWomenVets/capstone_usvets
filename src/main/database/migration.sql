@@ -10,22 +10,8 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema uswomenvets
 -- -----------------------------------------------------
-
--- -----------------------------------------------------
--- Schema uswomenvets
--- -----------------------------------------------------
+DROP SCHEMA uswomenvets;
 CREATE SCHEMA IF NOT EXISTS `uswomenvets` DEFAULT CHARACTER SET utf8 ;
--- -----------------------------------------------------
--- Schema uswomenvets
--- -----------------------------------------------------
--- This schema was created for a stub table
-
--- -----------------------------------------------------
--- Schema uswomenvets
---
--- This schema was created for a stub table
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `uswomenvets` ;
 USE `uswomenvets` ;
 
 -- -----------------------------------------------------
@@ -37,24 +23,22 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`roles` (
   PRIMARY KEY (`id`))
   ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `uswomenvets`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `uswomenvets`.`users` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `user_name` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NOT NULL,
-  `first_name` VARCHAR(45) NOT NULL,
-  `last_name` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
+  `user_name` VARCHAR(64) NOT NULL,
+  `password` VARCHAR(64) NOT NULL,
+  `email` VARCHAR(64) NOT NULL,
+  `role_id` INT(2) UNSIGNED NOT NULL DEFAULT '1',
+  `first_name` VARCHAR(32) NOT NULL,
+  `last_name` VARCHAR(32) NOT NULL,
   `birth` DATE NULL,
-  `age` INT(3) UNSIGNED NULL,
-  `gender` CHAR(1) NULL,
-  `creation_date` DATE NOT NULL,
-  `role_id` INT(2) UNSIGNED NOT NULL,
-  `prof_img_direct` VARCHAR(64) NULL,
-  `timestamp` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `age` VARCHAR(3) NULL,
+  `gender` VARCHAR(2) NULL,
+  `prof_img` VARCHAR(64) NULL,
+  `creation_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `last_online` DATETIME NULL,
   PRIMARY KEY (`id`),
   INDEX `role_idx` (`role_id` ASC),
@@ -66,7 +50,6 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`users` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `uswomenvets`.`posts`
@@ -235,3 +218,19 @@ USE `uswomenvets` ;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- database default inserts
+-- -----------------------------------------------------
+-- account password is 'password' for both
+-- the PW for admin will need to be changed before website is hosted publicly
+INSERT INTO roles (id, role) VALUES (1, 'USER');
+INSERT INTO roles (id, role) VALUE  (2, 'ADMIN');
+INSERT INTO users(user_name, email, password, role_id) VALUES ('admin', 'admin@email.com', '$2a$12$XA2t4QQrC3TS1.AtTf80l.octvZiqUisKqW1p2eBTnmvQqNTIu63W', '2');
+INSERT INTO users(user_name, email, password, role_id) VALUES ('user', 'user@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1');
+
+
+
+
+-- user creation:
+-- INSERT INTO users(user_name, email, password) VALUES ('Kenny', 'Kenny@email.com', '$2a$04$wqH/W9evMVOTXdFk8ogSguIFa5voJiLBbnzBVDtgZ4Nnc9Ug5va22');

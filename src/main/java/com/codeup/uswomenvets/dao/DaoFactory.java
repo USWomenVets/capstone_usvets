@@ -1,4 +1,4 @@
-package com.codeup.adlister.dao;
+package com.codeup.uswomenvets.dao;
 
 public class DaoFactory {
     private static Ads adsDao;

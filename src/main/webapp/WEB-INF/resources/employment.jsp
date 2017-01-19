@@ -26,9 +26,9 @@
                     </c:when>
                     <c:otherwise>
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/resourceshome">Wellness</a></li>
-                        <li><a href="/resourceshome">Employment</a></li>
-                        <li><a href="/resourceshome">Events</a></li>
+                        <li><a href="/wellness">Wellness</a></li>
+                        <li><a href="/employment">Employment</a></li>
+                        <li><a href="/events">Events</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
                     </c:otherwise>
@@ -51,7 +51,7 @@
             <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
                 <div class="wrap">
                     <div class="top-bar-left">
-                        <a href="/index"><h3 class="site-logo">USWOMENVETS || WELCOME</h3></a>
+                        <a href="/index"><h3 class="site-logo">USWOMENVETS || </h3></a>
                     </div>
                     <div class="top-bar-right">
                         <ul class="menu menu-desktop nav-desktop">

@@ -26,9 +26,9 @@
                     </c:when>
                     <c:otherwise>
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/resourceshome">Wellness</a></li>
-                        <li><a href="/resourceshome">Employment</a></li>
-                        <li><a href="/resourceshome">Events</a></li>
+                        <li><a href="/wellness">Wellness</a></li>
+                        <li><a href="/employment">Employment</a></li>
+                        <li><a href="/events">Events</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
                     </c:otherwise>
@@ -51,7 +51,7 @@
             <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
                 <div class="wrap">
                     <div class="top-bar-left">
-                        <a href="/index"><h3 class="site-logo">USWOMENVETS || WELCOME</h3></a>
+                        <a href="/index"><h3 class="site-logo">USWOMENVETS || </h3></a>
                     </div>
                     <div class="top-bar-right">
                         <ul class="menu menu-desktop nav-desktop">
@@ -84,7 +84,7 @@
             </section>
 
             <!--Calendar-->
-            <div>
+            <div class="wrap row small-up-1 medium-up-2">
                 <iframe src="https://calendar.google.com/calendar/embed?title=Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23990000&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                         style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
 

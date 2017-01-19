@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="US Women Vets Home Page" />
+        <jsp:param name="title" value="US Women Vets Home Page"/>
     </jsp:include>
 </head>
 <body>
@@ -79,7 +79,14 @@
                 </div>
             </section>
 
+            <!--Calendar-->
+            <div>
+                <iframe src="https://calendar.google.com/calendar/embed?title=Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23990000&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
+                        style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
 
+                </iframe>
+
+            </div>
             <!--Footer-->
 
             <footer>
@@ -88,7 +95,8 @@
                         <h4>Contact Info</h4>
                         <hr>
                         <a href="/contact"><span>Contact</span></a>
-                        <a href="/about"><span>About</span></a><!--span is here to add a class for styling if possible-->
+                        <a href="/about"><span>About</span></a>
+                        <!--span is here to add a class for styling if possible-->
                     </div>
                     <div class="column">
                         <h4>Social Media</h4>

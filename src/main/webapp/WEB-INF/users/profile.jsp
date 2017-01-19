@@ -124,19 +124,20 @@
                                     <div class="form-group">
                                         <label class="small-6 columns control-label name">FIRST NAME:</label>
                                         <div class="col-lg-8">
-                                            <p><strong>Temp</strong></p>
-                                            <%--<h4>${user.firstName()}</h4>--%>
+                                            <p><strong>${user.getFirstName()}</strong></p>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="small-6 columns control-label name">LAST NAME:</label>
                                         <div class="col-lg-8">
-                                            <p><strong>Temp</strong></p>
-                                            <%--<h4>${user.lastName()}</h4>--%>
+                                            <p><strong>${user.getLastName()}</strong></p>
                                         </div>
                                     </div>
                                 </div>
                             </form>
+                            <br>
+                            <h3 class="text-center">Friend's List</h3>
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -158,6 +159,8 @@
                         <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
                         <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
                     </div>
+                    <br>
+                    <a href="/index">@Copyright 2017 Team Allies</a>
                 </div>
             </footer>
         </div>

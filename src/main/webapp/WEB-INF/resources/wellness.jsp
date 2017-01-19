@@ -84,8 +84,30 @@
             </section>
 
 
-            <!--Footer-->
+            <section class="main">
+                <div class="wrap">
+                    <div class="container">
+                        <div class="row align-center">
+                            <div class="column small-2">Aligned to</div>
+                            <div class="column small-6">the middlethe middlethe middlethe middlethe middlethe middlethe middle</div>
+                        </div>
+                        <br>
+                        <div class="row align-center">
+                            <div class="column small-2">Aligned to</div>
+                            <div class="column small-6">the middlethe middlethe middlethe middlethe middlethe middlethe middle</div>
+                        </div>
+                        <br>
+                        <div class="row align-center">
+                            <div class="column small-2">Aligned to</div>
+                            <div class="column small-6">the middlethe middlethe middlethe middlethe middlethe middlethe middle</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+
+
+            <!--Footer-->
             <footer>
                 <div class="wrap row small-up-1 medium-up-2">
                     <div class="column">
@@ -101,6 +123,8 @@
                         <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
                         <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
                     </div>
+                    <br>
+                    <a href="/index">@Copyright 2017 Team Allies</a>
                 </div>
             </footer>
         </div>

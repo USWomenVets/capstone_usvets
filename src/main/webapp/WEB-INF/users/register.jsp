@@ -137,6 +137,8 @@
                         <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
                         <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
                     </div>
+                    <br>
+                    <a href="/index">@Copyright 2017 Team Allies</a>
                 </div>
             </footer>
         </div>

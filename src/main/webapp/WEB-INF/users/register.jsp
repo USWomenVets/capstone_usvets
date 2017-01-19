@@ -95,7 +95,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" name="email" class="form-control register_field" type="text">
+                    <input id="email" name="email" class="form-control register_field" type="email">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>

@@ -1,4 +1,6 @@
-package com.codeup.adlister.controllers;
+package com.codeup.uswomenvets.controllers;
+
+import com.codeup.uswomenvets.dao.DaoFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,16 +10,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by Calcious on 1/18/17.
+ * Created by Calcious on 12/20/16.
  */
-@WebServlet(name = "AboutServlet", urlPatterns = "/about")
-public class AboutServlet extends HttpServlet {
+@WebServlet(name = "controllers.ShowServlet", urlPatterns = "/show")
+public class ShowServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        request.getRequestDispatcher("/WEB-INF/users/about.jsp").forward(request, response);
+        String id = request.getParameter("id");
+        request.setAttribute("ads", DaoFactory.getPostsDao().specPost(id));
+        request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
     }
 }

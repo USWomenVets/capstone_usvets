@@ -1,8 +1,8 @@
-package com.codeup.adlister.controllers;
+package com.codeup.uswomenvets.controllers;
 
-import com.codeup.adlister.dao.DaoFactory;
-import com.codeup.adlister.models.Ad;
-import com.codeup.adlister.models.User;
+import com.codeup.uswomenvets.dao.DaoFactory;
+import com.codeup.uswomenvets.models.Post;
+import com.codeup.uswomenvets.models.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,12 +24,12 @@ public class CreatePostServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         User user = (User) request.getSession().getAttribute("user");
-        Ad ad = new Ad(
+        Post post = new Post(
             user.getId(),
             request.getParameter("title"),
             request.getParameter("description")
         );
-        DaoFactory.getAdsDao().insert(ad);
+        DaoFactory.getPostsDao().insert(post);
         response.sendRedirect("/archive");
     }
 }

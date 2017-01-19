@@ -15,8 +15,6 @@ public class ArchiveServlet extends HttpServlet {
             HttpServletRequest request,
             HttpServletResponse response
     ) throws ServletException, IOException {
-        String q = request.getParameter("q");
-        request.setAttribute("ads", DaoFactory.getAdsDao().all(q));
         request.getRequestDispatcher("/WEB-INF/posts/archive.jsp").forward(request, response);
     }
 }

@@ -17,14 +17,18 @@
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/resourceshome">Resources</a></li>
+                        <li><a href="/wellness">Wellness</a></li>
+                        <li><a href="/employment">Employment</a></li>
+                        <li><a href="/events">Events</a></li>
                         <li><a href="/create">Post</a></li>
                         <li><a href="/profile">Profile</a></li>
                         <li><a href="/logout">Logout</a></li>
                     </c:when>
                     <c:otherwise>
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/resourceshome">Resources</a></li>
+                        <li><a href="/resourceshome">Wellness</a></li>
+                        <li><a href="/resourceshome">Employment</a></li>
+                        <li><a href="/resourceshome">Events</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
                     </c:otherwise>
@@ -80,6 +84,28 @@
             </section>
 
 
+            <section class="main">
+                <div class="wrap row">
+                    <form action="https://www.elformo.com/forms/3e8e34bc-bf8d-4f42-8b8f-2cf90c44f4c5" method="post">
+                        <div class="contact form line">
+                            <div class="mail">
+                                <label>EMAIL: <input type="email" id="email" name="email" value="justin.armer@gmail.com"></label>
+                            </div>
+                            <div class="contact form line">
+                                <div class="message">
+                                    <label>MESSAGE: <textarea id="comment" name="comment" placeholder="Outgoing message through ElFormo"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="contact form line">
+                                <div class="submit">
+                                    <input type="submit" class="button">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
             <!--Footer-->
 
             <footer>

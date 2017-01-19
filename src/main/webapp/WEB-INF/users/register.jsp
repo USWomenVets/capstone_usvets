@@ -17,14 +17,18 @@
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/resourceshome">Resources</a></li>
+                        <li><a href="/wellness">Wellness</a></li>
+                        <li><a href="/employment">Employment</a></li>
+                        <li><a href="/events">Events</a></li>
                         <li><a href="/create">Post</a></li>
                         <li><a href="/profile">Profile</a></li>
                         <li><a href="/logout">Logout</a></li>
                     </c:when>
                     <c:otherwise>
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/resourceshome">Resources</a></li>
+                        <li><a href="/resourceshome">Wellness</a></li>
+                        <li><a href="/resourceshome">Employment</a></li>
+                        <li><a href="/resourceshome">Events</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
                     </c:otherwise>
@@ -71,11 +75,39 @@
                 </div>
             </nav>
 
+
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
                     <h1>Welcome to Register page!</h1>
                     <p>Catchy tagline goes here!</p>
+                </div>
+            </section>
+
+
+            <!--Main Section-->
+            <section class="main">
+                <div class="wrap row">
+            <form action="/register" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" class="form-control register_field" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" class="form-control register_field" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <p><em>Must be at least six characters in length</em></p>
+                    <input id="password" name="password" class="form-control register_field" type="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password">
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_reg">
+            </form>
                 </div>
             </section>
 

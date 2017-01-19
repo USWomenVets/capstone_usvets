@@ -114,7 +114,7 @@
                     <label for="confirm_password">Confirm Password</label>
                     <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password">
                 </div>
-                <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_reg">
+                <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_reg" value="Sign up!">
             </form>
                 </div>
             </section>
@@ -137,6 +137,8 @@
                         <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
                         <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
                     </div>
+                    <br>
+                    <a href="/index">@Copyright 2017 Team Allies</a>
                 </div>
             </footer>
         </div>

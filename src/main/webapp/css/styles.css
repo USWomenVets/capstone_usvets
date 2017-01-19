@@ -10,7 +10,13 @@ GENERAL
 /*font-family: 'Poiret One', cursive;*/
 /*}*/
 
+*{
+    font-family: 'Raleway', sans-serif;
+}
 
+button{
+    background-color: #8a8a8a;
+}
 
 .wrap{
     width: 90%;
@@ -20,7 +26,6 @@ GENERAL
 .off-canvas-wrapper{
     background-color: #222;
 }
-
 
 .port_name{
     margin-top: 10px;
@@ -63,6 +68,14 @@ THUMBNAILS
     line-height: 2;
 }
 #mobile-menu a:hover{
+    color: rgba(255, 255, 255, 0.6);
+}
+.resources a{
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    line-height: 2;
+}
+.resources a:hover{
     color: rgba(255, 255, 255, 0.6);
 }
 .js-off-canvas-exit{

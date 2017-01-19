@@ -84,6 +84,63 @@
             </section>
 
 
+            <section class="main wrap row">
+                <div class="container text-center">
+                    <h1>Welcome, ${sessionScope.user.username}!</h1>
+
+                <div>
+                    <div class="row">
+                        <!-- left column -->
+                        <div class="col-md-9">
+                            <div>
+                                <div class="col-md-9"><img src="//placehold.it/100" class="avatar img-circle" alt="avatar"></div>
+                                <h6>Upload a different photo</h6>
+
+                                <div id="photo" class="text-center"><input class="form-control" type="file"></div>
+                            </div>
+                        </div>
+
+                        <!-- edit form column -->
+                        <div class="col-md-9 personal-info text-center">
+                            <h3 class="text-center">Personal info</h3>
+                            <hr>
+                            <form class="form-horizontal" role="form" method="post">
+
+                                <div class="row">
+                                <div class="form-group">
+                                    <label class="small-6 columns control-label name">USERNAME:</label>
+                                    <div class="col-lg-8">
+                                        <p><strong>${user.getUsername()}</strong></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="small-6 columns control-label">EMAIL:</label>
+                                    <div class="col-lg-8">
+                                        <p><strong>${user.getEmail()}</strong></p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="small-6 columns control-label name">FIRST NAME:</label>
+                                        <div class="col-lg-8">
+                                            <p><strong>Temp</strong></p>
+                                            <%--<h4>${user.firstName()}</h4>--%>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="small-6 columns control-label name">LAST NAME:</label>
+                                        <div class="col-lg-8">
+                                            <p><strong>Temp</strong></p>
+                                            <%--<h4>${user.lastName()}</h4>--%>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!--Footer-->
 
             <footer>

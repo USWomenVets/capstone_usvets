@@ -81,6 +81,10 @@ THUMBNAILS
 .js-off-canvas-exit{
     background-color: rgba(0, 0, 0, 0.1);
 }
+#photo{
+    text-align: center;
+    margin: auto;
+}
 
 
 /* **************************************************************************

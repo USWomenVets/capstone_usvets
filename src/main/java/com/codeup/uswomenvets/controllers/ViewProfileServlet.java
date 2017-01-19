@@ -1,7 +1,7 @@
-package com.codeup.adlister.controllers;
+package com.codeup.uswomenvets.controllers;
 
-import com.codeup.adlister.dao.DaoFactory;
-import com.codeup.adlister.models.User;
+import com.codeup.uswomenvets.dao.DaoFactory;
+import com.codeup.uswomenvets.models.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +18,7 @@ public class ViewProfileServlet extends HttpServlet {
             response.sendRedirect("/login");
             return;
         }
-        request.setAttribute("ads", DaoFactory.getAdsDao().userAd(user.getId()));
+        request.setAttribute("posts", DaoFactory.getPostsDao().userPost(user.getId()));
         request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);
     }
 }

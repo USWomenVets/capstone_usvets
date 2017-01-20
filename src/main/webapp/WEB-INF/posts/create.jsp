@@ -19,6 +19,20 @@
                 </div>
             </section>
 
+            <!--Main Section-->
+            <section class="main">
+                <div class="wrap">
+                    <label>Select Menu
+                        <select>
+                            <option value="husker">Husker</option>
+                            <option value="starbuck">Starbuck</option>
+                            <option value="hotdog">Hot Dog</option>
+                            <option value="apollo">Apollo</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+
 
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <script src="js/foundation.min.js"></script>

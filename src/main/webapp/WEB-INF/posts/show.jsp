@@ -84,6 +84,28 @@
                 </div>
             </section>
 
+            <!--Main Section-->
+            <section class="main">
+                <div class="wrap">
+                    <h1>Hello world!</h1>
+                    <c:choose>
+                        <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
+                            <a href="/login"><button class="resources button">Comment</button></a>
+                            <a href="/employment"><button class="resources button">Edit</button></a>
+                            <a href="/events"><button class="resources button">Delete</button></a>
+                            <a href="#"><button class="resources button">Upvote</button></a>
+                            <a href="#"><button class="resources button">Downvote</button></a>
+                        </c:when>
+                        <c:otherwise> <!--ANON USER-->
+                            <a href="/login"><button class="resources button">Comment</button></a>
+                            <a href="/employment"><button class="resources button">Upvote</button></a>
+                            <a href="/events"><button class="resources button">Downvote</button></a>
+                        </c:otherwise>
+                    </c:choose>
+
+                </div>
+            </section>
+
 
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 

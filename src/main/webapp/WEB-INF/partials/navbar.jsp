@@ -1,8 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
-
         <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
             <ul>
                 <c:choose>
@@ -56,8 +54,8 @@
                                         </ul>
                                     </li>
                                     <li><a href="/create">Post</a></li>
-                                    <li><a href="/profile">Profile</a></li>
                                     <li><a href="/logout">Logout</a></li>
+                                    <li><a href="/profile">Profile</a></li>
                                 </c:when>
                                 <c:otherwise>
                                     <li><a href="/archive">Board</a></li>

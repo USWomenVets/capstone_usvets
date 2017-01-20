@@ -34,32 +34,55 @@
 
                         <div class="row">
                             <div class="form-group">
-                                <label class="small-6 columns control-label name">USERNAME:</label>
+                                <label for="username" class="small-6 columns control-label name">USERNAME:</label>
                                 <div class="col-lg-8">
-                                    <p><strong>${user.getUsername()}</strong></p>
+                                    <input id="username" value="${user.getUsername()}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="small-6 columns control-label">EMAIL:</label>
+                                <label for="email" class="small-6 columns control-label">EMAIL:</label>
                                 <div class="col-lg-8">
-                                    <p><strong>${user.getEmail()}</strong></p>
+                                    <input id="email" value="${user.getEmail()}">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group">
-                                <label class="small-6 columns control-label name">FIRST NAME:</label>
+                                <label for="first_name" class="small-6 columns control-label name">FIRST NAME:</label>
                                 <div class="col-lg-8">
-                                    <p><strong>${user.getFirstName()}</strong></p>
+                                    <input id="first_name" value="${user.getFirstName()}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="small-6 columns control-label name">LAST NAME:</label>
+                                <label for="last_name" class="small-6 columns control-label name">LAST NAME:</label>
                                 <div class="col-lg-8">
-                                    <p><strong>${user.getLastName()}</strong></p>
+                                    <input id="last_name" value="${user.getLastName()}">
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="gender" class="small-6 columns control-label name">GENDER:</label>
+                                <div class="col-lg-8">
+                                    <input id="gender" value="${user.getGender()}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="age" class="small-6 columns control-label name">AGE:</label>
+                                <div class="col-lg-8">
+                                    <input id="age" value="${user.getAge()}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="birth" class="small-6 columns control-label name">BIRTH:</label>
+                                <div class="col-lg-8">
+                                    <input id="birth" value="${user.getBirth()}">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button" type="submit">Save</button>
                     </form>
                     <br>
                     <h3 class="text-center">Friend's List</h3>

@@ -21,4 +21,18 @@ public class ViewProfileServlet extends HttpServlet {
         request.setAttribute("posts", DaoFactory.getPostsDao().userPost(user.getId()));
         request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);
     }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String username = request.getParameter("username");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+        String passwordConfirmation = request.getParameter("confirm_password");
+        String firstName = request.getParameter("first_name");
+        String lastName = request.getParameter("last_name");
+        String gender = request.getParameter("gender");
+        String birth = request.getParameter("birth");
+        String age = request.getParameter("age");
+
+
+
+    }
 }

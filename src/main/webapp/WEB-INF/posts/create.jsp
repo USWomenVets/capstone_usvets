@@ -31,15 +31,12 @@
                         </select>
                     </label>
                     <form action="/create" method="post">
-                        <label>Title
-                            <input type="text" placeholder="Post title" aria-describedby="exampleHelpText">
-                        </label>
+                        <label for="title">Title</label>
+                        <input id="title" name="title" type="text" placeholder="Post title" aria-describedby="exampleHelpText">
                         <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
-                        <label>
-                            Content
-                            <textarea></textarea>
-                        </label>
-                        <a href="/archive"><button class="resources button" type="submit">Post!</button></a>
+                        <label for="content">Content</label>
+                        <textarea id="content" name="content" ></textarea>
+                        <button class="resources button" type="submit">Post!</button>
                     </form>
                 </div>
             </section>

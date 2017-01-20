@@ -24,12 +24,23 @@
                 <div class="wrap">
                     <label>Select Menu
                         <select>
-                            <option value="husker">Husker</option>
-                            <option value="starbuck">Starbuck</option>
-                            <option value="hotdog">Hot Dog</option>
-                            <option value="apollo">Apollo</option>
+                            <option value="husker">Wellness</option>
+                            <option value="starbuck">Employment</option>
+                            <option value="hotdog">Events</option>
+                            <option value="apollo">General</option>
                         </select>
                     </label>
+                    <form action="/create" method="post">
+                        <label>Title
+                            <input type="text" placeholder="Post title" aria-describedby="exampleHelpText">
+                        </label>
+                        <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
+                        <label>
+                            Content
+                            <textarea></textarea>
+                        </label>
+                        <a href="/archive"><button class="resources button" type="submit">Post!</button></a>
+                    </form>
                 </div>
             </section>
 

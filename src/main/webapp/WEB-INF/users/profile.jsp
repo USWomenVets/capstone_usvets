@@ -9,17 +9,6 @@
     <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 </head>
 <body>
-
-
-<!--Hero Section-->
-<section class="hero">
-    <div class="wrap">
-        <h1>Welcome to Profile page!</h1>
-        <p>Catchy tagline goes here!</p>
-    </div>
-</section>
-
-
 <section class="main wrap row">
     <div class="container text-center">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
@@ -80,11 +69,7 @@
         </div>
     </div>
 </section>
-
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
-<script src="js/foundation.min.js"></script>
-<script src="js/foundation.js"></script>
-<script src="js/what-input.js"></script>
-<script src="js/app.js"></script>
+<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

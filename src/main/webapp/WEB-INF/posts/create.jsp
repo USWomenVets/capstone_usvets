@@ -9,8 +9,6 @@
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 </head>
 <body>
-
-
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
@@ -35,9 +33,6 @@
 
 
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
-<script src="js/foundation.min.js"></script>
-<script src="js/foundation.js"></script>
-<script src="js/what-input.js"></script>
-<script src="js/app.js"></script>
+<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

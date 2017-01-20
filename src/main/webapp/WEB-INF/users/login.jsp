@@ -6,14 +6,16 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 </head>
 <body>
+<div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
-                    <h1>Welcome to Login page!</h1>
+                    <h1>Welcome to Logi page!</h1>
                     <p>Catchy tagline goes here!</p>
                 </div>
             </section>
@@ -38,7 +40,8 @@
 
 
 
-
+    </div>
+</div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>

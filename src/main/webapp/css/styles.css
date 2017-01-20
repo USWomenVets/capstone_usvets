@@ -103,9 +103,6 @@ THUMBNAILS
     line-height: 80px;
     background-color: transparent;
 }
-.nav-desktop a{
-
-}
 .menu > li > a{
     display: inline-block;
     line-height: 80px;
@@ -115,6 +112,13 @@ THUMBNAILS
 }
 .menu > li > a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+.submenu_item{
+    display: block;
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    border: none;
 }
 
 /* **************************************************************************

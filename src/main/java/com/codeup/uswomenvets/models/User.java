@@ -2,6 +2,7 @@ package com.codeup.uswomenvets.models;
 
 public class User {
     private long id;
+    private long age;
     private String username;
     private String email;
     private String password;
@@ -9,7 +10,6 @@ public class User {
     private String lastName;
     private String about;
     private String birth;
-    private int age;
     private String gender;
     private String profileImg;
     private String creationDate;
@@ -18,7 +18,7 @@ public class User {
 
     public User() {
     }
-    //user creationregister servlet
+    //user creation in the register servlet
     public User(String username, String email, String password, String firstName, String lastName) {
         this.username = username;
         this.email = email;
@@ -27,12 +27,26 @@ public class User {
         setPassword(password);
     }
 
-    //user modification profile servlet
-    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, int age, String gender, String profileImg, String creationDate, String lastOnline) {
+    //user modification in the profile servlet
+    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, long age, String gender) {
         this.id = id;
         this.username = username;
         this.email = email;
-        this.password = password;
+        setPassword(password);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.about = about;
+        this.birth = birth;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    //user object creation to be sent to view
+    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, long age, String gender, String profileImg, String lastOnline, String creationDate) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        setPassword(password);
         this.firstName = firstName;
         this.lastName = lastName;
         this.about = about;
@@ -76,9 +90,9 @@ public class User {
 
     public void setBirth(String birth) { this.birth = birth; }
 
-    public int getAge() { return age; }
+    public long getAge() { return age; }
 
-    public void setAge(int age) { this.age = age; }
+    public void setAge(long age) { this.age = age; }
 
     public String getGender() { return gender; }
 

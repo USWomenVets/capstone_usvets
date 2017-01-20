@@ -12,8 +12,9 @@ import java.io.IOException;
 
 @WebServlet(name = "controllers.ViewProfileServlet", urlPatterns = "/profile")
 public class ViewProfileServlet extends HttpServlet {
+    User user;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User user = (User) request.getSession().getAttribute("user");
+        user = (User) request.getSession().getAttribute("user");
         if (request.getSession().getAttribute("user") == null) {
             response.sendRedirect("/login");
             return;
@@ -28,10 +29,25 @@ public class ViewProfileServlet extends HttpServlet {
         String passwordConfirmation = request.getParameter("confirm_password");
         String firstName = request.getParameter("first_name");
         String lastName = request.getParameter("last_name");
+        String about = request.getParameter("about");
         String gender = request.getParameter("gender");
         String birth = request.getParameter("birth");
-        String age = request.getParameter("age");
+        int age = Integer.parseInt(request.getParameter("age"));
 
+        User editUser = new User(
+                user.getId(),
+                username,
+                email,
+                password,
+                firstName,
+                lastName,
+                about,
+                birth,
+                age,
+                gender
+        );
+
+        DaoFactory.getUsersDao().editUser(editUser);
 
 
     }

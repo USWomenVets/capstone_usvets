@@ -21,19 +21,6 @@ public class MySQLUsersDao implements Users {
         }
     }
 
-
-    @Override
-    public User findByUsername(String username) {
-        String query = "SELECT * FROM users WHERE user_name = ? LIMIT 1";
-        try {
-            PreparedStatement stmt = connection.prepareStatement(query);
-            stmt.setString(1, username);
-            return extractUser(stmt.executeQuery());
-        } catch (SQLException e) {
-            throw new RuntimeException("Error finding a user by username", e);
-        }
-    }
-
     @Override
     public Long insert(User user) {
         String query = "INSERT INTO users(user_name, email, password, first_name, last_name) VALUES (?, ?, ?, ?, ?)";
@@ -53,6 +40,30 @@ public class MySQLUsersDao implements Users {
         }
     }
 
+    @Override
+    public Long editUser(User user) {
+        String query = "UPDATE users set user_name = ? WHERE id =" + user.getId();
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ResultSet rs = stmt.getGeneratedKeys();
+            return rs.getLong(1);
+        } catch (SQLException e) {
+            throw new RuntimeException("Error editing existing user", e);
+        }
+    }
+
+    @Override
+    public User findByUsername(String username) {
+        String query = "SELECT * FROM users WHERE user_name = ? LIMIT 1";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(query);
+            stmt.setString(1, username);
+            return extractUser(stmt.executeQuery());
+        } catch (SQLException e) {
+            throw new RuntimeException("Error finding a user by username", e);
+        }
+    }
+
     private User extractUser(ResultSet rs) throws SQLException {
         if (! rs.next()) {
             return null;
@@ -64,12 +75,13 @@ public class MySQLUsersDao implements Users {
                 rs.getString("password"),
                 rs.getString("first_name"),
                 rs.getString("last_name"),
+                rs.getString("about"),
                 rs.getString("birth"),
                 rs.getInt("age"),
                 rs.getString("gender"),
                 rs.getString("prof_img"),
-                rs.getString("creation_date"),
-                rs.getString("last_online")
+                rs.getString("last_online"),
+                rs.getString("creation_date")
         );
     }
 }

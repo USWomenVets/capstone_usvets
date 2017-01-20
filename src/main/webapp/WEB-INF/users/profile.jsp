@@ -6,13 +6,14 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page"/>
     </jsp:include>
-    <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 </head>
 <body>
-<section class="main wrap row">
+        <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+
+
+        <section class="main row">
     <div class="container text-center">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
-
         <div>
             <div class="row">
                 <!-- left column -->
@@ -69,6 +70,7 @@
         </div>
     </div>
 </section>
+
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>

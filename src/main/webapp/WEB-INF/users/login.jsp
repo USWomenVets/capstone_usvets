@@ -13,7 +13,7 @@
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
-                    <h1>Welcome to Login page!</h1>
+                    <h1>Welcome to Logi page!</h1>
                     <p>Catchy tagline goes here!</p>
                 </div>
             </section>

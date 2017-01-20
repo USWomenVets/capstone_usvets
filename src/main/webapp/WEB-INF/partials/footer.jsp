@@ -5,7 +5,7 @@
 <!--Footer-->
 
 <footer>
-    <div class="wrap row small-up-1 medium-up-2">
+    <div class="wrap small-up-1 medium-up-2">
         <div class="column">
             <h4>Contact Info</h4>
             <hr>

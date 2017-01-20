@@ -24,19 +24,64 @@
             <section class="main">
                 <div class="wrap">
                     <div class="container">
-                        <div class="row align-center">
-                            <div class="column small-2">Aligned to</div>
-                            <div class="column small-6">the middlethe middlethe middlethe middlethe middlethe middlethe middle</div>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <img src= "http://placeimg.com/200/200/people">
+                            </div>
+                            <div class="media-object-section">
+                                <h4>Dreams feel real while we're in them.</h4>
+                                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            </div>
                         </div>
                         <br>
-                        <div class="row align-center">
-                            <div class="column small-2">Aligned to</div>
-                            <div class="column small-6">the middlethe middlethe middlethe middlethe middlethe middlethe middle</div>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <h4>Dreams feel real while we're in them.</h4>
+                                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            </div>
+                            <div class="media-object-section">
+                                <img src= "http://placeimg.com/200/200/people">
+                            </div>
                         </div>
                         <br>
-                        <div class="row align-center">
-                            <div class="column small-2">Aligned to</div>
-                            <div class="column small-6">the middlethe middlethe middlethe middlethe middlethe middlethe middle</div>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <img src= "http://placeimg.com/200/200/people">
+                            </div>
+                            <div class="media-object-section">
+                                <h4>Dreams feel real while we're in them.</h4>
+                                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <h4>Dreams feel real while we're in them.</h4>
+                                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            </div>
+                            <div class="media-object-section">
+                                <img src= "http://placeimg.com/200/200/people">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <img src= "http://placeimg.com/200/200/people">
+                            </div>
+                            <div class="media-object-section">
+                                <h4>Dreams feel real while we're in them.</h4>
+                                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="media-object">
+                            <div class="media-object-section">
+                                <h4>Dreams feel real while we're in them.</h4>
+                                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            </div>
+                            <div class="media-object-section">
+                                <img src= "http://placeimg.com/200/200/people">
+                            </div>
                         </div>
                     </div>
                 </div>

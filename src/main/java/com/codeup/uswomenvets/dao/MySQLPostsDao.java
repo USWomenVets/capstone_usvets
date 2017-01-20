@@ -78,7 +78,7 @@ public class MySQLPostsDao implements Posts {
     @Override
     public Long insert(Post post) {
         try {
-            String insertQuery = "INSERT INTO posts(user_id, title, description) VALUES (?, ?, ?);";
+            String insertQuery = "INSERT INTO posts(user_id, title, content) VALUES (?, ?, ?);";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
             stmt.setLong(1, post.getUserId());
             stmt.setString(2, post.getTitle());

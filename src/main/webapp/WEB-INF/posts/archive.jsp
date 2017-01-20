@@ -20,6 +20,23 @@
                 </div>
             </section>
 
+        <section class="main">
+            <div class="wrap">
+                <c:forEach var="post" items="${post}">
+                    <div>
+                        <form role="search" action="/create" method="get">
+                            <button name="id" value=${post.getId()}>
+                                <h2>${post.getTitle()}</h2>
+                                <h4>${post.getPostDate()}</h4>
+                                <p>${post.getContent()}</p>
+                                <h4>${post.getUsername()}</h4>
+                            </button>
+                        </form>
+                    </div>
+                </c:forEach>
+            </div>
+        </section>
+
     </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

@@ -16,9 +16,46 @@
             <section class="hero">
                 <div class="wrap">
                     <h1>Welcome to About page!</h1>
-                    <p>Catchy tagline goes here!</p>
+                    <p>Take the time to meet Team Allies!</p>
                 </div>
             </section>
+
+        <!--Main section-->
+        <section class="main">
+            <div class="wrap">
+                <div class="container">
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src= "http://placeimg.com/200/200/people">
+                        </div>
+                        <div class="media-object-section">
+                            <h4>Eunice Heymann</h4>
+                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <h4>Kenneth Curtis</h4>
+                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                        </div>
+                        <div class="media-object-section">
+                            <img src= "http://placeimg.com/200/200/people">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src= "http://placeimg.com/200/200/people">
+                        </div>
+                        <div class="media-object-section">
+                            <h4>Justin Armer</h4>
+                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </div>

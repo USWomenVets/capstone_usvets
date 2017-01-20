@@ -7,6 +7,7 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
+    private String about;
     private String birth;
     private int age;
     private String gender;
@@ -15,8 +16,9 @@ public class User {
     private String lastOnline;
 
 
-    public User() {}
-
+    public User() {
+    }
+    //user creationregister servlet
     public User(String username, String email, String password, String firstName, String lastName) {
         this.username = username;
         this.email = email;
@@ -25,13 +27,15 @@ public class User {
         setPassword(password);
     }
 
-    public User(long id, String username, String email, String password, String firstName, String lastName, String birth, int age, String gender, String profileImg, String creationDate, String lastOnline) {
+    //user modification profile servlet
+    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, int age, String gender, String profileImg, String creationDate, String lastOnline) {
         this.id = id;
         this.username = username;
         this.email = email;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.about = about;
         this.birth = birth;
         this.age = age;
         this.gender = gender;
@@ -63,6 +67,10 @@ public class User {
     public String getLastName() { return lastName; }
 
     public void setLastName(String lastName) { this.lastName = lastName; }
+
+    public String getAbout() { return about; }
+
+    public void setAbout(String about) { this.about = about; }
 
     public String getBirth() { return birth; }
 

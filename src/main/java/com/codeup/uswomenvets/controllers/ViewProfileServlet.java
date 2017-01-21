@@ -13,6 +13,7 @@ import java.io.IOException;
 @WebServlet(name = "controllers.ViewProfileServlet", urlPatterns = "/profile")
 public class ViewProfileServlet extends HttpServlet {
     User user;
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         user = (User) request.getSession().getAttribute("user");
         if (request.getSession().getAttribute("user") == null) {
@@ -22,6 +23,7 @@ public class ViewProfileServlet extends HttpServlet {
         request.setAttribute("posts", DaoFactory.getPostsDao().userPost(user.getId()));
         request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);
     }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
@@ -46,9 +48,7 @@ public class ViewProfileServlet extends HttpServlet {
                 age,
                 gender
         );
-
         DaoFactory.getUsersDao().editUser(editUser);
-
-
+        request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);
     }
 }

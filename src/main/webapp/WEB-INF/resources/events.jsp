@@ -20,11 +20,12 @@
             </section>
 
             <!--Calendar-->
-            <div class="wrap row small-up-1 medium-up-2">
+            <div class="wrap small-up-1 medium-up-2">
                 <iframe src="https://calendar.google.com/calendar/embed?title=Events&amp;height=600&amp;wkst=1&amp;bgcolor=%23990000&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                         style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
 
                 </iframe>
+
 
             </div>
     </div>

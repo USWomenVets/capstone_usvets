@@ -25,21 +25,28 @@
             <section class="main">
                 <div class="wrap">
                     <h1>Hello world!</h1>
-                    <c:choose>
-                        <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
-                            <a href="/login"><button class="resources button">Comment</button></a>
-                            <a href="/employment"><button class="resources button">Edit</button></a>
-                            <a href="/events"><button class="resources button">Delete</button></a>
-                            <a href="#"><button class="resources button">Upvote</button></a>
-                            <a href="#"><button class="resources button">Downvote</button></a>
-                        </c:when>
-                        <c:otherwise> <!--ANON USER-->
-                            <a href="/login"><button class="resources button">Comment</button></a>
-                            <a href="/employment"><button class="resources button">Upvote</button></a>
-                            <a href="/events"><button class="resources button">Downvote</button></a>
-                        </c:otherwise>
-                    </c:choose>
-
+                    <c:forEach var="post" items="${posts}">
+                        <div>
+                            <h2>${post.title}</h2>
+                            <h4>${post.timestamp}</h4>
+                            <p>${post.description}</p>
+                            <h4>${post.getUsername()}</h4>
+                        </div>
+                        <c:choose>
+                            <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
+                                <a href="/login"><button class="resources button">Comment</button></a>
+                                <a href="/employment"><button class="resources button">Edit</button></a>
+                                <a href="/events"><button class="resources button">Delete</button></a>
+                                <a href="#"><button class="resources button">Upvote</button></a>
+                                <a href="#"><button class="resources button">Downvote</button></a>
+                            </c:when>
+                            <c:otherwise> <!--ANON USER-->
+                                <a href="/login"><button class="resources button">Comment</button></a>
+                                <a href="/employment"><button class="resources button">Upvote</button></a>
+                                <a href="/events"><button class="resources button">Downvote</button></a>
+                            </c:otherwise>
+                        </c:choose>
+                    </c:forEach>
                 </div>
             </section>
 

@@ -24,10 +24,10 @@
                 <div class="wrap">
                     <label>Select Menu
                         <select>
-                            <option value="husker">Wellness</option>
-                            <option value="starbuck">Employment</option>
-                            <option value="hotdog">Events</option>
-                            <option value="apollo">General</option>
+                            <option>Wellness</option>
+                            <option>Employment</option>
+                            <option>Events</option>
+                            <option>General</option>
                         </select>
                     </label>
                     <form action="/create" method="post">

@@ -22,8 +22,21 @@
 
             <!--Main Section-->
             <section class="main">
-                <div class="wrap row">
+                <div class="wrap">
             <form action="/register" method="post">
+                <c:if test="${sessionScope.errorMessage != null}">
+                    <div class="reveal" id="exampleModal1" data-reveal>
+                        <h1>Oops!</h1>
+                        <p class="lead">${sessionScope.errorMessage}</p>
+                        <p>Please choose another username or email.</p>
+                        <button class="close-button" data-close aria-label="Close reveal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </c:if>
+                <%--<c:if test="${sessionScope.errorMessageEmpty != null}">--%>
+                    <%--<div class="has-error alert alert-danger" role="alert">${sessionScope.errorMessage}</div>--%>
+                <%--</c:if>--%>
                 <div class="form-group">
                     <label for="first_name">First Name</label>
                     <input id="first_name" name="first_name" class="form-control register_field" type="text">

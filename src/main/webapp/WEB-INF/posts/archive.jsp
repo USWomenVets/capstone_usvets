@@ -22,14 +22,14 @@
 
         <section class="main">
             <div class="wrap">
-                <c:forEach var="post" items="${post}">
+                <c:forEach var="post" items="${posts}">
                     <div>
                         <form role="search" action="/create" method="get">
                             <button name="id" value=${post.getId()}>
-                                <h2>${post.getTitle()}</h2>
-                                <h4>${post.getPostDate()}</h4>
-                                <p>${post.getContent()}</p>
-                                <h4>${post.getUsername()}</h4>
+                                <h2>${post.title}</h2>
+                                <h4>${post.postDate}</h4>
+                                <p>${post.content}</p>
+                                <h4>${post.username}</h4>
                             </button>
                         </form>
                     </div>

@@ -21,6 +21,31 @@
                 </div>
             </section>
 
+        <section class="main">
+            <div class="wrap">
+                <div class="container row">
+            <div class="small-12 large-4 columns">
+                <div class="media-object-section">
+                    <img src= "http://placeimg.com/200/200/people">
+                </div>
+                <p>Text</p>
+            </div>
+            <div class="small-12 large-4 columns">
+                <div class="media-object-section">
+                    <img src= "http://placeimg.com/200/200/people">
+                </div>
+                <p>Text</p>
+            </div>
+                    <div class="small-12 large-4 columns">
+                        <div class="media-object-section">
+                            <img src= "http://placeimg.com/200/200/people">
+                        </div>
+                        <p>Text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
 </div>

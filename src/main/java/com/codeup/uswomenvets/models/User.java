@@ -1,5 +1,7 @@
 package com.codeup.uswomenvets.models;
 
+import com.codeup.uswomenvets.util.Password;
+
 public class User {
     private long id;
     private long age;
@@ -46,7 +48,7 @@ public class User {
         this.id = id;
         this.username = username;
         this.email = email;
-        setPassword(password);
+        this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.about = about;
@@ -72,7 +74,7 @@ public class User {
 
     public String getPassword() { return password; }
 
-    public void setPassword(String password) { this.password = password; }
+    public void setPassword(String password) { this.password = Password.hash(password); }
 
     public String getFirstName() { return firstName; }
 

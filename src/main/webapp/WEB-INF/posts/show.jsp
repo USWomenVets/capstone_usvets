@@ -6,7 +6,6 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
-
 </head>
 <body>
 <div class="off-canvas-wrapper">
@@ -35,7 +34,7 @@
                         <c:choose>
                             <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
                                 <a href="/login"><button class="resources button">Comment</button></a>
-                                <a href="/employment"><button class="resources button">Edit</button></a>
+                                <a href="/edit"><button class="resources button">Edit</button></a>
                                 <a href="/events"><button class="resources button">Delete</button></a>
                                 <a href="#"><button class="resources button">Upvote</button></a>
                                 <a href="#"><button class="resources button">Downvote</button></a>
@@ -49,7 +48,6 @@
                     </c:forEach>
                 </div>
             </section>
-
     </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

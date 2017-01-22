@@ -22,9 +22,19 @@
 
         <section class="main">
             <div class="wrap">
+                <label>Sort by category
+                    <br>
+                    <select id="sort">
+                        <option>Wellness</option>
+                        <option>Employment</option>
+                        <option>Events</option>
+                        <option>General</option>
+                    </select>
+                </label>
+            <br>
                 <c:forEach var="post" items="${posts}">
                     <div>
-                        <form role="search" action="/create" method="get">
+                        <form role="search" action="/create" method="GET">
                             <button name="id" value=${post.getId()}>
                                 <h2>${post.title}</h2>
                                 <h4>${post.postDate}</h4>

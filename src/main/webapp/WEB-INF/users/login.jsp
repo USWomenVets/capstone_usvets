@@ -34,11 +34,10 @@
                             </div>
                             <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_in" value="Log In">
                         </form>
+                        <p>Don't have a profile, yet? <a href="/register">Join up!</a></p>
                     </div>
                 </div>
             </section>
-
-
 
     </div>
 </div>

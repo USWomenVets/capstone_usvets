@@ -120,6 +120,9 @@ THUMBNAILS
     text-align: center;
     border: none;
 }
+.submenu_item > a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 /* **************************************************************************
 HERO
@@ -197,4 +200,7 @@ SOCIAL MEDIA
 
 .personal-info{
     margin-left: 30px;
+}
+#sort{
+    width: 30%;
 }

@@ -30,7 +30,7 @@
                             <option>General</option>
                         </select>
                     </label>
-                    <form action="/create" method="post">
+                    <form action="/create" method="POST">
                         <label for="title">Title</label>
                         <input id="title" name="title" type="text" placeholder="Post title" aria-describedby="exampleHelpText">
                         <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>

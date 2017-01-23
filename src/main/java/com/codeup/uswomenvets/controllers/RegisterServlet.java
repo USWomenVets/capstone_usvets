@@ -33,6 +33,7 @@ public class RegisterServlet extends HttpServlet {
             || (! password.equals(passwordConfirmation));
 
         if (inputHasErrors) {
+            request.getSession().setAttribute("errorMessageEmpty", "Username, Password and Email field cannot be empty");
             response.sendRedirect("/register");
             return;
         }

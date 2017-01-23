@@ -90,6 +90,7 @@ THUMBNAILS
     background-color: #222;
     height: 80px;
     padding: 0;
+    /*background: linear-gradient(to left, #ED4264 , #FFEDBC);*/
 }
 .site-logo{
     color: white;
@@ -208,3 +209,6 @@ SOCIAL MEDIA
 #sort{
     width: 30%;
 }
+
+
+

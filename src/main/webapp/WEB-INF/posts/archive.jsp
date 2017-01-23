@@ -12,13 +12,6 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Archive Page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
 
         <section class="main">
             <div class="wrap">
@@ -33,16 +26,16 @@
                 </label>
             <br>
                 <c:forEach var="post" items="${posts}">
-                    <div>
+                <a class="show_anchor small-6 medium-4 large-4"><div class="archive_post">
                         <form role="search" action="/show" method="GET">
-                            <button name="id" value=${post.getId()}>
+                            <button class="archive_post_button" name="id" value=${post.getId()}>
                                 <h2>${post.title}</h2>
-                                <h4>${post.postDate}</h4>
-                                <p>${post.content}</p>
-                                <h4>${post.username}</h4>
+                                <p>${post.postDate}</p>
+                                <h4>${post.userId}</h4>
                             </button>
                         </form>
                     </div>
+                </a>
                 </c:forEach>
             </div>
         </section>

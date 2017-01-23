@@ -48,21 +48,19 @@
                                     <li><a href="/archive">Board</a></li>
                                     <li><a href="/resourceshome">Resources</a>
                                         <ul class="menu">
-                                            <li class="submenu_item"><a href="/wellness">Wellness</a></li>
-                                            <li class="submenu_item"><a href="/employment">Employment</a></li>
+                                            <li class="submenu_item"><a href="/events">Locator</a></li>
                                             <li class="submenu_item"><a href="/events">Events</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="/create">Post</a></li>
-                                    <li><a href="/logout">Logout</a></li>
                                     <li><a href="/profile">Profile</a></li>
+                                    <li><a href="/logout">Logout</a></li>
                                 </c:when>
                                 <c:otherwise>
                                     <li><a href="/archive">Board</a></li>
                                     <li><a href="/resourceshome">Resources</a>
                                         <ul class="menu">
-                                            <li class="submenu_item"><a href="/wellness">Wellness</a></li>
-                                            <li class="submenu_item"><a href="/employment">Employment</a></li>
+                                            <li class="submenu_item"><a href="/events">Locator</a></li>
                                             <li class="submenu_item"><a href="/events">Events</a></li>
                                         </ul>
                                     </li>

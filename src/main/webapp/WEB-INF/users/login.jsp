@@ -12,17 +12,12 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Logi page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
-
             <section class="main">
                 <div class="wrap">
                     <div class="container">
+                        <h3>Welcome</h3>
+                        <p><strong>Please log in</strong></p>
+                        <br>
                         <form action="/login" method="POST">
                             <div class="form-group">
                                 <label for="username">Username</label>

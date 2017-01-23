@@ -11,29 +11,7 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Resources base page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
 
-        <%--<section class="main">--%>
-            <%--<div class="wrap">--%>
-                <%--<div class="container row">--%>
-                    <%--<div class="small-4 large-4 columns">--%>
-                        <%--<a href="/wellness"><button class="resources button">Wellness</button></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="small-4 large-4 columns">--%>
-                        <%--<a href="/employment"><button class="resources button">Employment</button></a>--%>
-                    <%--</div>--%>
-                    <%--<div class="small-4 large-4 columns">--%>
-                        <%--<a href="/events"><button class="resources button">Events</button></a>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</section>--%>
         <section class="main">
             <div class="wrap">
                 <div class="container row">

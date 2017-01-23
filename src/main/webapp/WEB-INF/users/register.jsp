@@ -11,13 +11,6 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Register page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
 
 
             <!--Main Section-->
@@ -34,9 +27,9 @@
                         </button>
                     </div>
                 </c:if>
-                <%--<c:if test="${sessionScope.errorMessageEmpty != null}">--%>
-                    <%--<div class="has-error alert alert-danger" role="alert">${sessionScope.errorMessage}</div>--%>
-                <%--</c:if>--%>
+                <h3>Welcome</h3>
+                <p><strong>Please fill out your information</strong></p>
+                <br>
                 <div class="form-group">
                     <label for="first_name">First Name</label>
                     <input id="first_name" name="first_name" class="form-control register_field" type="text">

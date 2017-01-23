@@ -209,6 +209,17 @@ SOCIAL MEDIA
 #sort{
     width: 30%;
 }
-
-
-
+.archive_post{
+    background: honeydew;
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+.archive_post_button{
+    background-color: transparent;
+    width: 358px;
+}
+.show_anchor{
+    color: black;
+    /*padding: 80px;*/
+}

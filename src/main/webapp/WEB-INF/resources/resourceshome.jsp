@@ -9,7 +9,7 @@
     <style>
         #map {
             height: 400px;
-            width: 400px;
+            width: 600px;
         }
     </style>
 </head>
@@ -68,7 +68,6 @@
     </div>
     <div>
         <div id="map"></div>
-
     </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

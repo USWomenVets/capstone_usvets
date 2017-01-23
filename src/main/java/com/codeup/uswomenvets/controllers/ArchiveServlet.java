@@ -1,5 +1,7 @@
 package com.codeup.uswomenvets.controllers;
 
+import com.codeup.uswomenvets.dao.DaoFactory;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +15,8 @@ public class ArchiveServlet extends HttpServlet {
             HttpServletRequest request,
             HttpServletResponse response
     ) throws ServletException, IOException {
+        String q = request.getParameter("query");
+        request.setAttribute("posts", DaoFactory.getPostsDao().all(q));
         request.getRequestDispatcher("/WEB-INF/posts/archive.jsp").forward(request, response);
     }
 }

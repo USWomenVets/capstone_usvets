@@ -37,7 +37,7 @@
 
             <!--Navigation-->
             <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
-                <div class="wrap">
+
                     <div class="top-bar-left">
                         <a href="/index"><h3 class="site-logo">USWOMENVETS || </h3></a>
                     </div>
@@ -72,6 +72,5 @@
                             </c:choose>
                         </ul>
                     </div>
-                </div>
             </nav>
         </div>

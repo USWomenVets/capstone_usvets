@@ -6,6 +6,12 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
+    <style>
+        #map {
+            height: 400px;
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
 <div class="off-canvas-wrapper">
@@ -60,8 +66,15 @@
         </section>
 
     </div>
+    <div>
+        <div id="map"></div>
+
+    </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ&callback=initMap">
+</script>
 </body>
 </html>

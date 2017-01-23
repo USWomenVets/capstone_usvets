@@ -53,7 +53,7 @@ public class MySQLPostsDao implements Posts {
     public List<Post> all(String q) {
         PreparedStatement stmt = null;
         try {
-            if (q != null && q.trim() != "") {
+            if (q != null) {
                 String selectQuery = "SELECT posts.* , users.user_name FROM posts JOIN users ON users.id = posts.user_id WHERE title LIKE ? OR description LIKE ? OR users.user_name LIKE ? OR timestamp LIKE ?";
                 stmt = connection.prepareStatement(selectQuery, Statement.RETURN_GENERATED_KEYS);
                 String qa = "%" + q + "%";

@@ -41,16 +41,59 @@ public class MySQLUsersDao implements Users {
     }
 
     @Override
-    public Long editUser(User user) {
-        String query = "UPDATE users set user_name = ? WHERE id =" + user.getId();
+    public void editUser(User user) {
+
+        int columnIndex = 1;
+        String query = "UPDATE users SET";
+
+        String[] userInfo = new String[8];
+        userInfo[0] = user.getUsername();
+        userInfo[1] = user.getEmail();
+        userInfo[2] = user.getPassword();
+        userInfo[3] = user.getFirstName();
+        userInfo[4] = user.getLastName();
+        userInfo[5] = user.getAbout();
+        userInfo[6] = user.getGender();
+        userInfo[7] = user.getBirth();
+
+        String[] dbColumns = new String[8];
+        dbColumns[0] = " user_name = ?";
+        dbColumns[1] = " email = ?";
+        dbColumns[2] = " password = ?";
+        dbColumns[3] = " first_name = ?";
+        dbColumns[4] = " last_name = ?";
+        dbColumns[5] = " about = ?";
+        dbColumns[6] = " gender = ?";
+        dbColumns[7] = " birth = ?";
+
+
+        for (int i = 0; i <= 7; i++) {
+            if (userInfo[i] != null && userInfo[i].trim() != "") {
+                if (i > 0) {
+                    query += ",";
+                }
+                query += dbColumns[i];
+            }
+        }
+        query += " WHERE id = ?;";
+
         try {
             PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-            ResultSet rs = stmt.getGeneratedKeys();
-            return rs.getLong(1);
+            for (int i = 0; i < 8; i++) {
+                if (userInfo[i] != null && userInfo[i].trim() != "") {
+                    stmt.setString(columnIndex, userInfo[i]);
+                    columnIndex++;
+                }
+            }
+            stmt.setLong(columnIndex, user.getId());
+            stmt.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException("Error editing existing user", e);
+            throw new RuntimeException("Error editing user info", e);
         }
     }
+
+
+
 
     @Override
     public User findByUsername(String username) {

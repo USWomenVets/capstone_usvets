@@ -30,16 +30,20 @@ public class User {
     }
 
     //user modification in the profile servlet
-    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, long age, String gender) {
+    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, String age, String gender) {
         this.id = id;
         this.username = username;
         this.email = email;
-        setPassword(password);
+        if (password != null && password != "") {
+            setPassword(password);
+        } else {
+            this.password = password;
+        }
         this.firstName = firstName;
         this.lastName = lastName;
         this.about = about;
         this.birth = birth;
-        this.age = age;
+        this.age = Integer.parseInt(age);
         this.gender = gender;
     }
 

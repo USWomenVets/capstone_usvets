@@ -34,7 +34,10 @@ public class ViewProfileServlet extends HttpServlet {
         String about = request.getParameter("about");
         String gender = request.getParameter("gender");
         String birth = request.getParameter("birth");
-        int age = Integer.parseInt(request.getParameter("age"));
+        String age = request.getParameter("age");
+        if (age == null || age.trim() == "") {
+            age = "0";
+        }
 
         User editUser = new User(
                 user.getId(),
@@ -49,6 +52,8 @@ public class ViewProfileServlet extends HttpServlet {
                 gender
         );
         DaoFactory.getUsersDao().editUser(editUser);
+        User updatedUser = DaoFactory.getUsersDao().findByUsername(username);
+        request.getSession().setAttribute("user", updatedUser);
         request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);
     }
 }

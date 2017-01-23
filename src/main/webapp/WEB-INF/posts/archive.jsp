@@ -34,7 +34,7 @@
             <br>
                 <c:forEach var="post" items="${posts}">
                     <div>
-                        <form role="search" action="/create" method="GET">
+                        <form role="search" action="/show" method="GET">
                             <button name="id" value=${post.getId()}>
                                 <h2>${post.title}</h2>
                                 <h4>${post.postDate}</h4>

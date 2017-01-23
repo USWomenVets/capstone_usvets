@@ -27,8 +27,8 @@
                     <c:forEach var="post" items="${posts}">
                         <div>
                             <h2>${post.title}</h2>
-                            <h4>${post.timestamp}</h4>
-                            <p>${post.description}</p>
+                            <h4>${post.postDate}</h4>
+                            <p>${post.content}</p>
                             <h4>${post.getUsername()}</h4>
                         </div>
                         <c:choose>

@@ -20,7 +20,7 @@ public class ShowServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
-        request.setAttribute("ads", DaoFactory.getPostsDao().specPost(id));
+        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(id));
         request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
     }
 }

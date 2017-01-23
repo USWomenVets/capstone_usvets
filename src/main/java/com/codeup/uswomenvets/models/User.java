@@ -34,7 +34,7 @@ public class User {
         this.id = id;
         this.username = username;
         this.email = email;
-        if (password != null && password != "") {
+        if (password != null && password.trim() != "") {
             setPassword(password);
         } else {
             this.password = password;

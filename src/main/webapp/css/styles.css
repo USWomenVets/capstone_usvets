@@ -90,6 +90,7 @@ THUMBNAILS
     background-color: #222;
     height: 80px;
     padding: 0;
+    /*background: linear-gradient(to left, #ED4264 , #FFEDBC);*/
 }
 .site-logo{
     color: white;
@@ -119,6 +120,13 @@ THUMBNAILS
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     border: none;
+}
+.submenu_item > a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.submenu_item > a {
+    width: 100%;
 }
 
 /* **************************************************************************
@@ -198,3 +206,9 @@ SOCIAL MEDIA
 .personal-info{
     margin-left: 30px;
 }
+#sort{
+    width: 30%;
+}
+
+
+

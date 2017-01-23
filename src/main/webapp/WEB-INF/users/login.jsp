@@ -15,7 +15,7 @@
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
-                    <h1>Welcome to Login page!</h1>
+                    <h1>Welcome to Logi page!</h1>
                     <p>Catchy tagline goes here!</p>
                 </div>
             </section>
@@ -34,11 +34,11 @@
                             </div>
                             <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_in" value="Log In">
                         </form>
+                        <br>
+                        <p>Don't have a profile, yet? <a href="/register">Join up!</a></p>
                     </div>
                 </div>
             </section>
-
-
 
     </div>
 </div>

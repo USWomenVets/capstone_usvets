@@ -51,7 +51,7 @@ public class ViewProfileServlet extends HttpServlet {
                 age,
                 gender
         );
-        DaoFactory.getUsersDao().editUser(editUser);
+        DaoFactory.getUsersDao().editUser(editUser, user);
         User updatedUser = DaoFactory.getUsersDao().findByUsername(username);
         request.getSession().setAttribute("user", updatedUser);
         request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);

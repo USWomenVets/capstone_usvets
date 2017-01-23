@@ -5,19 +5,24 @@
             <ul>
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
+
                         <li><a href="/archive">Board</a></li>
-                        <li><a href="/wellness">Wellness</a></li>
-                        <li><a href="/employment">Employment</a></li>
-                        <li><a href="/events">Events</a></li>
+                        <form>
+                            <li><button href="/wellness">Wellness</button></li>
+                            <li><button href="/employment">Employment</button></li>
+                            <li><button href="/events">Events</button></li>
+                        </form>
                         <li><a href="/create">Post</a></li>
                         <li><a href="/profile">Profile</a></li>
                         <li><a href="/logout">Logout</a></li>
                     </c:when>
                     <c:otherwise>
-                        <li><a href="/archive">Board</a></li>
-                        <li><a href="/wellness">Wellness</a></li>
-                        <li><a href="/employment">Employment</a></li>
-                        <li><a href="/events">Events</a></li>
+                        <form>
+                            <li><button href="/archive">Board</button></li>
+                            <li><button href="/wellness">Wellness</button></li>
+                            <li><button href="/employment">Employment</button></li>
+                            <li><button href="/events">Events</button></li>
+                        </form>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
                     </c:otherwise>

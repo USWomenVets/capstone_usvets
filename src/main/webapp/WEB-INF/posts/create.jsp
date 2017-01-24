@@ -16,6 +16,12 @@
             <!--Main Section-->
             <section class="main">
                 <div class="wrap">
+                    <%--<c:if test="${sessionScope.errorMessageEmptyLogin != null}">--%>
+                        <%--<div class="callout alert">--%>
+                            <%--<h5>We must apologize...</h5>--%>
+                            <%--<p>Username or password cannot be blank</p>--%>
+                        <%--</div>--%>
+                    <%--</c:if>--%><!--NEED BACKEND HERE TO CHECK IF TITLE/BODY ARE EMPTY-->
                     <label>Select Menu
                         <select>
                             <option>Wellness</option>

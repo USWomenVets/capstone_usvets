@@ -60,7 +60,7 @@
                     <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password" data-equalto="password" required>
                     <span class="form-error">Hey, passwords are supposed to match!</span>
                 </div>
-                <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_reg" value="Sign up!">
+                <input type="submit" class="large button" value="Sign up!">
 
             </form>
                 </div>

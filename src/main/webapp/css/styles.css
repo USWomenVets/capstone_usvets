@@ -21,20 +21,15 @@ GENERAL
 
 
 /* **************************************************************************
-THUMBNAILS
-************************************************************************** */
-
-
-/* **************************************************************************
  NAV-MOBILE
 ************************************************************************** */
 .title-bar{
-    background-color: #222;
+    background-color: #5AABC9;
     height: 60px;
     padding-top: 17px;
 }
 #mobile-menu{
-    background-color: #222;
+    background-color: #5AABC9;
     padding: 10px;
 }
 #mobile-menu li{
@@ -69,7 +64,7 @@ THUMBNAILS
  NAV-DESKTOP
 ************************************************************************** */
 .nav-desktop{
-    background-color: #222;
+    background-color: #5AABC9;
     height: 80px;
     padding: 0;
 }
@@ -77,6 +72,7 @@ THUMBNAILS
     color: white;
     line-height: 80px;
     font-size: 1.5em;
+    font-weight: bold;
 }
 .nav-desktop .menu-desktop{
     line-height: 80px;
@@ -88,13 +84,14 @@ THUMBNAILS
     padding-top: 0;
     padding-bottom: 0;
     color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
 }
 .menu > li > a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .submenu_item{
     display: block;
-    background-color: #222;
+    background-color: #5AABC9;
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
     border: none;
@@ -111,7 +108,7 @@ THUMBNAILS
 HERO
 ************************************************************************** */
 .hero{
-    background-color: #999;
+    background-color: whitesmoke;
     padding: 80px 0;
     height: 400px;
 }
@@ -125,7 +122,13 @@ MAIN
 ************************************************************************** */
 .main{
     padding: 80px 0;
-    background-color: white;
+    /*background-color: white;*/
+
+
+    background: #B993D6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B993D6 , #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B993D6 , #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 
@@ -134,19 +137,22 @@ MAIN
 FOOTER
 ************************************************************************** */
 footer{
-    background-color: #222;
+    background-color: #5AABC9;
     padding: 80px 0;
     margin-top: 120px;
+    font-weight: bold;
 }
 
 footer a{
     display: block;
     color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
 }
 
 footer h4{
     color: rgba(255, 255, 255, 0.8);
     font-size: 2em;
+    font-weight: bold;
 }
 
 footer hr{
@@ -187,20 +193,23 @@ SOCIAL MEDIA
     width: 30%;
 }
 .archive_post{
-    background: honeydew;
+background-color: #E80C6E;
+    border: double dodgerblue;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 50px;
     display: inline-block;
-    border-color: red;
-    width: 80%;
+    width: 255px;
 }
 .archive_post_button{
-    background-color: transparent;
-    width: 80%;
+    background-color: #E80C6E;
+    width: 255px;
+    margin: 50px;
+    text-align: center;
 }
 .show_anchor{
     color: black;
-    /*padding: 80px;*/
+    padding: 80px;
+    text-align: center;
 }
 #map{
     display: block;
@@ -210,7 +219,23 @@ SOCIAL MEDIA
 }
 .breadcrumbs{
     text-align: center;
+    color: #E80C6E;
 }
+.breadcrumbs > li{
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+               }
 .show_sort{
     text-align: center;
+}
+#archive_post_form{
+    background-color: floralwhite;
+    width: 255px;
+    margin: 50px;
+    text-align: center;
+}
+.locator{
+    background-color: whitesmoke;
+    padding: 80px 0;
 }

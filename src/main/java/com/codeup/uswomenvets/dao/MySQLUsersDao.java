@@ -41,52 +41,69 @@ public class MySQLUsersDao implements Users {
     }
 
     @Override
-    public void editUser(User user) {
-
+    public void editUser(User newUser, User oldUser) {
         int columnIndex = 1;
         String query = "UPDATE users SET";
+        boolean validExecute = false;
+        int validQueryIndex = 0;
+        User currentUser = DaoFactory.getUsersDao().findByUsername(oldUser.getUsername());
+        String[] oldUserInfo = {
+                currentUser.getUsername(),
+                currentUser.getEmail(),
+                currentUser.getPassword(),
+                currentUser.getFirstName(),
+                currentUser.getLastName(),
+                currentUser.getAbout(),
+                currentUser.getGender(),
+                currentUser.getBirth()
+        };
+        String[] newUserInfo = {
+                newUser.getUsername(),
+                newUser.getEmail(),
+                newUser.getPassword(),
+                newUser.getFirstName(),
+                newUser.getLastName(),
+                newUser.getAbout(),
+                newUser.getGender(),
+                newUser.getBirth()
+        };
 
-        String[] userInfo = new String[8];
-        userInfo[0] = user.getUsername();
-        userInfo[1] = user.getEmail();
-        userInfo[2] = user.getPassword();
-        userInfo[3] = user.getFirstName();
-        userInfo[4] = user.getLastName();
-        userInfo[5] = user.getAbout();
-        userInfo[6] = user.getGender();
-        userInfo[7] = user.getBirth();
-
-        String[] dbColumns = new String[8];
-        dbColumns[0] = " user_name = ?";
-        dbColumns[1] = " email = ?";
-        dbColumns[2] = " password = ?";
-        dbColumns[3] = " first_name = ?";
-        dbColumns[4] = " last_name = ?";
-        dbColumns[5] = " about = ?";
-        dbColumns[6] = " gender = ?";
-        dbColumns[7] = " birth = ?";
+        String[] dbColumns = {
+                " user_name = ?",
+                " email = ?",
+                " password = ?",
+                " first_name = ?",
+                " last_name = ?",
+                " about = ?",
+                " gender = ?",
+                " birth = ?"
+        };
 
 
         for (int i = 0; i <= 7; i++) {
-            if (userInfo[i] != null && userInfo[i].trim() != "") {
-                if (i > 0) {
+            if (newUserInfo[i] != null && newUserInfo[i].trim() != "" && !(newUserInfo[i].trim().equals(oldUserInfo[i].trim()))) {
+                validExecute = true;
+                if (validQueryIndex > 0) {
                     query += ",";
                 }
                 query += dbColumns[i];
+                validQueryIndex++;
             }
         }
-        query += " WHERE id = ?;";
-
         try {
-            PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-            for (int i = 0; i < 8; i++) {
-                if (userInfo[i] != null && userInfo[i].trim() != "") {
-                    stmt.setString(columnIndex, userInfo[i]);
-                    columnIndex++;
+            if (validExecute) {
+                query += " WHERE id = ?;";
+
+                PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+                for (int i = 0; i < 8; i++) {
+                    if (newUserInfo[i] != null && newUserInfo[i].trim() != "" && !(newUserInfo[i].trim().equals(oldUserInfo[i].trim()))) {
+                        stmt.setString(columnIndex, newUserInfo[i]);
+                        columnIndex++;
+                    }
                 }
+                stmt.setLong(columnIndex, newUser.getId());
+                stmt.executeUpdate();
             }
-            stmt.setLong(columnIndex, user.getId());
-            stmt.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException("Error editing user info", e);
         }

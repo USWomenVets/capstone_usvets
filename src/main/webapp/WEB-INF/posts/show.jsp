@@ -12,31 +12,43 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-            <!--Main Section-->
-            <section class="main">
-                <div class="show">
+        <!--Hero Section-->
+        <section class="hero">
+            <div class="wrap">
+                <h1>Welcome to Show page!</h1>
+                <p>Catchy tagline goes here!</p>
+            </div>
+        </section>
+
+        <!--Main Section-->
+        <section class="main">
+            <div class="show">
+                <form action="/edit">
                     <c:forEach var="post" items="${posts}">
                         <div class="wrap">
-                            <p>${post.title}</p>
-                            <p>${post.postDate}</p>
+                            <h2>${post.title}</h2>
+                            <h4>${post.getPostDate()}</h4>
                             <p>${post.content}</p>
-                            <p>${post.getUsername()}</p>
-                        <c:choose>
-                            <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
-                                <a href="/login"><button class="resources button">Comment</button></a>
-                                <a href="/edit"><button class="resources button">Edit</button></a>
-                                <a href="/events"><button class="resources button">Delete</button></a>
-                                <a href="#"><button class="resources button">Upvote</button></a>
-                                <a href="#"><button class="resources button">Downvote</button></a>
-                            </c:when>
-                            <c:otherwise> <!--ANON USER-->
-                                <a href="/login"><button class="resources button">Comment</button></a>
-                            </c:otherwise>
-                        </c:choose>
+                            <h4>${post.getUsername()}</h4>
+                            <c:choose>
+                                <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
+                                    <button href="/comment" class="resources button">Comment</button>
+                                    <button href="/edit" id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
+                                    <button class="resources button">Delete</button>
+                                    <button class="resources button">Upvote</button>
+                                    <button class="resources button">Downvote</button>
+                                </c:when>
+                                <c:otherwise> <!--ANON USER-->
+                                    <a href="/login"><button class="resources button">Comment</button></a>
+                                    <a href="/employment"><button class="resources button">Upvote</button></a>
+                                    <a href="/events"><button class="resources button">Downvote</button></a>
+                                </c:otherwise>
+                            </c:choose>
                         </div>
                     </c:forEach>
-                </div>
-            </section>
+                </form>
+            </div>
+        </section>
     </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

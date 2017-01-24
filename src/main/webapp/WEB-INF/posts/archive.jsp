@@ -15,7 +15,7 @@
 
         <section class="locator">
             <div class="wrap">
-            <h3><strong>Please select a category</strong></h3>
+            <h3><strong>Please select a categoy</strong></h3>
             <nav aria-label="You are here:" role="navigation">
                 <ul class="breadcrumbs">
                     <li><a href="#0">Wellness</a></li>

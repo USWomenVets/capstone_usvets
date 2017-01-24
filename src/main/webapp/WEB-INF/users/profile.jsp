@@ -34,7 +34,6 @@
                     <h3 class="text-center">Personal info</h3>
                     <hr>
                     <form action="/profile" class="form-horizontal" method="post">
-
                         <div class="row">
                             <div class="form-group">
                                 <label for="username" class="small-6 columns control-label name">USERNAME:</label>
@@ -73,7 +72,7 @@
                             <div class="form-group">
                                 <label for="age" class="small-6 columns control-label name">AGE:</label>
                                 <div>
-                                    <input id="age" name="age" value="${user.getAge()}">
+                                    <input type="number" min="0" max="150" id="age" name="age" value="${user.getAge()}">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -87,19 +86,19 @@
                             <div class="form-group">
                                 <label for="current_password" class="small-6 columns control-label name">CURRENT PASSWORD:</label>
                                 <div>
-                                    <input id="current_password" name="current_password" value="">
+                                    <input type="password" id="current_password" name="current_password" value="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="new_password" class="small-6 columns control-label name">NEW PASSWORD:</label>
                                 <div>
-                                    <input id="new_password" name="new_password" value="">
+                                    <input type="password" id="new_password" name="new_password" value="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="confrim_password" class="small-6 columns control-label name">CONFIRM PASSWORD:</label>
                                 <div>
-                                    <input id="confrim_password" name="confrim_password" value="">
+                                    <input type="password" id="confrim_password" name="confirm_password" value="">
                                 </div>
                             </div>
                         </div>

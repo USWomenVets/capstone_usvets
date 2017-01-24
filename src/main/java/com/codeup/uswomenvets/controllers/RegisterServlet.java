@@ -40,8 +40,8 @@ public class RegisterServlet extends HttpServlet {
         User userExists = DaoFactory.getUsersDao().findByUsername(username);
 
         if ( userExists != null){
-            request.getSession().setAttribute("errorMessage", "Username or email already exists");
             response.sendRedirect("/register");
+            request.getSession().setAttribute("errorMessage", "Username or email already exists");
             return;
         }
 

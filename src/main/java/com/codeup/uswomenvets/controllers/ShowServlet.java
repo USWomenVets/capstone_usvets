@@ -15,6 +15,8 @@ import java.io.IOException;
 @WebServlet(name = "controllers.ShowServlet", urlPatterns = "/show")
 public class ShowServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String id = request.getParameter("id");
+        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(id));
 
     }
 

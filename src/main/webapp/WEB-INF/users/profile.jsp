@@ -15,7 +15,7 @@
 
         <section class="main row">
     <div class="container text-center">
-        <h1>Welcome, ${sessionScope.user.username}!</h1>
+        <h1 id="greeting"> ${sessionScope.user.username}!</h1>
         <div>
             <div class="row">
                 <!-- left column -->

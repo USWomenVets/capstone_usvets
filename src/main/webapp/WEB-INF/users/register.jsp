@@ -40,22 +40,22 @@
                 </div>
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input id="username" name="username" class="form-control register_field" type="text">
+                    <input id="username" name="username" class="form-control register_field" type="text" required>
                     <span class="form-error">We apologize, but that username has been taken.</span>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" name="email" class="form-control register_field" type="email">
+                    <input id="email" name="email" class="form-control register_field" type="email" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <p><em>Must be at least six characters in length</em></p>
-                    <input id="password" name="password" class="form-control register_field" type="password">
+                    <input id="password" name="password" class="form-control register_field" type="password" required>
                     <span class="form-error">Password must be at least six characters in length!</span>
                 </div>
                 <div class="form-group">
                     <label for="confirm_password">Confirm Password</label>
-                    <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password" data-equalto="password">
+                    <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password" data-equalto="password" required>
                     <span class="form-error">Hey, passwords are supposed to match!</span>
                 </div>
                 <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_reg" value="Sign up!">

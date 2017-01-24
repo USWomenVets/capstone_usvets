@@ -29,15 +29,18 @@
                     </select>
                 </label>
                 <form action="/create" method="POST">
+                    <c:forEach var="post" items="${posts}">
                     <label for="title">Title</label>
-                    <input id="title" name="title" type="text" placeholder="Post title" aria-describedby="exampleHelpText">
+                    <input id="title" name="title" type="text" placeholder="Post title" value="${post.title}" aria-describedby="exampleHelpText">
                     <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
                     <label for="content">Content</label>
-                    <textarea id="content" name="content" ></textarea>
-                    <button class="resources button" type="submit">Post!</button>
+                    <textarea id="content" name="content"></textarea>
+                    <button class="resources button" type="submit" name="id" value="${post.getId()}">Post!</button>
+                    </c:forEach>
                 </form>
             </div>
         </section>
+
 
 
 

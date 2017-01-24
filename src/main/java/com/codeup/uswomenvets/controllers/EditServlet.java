@@ -1,5 +1,8 @@
 package com.codeup.uswomenvets.controllers;
 
+import com.codeup.uswomenvets.dao.DaoFactory;
+import com.codeup.uswomenvets.models.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,12 +15,19 @@ import java.io.IOException;
  */
 @WebServlet(name = "EditServlet", urlPatterns = "/edit")
 public class EditServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if (request.getSession().getAttribute("user") == null) {
+            response.sendRedirect("/login");
+            return;
+        }
+        String postId = request.getParameter("id");
+        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(postId));
+        request.getRequestDispatcher("/WEB-INF/posts/edit.jsp").forward(request, response);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        User user = (User) request.getSession().getAttribute("user");
+        String postId = request.getParameter("id");
 
-        request.getRequestDispatcher("/WEB-INF/posts/edit.jsp").forward(request, response);
     }
 }

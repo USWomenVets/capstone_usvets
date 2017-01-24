@@ -23,24 +23,35 @@
 
         <section class="main">
             <div class="wrap">
-                <div class="container row">
-            <div class="small-12 large-4 columns">
-                <div class="media-object-section">
-                    <img src= "http://placeimg.com/200/200/people">
-                </div>
-                <p>Text</p>
-            </div>
-            <div class="small-12 large-4 columns">
-                <div class="media-object-section">
-                    <img src= "http://placeimg.com/200/200/people">
-                </div>
-                <p>Text</p>
-            </div>
-                    <div class="small-12 large-4 columns">
+                <div class="container">
+                    <div class="media-object">
                         <div class="media-object-section">
                             <img src= "http://placeimg.com/200/200/people">
                         </div>
-                        <p>Text</p>
+                        <div class="media-object-section">
+                            <h4>Dreams feel real while we're in them.</h4>
+                            <p>I'm going to improvise. Listen, there's something you should know.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <h4>Dreams feel real while we're in them.</h4>
+                            <p>I'm going to improvise. Listen, there's something you should know.</p>
+                        </div>
+                        <div class="media-object-section">
+                            <img src= "http://placeimg.com/200/200/people">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src= "http://placeimg.com/200/200/people">
+                        </div>
+                        <div class="media-object-section">
+                            <h4>Dreams feel real while we're in them.</h4>
+                            <p>I'm going to improvise. Listen, there's something you should know.</p>
+                        </div>
                     </div>
                 </div>
             </div>

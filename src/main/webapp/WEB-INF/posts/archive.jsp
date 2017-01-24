@@ -9,41 +9,35 @@
 </head>
 <body>
 <div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="off-canvas-wrapper-inner row" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Archive Page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
 
         <section class="main">
             <div class="wrap">
-                <label>Sort by category
-                    <br>
-                    <select id="sort">
-                        <option>Wellness</option>
-                        <option>Employment</option>
-                        <option>Events</option>
-                        <option>General</option>
-                    </select>
-                </label>
+            <h3><strong>Please select a category</strong></h3>
+            <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                    <li><a href="#0">Wellness</a></li>
+                    <li><a href="#0">Events</a></li>
+                    <li><a href="#0">Employment</a></li>
+                    <li><a href="#0">General</a></li>
+                </ul>
+            </nav>
+            <div>
             <br>
                 <c:forEach var="post" items="${posts}">
-                    <div>
+                <div class="archive_post">
                         <form role="search" action="/show" method="GET">
-                            <button name="id" value=${post.getId()}>
-                                <h2>${post.title}</h2>
-                                <h4>${post.postDate}</h4>
-                                <p>${post.content}</p>
-                                <h4>${post.username}</h4>
+                            <button class="archive_post_button" name="id" value=${post.getId()}>
+                                <p>${post.title}</p>
+                                <p>${post.postDate}</p>
+                                <p>${post.userId}</p>
                             </button>
                         </form>
                     </div>
                 </c:forEach>
+            </div>
             </div>
         </section>
 

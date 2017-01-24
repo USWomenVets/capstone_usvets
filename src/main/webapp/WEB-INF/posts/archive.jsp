@@ -29,13 +29,11 @@
             <br>
                 <c:forEach var="post" items="${posts}">
                 <div class="archive_post container">
-                        <form id="archive_post_form" role="search" action="/show" method="GET">
-                            <button class="archive_post_button" name="id" value=${post.getId()}>
-                                <p>${post.title}</p>
-                                <p>${post.postDate}</p>
-                                <p>${post.userId}</p>
-                            </button>
-                        </form>
+                            <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
+                                <p class="post_para">${post.title}</p>
+                                <p class="post_para">${post.postDate}</p>
+                                <p class="post_para">${post.userId}</p>
+                            </a>
                     </div>
                 </c:forEach>
             </div>

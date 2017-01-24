@@ -193,17 +193,16 @@ SOCIAL MEDIA
     width: 30%;
 }
 .archive_post{
-background-color: #E80C6E;
-    border: double dodgerblue;
+    background-color: #E80C6E;
     text-align: center;
-    margin: 50px;
+    margin: 30px;
     display: inline-block;
-    width: 255px;
+    width: 355px;
 }
 .archive_post_button{
     background-color: #E80C6E;
-    width: 255px;
-    margin: 50px;
+    width: 355px;
+    margin: 30px;
     text-align: center;
 }
 .show_anchor{
@@ -238,4 +237,7 @@ background-color: #E80C6E;
 .locator{
     background-color: whitesmoke;
     padding: 80px 0;
+}
+.post_para{
+    color: black;
 }

@@ -17,10 +17,10 @@
                 <div class="show">
                     <c:forEach var="post" items="${posts}">
                         <div class="wrap">
-                            <h2>${post.title}</h2>
+                            <p>${post.title}</p>
                             <p>${post.postDate}</p>
-                            <h3>${post.content}</h3>
-                            <h4>${post.getUsername()}</h4>
+                            <p>${post.content}</p>
+                            <p>${post.getUsername()}</p>
                         <c:choose>
                             <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
                                 <a href="/login"><button class="resources button">Comment</button></a>

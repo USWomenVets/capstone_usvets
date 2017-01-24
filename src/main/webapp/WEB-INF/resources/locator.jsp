@@ -21,7 +21,7 @@
         <section class="main">
             <div class="wrap">
                 <div class="container row">
-                    <h1>Hello World</h1>
+                    <h2><strong>Resource Locator</strong></h2>
                 </div>
                 <div>
                     <div id="map"></div>

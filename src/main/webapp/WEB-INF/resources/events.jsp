@@ -11,13 +11,7 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Events page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
+
 
             <!--Calendar-->
             <div class="wrap small-up-1 medium-up-2">

@@ -28,6 +28,7 @@ public class LoginServlet extends HttpServlet {
         User user = DaoFactory.getUsersDao().findByUsername(username);
 
         if (user == null) {
+            request.getSession().setAttribute("errorMessageEmptyLogin", "Username or password cannot be blank");
             response.sendRedirect("/login");
             return;
         }
@@ -38,6 +39,7 @@ public class LoginServlet extends HttpServlet {
             request.getSession().setAttribute("user", user);
             response.sendRedirect("/profile");
         } else {
+            request.getSession().setAttribute("errorMessageValidLogin", "Username or password is not valid");
             response.sendRedirect("/login");
         }
     }

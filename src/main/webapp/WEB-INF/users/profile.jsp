@@ -104,9 +104,6 @@
                         </div>
                         <button class="button" type="submit">Save</button>
                     </form>
-                    <br>
-                    <h3 class="text-center">Friend's List</h3>
-                    <hr>
                 </div>
             </div>
         </div>

@@ -11,13 +11,6 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Register page!</h1>
-                    <p>Catchy tagline goes here!</p>
-                </div>
-            </section>
 
 
             <!--Main Section-->
@@ -25,18 +18,20 @@
                 <div class="wrap">
             <form action="/register" method="post">
                 <c:if test="${sessionScope.errorMessage != null}">
-                    <div class="reveal" id="exampleModal1" data-reveal>
-                        <h1>Oops!</h1>
-                        <p class="lead">${sessionScope.errorMessage}</p>
-                        <p>Please choose another username or email.</p>
-                        <button class="close-button" data-close aria-label="Close reveal" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <div class="callout alert">
+                        <h5>We must apologize...</h5>
+                        <p>The username or email you have entered is already in our system--please choose another</p>
                     </div>
                 </c:if>
-                <%--<c:if test="${sessionScope.errorMessageEmpty != null}">--%>
-                    <%--<div class="has-error alert alert-danger" role="alert">${sessionScope.errorMessage}</div>--%>
-                <%--</c:if>--%>
+                <c:if test="${sessionScope.errorMessageEmpty != null}">
+                    <div class="callout alert">
+                        <h5>We must apologize...</h5>
+                        <p>The passwords you have entered do not match</p>
+                    </div>
+                </c:if>
+                <h3>Welcome</h3>
+                <p><strong>Please fill out your information</strong></p>
+                <br>
                 <div class="form-group">
                     <label for="first_name">First Name</label>
                     <input id="first_name" name="first_name" class="form-control register_field" type="text">

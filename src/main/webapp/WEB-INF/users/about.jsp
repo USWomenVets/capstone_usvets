@@ -12,14 +12,6 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
-            <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to About page!</h1>
-                    <p>Take the time to meet Team Allies!</p>
-                </div>
-            </section>
-
         <!--Main section-->
         <section class="main">
             <div class="wrap">

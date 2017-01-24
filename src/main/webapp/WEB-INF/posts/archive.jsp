@@ -32,8 +32,8 @@
                             <button class="archive_post_button" name="id" value=${post.getId()}>
                                 <p>${post.title}</p>
                                 <p>${post.postDate}</p>
-                                <p>${post.userId}</p>
-                                <p>${post.getStringCategory}</p>
+                                <p>${post.getUsername()}</p>
+                                <p>${post.getStringCategory()}</p>
                             </button>
                         </form>
                     </div>

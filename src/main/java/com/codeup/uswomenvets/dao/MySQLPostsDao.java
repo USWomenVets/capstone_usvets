@@ -64,6 +64,7 @@ public class MySQLPostsDao implements Posts {
 
     private List<Post> createPostsFromResults(ResultSet rs) throws SQLException {
         List<Post> posts = new ArrayList<>();
+
         while (rs.next()) {
             posts.add(extractPost(rs));
         }
@@ -87,7 +88,7 @@ public class MySQLPostsDao implements Posts {
         PreparedStatement stmt = null;
         try {
             if (q != null) {
-                String selectQuery = "SELECT posts.* , users.user_name FROM posts JOIN users ON users.id = posts.user_id WHERE title LIKE ? OR description LIKE ? OR users.user_name LIKE ? OR timestamp LIKE ?";
+                String selectQuery = "SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id WHERE title LIKE ? OR description LIKE ? OR users.user_name LIKE ? OR timestamp LIKE ?";
                 stmt = connection.prepareStatement(selectQuery, Statement.RETURN_GENERATED_KEYS);
                 String qa = "%" + q + "%";
                 stmt.setString(1, qa);
@@ -99,7 +100,7 @@ public class MySQLPostsDao implements Posts {
                 ResultSet rs = stmt.executeQuery();
                 return createPostsFromResults(rs);
             } else {
-                stmt = connection.prepareStatement("SELECT posts.* , users.user_name FROM posts JOIN users ON users.id = posts.user_id;");
+                stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id;");
                 ResultSet rs = stmt.executeQuery();
                 return createPostsFromResults(rs);
             }

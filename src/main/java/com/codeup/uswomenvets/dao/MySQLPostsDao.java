@@ -26,7 +26,7 @@ public class MySQLPostsDao implements Posts {
     public List<Post> userPost(long user_id) {
         PreparedStatement stmt = null;
         try {
-            stmt = connection.prepareStatement("SELECT posts.* , users.user_name FROM posts JOIN users ON users.id = posts.user_id where users.id = ?;");
+            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.user_id = ?;");
             stmt.setLong(1, user_id);
             ResultSet rs = stmt.executeQuery();
             return createPostsFromResults(rs);
@@ -39,13 +39,43 @@ public class MySQLPostsDao implements Posts {
         PreparedStatement stmt = null;
         int postID = Integer.valueOf(postId);
         try {
-            stmt = connection.prepareStatement("SELECT posts.* , users.user_name FROM posts JOIN users ON users.id = posts.user_id where posts.id = ?;");
+            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;");
             stmt.setLong(1, postID);
             ResultSet rs = stmt.executeQuery();
             return createPostsFromResults(rs);
         } catch (SQLException e) {
             throw new RuntimeException("error retrieving selected post");
         }
+    }
+    private Post extractPost(ResultSet rs) throws SQLException {
+        return new Post(
+                rs.getInt("id"),
+                rs.getLong("user_id"),
+                rs.getString("title"),
+                rs.getString("content"),
+                rs.getString("post_date"),
+                rs.getString("username"),
+                rs.getString("category")
+        );
+    }
+
+    private List<Post> createPostsFromResults(ResultSet rs) throws SQLException {
+        List<Post> posts = new ArrayList<>();
+        while (rs.next()) {
+            posts.add(extractPost(rs));
+        }
+        return posts;
+    }
+
+    public void editPost(Post post) {
+        String query = "UPDATE posts";
+        boolean validExecute = false;
+        int validQueryIndex = 0;
+
+        List currentPostList = DaoFactory.getPostsDao().specPost(Integer.toString(post.getId()));
+
+
+
     }
 
 
@@ -92,22 +122,5 @@ public class MySQLPostsDao implements Posts {
         }
     }
 
-    private Post extractPost(ResultSet rs) throws SQLException {
-        return new Post(
-                rs.getLong("id"),
-                rs.getLong("user_id"),
-                rs.getString("title"),
-                rs.getString("content"),
-                rs.getString("user_name"),
-                rs.getString("content")
-        );
-    }
 
-    private List<Post> createPostsFromResults(ResultSet rs) throws SQLException {
-        List<Post> posts = new ArrayList<>();
-        while (rs.next()) {
-            posts.add(extractPost(rs));
-        }
-        return posts;
-    }
 }

@@ -13,4 +13,6 @@ public interface Posts {
     List <Post> userPost(long userId);
 
     List <Post> specPost(String postId);
+
+    void editPost(Post post);
 }

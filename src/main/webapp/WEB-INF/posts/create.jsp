@@ -16,15 +16,15 @@
             <!--Main Section-->
             <section class="main">
                 <div class="wrap">
-                    <label>Select Menu
-                        <select>
-                            <option>Wellness</option>
-                            <option>Employment</option>
-                            <option>Events</option>
-                            <option>General</option>
-                        </select>
-                    </label>
                     <form action="/create" method="POST">
+                        <label>Select Menu
+                            <select name="category">
+                                <option value="1">General</option>
+                                <option value="2">Events</option>
+                                <option value="3">Employment</option>
+                                <option value="4">Wellness</option>
+                            </select>
+                        </label>
                         <label for="title">Title</label>
                         <input id="title" name="title" type="text" placeholder="Post title" aria-describedby="exampleHelpText">
                         <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>

@@ -1,6 +1,7 @@
 package com.codeup.uswomenvets.controllers;
 
 import com.codeup.uswomenvets.dao.DaoFactory;
+import com.codeup.uswomenvets.models.Post;
 import com.codeup.uswomenvets.models.User;
 
 import javax.servlet.ServletException;
@@ -27,7 +28,15 @@ public class EditServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = (User) request.getSession().getAttribute("user");
-        String postId = request.getParameter("id");
+        String title = request.getParameter("title");
+        String content = request.getParameter("title");
+        int category = Integer.parseInt(request.getParameter("category"));
+        int postId = Integer.parseInt(request.getParameter("id"));
+
+
+
+        Post post = new Post(user.getId(), postId, title, content, category);
+
 
     }
 }

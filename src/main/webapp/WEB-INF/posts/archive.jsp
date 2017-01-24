@@ -13,7 +13,7 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 
-        <section class="main">
+        <section class="locator">
             <div class="wrap">
             <h3><strong>Please select a category</strong></h3>
             <nav aria-label="You are here:" role="navigation">
@@ -24,22 +24,20 @@
                     <li><a href="#0">General</a></li>
                 </ul>
             </nav>
+            </div>
             <div>
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post">
-                        <form role="search" action="/show" method="GET">
-                            <button class="archive_post_button" name="id" value=${post.getId()}>
-                                <p>${post.title}</p>
-                                <p>${post.postDate}</p>
-                                <p>${post.getUsername()}</p>
-                                <p>${post.getStringCategory()}</p>
-                            </button>
-                        </form>
+                <div class="archive_post container">
+                            <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
+                                <p class="post_para">${post.title}</p>
+                                <p class="post_para">${post.postDate}</p>
+                                <p class="post_para">${post.userId}</p>
+                            </a>
                     </div>
                 </c:forEach>
             </div>
-            </div>
+
         </section>
 
     </div>

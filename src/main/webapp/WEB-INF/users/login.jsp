@@ -39,7 +39,7 @@
                                 <label for="password">Password</label>
                                 <input id="password" name="password" class="form-control register_field" type="password">
                             </div>
-                            <input type="submit" class="btn btn-primary btn-block" id="submit_length_mod_in" value="Log In">
+                            <input type="submit" class="large button" value="Log In">
                         </form>
                         <br>
                         <p>Don't have a profile, yet? <a href="/register">Join up!</a></p>

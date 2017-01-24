@@ -4,6 +4,9 @@ public class Post {
     private long userId;
     private int id;
     private int category;
+    private int views;
+    private int likes;
+    private int commentCount;
     private String stringCategory;
     private String title;
     private String content;
@@ -18,7 +21,7 @@ public class Post {
         this.content = content;
     }
 
-    public Post(int id, long userId, String title, String content, String postDate, String username, String category) {
+    public Post(int id, long userId, String title, String content, String postDate, String username, String category, int views, int likes, int commentCount) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -26,6 +29,10 @@ public class Post {
         this.postDate = postDate;
         this.username = username;
         this.stringCategory = category;
+        this.views = views;
+        this.likes = likes;
+        this.commentCount = commentCount;
+
     }
 
     public Post(long userId, int id, String title, String content, int category) {
@@ -53,6 +60,22 @@ public class Post {
     public int getCategory() { return category; }
 
     public void setCategory(int category) { this.category = category; }
+
+    public int getViews() { return views; }
+
+    public void setViews(int views) { this.views = views; }
+
+    public int getLikes() { return likes; }
+
+    public void setLikes(int likes) { this.likes = likes; }
+
+    public int getCommentCount() { return commentCount; }
+
+    public void setCommentCount(int commentCount) { this.commentCount = commentCount; }
+
+    public String getStringCategory() { return stringCategory; }
+
+    public void setStringCategory(String stringCategory) { this.stringCategory = stringCategory; }
 
     public String getTitle() {
         return title;

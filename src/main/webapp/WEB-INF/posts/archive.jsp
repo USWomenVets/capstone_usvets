@@ -33,6 +33,7 @@
                                 <p>${post.title}</p>
                                 <p>${post.postDate}</p>
                                 <p>${post.userId}</p>
+                                <p>${post.getStringCategory}</p>
                             </button>
                         </form>
                     </div>

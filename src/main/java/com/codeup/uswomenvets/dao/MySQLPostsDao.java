@@ -54,8 +54,11 @@ public class MySQLPostsDao implements Posts {
                 rs.getString("title"),
                 rs.getString("content"),
                 rs.getString("post_date"),
-                rs.getString("username"),
-                rs.getString("category")
+                rs.getString("user_name"),
+                rs.getString("category"),
+                rs.getInt("views"),
+                rs.getInt("likes"),
+                rs.getInt("comment_count")
         );
     }
 
@@ -106,7 +109,7 @@ public class MySQLPostsDao implements Posts {
     }
 
     @Override
-    public Long insert(Post post) {
+    public int insert(Post post) {
         try {
             String insertQuery = "INSERT INTO posts(user_id, title, content) VALUES (?, ?, ?);";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
@@ -116,9 +119,23 @@ public class MySQLPostsDao implements Posts {
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
             rs.next();
-            return rs.getLong(1);
+            int postId = rs.getInt(1);
+            catInsert(post.getCategory(), postId);
+            return postId;
         } catch (SQLException e) {
             throw new RuntimeException("Error creating a new post.", e);
+        }
+    }
+
+    public void catInsert(int category, int post_id) {
+        try {
+            PreparedStatement catStmt;
+            catStmt = connection.prepareStatement("INSERT INTO category_post(category_id, post_id) VALUES(?, ?);", Statement.RETURN_GENERATED_KEYS);
+            catStmt.setInt(1, category);
+            catStmt.setInt(2, post_id);
+            catStmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error creating category row for post", e);
         }
     }
 

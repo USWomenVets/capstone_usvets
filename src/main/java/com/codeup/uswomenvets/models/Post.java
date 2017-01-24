@@ -11,6 +11,13 @@ public class Post {
     private String username;
 
 
+    public Post(long userId, int category, String title, String content) {
+        this.userId = userId;
+        this.title = title;
+        this.category = category;
+        this.content = content;
+    }
+
     public Post(int id, long userId, String title, String content, String postDate, String username, String category) {
         this.id = id;
         this.userId = userId;

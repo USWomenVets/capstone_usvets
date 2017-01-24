@@ -28,9 +28,9 @@ public class CreatePostServlet extends HttpServlet {
 
         Post post = new Post(
                 user.getId(),
+                category,
                 request.getParameter("title"),
-                request.getParameter("content"),
-                category
+                request.getParameter("content")
         );
         DaoFactory.getPostsDao().insert(post);
         response.sendRedirect("/archive");

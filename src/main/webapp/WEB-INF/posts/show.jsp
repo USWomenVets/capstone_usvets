@@ -14,14 +14,13 @@
 
             <!--Main Section-->
             <section class="main">
-                <div class="wrap">
+                <div class="show">
                     <c:forEach var="post" items="${posts}">
-                        <div>
+                        <div class="wrap">
                             <h2>${post.title}</h2>
                             <p>${post.postDate}</p>
                             <h3>${post.content}</h3>
                             <h4>${post.getUsername()}</h4>
-                        </div>
                         <c:choose>
                             <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
                                 <a href="/login"><button class="resources button">Comment</button></a>
@@ -34,6 +33,7 @@
                                 <a href="/login"><button class="resources button">Comment</button></a>
                             </c:otherwise>
                         </c:choose>
+                        </div>
                     </c:forEach>
                 </div>
             </section>

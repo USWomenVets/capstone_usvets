@@ -14,19 +14,28 @@
 
 
         <section class="main">
+            <h3><strong>Please select a category</strong></h3>
+            <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                    <li><a href="#0">Wellness</a></li>
+                    <li><a href="#0">Events</a></li>
+                    <li><a href="#0">Employment</a></li>
+                    <li><a href="#0">General</a></li>
+                </ul>
+            </nav>
             <div class="wrap">
-                <label>Sort by category
-                    <br>
-                    <select id="sort">
-                        <option>Wellness</option>
-                        <option>Employment</option>
-                        <option>Events</option>
-                        <option>General</option>
-                    </select>
-                </label>
+                <%--<label>Sort by category--%>
+                    <%--<br>--%>
+                    <%--<select id="sort">--%>
+                        <%--<option>Wellness</option>--%>
+                        <%--<option>Employment</option>--%>
+                        <%--<option>Events</option>--%>
+                        <%--<option>General</option>--%>
+                    <%--</select>--%>
+                <%--</label>--%>
             <br>
                 <c:forEach var="post" items="${posts}">
-                <a class="show_anchor small-6 medium-4 large-4"><div class="archive_post">
+                <div class="archive_post row">
                         <form role="search" action="/show" method="GET">
                             <button class="archive_post_button" name="id" value=${post.getId()}>
                                 <h2>${post.title}</h2>
@@ -35,7 +44,7 @@
                             </button>
                         </form>
                     </div>
-                </a>
+
                 </c:forEach>
             </div>
         </section>

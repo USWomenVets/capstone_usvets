@@ -31,18 +31,18 @@ button{
     margin-top: 10px;
 }
 
-h5{
-    text-align: center;
-}
+/*h5{*/
+    /*text-align: center;*/
+/*}*/
 /* **************************************************************************
 THUMBNAILS
 ************************************************************************** */
 
-.thumbnail{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-}
+/*.thumbnail{*/
+    /*height: 200px;*/
+    /*width: 200px;*/
+    /*margin: 10px;*/
+/*}*/
 /* **************************************************************************
  NAV-MOBILE
 ************************************************************************** */
@@ -97,9 +97,9 @@ THUMBNAILS
     line-height: 80px;
     font-size: 1.5em;
 }
-.menu-desktop{
-    background-color: red;
-}
+/*.menu-desktop{*/
+    /*background-color: red;*/
+/*}*/
 .nav-desktop .menu-desktop{
     line-height: 80px;
     background-color: transparent;
@@ -135,7 +135,6 @@ HERO
 .hero{
     background-color: #999;
     padding: 80px 0;
-    background-image: url("../img/cheap_diagonal_fabric.png");
     height: 400px;
 }
 .hero p{
@@ -222,4 +221,13 @@ SOCIAL MEDIA
 .show_anchor{
     color: black;
     /*padding: 80px;*/
+}
+#map{
+    display: block;
+}
+.show{
+    text-align: left;
+}
+.breadcrumbs{
+    text-align: center;
 }

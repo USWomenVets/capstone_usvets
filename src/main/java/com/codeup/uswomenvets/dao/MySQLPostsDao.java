@@ -61,6 +61,24 @@ public class MySQLPostsDao implements Posts {
                 rs.getInt("comment_count")
         );
     }
+    private Post extractPost(int postId) throws SQLException {
+        String extractQuery = "SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;";
+        PreparedStatement stmt = connection.prepareStatement(extractQuery);
+        stmt.setInt(1, postId);
+        ResultSet rs = stmt.executeQuery();
+        return new Post(
+                rs.getInt("id"),
+                rs.getLong("user_id"),
+                rs.getString("title"),
+                rs.getString("content"),
+                rs.getString("post_date"),
+                rs.getString("user_name"),
+                rs.getString("category"),
+                rs.getInt("views"),
+                rs.getInt("likes"),
+                rs.getInt("comment_count")
+        );
+    }
 
     private List<Post> createPostsFromResults(ResultSet rs) throws SQLException {
         List<Post> posts = new ArrayList<>();
@@ -75,10 +93,17 @@ public class MySQLPostsDao implements Posts {
         String query = "UPDATE posts";
         boolean validExecute = false;
         int validQueryIndex = 0;
+        //DaoFactory.getPostsDao().specPost(Integer.toString(post.getId()));
+        Post oldPost = extractPost(Integer.parseInt());
 
-        List currentPostList = DaoFactory.getPostsDao().specPost(Integer.toString(post.getId()));
+        String[] oldPostInfo = {
+                oldPost.getTitle(),
+                oldPost.getContent(),
+                Integer.toString(oldPost.getCategory())
+        };
+        String[] newPostInfo = {
 
-
+        };
 
     }
 

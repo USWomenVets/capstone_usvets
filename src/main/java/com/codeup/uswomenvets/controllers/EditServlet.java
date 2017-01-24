@@ -33,9 +33,8 @@ public class EditServlet extends HttpServlet {
         int category = Integer.parseInt(request.getParameter("category"));
         int postId = Integer.parseInt(request.getParameter("id"));
 
-
-
         Post post = new Post(user.getId(), postId, title, content, category);
+        DaoFactory.getPostsDao().editPost(post);
 
 
     }

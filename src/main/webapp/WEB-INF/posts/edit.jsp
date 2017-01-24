@@ -12,10 +12,16 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
             <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to Edit page!</h1>
-                    <p>Catchy tagline goes here!</p>
+        <section class="main">
+            <div class="wrap">
+                <form action="/create" method="POST">
+                    <label for="title">Title</label>
+                    <input id="title" name="title" type="text" placeholder="Post title" aria-describedby="exampleHelpText">
+                    <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" ></textarea>
+                    <button class="resources button" type="submit">Post!</button>
+                </form>
                 </div>
             </section>
 

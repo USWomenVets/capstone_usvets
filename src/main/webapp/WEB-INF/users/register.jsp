@@ -18,13 +18,15 @@
                 <div class="wrap">
             <form action="/register" method="post">
                 <c:if test="${sessionScope.errorMessage != null}">
-                    <div class="reveal" id="exampleModal1" data-reveal>
-                        <h1>Oops!</h1>
-                        <p class="lead">${sessionScope.errorMessage}</p>
-                        <p>Please choose another username or email.</p>
-                        <button class="close-button" data-close aria-label="Close reveal" type="button">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <div class="callout alert">
+                        <h5>We must apologize...</h5>
+                        <p>The username or email you have entered is already in our system--please choose another</p>
+                    </div>
+                </c:if>
+                <c:if test="${sessionScope.errorMessageEmpty != null}">
+                    <div class="callout alert">
+                        <h5>We must apologize...</h5>
+                        <p>The passwords you have entered do not match</p>
                     </div>
                 </c:if>
                 <h3>Welcome</h3>

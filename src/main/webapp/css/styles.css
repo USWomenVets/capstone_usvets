@@ -4,18 +4,9 @@
 /* **************************************************************************
 GENERAL
 ************************************************************************** */
-/*@import url('https://fonts.googleapis.com/css?family=Poiret+One');*/
-/*!* Wrapping content at a fixed width which stays centered *!*/
-/*body{*/
-/*font-family: 'Poiret One', cursive;*/
-/*}*/
 
 *{
     font-family: 'Raleway', sans-serif;
-}
-
-button{
-    background-color: #8a8a8a;
 }
 
 .wrap{
@@ -23,26 +14,17 @@ button{
     max-width: 700px;
     margin: 0 auto;
 }
-.off-canvas-wrapper{
-    background-color: #222;
-}
 
 .port_name{
     margin-top: 10px;
 }
 
-/*h5{*/
-    /*text-align: center;*/
-/*}*/
+
 /* **************************************************************************
 THUMBNAILS
 ************************************************************************** */
 
-/*.thumbnail{*/
-    /*height: 200px;*/
-    /*width: 200px;*/
-    /*margin: 10px;*/
-/*}*/
+
 /* **************************************************************************
  NAV-MOBILE
 ************************************************************************** */
@@ -90,16 +72,12 @@ THUMBNAILS
     background-color: #222;
     height: 80px;
     padding: 0;
-    /*background: linear-gradient(to left, #ED4264 , #FFEDBC);*/
 }
 .site-logo{
     color: white;
     line-height: 80px;
     font-size: 1.5em;
 }
-/*.menu-desktop{*/
-    /*background-color: red;*/
-/*}*/
 .nav-desktop .menu-desktop{
     line-height: 80px;
     background-color: transparent;
@@ -211,12 +189,14 @@ SOCIAL MEDIA
 .archive_post{
     background: honeydew;
     text-align: center;
-    margin: 10px;
+    margin-bottom: 40px;
     display: inline-block;
+    border-color: red;
+    width: 80%;
 }
 .archive_post_button{
     background-color: transparent;
-    width: 358px;
+    width: 80%;
 }
 .show_anchor{
     color: black;
@@ -229,5 +209,8 @@ SOCIAL MEDIA
     text-align: left;
 }
 .breadcrumbs{
+    text-align: center;
+}
+.show_sort{
     text-align: center;
 }

@@ -18,6 +18,18 @@
                         <h3>Welcome</h3>
                         <p><strong>Please log in</strong></p>
                         <br>
+                        <c:if test="${sessionScope.errorMessageEmptyLogin != null}">
+                            <div class="callout alert">
+                                <h5>We must apologize...</h5>
+                                <p>Username or password cannot be blank</p>
+                            </div>
+                        </c:if>
+                        <c:if test="${sessionScope.errorMessageValidLogin != null}">
+                            <div class="callout alert">
+                                <h5>We must apologize...</h5>
+                                <p>Username or password is not valid</p>
+                            </div>
+                        </c:if>
                         <form action="/login" method="POST">
                             <div class="form-group">
                                 <label for="username">Username</label>

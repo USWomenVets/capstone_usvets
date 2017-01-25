@@ -25,11 +25,11 @@ public class EditServlet extends HttpServlet {
         if (request.getSession().getAttribute("user") == null) {
             response.sendRedirect("/login");
             return;
-        } else if (user.getId() != oldPost.getId()) {
+        } else if (user.getId() != oldPost.getUserId()) {
             request.getSession().setAttribute("editErrorMessage", "you are not allowed to edit other user's posts");
             response.sendRedirect("/show?id=" + oldPost.getId());
         } else {
-            request.setAttribute("posts", DaoFactory.getPostsDao().specPost(postId));
+            request.setAttribute("posts", DaoFactory.getPostsDao().specPost(request.getParameter("id")));
             request.getRequestDispatcher("/WEB-INF/posts/edit.jsp").forward(request, response);
         }
     }

@@ -15,18 +15,19 @@
         <!--Main Section-->
         <section class="main">
             <div class="show">
-                <form action="/edit">
+                <form action="/posts/edit">
                     <c:forEach var="post" items="${posts}">
                         <div class="wrap">
-                            <h2>${post.title}</h2>
+                            <h2>${post.getTitle()}</h2>
+                            <h3>${post.getStringCategory()}</h3>
                             <h4>${post.getPostDate()}</h4>
-                            <p>${post.content}</p>
+                            <p>${post.getContent()}</p>
                             <h4>${post.getUsername()}</h4>
                             <c:choose>
                                 <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
-                                    <button href="/comment" class="resources button">Comment</button>
-                                    <button href="/edit" id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
-                                    <button class="resources button">Delete</button>
+                                    <a href="/comment/create" class="resources button">Comment</a>
+                                    <button id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
+                                    <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button">Delete</a>
                                     <button class="resources button">Upvote</button>
                                     <button class="resources button">Downvote</button>
                                 </c:when>

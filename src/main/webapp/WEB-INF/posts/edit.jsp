@@ -14,20 +14,8 @@
             <!--Hero Section-->
         <section class="main">
             <div class="wrap">
-                <form action="/create" method="POST">
-                    <label for="title">Title</label>
-                    <input id="title" name="title" type="text" placeholder="Post title" aria-describedby="exampleHelpText">
-                    <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
-                    <label for="content">Content</label>
-                    <textarea id="content" name="content" ></textarea>
-                    <button class="resources button" type="submit">Post!</button>
-                </form>
-                </div>
-            </section>
-        <section class="main">
-            <div class="wrap">
 
-                <form action="/create" method="POST">
+                <form action="/edit" method="POST">
                     <c:forEach var="post" items="${posts}">
                         <label>Select Menu
                             <select name="category">
@@ -41,7 +29,7 @@
                         <input id="title" name="title" type="text" placeholder="Post title" value="${post.title}" aria-describedby="exampleHelpText">
                         <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
                         <label for="content">Content</label>
-                        <textarea id="content" name="content"></textarea>
+                        <textarea id="content" name="content">${post.getContent()}</textarea>
                         <button class="resources button" type="submit" name="id" value="${post.getId()}">Post!</button>
                     </c:forEach>
                 </form>

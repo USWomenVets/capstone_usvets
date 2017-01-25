@@ -61,23 +61,28 @@ public class MySQLPostsDao implements Posts {
                 rs.getInt("comment_count")
         );
     }
-    private Post extractPost(int postId) throws SQLException {
-        String extractQuery = "SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;";
-        PreparedStatement stmt = connection.prepareStatement(extractQuery);
-        stmt.setInt(1, postId);
-        ResultSet rs = stmt.executeQuery();
-        return new Post(
-                rs.getInt("id"),
-                rs.getLong("user_id"),
-                rs.getString("title"),
-                rs.getString("content"),
-                rs.getString("post_date"),
-                rs.getString("user_name"),
-                rs.getString("category"),
-                rs.getInt("views"),
-                rs.getInt("likes"),
-                rs.getInt("comment_count")
-        );
+    private Post extractPost(int postId) {
+        try {
+
+            String extractQuery = "SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;";
+            PreparedStatement stmt = connection.prepareStatement(extractQuery);
+            stmt.setInt(1, postId);
+            ResultSet rs = stmt.executeQuery();
+            return new Post(
+                    rs.getInt("id"),
+                    rs.getLong("user_id"),
+                    rs.getString("title"),
+                    rs.getString("content"),
+                    rs.getString("post_date"),
+                    rs.getString("user_name"),
+                    rs.getString("category"),
+                    rs.getInt("views"),
+                    rs.getInt("likes"),
+                    rs.getInt("comment_count")
+            );
+        } catch (SQLException e) {
+            throw new RuntimeException("unable to extract post", e);
+        }
     }
 
     private List<Post> createPostsFromResults(ResultSet rs) throws SQLException {
@@ -89,21 +94,64 @@ public class MySQLPostsDao implements Posts {
         return posts;
     }
 
-    public void editPost(Post post) {
+    public void editPost(Post newPost) {
+        int columnIndex = 1;
         String query = "UPDATE posts";
         boolean validExecute = false;
+        boolean isCatValid = false;
         int validQueryIndex = 0;
-        //DaoFactory.getPostsDao().specPost(Integer.toString(post.getId()));
-        Post oldPost = extractPost(Integer.parseInt());
+        DaoFactory.getPostsDao().specPost(Integer.toString(newPost.getId()));
+        Post oldPost = extractPost(newPost.getId());
 
         String[] oldPostInfo = {
                 oldPost.getTitle(),
-                oldPost.getContent(),
-                Integer.toString(oldPost.getCategory())
+                oldPost.getContent()
         };
         String[] newPostInfo = {
-
+                newPost.getTitle(),
+                newPost.getContent()
         };
+        String[] dbColumns = {
+                " title = ?",
+                " content = ?",
+        };
+        for (int i = 0; i < 2; i++) {
+            if (newPostInfo[i] != null && newPostInfo[i].trim() != "" && !(newPostInfo[i].trim().equals(oldPostInfo[i].trim()))) {
+                validExecute = true;
+                if (validQueryIndex > 0) {
+                    query += ",";
+                }
+                query += dbColumns[i];
+                validQueryIndex++;
+            }
+        }
+        if (newPost.getCategory() != oldPost.getCategory()) {
+            query += " category = ?";
+            isCatValid = true;
+        }
+        try {
+
+            if (validExecute) {
+                query += " WHERE id = ?;";
+                PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+                for (int i =0; i < 2; i++) {
+                    if (newPostInfo[i] != null && newPostInfo[i].trim() != "" && !(newPostInfo[i].trim().equals(oldPostInfo[i].trim()))) {
+                        stmt.setString(columnIndex, newPostInfo[i]);
+                        columnIndex++;
+                    }
+                }
+                if (isCatValid) {
+                    stmt.setInt(columnIndex, newPost.getCategory());
+                    columnIndex++;
+                }
+                stmt.setInt(columnIndex, newPost.getId());
+                stmt.executeUpdate();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("unable to edit post", e);
+        }
+
+
 
     }
 

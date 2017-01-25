@@ -28,11 +28,15 @@
             <div>
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post container">
+                <div class="archive_post container hvr-grow-shadow">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
+                                <p class="post_para">${post.stringCategory}</p>
                                 <p class="post_para">${post.title}</p>
+                                <p class="post_para">${post.username}</p>
                                 <p class="post_para">${post.postDate}</p>
-                                <p class="post_para">${post.userId}</p>
+                                <p class="post_para">Views: ${post.views}</p>
+                                <p class="post_para">Views: ${post.views}</p>
+                                <p class="post_para">Views: ${post.views}</p>
                             </a>
                     </div>
                 </c:forEach>

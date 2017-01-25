@@ -15,10 +15,10 @@
         <div class="column">
             <h4>Social Media</h4>
             <hr>
-            <a href="http://www.facebook.com/justin.armer.52" target="_blank">Facebook</a>
-            <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
-            <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
+            <a href="https://twitter.com/USWomenVets" target="_blank">Twitter</a>
+            <a href="https://github.com/USWomenVets/capstone_usvets" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/groups/12028850" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/groups/222014964872906/" target="_blank">Facebook</a>
         </div>
         <br>
         <a href="/index">&#xA9;Copyright 2017 Team Allies</a>

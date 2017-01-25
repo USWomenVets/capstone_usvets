@@ -17,9 +17,16 @@
             <section class="hero">
                 <div class="wrap">
                     <h1>Welcome to US!</h1>
-                    <p>Catchy tagline goes here!</p>
+                    <p>A Rally Point for US</p>
                 </div>
             </section>
+
+        <section class="homepage-links">
+            <div class="medium-6">
+                <p>testestsetsetsetsatetasdfsdf</p>
+
+            </div>
+        </section>
 
         <section class="main">
             <div class="wrap">

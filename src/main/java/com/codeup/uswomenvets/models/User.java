@@ -3,7 +3,7 @@ package com.codeup.uswomenvets.models;
 import com.codeup.uswomenvets.util.Password;
 
 public class User {
-    private long id;
+    private int id;
     private int age;
     private String username;
     private String email;
@@ -30,7 +30,7 @@ public class User {
     }
 
     //user modification in the profile servlet
-    public User(long id, String password, int age, String username, String email, String firstName, String lastName, String about, String birth, String gender) {
+    public User(int id, String password, int age, String username, String email, String firstName, String lastName, String about, String birth, String gender) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -48,7 +48,7 @@ public class User {
     }
 
     //user object creation to be sent to view
-    public User(long id, String username, String email, String password, String firstName, String lastName, String about, String birth, int age, String gender, String profileImg, String lastOnline, String creationDate) {
+    public User(int id, String username, String email, String password, String firstName, String lastName, String about, String birth, int age, String gender, String profileImg, String lastOnline, String creationDate) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -64,9 +64,9 @@ public class User {
         this.lastOnline = lastOnline;
     }
 
-    public long getId() { return id; }
+    public int getId() { return id; }
 
-    public void setId(long id) { this.id = id; }
+    public void setId(int id) { this.id = id; }
 
     public String getUsername() { return username; }
 

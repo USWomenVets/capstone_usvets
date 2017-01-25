@@ -21,7 +21,6 @@ public class ViewProfileServlet extends HttpServlet {
             response.sendRedirect("/login");
             return;
         }
-        request.setAttribute("posts", DaoFactory.getPostsDao().userPost(user.getId()));
         request.getRequestDispatcher("/WEB-INF/users/profile.jsp").forward(request, response);
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,9 +30,9 @@ public class ViewProfileServlet extends HttpServlet {
             response.sendRedirect("/login");
             return;
         }
-        String password = request.getParameter("current_password").trim();
-        String newPassword = request.getParameter("new_password").trim();
-        String passwordConfirmation = request.getParameter("confirm_password").trim();
+        String password = request.getParameter("current_password");
+        String newPassword = request.getParameter("new_password");
+        String passwordConfirmation = request.getParameter("confirm_password");
         if (! newPassword.isEmpty()) {
             boolean inputHasErrors = newPassword.isEmpty()
                     || password.isEmpty()

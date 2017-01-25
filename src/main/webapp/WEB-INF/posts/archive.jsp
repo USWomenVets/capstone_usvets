@@ -16,27 +16,24 @@
         <section class="locator">
             <div class="wrap">
             <h3><strong>Please select a categoy</strong></h3>
-            <nav aria-label="You are here:" role="navigation">
+            <nav aria-label="You are here:" role="navigation" class="button-group sort-by-button-group">
                 <ul class="breadcrumbs">
-                    <li><a href="#0">Wellness</a></li>
-                    <li><a href="#0">Events</a></li>
-                    <li><a href="#0">Employment</a></li>
-                    <li><a href="#0">General</a></li>
+                    <li><button class="button" data-sort-value="username">Username</button></li>
+                    <li><button class="button" data-sort-value="date">Date</button></li>
+                    <li><button class="button" data-sort-value="title">Ttile</button></li>
+                    <li><button class="button" data-sort-value="category">Category</button></li>
                 </ul>
             </nav>
             </div>
-            <div>
+            <div class="grid">
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post container hvr-grow-shadow">
+                <div class="archive_post container hvr-grow-shadow element-item" data-category="${post.stringCategory} ">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
-                                <p class="post_para">${post.stringCategory}</p>
-                                <p class="post_para">${post.title}</p>
-                                <p class="post_para">${post.username}</p>
-                                <p class="post_para">${post.postDate}</p>
-                                <p class="post_para">Views: ${post.views}</p>
-                                <p class="post_para">Views: ${post.views}</p>
-                                <p class="post_para">Views: ${post.views}</p>
+                                <p class="post_para category">${post.stringCategory}</p>
+                                <p class="post_para title">${post.title}</p>
+                                <p class="post_para username">${post.username}</p>
+                                <p class="post_para date">${post.postDate}</p>
                             </a>
                     </div>
                 </c:forEach>

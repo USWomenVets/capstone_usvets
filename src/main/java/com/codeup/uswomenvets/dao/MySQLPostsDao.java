@@ -23,11 +23,11 @@ public class MySQLPostsDao implements Posts {
         }
     }
 
-    public List<Post> userPost(long user_id) {
+    public List<Post> userPost(int user_id) {
         PreparedStatement stmt = null;
         try {
             stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id, posts.is_deleted FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.user_id = ?;");
-            stmt.setLong(1, user_id);
+            stmt.setInt(1, user_id);
             ResultSet rs = stmt.executeQuery();
             return createPostsFromResults(rs);
         } catch (SQLException e) {
@@ -36,12 +36,10 @@ public class MySQLPostsDao implements Posts {
     }
 
     public List<Post> specPost(String postId) {
-
-        PreparedStatement stmt = null;
         int postID = Integer.valueOf(postId);
         try {
-            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id, posts.is_deleted FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;");
-            stmt.setLong(1, postID);
+            PreparedStatement stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id, posts.is_deleted FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;");
+            stmt.setInt(1, postID);
             ResultSet rs = stmt.executeQuery();
             return createPostsFromResults(rs);
         } catch (SQLException e) {
@@ -49,10 +47,9 @@ public class MySQLPostsDao implements Posts {
         }
     }
     public Post specPost(int postId) {
-
         try {
             PreparedStatement stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id, posts.is_deleted FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;");
-            stmt.setLong(1, postId);
+            stmt.setInt(1, postId);
             ResultSet rs = stmt.executeQuery();
             rs.next();
             return extractPost(rs);
@@ -63,7 +60,7 @@ public class MySQLPostsDao implements Posts {
     private Post extractPost(ResultSet rs) throws SQLException {
         return new Post(
                 rs.getInt("id"),
-                rs.getLong("user_id"),
+                rs.getInt("user_id"),
                 rs.getString("title"),
                 rs.getString("content"),
                 rs.getString("post_date"),
@@ -86,7 +83,7 @@ public class MySQLPostsDao implements Posts {
             rs.next();
             return new Post(
                     rs.getInt("id"),
-                    rs.getLong("user_id"),
+                    rs.getInt("user_id"),
                     rs.getString("title"),
                     rs.getString("content"),
                     rs.getString("post_date"),
@@ -225,7 +222,7 @@ public class MySQLPostsDao implements Posts {
         try {
             String insertQuery = "INSERT INTO posts(user_id, title, content) VALUES (?, ?, ?);";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
-            stmt.setLong(1, post.getUserId());
+            stmt.setInt(1, post.getUserId());
             stmt.setString(2, post.getTitle());
             stmt.setString(3, post.getContent());
             stmt.executeUpdate();

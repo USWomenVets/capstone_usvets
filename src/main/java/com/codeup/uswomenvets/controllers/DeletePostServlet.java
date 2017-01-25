@@ -30,7 +30,7 @@ public class DeletePostServlet extends HttpServlet{
         }
         if (user.getId() != post.getUserId()) {
             request.getSession().setAttribute("errorMessage", "You do not have the permissions to delete this post");
-            response.sendRedirect("/show");
+            response.sendRedirect("/show?id=" + post.getId());
 
         } else {
             if (DaoFactory.getPostsDao().deletePost(post)) {

@@ -1,7 +1,7 @@
 package com.codeup.uswomenvets.models;
 
 public class Post {
-    private long userId;
+    private int userId;
     private int id;
     private int category;
     private int views;
@@ -28,14 +28,14 @@ public class Post {
         this.username = "System";
         this.stringCategory = "";
     }
-    public Post(long userId, int category, String title, String content) {
+    public Post(int userId, int category, String title, String content) {
         this.userId = userId;
         this.title = title;
         this.category = category;
         this.content = content;
     }
 
-    public Post(int id, long userId, String title, String content, String postDate, String username, String stringCategory,int category, int views, int likes, int commentCount, int isDeleted) {
+    public Post(int id, int userId, String title, String content, String postDate, String username, String stringCategory,int category, int views, int likes, int commentCount, int isDeleted) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -50,7 +50,7 @@ public class Post {
         this.isDeleted = isDeleted;
     }
 
-    public Post(long userId, int id, String title, String content, int category) {
+    public Post(int userId, int id, String title, String content, int category) {
         this.userId = userId;
         this.title = title;
         this.content = content;
@@ -64,11 +64,11 @@ public class Post {
         this.id = id;
     }
 
-    public long getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 

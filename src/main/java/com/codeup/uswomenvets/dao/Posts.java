@@ -14,7 +14,7 @@ public interface Posts {
 
     boolean deletePost(Post post);
 
-    List <Post> userPost(long userId);
+    List <Post> userPost(int userId);
 
     List <Post> specPost(String postId);
 

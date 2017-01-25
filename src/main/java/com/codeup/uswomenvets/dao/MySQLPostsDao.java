@@ -26,7 +26,7 @@ public class MySQLPostsDao implements Posts {
     public List<Post> userPost(long user_id) {
         PreparedStatement stmt = null;
         try {
-            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.user_id = ?;");
+            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.user_id = ?;");
             stmt.setLong(1, user_id);
             ResultSet rs = stmt.executeQuery();
             return createPostsFromResults(rs);
@@ -39,7 +39,7 @@ public class MySQLPostsDao implements Posts {
         PreparedStatement stmt = null;
         int postID = Integer.valueOf(postId);
         try {
-            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;");
+            stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;");
             stmt.setLong(1, postID);
             ResultSet rs = stmt.executeQuery();
             return createPostsFromResults(rs);
@@ -99,7 +99,7 @@ public class MySQLPostsDao implements Posts {
 
     public void editPost(Post newPost) {
         int columnIndex = 1;
-        String query = "UPDATE posts";
+        String query = "UPDATE posts SET";
         boolean validExecute = false;
         int validQueryIndex = 0;
         DaoFactory.getPostsDao().specPost(Integer.toString(newPost.getId()));
@@ -132,7 +132,7 @@ public class MySQLPostsDao implements Posts {
             if (validExecute) {
                 query += " WHERE id = ?;";
                 PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-                for (int i =0; i < 2; i++) {
+                for (int i = 0; i < 2; i++) {
                     if (newPostInfo[i] != null && newPostInfo[i].trim() != "" && !(newPostInfo[i].trim().equals(oldPostInfo[i].trim()))) {
                         stmt.setString(columnIndex, newPostInfo[i]);
                         columnIndex++;
@@ -167,7 +167,7 @@ public class MySQLPostsDao implements Posts {
         PreparedStatement stmt = null;
         try {
             if (q != null) {
-                String selectQuery = "SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id WHERE title LIKE ? OR description LIKE ? OR users.user_name LIKE ? OR timestamp LIKE ?";
+                String selectQuery = "SELECT posts.* , users.user_name, category.category, category_post.category_id FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id WHERE title LIKE ? OR description LIKE ? OR users.user_name LIKE ? OR timestamp LIKE ?";
                 stmt = connection.prepareStatement(selectQuery, Statement.RETURN_GENERATED_KEYS);
                 String qa = "%" + q + "%";
                 stmt.setString(1, qa);
@@ -179,7 +179,7 @@ public class MySQLPostsDao implements Posts {
                 ResultSet rs = stmt.executeQuery();
                 return createPostsFromResults(rs);
             } else {
-                stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id;");
+                stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id;");
                 ResultSet rs = stmt.executeQuery();
                 return createPostsFromResults(rs);
             }

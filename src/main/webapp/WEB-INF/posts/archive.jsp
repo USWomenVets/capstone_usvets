@@ -30,9 +30,9 @@
                 <c:forEach var="post" items="${posts}">
                 <div class="archive_post container">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
-                                <p class="post_para">${post.title}</p>
-                                <p class="post_para">${post.postDate}</p>
-                                <p class="post_para">${post.userId}</p>
+                                <p class="post_para">${post.getTitle()}</p>
+                                <p class="post_para">${post.getPostDate()}</p>
+                                <p class="post_para">${post.getUsername()}</p>
                             </a>
                     </div>
                 </c:forEach>

@@ -18,11 +18,11 @@
                 <form action="/edit" method="POST">
                     <c:forEach var="post" items="${posts}">
                         <label>Select Menu
-                            <select name="category">
-                                <option value="1">General</option>
-                                <option value="2">Events</option>
-                                <option value="3">Employment</option>
-                                <option value="4">Wellness</option>
+                            <select name="category" id="selCategory">
+                                <option value="1" selected="">General</option>
+                                <option value="2" selected="">Events</option>
+                                <option value="3" selected="">Employment</option>
+                                <option value="4" selected="">Wellness</option>
                             </select>
                         </label>
                         <label for="title">Title</label>
@@ -31,16 +31,24 @@
                         <label for="content">Content</label>
                         <textarea id="content" name="content">${post.getContent()}</textarea>
                         <button class="resources button" type="submit" name="id" value="${post.getId()}">Post!</button>
+                        <script>
+                            var temp = "${post.getCategory()}";
+                            var mySelect = document.getElementById('selCategory');
+
+                            for(var i, j = 0; i = mySelect.options[j]; j++) {
+                                if(i.value == temp) {
+                                    mySelect.selectedIndex = j;
+                                    break;
+                                }
+                            }
+                        </script>
                     </c:forEach>
                 </form>
             </div>
         </section>
-
-
-
-
     </div>
 </div>
+
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>

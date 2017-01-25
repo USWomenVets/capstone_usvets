@@ -29,12 +29,15 @@ public class EditServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User user = (User) request.getSession().getAttribute("user");
         String title = request.getParameter("title");
-        String content = request.getParameter("title");
+        String content = request.getParameter("content");
         int category = Integer.parseInt(request.getParameter("category"));
         int postId = Integer.parseInt(request.getParameter("id"));
 
         Post post = new Post(user.getId(), postId, title, content, category);
         DaoFactory.getPostsDao().editPost(post);
+        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(Integer.toString(post.getId())));
+        request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
+
 
 
     }

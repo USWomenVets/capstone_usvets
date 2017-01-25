@@ -162,11 +162,14 @@ footer hr{
 /* **************************************************************************
 MEDIA QUERIES
 ************************************************************************** */
-@media(max-width: 702px){
-    .nav-desktop{
+@media(max-width: 844px){
+    .nav-desktop
+    {
         display: none;
     }
-    .hero{
+}
+@media (min-width: 844px) {
+    .title-bar{
         display: none;
     }
 }

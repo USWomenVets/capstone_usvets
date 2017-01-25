@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Created by Calcious on 1/18/17.
  */
-@WebServlet(name = "EditServlet", urlPatterns = "/edit")
+@WebServlet(name = "EditServlet", urlPatterns = "/posts/edit")
 public class EditServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (request.getSession().getAttribute("user") == null) {

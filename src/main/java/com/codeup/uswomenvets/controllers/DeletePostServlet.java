@@ -18,10 +18,10 @@ import java.io.IOException;
 @WebServlet(name = "controllers.DeletePostServlet", urlPatterns = "/delete")
 public class DeletePostServlet extends HttpServlet{
     User user;
-    Post post;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         user = (User) request.getSession().getAttribute("user");
         int id = Integer.parseInt(request.getParameter("id"));
+        request.setAttribute("id", id);
         Post post = DaoFactory.getPostsDao().specPost(id);
 
         if (user == null) {
@@ -30,6 +30,8 @@ public class DeletePostServlet extends HttpServlet{
         }
         if (user.getId() != post.getUserId()) {
             request.getSession().setAttribute("errorMessage", "You do not have the permissions to delete this post");
+            response.sendRedirect("/show");
+
         } else {
             if (DaoFactory.getPostsDao().deletePost(post)) {
                 request.getSession().setAttribute("successMessage", "Your post has been successfully deleted.");

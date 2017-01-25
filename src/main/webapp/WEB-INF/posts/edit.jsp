@@ -17,19 +17,38 @@
                 <h1>Update</h1>
                 <form action="/posts/edit" method="POST">
                     <c:forEach var="post" items="${posts}">
-                        <h3>${post.title}</h3>
-                        <h4>${post.getPostDate}</h4>
-                        <p>${post.content}</p>
+                        <h3>${post.getTitle()}</h3>
+                        <h4>${post.getPostDate()}</h4>
+                        <p>${post.getContent()}</p>
                         <h3>${post.getUsername()}</h3>
                         <div class="form-group">
+                            <label>Select Menu
+                                <select name="category" id="selCategory">
+                                    <option value="1" selected="">General</option>
+                                    <option value="2" selected="">Events</option>
+                                    <option value="3" selected="">Employment</option>
+                                    <option value="4" selected="">Wellness</option>
+                                </select>
+                            </label>
                             <label for="title">Title</label>
-                            <input id="title" name="title" class="form-control" type="text">
+                            <input id="title" name="title" class="form-control" type="text" value="${post.getTitle()}">
                         </div>
                         <div class="form-group">
                             <label for="content">Content</label>
-                            <textarea id="content" name="content" class="form-control"></textarea>
+                            <textarea id="content" name="content" class="form-control">${post.getContent()}</textarea>
                         </div>
                         <button type="submit" class="btn btn-block btn-primary" name="id" value=${post.getId()}>Submit</button>
+                        <script>
+                            var temp = "${post.getCategory()}";
+                            var mySelect = document.getElementById('selCategory');
+
+                            for(var i, j = 0; i = mySelect.options[j]; j++) {
+                                if(i.value == temp) {
+                                    mySelect.selectedIndex = j;
+                                    break;
+                                }
+                            }
+                        </script>
                     </c:forEach>
                 </form>
                 </div>

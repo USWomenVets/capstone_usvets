@@ -34,6 +34,9 @@
                                 <p class="post_para">${post.title}</p>
                                 <p class="post_para">${post.username}</p>
                                 <p class="post_para">${post.postDate}</p>
+                                <p class="post_para">Views: ${post.views}</p>
+                                <p class="post_para">Views: ${post.views}</p>
+                                <p class="post_para">Views: ${post.views}</p>
                             </a>
                     </div>
                 </c:forEach>

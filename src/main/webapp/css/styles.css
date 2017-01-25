@@ -215,9 +215,53 @@ HOVER EFFECTS
 }
 
 /* **************************************************************************
+ARCHIVE DIV FIELDS
+************************************************************************** */
+
+#username_arch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#date_arch{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+#category_arch{
+    text-align: left;
+    text-transform: uppercase;
+}
+#title_arch{
+    text-align: center;
+    text-transform: capitalize;
+}
+#content_arch{
+    text-align: center;
+    text-transform: capitalize;
+}
+.truncate {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* **************************************************************************
 CUSTOM
 ************************************************************************** */
 
+.sort_title{
+    text-align: center;
+}
+#sorting_buttons{
+    text-align: center;
+    margin: 20px;
+}
 
 #file_format{
     width: 17%;
@@ -255,15 +299,6 @@ CUSTOM
 }
 .show{
     text-align: left;
-}
-.breadcrumbs{
-    text-align: center;
-    color: #E80C6E;
-}
-.breadcrumbs > li{
-    font-size: 1em;
-    color: black;
-    font-weight: bold;
 }
 .show_sort{
     text-align: center;

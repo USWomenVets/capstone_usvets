@@ -18,21 +18,9 @@
         <h1 id="greeting"> ${sessionScope.user.username}!</h1>
         <div>
             <div class="row">
-                <!-- left column -->
-                <div>
-                    <div>
-                        <div><img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
-                        </div>
-                        <h6>Upload a different photo</h6>
-
-                        <div id="photo" class="text-center"><input class="form-control" id="file_format" type="file"></div>
-                    </div>
-                </div>
-
                 <!-- edit form column -->
                 <div class="personal-info text-center">
                     <h3 class="text-center">Personal info</h3>
-                    <hr>
                     <form action="/profile" class="form-horizontal" method="post">
 
                         <div class="row">

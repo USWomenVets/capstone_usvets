@@ -10,11 +10,17 @@ public interface Posts {
     // insert a new post and return the new post's id
     int insert(Post post);
 
-    void editPost(Post newPost);
+    boolean editPost(Post newPost);
+
+    boolean deletePost(Post post);
 
     List <Post> userPost(long userId);
 
     List <Post> specPost(String postId);
+
+    Post specPost(int postId);
+
+    Post extractPost(int postId);
 
     //void editPost(Post post);
 }

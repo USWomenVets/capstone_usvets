@@ -32,9 +32,9 @@
                             <h4>${post.getUsername()}</h4>
                             <c:choose>
                                 <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
-                                    <button href="/comment" class="resources button">Comment</button>
+                                    <a href="/comment/create" class="resources button">Comment</a>
                                     <button href="/edit" id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
-                                    <button class="resources button">Delete</button>
+                                    <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button">Delete</a>
                                     <button class="resources button">Upvote</button>
                                     <button class="resources button">Downvote</button>
                                 </c:when>

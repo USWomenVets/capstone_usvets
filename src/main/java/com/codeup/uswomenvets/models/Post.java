@@ -7,13 +7,27 @@ public class Post {
     private int views;
     private int likes;
     private int commentCount;
+    private int isDeleted;
     private String stringCategory;
     private String title;
     private String content;
     private String postDate;
     private String username;
 
-
+    public Post() {
+        this.id = 0;
+        this.userId = 0;
+        this.category = 1;
+        this.views = 0;
+        this.likes = 0;
+        this.commentCount = 0;
+        this.isDeleted = 1;
+        this.title = "This post does not exist";
+        this.content = "I apologize, but this post no longer exists. The post has either been deleted.";
+        this.postDate = "";
+        this.username = "System";
+        this.stringCategory = "";
+    }
     public Post(long userId, int category, String title, String content) {
         this.userId = userId;
         this.title = title;
@@ -21,7 +35,7 @@ public class Post {
         this.content = content;
     }
 
-    public Post(int id, long userId, String title, String content, String postDate, String username, String stringCategory,int category, int views, int likes, int commentCount) {
+    public Post(int id, long userId, String title, String content, String postDate, String username, String stringCategory,int category, int views, int likes, int commentCount, int isDeleted) {
         this.id = id;
         this.userId = userId;
         this.title = title;
@@ -33,7 +47,7 @@ public class Post {
         this.views = views;
         this.likes = likes;
         this.commentCount = commentCount;
-
+        this.isDeleted = isDeleted;
     }
 
     public Post(long userId, int id, String title, String content, int category) {
@@ -73,6 +87,10 @@ public class Post {
     public int getCommentCount() { return commentCount; }
 
     public void setCommentCount(int commentCount) { this.commentCount = commentCount; }
+
+    public int getIsDeleted() { return isDeleted; }
+
+    public void setIsDeleted(int isDeleted) { this.isDeleted = isDeleted; }
 
     public String getStringCategory() { return stringCategory; }
 

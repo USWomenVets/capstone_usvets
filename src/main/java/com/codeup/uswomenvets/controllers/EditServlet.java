@@ -34,9 +34,13 @@ public class EditServlet extends HttpServlet {
         int postId = Integer.parseInt(request.getParameter("id"));
 
         Post post = new Post(user.getId(), postId, title, content, category);
-        DaoFactory.getPostsDao().editPost(post);
-        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(Integer.toString(post.getId())));
-        request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
+        if (DaoFactory.getPostsDao().editPost(post)) {
+            request.setAttribute("posts", DaoFactory.getPostsDao().specPost(Integer.toString(post.getId())));
+            request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
+        } else {
+            request.getSession().setAttribute("failureMessage", "You post was not able to be changed.");
+        }
+
 
 
 

@@ -18,8 +18,9 @@
             <a href="http://www.facebook.com/justin.armer.52" target="_blank">Facebook</a>
             <a href="http://www.twitter.com/ausgrave" target="_blank">Twitter</a>
             <a href="https://www.github.com/calcious" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/groups/12028850" target="_blank">LinkedIn</a>
         </div>
         <br>
-        <a href="/index">@Copyright 2017 Team Allies</a>
+        <a href="/index">&#xA9;Copyright 2017 Team Allies</a>
     </div>
 </footer>

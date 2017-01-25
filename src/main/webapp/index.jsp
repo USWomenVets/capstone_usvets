@@ -16,7 +16,7 @@
             <!--Hero Section-->
             <section class="hero">
                 <div class="wrap">
-                    <h1>Welcome to USWOMENVETS!</h1>
+                    <h1>Welcome to US!</h1>
                     <p>Catchy tagline goes here!</p>
                 </div>
             </section>

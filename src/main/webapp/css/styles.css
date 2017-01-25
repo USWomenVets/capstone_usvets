@@ -142,7 +142,6 @@ footer{
     margin-top: 120px;
     font-weight: bold;
 }
-
 footer a{
     display: block;
     color: rgba(255, 255, 255, 0.8);
@@ -176,6 +175,50 @@ MEDIA QUERIES
 SOCIAL MEDIA
 ************************************************************************** */
 
+
+/* **************************************************************************
+HOVER EFFECTS
+************************************************************************** */
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* **************************************************************************
+CUSTOM
+************************************************************************** */
+
+
 #file_format{
     width: 17%;
 }
@@ -199,11 +242,8 @@ SOCIAL MEDIA
     display: inline-block;
     width: 355px;
 }
-.archive_post_button{
-    background-color: #E80C6E;
-    width: 355px;
-    margin: 30px;
-    text-align: center;
+.archive_post:hover{
+
 }
 .show_anchor{
     color: black;
@@ -224,14 +264,8 @@ SOCIAL MEDIA
     font-size: 1em;
     color: black;
     font-weight: bold;
-               }
-.show_sort{
-    text-align: center;
 }
-#archive_post_form{
-    background-color: floralwhite;
-    width: 255px;
-    margin: 50px;
+.show_sort{
     text-align: center;
 }
 .locator{
@@ -239,5 +273,7 @@ SOCIAL MEDIA
     padding: 80px 0;
 }
 .post_para{
-    color: black;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
 }

@@ -8,38 +8,37 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 30.2672, lng: 97.7431},
-        zoom: 11
+        zoom: 10
     });
     var infoWindow = new google.maps.InfoWindow({map: map});
 
-    // HTML5 geolocation.
+    // HTML5 geolocation
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
+        navigator.geolocation.getCurrentPosition(function (position) {
             var pos = {
                 lat: position.coords.latitude,
-                lng: position.coords.longitude
+                lng: position.coords.longitude,
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('You are here');
+            infoWindow.setContent('<strong>You are here</strong>');
             map.setCenter(pos);
 
             var service = new google.maps.places.PlacesService(map);
-
             service.textSearch({
                 location: new google.maps.LatLng(pos.lat, pos.lng),
                 radius: 48000,
                 query: "veteran facilities",
                 types: ['hospital']
-            }, function(results, status){
-                if (status === google.maps.places.PlacesServiceStatus.OK){
-                    for (var i =0; i < results.length; i++) {
-                        createMarker(results[i]);
+            }, function (results, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    for (var i = 0; i < results.length; i++) {
+                        createMarker(results[i], service);
 
                     }
                 }
             });
-        }, function() {
+        }, function () {
             handleLocationError(true, infoWindow, map.getCenter());
         });
     } else {
@@ -48,14 +47,53 @@ function initMap() {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
     }
-    function createMarker(place) {
+    function createMarker(place, service) {
         var marker = new google.maps.Marker({
             map: map,
             position: place.geometry.location,
-            id: place.place_id
+            id: place.place_id,
+            animation: google.maps.Animation.DROP
+
+        });
+        var request = {
+
+            reference: place.reference
+
+        };
+
+// --------------------------- INFOWINDOWS ---------------------------
+
+        google.maps.event.addListener(marker, 'click', function () {
+
+            service.getDetails(request, function (place, status) {
+
+                if (status == google.maps.places.PlacesServiceStatus.OK) {
+                    var infowindow = new google.maps.InfoWindow({map: map});
+
+                    var contentStr = '<div>';
+
+
+                    // Name of Veteran Facility
+
+                    contentStr += '<strong>' + place.name + '</strong>';
+
+                    // Address of Veteran Facility
+
+                    contentStr += (place.vicinity) ? '<br>' + place.vicinity : "<br><em>No Address Provided</em>";
+
+
+                    contentStr += '</div>';
+
+                    infowindow.setContent(contentStr);
+
+                    infowindow.open(map, marker);
+                }
+
+            });
+
         });
     }
-     }
+}
 
     function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);

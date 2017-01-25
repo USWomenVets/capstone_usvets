@@ -30,7 +30,7 @@
                         <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
                         <label for="content">Content</label>
                         <textarea id="content" name="content">${post.getContent()}</textarea>
-                        <button class="resources button" type="submit" name="id" value="${post.getId()}">Post!</button>
+                        <button class="resources button" type="submit" name="id" value="${post.getId()}">Edit!</button>
                         <script>
                             var temp = "${post.getCategory()}";
                             var mySelect = document.getElementById('selCategory');

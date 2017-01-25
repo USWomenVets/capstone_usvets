@@ -21,14 +21,15 @@ public class Post {
         this.content = content;
     }
 
-    public Post(int id, long userId, String title, String content, String postDate, String username, String category, int views, int likes, int commentCount) {
+    public Post(int id, long userId, String title, String content, String postDate, String username, String stringCategory,int category, int views, int likes, int commentCount) {
         this.id = id;
         this.userId = userId;
         this.title = title;
         this.content = content;
         this.postDate = postDate;
         this.username = username;
-        this.stringCategory = category;
+        this.stringCategory = stringCategory;
+        this.category = category;
         this.views = views;
         this.likes = likes;
         this.commentCount = commentCount;

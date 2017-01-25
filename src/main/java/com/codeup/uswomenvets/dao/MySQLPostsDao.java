@@ -56,6 +56,7 @@ public class MySQLPostsDao implements Posts {
                 rs.getString("post_date"),
                 rs.getString("user_name"),
                 rs.getString("category"),
+                rs.getInt("category_id"),
                 rs.getInt("views"),
                 rs.getInt("likes"),
                 rs.getInt("comment_count")
@@ -64,10 +65,11 @@ public class MySQLPostsDao implements Posts {
     private Post extractPost(int postId) {
         try {
 
-            String extractQuery = "SELECT posts.* , users.user_name, category.category FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;";
+            String extractQuery = "SELECT posts.* , users.user_name, category.category, category_post.category_id FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.id = ?;";
             PreparedStatement stmt = connection.prepareStatement(extractQuery);
             stmt.setInt(1, postId);
             ResultSet rs = stmt.executeQuery();
+            rs.next();
             return new Post(
                     rs.getInt("id"),
                     rs.getLong("user_id"),
@@ -76,6 +78,7 @@ public class MySQLPostsDao implements Posts {
                     rs.getString("post_date"),
                     rs.getString("user_name"),
                     rs.getString("category"),
+                    rs.getInt("category_id"),
                     rs.getInt("views"),
                     rs.getInt("likes"),
                     rs.getInt("comment_count")
@@ -98,7 +101,6 @@ public class MySQLPostsDao implements Posts {
         int columnIndex = 1;
         String query = "UPDATE posts";
         boolean validExecute = false;
-        boolean isCatValid = false;
         int validQueryIndex = 0;
         DaoFactory.getPostsDao().specPost(Integer.toString(newPost.getId()));
         Post oldPost = extractPost(newPost.getId());
@@ -125,10 +127,6 @@ public class MySQLPostsDao implements Posts {
                 validQueryIndex++;
             }
         }
-        if (newPost.getCategory() != oldPost.getCategory()) {
-            query += " category = ?";
-            isCatValid = true;
-        }
         try {
 
             if (validExecute) {
@@ -140,15 +138,23 @@ public class MySQLPostsDao implements Posts {
                         columnIndex++;
                     }
                 }
-                if (isCatValid) {
-                    stmt.setInt(columnIndex, newPost.getCategory());
-                    columnIndex++;
-                }
+
                 stmt.setInt(columnIndex, newPost.getId());
                 stmt.executeUpdate();
             }
         } catch (SQLException e) {
             throw new RuntimeException("unable to edit post", e);
+        }
+        try {
+            if (newPost.getCategory() != oldPost.getCategory()) {
+                String catQuery = "UPDATE category_post SET category_id = ? WHERE post_id = ?;";
+                PreparedStatement stmt = connection.prepareStatement(catQuery, Statement.RETURN_GENERATED_KEYS);
+                stmt.setInt(1, newPost.getCategory());
+                stmt.setInt(2, newPost.getId());
+                stmt.executeUpdate();
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException("unable to update category", e);
         }
 
 

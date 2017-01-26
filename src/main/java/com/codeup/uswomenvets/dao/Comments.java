@@ -16,4 +16,5 @@ public interface Comments {
 
     boolean deleteComment(Comment comment);
 
+    Comment specComment(int id);
 }

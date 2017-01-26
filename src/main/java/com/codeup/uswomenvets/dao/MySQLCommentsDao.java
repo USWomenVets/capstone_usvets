@@ -52,16 +52,15 @@ public class MySQLCommentsDao implements Comments{
             stmt.setInt(1, comment.getId());
             stmt.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException("there was an error removing comment", e);
+            return false;
         }
-
         return true;
     }
 
     @Override
     public List<Comment> all(Post post) {
         try {
-            String selectQuery = "SELECT comments.*  FROM comments WHERE comments.post_id = ?";
+            String selectQuery = "SELECT comments.*, users.user_name FROM comments JOIN users ON users.id = comments.user_id WHERE comments.post_id = ?;";
             PreparedStatement stmt = connection.prepareStatement(selectQuery, java.sql.Statement.RETURN_GENERATED_KEYS);
             stmt.setInt(1, post.getId());
             ResultSet rs = stmt.executeQuery();
@@ -69,6 +68,20 @@ public class MySQLCommentsDao implements Comments{
 
         } catch (SQLException e) {
             throw new RuntimeException("error pulling comments for post", e);
+        }
+    }
+    @Override
+    public Comment specComment(int id) {
+        try {
+            String specQuery = "SELECT comments.*, users.user_name FROM comments JOIN users ON users.id = comments.user_id WHERE comments.id = ?;";
+            PreparedStatement stmt = connection.prepareStatement(specQuery, java.sql.Statement.RETURN_GENERATED_KEYS);
+            stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+            rs.next();
+            return extractComments(rs);
+
+        } catch (SQLException e) {
+            throw new RuntimeException("error retrieving comment", e);
         }
     }
     private List<Comment> createCommentsFromResults(ResultSet rs) throws SQLException {
@@ -83,6 +96,7 @@ public class MySQLCommentsDao implements Comments{
         }
         return comments;
     }
+
     private Comment extractComments(ResultSet rs) throws SQLException{
         return new Comment(
                 rs.getInt("id"),
@@ -90,7 +104,8 @@ public class MySQLCommentsDao implements Comments{
                 rs.getInt("post_id"),
                 rs.getInt("is_deleted"),
                 rs.getString("comment"),
-                rs.getString("timestamp")
+                rs.getString("timestamp"),
+                rs.getString("user_name")
         );
     }
 

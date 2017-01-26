@@ -237,6 +237,11 @@ INSERT INTO category (category) VALUE  ("events");
 INSERT INTO category (category) VALUE  ("employment");
 INSERT INTO category (category) VALUE  ("wellness");
 INSERT INTO category_post(post_id, category_id) VALUES ('1', '1');
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 1, "this is a comment on this post providing discussion");
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 2, "I completely dissagree, you are wrong");
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 1, "your incompetent");
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 2, " ''You're'' ");
+
 
 
 

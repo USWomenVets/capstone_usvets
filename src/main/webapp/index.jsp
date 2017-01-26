@@ -14,56 +14,37 @@
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
             <!--Hero Section-->
-            <section class="hero">
-                <div class="wrap">
-                    <h1>Welcome to US!</h1>
-                    <p>A Rally Point for US</p>
-                </div>
+            <section class="hero text-center">
+                    <h1>A Rally Point for</h1>
+                    <img src="/img/USWV-Logo.png">
+
             </section>
 
-        <section class="homepage-links">
-            <div class="medium-6">
-                <p>testestsetsetsetsatetasdfsdf</p>
-
-            </div>
-        </section>
-
-        <section class="main">
-            <div class="wrap">
-                <div class="container">
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
+        <div class="about medium-up-1 large-up-2">
+            <div class="row">
+                <div class="medium-6 columns text-center">
+                    <h4>Talk With US</h4>
+                    <hr>
+                    <p>A discussion board</p>
+                </div>
+                <div class="medium-6 columns text-center">
+                    <h4>Social Media</h4>
+                    <hr>
+                    <div class="row" id="icons">
+                        <div class="small-4 columns">
+                            <a href="https://twitter.com/USWomenVets" target="_blank" class="fi-social-twitter"></a>
                         </div>
-                        <div class="media-object-section">
-                            <h4>Dreams feel real while we're in them.</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know.</p>
+                        <div class="small-4 columns">
+                            <a href="https://www.linkedin.com/groups/12028850" target="_blank"
+                               class="fi-social-linkedin"></a>
                         </div>
-                    </div>
-                    <br>
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <h4>Dreams feel real while we're in them.</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know.</p>
-                        </div>
-                        <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="media-object">
-                        <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
-                        </div>
-                        <div class="media-object-section">
-                            <h4>Dreams feel real while we're in them.</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know.</p>
+                        <div class="small-4 columns">
+                            <a href="https://www.facebook.com/groups/222014964872906/" target="_blank"
+                               class="fi-social-facebook"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
 
 
 </div>

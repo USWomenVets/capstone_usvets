@@ -12,6 +12,12 @@ public class Comment {
     private String postDate;
     private String username;
 
+    public Comment(int userId, int postId, String content) {
+        this.userId = userId;
+        this.postId = postId;
+        this.content = content;
+        this.postDate = postDate;
+    }
 
     public Comment(int id, int userId, int postId, int isDeleted, String content, String postDate) {
         this.id = id;

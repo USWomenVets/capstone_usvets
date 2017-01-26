@@ -7,10 +7,7 @@
         <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
     <style>
-        #map {
-            height: 400px;
-            width: 600px;
-        }
+
     </style>
 </head>
 <body>
@@ -19,30 +16,36 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
         <section class="main">
-            <div class="wrap">
-                <div class="container row">
-                    <h2><strong>Resource Locator</strong></h2>
-                </div>
+            <div>
+                <%--<div class="container">--%>
+                    <%----%>
+                <%--</div>--%>
                 <div>
+                    <h2 class="locator_heading" id="map_head"><strong>Resource Locator</strong></h2>
                     <div id="map"></div>
                 </div>
             </div>
         </section>
 
-        <section class="locator">
+        <section class="locator" id="locator_heading">
             <div class="wrap">
                 <div class="container">
-                    <div class="media-object">
+
+                    <div class="media-object locator_heading">
+                        <a href="#">
                         <div class="media-object-section">
                             <img src= "http://placeimg.com/200/200/people">
                         </div>
+
                         <div class="media-object-section">
                             <h4>Dreams feel real while we're in them.</h4>
                             <p>I'm going to improvise. Listen, there's something you should know.</p>
                         </div>
+                        </a>
                     </div>
                     <br>
-                    <div class="media-object">
+                    <div class="media-object locator_heading">
+                        <a href="#">
                         <div class="media-object-section">
                             <h4>Dreams feel real while we're in them.</h4>
                             <p>I'm going to improvise. Listen, there's something you should know.</p>
@@ -50,9 +53,11 @@
                         <div class="media-object-section">
                             <img src= "http://placeimg.com/200/200/people">
                         </div>
+                        </a>
                     </div>
                     <br>
-                    <div class="media-object">
+                    <div class="media-object locator_heading">
+                        <a href="#">
                         <div class="media-object-section">
                             <img src= "http://placeimg.com/200/200/people">
                         </div>
@@ -60,6 +65,7 @@
                             <h4>Dreams feel real while we're in them.</h4>
                             <p>I'm going to improvise. Listen, there's something you should know.</p>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@
             <div class="show">
                 <form action="/posts/edit">
                     <c:forEach var="post" items="${posts}">
-                        <div class="wrap">
+                        <div class="wrap form-text-color">
                             <h2>${post.getTitle()}</h2>
                             <h3>${post.getStringCategory()}</h3>
                             <h4>${post.getPostDate()}</h4>
@@ -30,12 +30,39 @@
                                     <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button">Delete</a>
                                 </c:when>
                                 <c:otherwise> <!--ANON USER-->
-                                    <a href="/login"><button class="resources button">Sign in comment</button></a>
+                                    <a href="/login"><button class="resources button">Sign in to comment</button></a>
                                 </c:otherwise>
                             </c:choose>
                         </div>
                     </c:forEach>
                 </form>
+                <br>
+                <hr class="hr_comment">
+                <br>
+                <hr class="hr_comment">
+                <div class="row wrap">
+                    <form action="/posts/edit">
+                        <c:forEach var="post" items="${posts}">
+                            <div class="wrap form-text-color">
+                                <h2>${post.getTitle()}</h2>
+                                <h3>${post.getStringCategory()}</h3>
+                                <h4>${post.getPostDate()}</h4>
+                                <p>${post.getContent()}</p>
+                                <h4>${post.getUsername()}</h4>
+                                <c:choose>
+                                    <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
+                                        <a href="/comment/create" class="resources button">Comment</a>
+                                        <button id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
+                                        <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button">Delete</a>
+                                    </c:when>
+                                    <c:otherwise> <!--ANON USER-->
+                                        <a href="/login"><button class="resources button">Sign in to comment</button></a>
+                                    </c:otherwise>
+                                </c:choose>
+                            </div>
+                        </c:forEach>
+                    </form>
+                </div>
             </div>
         </section>
     </div>

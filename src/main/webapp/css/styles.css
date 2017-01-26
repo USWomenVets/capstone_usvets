@@ -6,7 +6,7 @@ GENERAL
 ************************************************************************** */
 
 *{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .wrap{
@@ -108,14 +108,19 @@ GENERAL
 HERO
 ************************************************************************** */
 .hero{
-    background-color: whitesmoke;
-    padding: 80px 0;
-    height: 400px;
-}
-.hero p{
-    width: 85%;
+    background: url("../img/women-veterans-air2.jpg") no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
+
+.hero h1{
+    size: 35em;
+    color: white;
+
+}
 
 /* **************************************************************************
 MAIN
@@ -139,7 +144,7 @@ FOOTER
 footer{
     background-color: #5AABC9;
     padding: 80px 0;
-    margin-top: 120px;
+    margin-top: 60px;
     font-weight: bold;
 }
 footer a{
@@ -162,11 +167,14 @@ footer hr{
 /* **************************************************************************
 MEDIA QUERIES
 ************************************************************************** */
-@media(max-width: 702px){
-    .nav-desktop{
+@media(max-width: 844px){
+    .nav-desktop
+    {
         display: none;
     }
-    .hero{
+}
+@media (min-width: 844px) {
+    .title-bar{
         display: none;
     }
 }
@@ -174,6 +182,12 @@ MEDIA QUERIES
 /* **************************************************************************
 SOCIAL MEDIA
 ************************************************************************** */
+
+.large{
+    font-size: 50px;
+    line-height: 50px;
+}
+
 
 
 /* **************************************************************************
@@ -224,7 +238,6 @@ ARCHIVE DIV FIELDS
     left: 0;
     text-align: left;
     text-transform: uppercase;
-    text-decoration: underline;
 }
 #date_arch{
     position: absolute;
@@ -280,14 +293,11 @@ CUSTOM
     width: 30%;
 }
 .archive_post{
-    background-color: #E80C6E;
+    background-color: #67AECA;
     text-align: center;
     margin: 30px;
     display: inline-block;
     width: 355px;
-}
-.archive_post:hover{
-
 }
 .show_anchor{
     color: black;
@@ -311,4 +321,7 @@ CUSTOM
     color: white;
     font-size: 1em;
     font-weight: bold;
+}
+.sorting_buttons{
+    background-color: #E52A6F;
 }

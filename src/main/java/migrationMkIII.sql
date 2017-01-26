@@ -64,6 +64,7 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`posts` (
   `views` INT NULL,
   `likes` INT NULL,
   `comment_count` INT NULL,
+  `is_deleted` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   INDEX `user_id_idx` (`user_id` ASC),
   CONSTRAINT `user_id`

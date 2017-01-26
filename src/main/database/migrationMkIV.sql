@@ -83,7 +83,8 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`comments` (
   `post_id` INT UNSIGNED NOT NULL,
   `user_id` INT UNSIGNED NOT NULL,
   `comment` VARCHAR(512) NOT NULL,
-  `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `timestamp` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_deleted` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   INDEX `post_id_idx` (`post_id` ASC),
   CONSTRAINT `post_id`

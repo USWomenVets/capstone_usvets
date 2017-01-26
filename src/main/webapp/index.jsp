@@ -42,10 +42,32 @@
         <div class="statistics text-center">
             <div class="row">
                 <h1>Did you know...</h1>
-
+            </div>
+            <div class="row">
+                <div class="small-3 columns text-center">
+                    <h4>Let's Talk</h4>
+                    <hr>
+                    <p>A discussion board for US to ask and give each other advice.</p>
+                </div>
+                <div class="small-3 columns text-center">
+                    <h4>Your VA</h4>
+                    <hr>
+                    <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+                </div>
+                <div class="small-3 columns text-center">
+                    <h4>Events</h4>
+                    <hr>
+                    <p>Find events and import events on your calendar.</p>
+                </div>
+                <div class="small-3 columns text-center">
+                    <h4>Events</h4>
+                    <hr>
+                    <p>Find events and import events on your calendar.</p>
+                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

@@ -112,7 +112,7 @@ HERO
     background-size: 100%;
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 80%;
 }
 
 
@@ -331,3 +331,10 @@ CUSTOM
     background-color: white;
 }
 
+.statistics{
+    background: url("../img/Springfield.jpeg") no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}

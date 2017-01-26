@@ -27,7 +27,6 @@
                         <hr>
                         <p>A discussion board for US to ask and give each other advice.</p>
                     </div>
-
                 </div>
                </a>
                 <a href="/locator">

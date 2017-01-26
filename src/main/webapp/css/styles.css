@@ -329,15 +329,13 @@ CUSTOM
 .sorting_buttons{
     background-color: #E52A6F;
 }
-.about .columns{
-    background-color: white;
-}
+
+
+
 
 .statistics{
     background: url("../img/Springfield.jpeg") no-repeat;
     background-size: 100%;
-    padding: 0;
-    margin: 0;
     height: 100%;
 }
 

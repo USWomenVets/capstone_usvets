@@ -110,16 +110,19 @@ HERO
 .hero{
     background: url("../img/women-veterans-air2.jpg") no-repeat;
     background-size: 100%;
-    padding: 0;
+    padding-bottom: 200px;
     margin: 0;
     height: 80%;
 }
 
+.hero .hero-logo{
+    height: 200px;
+    width: 200px;
+}
 
 .hero h1{
     size: 35em;
     color: white;
-
 }
 
 /* **************************************************************************
@@ -337,4 +340,12 @@ CUSTOM
     padding: 0;
     margin: 0;
     height: 100%;
+}
+.circle{
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+    margin: 80px;
+    border-radius: 50%;
+
 }

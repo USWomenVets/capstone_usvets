@@ -17,7 +17,7 @@
                 <h1>A Rally Point for</h1>
             </div>
             <div class="hero-logo">
-                <img src="/img/USWV-Logo.png">
+                <img src="/img/USLogo.png">
             </div>
         </section>
         <div class="about medium-up-1 large-up-2">
@@ -45,24 +45,25 @@
             </div>
             <div class="row">
                 <div class="small-3 columns text-center">
-                    <h4>Let's Talk</h4>
+                    <h4>1st STAT</h4>
                     <hr>
-                    <p>A discussion board for US to ask and give each other advice.</p>
+                    <div class="circle"></div>
                 </div>
                 <div class="small-3 columns text-center">
-                    <h4>Your VA</h4>
+                    <h4>1st STAT</h4>
                     <hr>
-                    <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+                    <div class="circle"></div>
                 </div>
                 <div class="small-3 columns text-center">
-                    <h4>Events</h4>
+                    <h4>1st STAT</h4>
                     <hr>
-                    <p>Find events and import events on your calendar.</p>
+
+                    <div class="circle"></div>
                 </div>
                 <div class="small-3 columns text-center">
-                    <h4>Events</h4>
+                    <h4>1st STAT</h4>
                     <hr>
-                    <p>Find events and import events on your calendar.</p>
+                    <div class="circle"></div>
                 </div>
             </div>
         </div>

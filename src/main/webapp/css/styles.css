@@ -111,8 +111,8 @@ HERO
     background: url("../img/women-veterans-air2.jpg") no-repeat;
     background-size: 100%;
     padding-bottom: 30%;
-    margin: 0;
     height: 80%;
+    margin-bottom: 5%;
 }
 
 .hero img{

@@ -20,30 +20,34 @@
         </section>
         <div class="about medium-up-1 large-up-2">
             <div class="row">
+               <a href="/archive">
                 <div class="medium-4 columns text-center">
                     <div class="callout">
                         <h4>Let's Talk</h4>
                         <hr>
                         <p>A discussion board for US to ask and give each other advice.</p>
-                        <a href="#">It's dangerous to go alone, take this.</a>
                     </div>
+
                 </div>
+               </a>
+                <a href="/locator">
                 <div class="medium-4 columns text-center">
                     <div class="callout">
                         <h4>Your VA</h4>
                         <hr>
                         <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
-                        <a href="#">It's dangerous to go alone, take this.</a>
                     </div>
                 </div>
+                </a>
+                <a href="/events">
                 <div class="medium-4 columns text-center">
                     <div class="callout">
                         <h4>Events</h4>
                         <hr>
                         <p>Find events and import events on your calendar.</p>
-                        <a href="#">It's dangerous to go alone, take this.</a>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
         <div class="statistics text-center">

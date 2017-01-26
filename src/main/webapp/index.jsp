@@ -13,9 +13,7 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <div class="headline">
-                <h1>A Rally Point for</h1>
-            </div>
+                <h1 class="large-12 columns">A Rally Point for</h1>
             <div class="hero-logo">
                 <img src="/img/USLogo.png">
             </div>
@@ -44,23 +42,23 @@
                 <h1>Did you know...</h1>
             </div>
             <div class="row">
-                <div class="small-3 columns text-center">
+                <div class="small-10 medium-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
                     <div class="circle"></div>
                 </div>
-                <div class="small-3 columns text-center">
+                <div class="small-10 medium-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
                     <div class="circle"></div>
                 </div>
-                <div class="small-3 columns text-center">
+                <div class="small-10 medium-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
 
                     <div class="circle"></div>
                 </div>
-                <div class="small-3 columns text-center">
+                <div class="small-10 medium-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
                     <div class="circle"></div>

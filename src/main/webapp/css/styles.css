@@ -330,3 +330,7 @@ CUSTOM
 #map_head{
     text-align: center;
 }
+input{
+    border: none;
+    background-color: transparent;
+}

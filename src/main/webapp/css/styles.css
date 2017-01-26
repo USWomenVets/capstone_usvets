@@ -317,3 +317,8 @@ CUSTOM
     font-size: 1em;
     font-weight: bold;
 }
+
+.about .columns{
+    background-color: white;
+}
+

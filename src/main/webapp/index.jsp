@@ -12,7 +12,6 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-
         <!--Hero Section-->
         <section class="hero text-center">
             <div class="headline">
@@ -22,7 +21,6 @@
                 <img src="/img/USWV-Logo.png">
             </div>
         </section>
-
         <div class="about medium-up-1 large-up-2">
             <div class="row">
                 <div class="medium-4 columns text-center">
@@ -41,12 +39,17 @@
                     <p>Find events and import events on your calendar.</p>
                 </div>
             </div>
+        </div>
+        <div class="statistics text-center">
+            <div class="row">
+                <h1>Did you know...</h1>
 
+            </div>
         </div>
     </div>
-    </div>
+</div>
 
-    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
-    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
+<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

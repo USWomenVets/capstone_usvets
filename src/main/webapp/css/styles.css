@@ -340,11 +340,13 @@ CUSTOM
     margin: 0;
     height: 100%;
 }
+
 .circle{
-    border: 5px solid white;
-    width: 200px;
-    height: 200px;
-    margin: 80px;
+    border: 5px solid darkred;
+    height: 12em;
+    width: 12em;
+    margin: 22%;
     border-radius: 50%;
 
 }
+

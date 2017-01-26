@@ -13,7 +13,7 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-                <h1 class="large-12 columns">A Rally Point for</h1>
+            <h1 class="large-12 columns">A Rally Point for</h1>
             <div class="hero-logo">
                 <img src="/img/USLogo.png">
             </div>
@@ -21,19 +21,28 @@
         <div class="about medium-up-1 large-up-2">
             <div class="row">
                 <div class="medium-4 columns text-center">
-                    <h4>Let's Talk</h4>
-                    <hr>
-                    <p>A discussion board for US to ask and give each other advice.</p>
+                    <div class="callout">
+                        <h4>Let's Talk</h4>
+                        <hr>
+                        <p>A discussion board for US to ask and give each other advice.</p>
+                        <a href="#">It's dangerous to go alone, take this.</a>
+                    </div>
                 </div>
                 <div class="medium-4 columns text-center">
-                    <h4>Your VA</h4>
-                    <hr>
-                    <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+                    <div class="callout">
+                        <h4>Your VA</h4>
+                        <hr>
+                        <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+                        <a href="#">It's dangerous to go alone, take this.</a>
+                    </div>
                 </div>
                 <div class="medium-4 columns text-center">
-                    <h4>Events</h4>
-                    <hr>
-                    <p>Find events and import events on your calendar.</p>
+                    <div class="callout">
+                        <h4>Events</h4>
+                        <hr>
+                        <p>Find events and import events on your calendar.</p>
+                        <a href="#">It's dangerous to go alone, take this.</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +56,7 @@
                     <hr>
                     <div class="circle"></div>
                 </div>
-                <div class="small-12 medium-6 large--3 columns text-center">
+                <div class="small-12 medium-6 large-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
                     <div class="circle"></div>

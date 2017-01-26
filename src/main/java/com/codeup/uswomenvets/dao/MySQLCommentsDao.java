@@ -35,11 +35,11 @@ public class MySQLCommentsDao implements Comments{
             String insertQuery = "INSERT INTO comments(post_id, user_id, comment) VALUES(?, ?, ?);";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
             stmt.setInt(1, post.getId());
-            stmt.setInt(2, comment.getId());
+            stmt.setInt(2, comment.getUserId());
             stmt.setString(3, comment.getContent());
-            stmt.executeQuery();
+            stmt.executeUpdate();
         } catch  (SQLException e) {
-            throw new RuntimeException("error created a new comment", e);
+            return false;
         }
         return true;
     }

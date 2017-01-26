@@ -22,5 +22,4 @@ public interface Posts {
 
     Post extractPost(int postId);
 
-    //void editPost(Post post);
 }

@@ -115,8 +115,9 @@ HERO
     height: 100%;
 }
 
+
 .hero h1{
-    size: 20em;
+    size: 35em;
     color: white;
 
 }
@@ -315,9 +316,4 @@ CUSTOM
     color: white;
     font-size: 1em;
     font-weight: bold;
-}
-
-.about {
-    background-color: whitesmoke;
-
 }

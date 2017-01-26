@@ -28,8 +28,7 @@ function initMap() {
             service.textSearch({
                 location: new google.maps.LatLng(pos.lat, pos.lng),
                 radius: 48000,
-                query: "veteran facilities",
-                types: ['hospital']
+                query: "Veteran Affairs"
             }, function (results, status) {
                 if (status === google.maps.places.PlacesServiceStatus.OK) {
                     for (var i = 0; i < results.length; i++) {

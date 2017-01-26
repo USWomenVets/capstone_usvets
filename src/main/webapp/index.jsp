@@ -13,30 +13,40 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <div class="headline">
-                <h1>A Rally Point for</h1>
-            </div>
+            <h1 class="large-12 columns">A Rally Point for</h1>
             <div class="hero-logo">
                 <img src="/img/USLogo.png">
             </div>
         </section>
-        <div class="about medium-up-1 large-up-2">
+        <div class="about">
             <div class="row">
-                <div class="medium-4 columns text-center">
-                    <h4>Let's Talk</h4>
-                    <hr>
-                    <p>A discussion board for US to ask and give each other advice.</p>
+               <a href="/archive">
+                <div class="small-12 medium-4 large-4 columns text-center">
+                    <div class="callout">
+                        <h4>Let's Talk</h4>
+                        <hr>
+                        <p>A discussion board for US to ask and give each other advice.</p>
+                    </div>
                 </div>
-                <div class="medium-4 columns text-center">
-                    <h4>Your VA</h4>
-                    <hr>
-                    <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+               </a>
+                <a href="/locator">
+                <div class="small-12 medium-4 large-4 columns text-center">
+                    <div class="callout">
+                        <h4>Your VA</h4>
+                        <hr>
+                        <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+                    </div>
                 </div>
-                <div class="medium-4 columns text-center">
-                    <h4>Events</h4>
-                    <hr>
-                    <p>Find events and import events on your calendar.</p>
+                </a>
+                <a href="/events">
+                <div class="small-12 medium-4 large-4 columns text-center">
+                    <div class="callout">
+                        <h4>Events</h4>
+                        <hr>
+                        <p>Find events and import events on your calendar.</p>
+                    </div>
                 </div>
+                </a>
             </div>
         </div>
         <div class="statistics text-center">
@@ -44,24 +54,23 @@
                 <h1>Did you know...</h1>
             </div>
             <div class="row">
-                <div class="small-3 columns text-center">
+                <div class="small-12 medium-6 large-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
                     <div class="circle"></div>
                 </div>
-                <div class="small-3 columns text-center">
+                <div class="small-12 medium-6 large-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
                     <div class="circle"></div>
                 </div>
-                <div class="small-3 columns text-center">
+                <div class="small-12 medium-6 large-3 columns text-center">
                     <h4>1st STAT</h4>
                     <hr>
-
                     <div class="circle"></div>
                 </div>
-                <div class="small-3 columns text-center">
-                    <h4>1st STAT</h4>
+                <div class="small-12 medium-6 large-3 columns text-center">
+                    <h4>4th STAT</h4>
                     <hr>
                     <div class="circle"></div>
                 </div>

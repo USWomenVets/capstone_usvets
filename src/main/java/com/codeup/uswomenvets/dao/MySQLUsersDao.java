@@ -81,13 +81,20 @@ public class MySQLUsersDao implements Users {
 
 
         for (int i = 0; i <= 7; i++) {
-            if (newUserInfo[i] != null && newUserInfo[i].trim() != "" && !(newUserInfo[i].trim().equals(oldUserInfo[i].trim()))) {
-                validExecute = true;
-                if (validQueryIndex > 0) {
-                    query += ",";
+            try {
+                if (
+                        newUserInfo[i] != null
+                                && newUserInfo[i].trim() != ""
+                                && !newUserInfo[i].trim().equals(oldUserInfo[i].trim())) {
+                    validExecute = true;
+                    if (validQueryIndex > 0) {
+                        query += ",";
+                    }
+                    query += dbColumns[i];
+                    validQueryIndex++;
                 }
-                query += dbColumns[i];
-                validQueryIndex++;
+            } catch (NullPointerException e) {
+                throw new RuntimeException(e);
             }
         }
         try {
@@ -106,6 +113,18 @@ public class MySQLUsersDao implements Users {
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error editing user info", e);
+        }
+
+        if (newUser.getAge() != oldUser.getAge()) {
+            try {
+                String ageQuery = "UPDATE users SET users.age = ? WHERE users.id = ?";
+                PreparedStatement stmt = connection.prepareStatement(ageQuery, Statement.RETURN_GENERATED_KEYS);
+                stmt.setInt(1, newUser.getAge());
+                stmt.setInt(2, newUser.getId());
+                stmt.executeUpdate();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 

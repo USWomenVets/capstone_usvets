@@ -5,7 +5,16 @@
     <ul>
         <c:choose>
             <c:when test="${sessionScope.user != null}">
-                <li><input type="search" placeholder="Search"></li>
+                <li class="has-form">
+                    <div class="row collapse">
+                        <div class="large-8 small-9 columns">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="large-4 small-3 columns">
+                            <a href="/archive" class="alert button expand">Search</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="/archive">Board</a></li>
                 <li><a href="/locator">Locator</a></li>
                 <li><a href="/events">Events</a></li>
@@ -14,7 +23,16 @@
                 <li><a href="/logout">Logout</a></li>
             </c:when>
             <c:otherwise>
-                <li><input type="search" placeholder="Search"></li>
+                <li class="has-form">
+                    <div class="row collapse">
+                        <div class="large-8 small-9 columns">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="large-4 small-3 columns">
+                            <a href="/archive" class="alert button expand">Search</a>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="/archive">Board</a></li>
                 <li><a href="/locator">Locator</a></li>
                 <li><a href="/events">Events</a></li>

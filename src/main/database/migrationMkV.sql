@@ -83,7 +83,8 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`comments` (
   `post_id` INT UNSIGNED NOT NULL,
   `user_id` INT UNSIGNED NOT NULL,
   `comment` VARCHAR(512) NOT NULL,
-  `timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `timestamp` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_deleted` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   INDEX `post_id_idx` (`post_id` ASC),
   CONSTRAINT `post_id`
@@ -236,6 +237,11 @@ INSERT INTO category (category) VALUE  ("events");
 INSERT INTO category (category) VALUE  ("employment");
 INSERT INTO category (category) VALUE  ("wellness");
 INSERT INTO category_post(post_id, category_id) VALUES ('1', '1');
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 1, "this is a comment on this post providing discussion");
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 2, "I completely dissagree, you are wrong");
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 1, "your incompetent");
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 2, " ''You're'' ");
+
 
 
 

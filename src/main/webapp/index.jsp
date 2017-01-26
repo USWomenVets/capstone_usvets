@@ -59,7 +59,7 @@
                     <div class="circle"></div>
                 </div>
                 <div class="small-10 medium-3 columns text-center">
-                    <h4>1st STAT</h4>
+                    <h4>4th STAT</h4>
                     <hr>
                     <div class="circle"></div>
                 </div>

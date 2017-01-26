@@ -144,7 +144,7 @@ FOOTER
 footer{
     background-color: #5AABC9;
     padding: 80px 0;
-    margin-top: 120px;
+    margin-top: 60px;
     font-weight: bold;
 }
 footer a{
@@ -238,7 +238,6 @@ ARCHIVE DIV FIELDS
     left: 0;
     text-align: left;
     text-transform: uppercase;
-    text-decoration: underline;
 }
 #date_arch{
     position: absolute;
@@ -294,14 +293,11 @@ CUSTOM
     width: 30%;
 }
 .archive_post{
-    background-color: #E80C6E;
+    background-color: #67AECA;
     text-align: center;
     margin: 30px;
     display: inline-block;
     width: 355px;
-}
-.archive_post:hover{
-
 }
 .show_anchor{
     color: black;
@@ -325,4 +321,7 @@ CUSTOM
     color: white;
     font-size: 1em;
     font-weight: bold;
+}
+.sorting_buttons{
+    background-color: #E52A6F;
 }

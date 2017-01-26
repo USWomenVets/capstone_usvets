@@ -16,23 +16,25 @@
         <section class="locator sort_title">
             <h3><strong>Discussion Board</strong></h3>
                 <div class="button-group sort-by-button-group">
-                    <button class="button" data-sort-value="username">Username</button>
-                    <button class="button" data-sort-value="date">Date</button>
-                    <button class="button" data-sort-value="title">Title</button>
-                    <button class="button" data-sort-value="category">Category</button>
+                    <button class="button sorting_buttons" data-sort-value="username">Username</button>
+                    <button class="button sorting_buttons" data-sort-value="date">Date</button>
+                    <button class="button sorting_buttons" data-sort-value="title">Title</button>
+                    <button class="button sorting_buttons" data-sort-value="category">Category</button>
                     </div>
 
             <div class="grid">
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post container hvr-grow-shadow element-item" data-category="${post.stringCategory} ">
+                <div class="archive_post container hvr-grow-shadow element-item" data-category="${post.stringCategory}">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
-                                <div class="post_para username date"><span id="username_arch">${post.username}</span><span id="date_arch">${post.postDate}</span></div>
+                                <div class="post_para username date">
+                                    <span id="username_arch">${post.username}</span>
+                                    <span id="date_arch">${post.postDate}</span>
+                                </div>
                                 <br />
                                 <h1 class="post_para title" id="title_arch">${post.title}</h1>
                                 <p class="post_para content truncate" id="content_arch">${post.content}</p>
                                 <h2 class="post_para category" id="category_arch">${post.stringCategory}</h2>
-                                <%--<p class="post_para date">${post.postDate}</p>--%>
                             </a>
                     </div>
                 </c:forEach>

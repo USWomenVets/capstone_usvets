@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <br>
+        <hr>
         <h4>&#xA9;Copyright 2017 Team Allies</h4>
     </div>
 </footer>

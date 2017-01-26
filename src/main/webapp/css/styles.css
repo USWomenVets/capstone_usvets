@@ -112,16 +112,15 @@ HERO
     background-size: 100%;
     padding: 0;
     margin: 0;
-    height: 40em;
+    height: 100%;
 }
-.hero p{
-    width: 85%;
+
+
+.hero h1{
+    size: 35em;
     color: white;
 
-
-
 }
-
 
 /* **************************************************************************
 MAIN

@@ -88,7 +88,7 @@
                             <div class="form-group">
                                 <label for="confrim_password" class="small-6 columns control-label name form-text-color">CONFIRM PASSWORD:</label>
                                 <div>
-                                    <input id="confrim_password" name="confrim_password" value="">
+                                    <input id="confrim_password" name="confirm_password" value="">
                                 </div>
                             </div>
                         </div>

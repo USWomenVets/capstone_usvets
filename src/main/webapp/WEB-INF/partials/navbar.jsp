@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+<div class="off-canvas position-left show-for-medium" id="mobile-menu" data-off-canvas>
     <ul>
         <c:choose>
             <c:when test="${sessionScope.user != null}">
@@ -28,7 +28,7 @@
 
 <!--Mobile Navigation-->
 <div class="off-canvas-content" data-off-canvas-content>
-    <div class="title-bar show-for-small-only">
+    <div class="title-bar show-for-small">
         <div class="title-bar-left">
             <button class="menu-icon" type="button" data-open="mobile-menu"></button>
             <span class="title-bar-title">MENU || <a href="/index">USWOMENVETS</a></span>

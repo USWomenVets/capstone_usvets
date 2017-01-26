@@ -16,13 +16,12 @@ import java.io.IOException;
 public class ShowServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
-        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(id));
-
+        request.getSession().setAttribute("posts", DaoFactory.getPostsDao().specPost(id));
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String id = request.getParameter("id");
-        request.setAttribute("posts", DaoFactory.getPostsDao().specPost(id));
+        request.getSession().setAttribute("posts", DaoFactory.getPostsDao().specPost(id));
         request.getRequestDispatcher("/WEB-INF/posts/show.jsp").forward(request, response);
     }
 }

@@ -8,7 +8,6 @@
     </jsp:include>
 </head>
 <body>
-
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>

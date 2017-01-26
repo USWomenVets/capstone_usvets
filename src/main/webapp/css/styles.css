@@ -110,14 +110,14 @@ HERO
 .hero{
     background: url("../img/women-veterans-air2.jpg") no-repeat;
     background-size: 100%;
-    padding-bottom: 200px;
-    margin: 0;
+    padding-bottom: 30%;
     height: 80%;
+    margin-bottom: 2%;
 }
 
-.hero .hero-logo{
-    height: 200px;
-    width: 200px;
+.hero img{
+    height: 10%;
+    width: 10%;
 }
 
 .hero h1{
@@ -329,22 +329,21 @@ CUSTOM
 .sorting_buttons{
     background-color: #E52A6F;
 }
-.about .columns{
-    background-color: white;
-}
+
 
 .statistics{
     background: url("../img/Springfield.jpeg") no-repeat;
     background-size: 100%;
-    padding: 0;
-    margin: 0;
     height: 100%;
+    margin-top: 2%;
 }
+
 .circle{
-    border: 5px solid white;
-    width: 200px;
-    height: 200px;
-    margin: 80px;
+    border: 5px solid darkred;
+    height: 12em;
+    width: 12em;
+    margin: 22%;
     border-radius: 50%;
 
 }
+

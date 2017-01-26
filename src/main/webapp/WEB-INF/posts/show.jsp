@@ -28,13 +28,9 @@
                                     <a href="/comment/create" class="resources button">Comment</a>
                                     <button id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
                                     <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button">Delete</a>
-                                    <button class="resources button">Upvote</button>
-                                    <button class="resources button">Downvote</button>
                                 </c:when>
                                 <c:otherwise> <!--ANON USER-->
-                                    <a href="/login"><button class="resources button">Comment</button></a>
-                                    <a href="/employment"><button class="resources button">Upvote</button></a>
-                                    <a href="/events"><button class="resources button">Downvote</button></a>
+                                    <a href="/login"><button class="resources button">Sign in comment</button></a>
                                 </c:otherwise>
                             </c:choose>
                         </div>

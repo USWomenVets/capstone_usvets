@@ -71,7 +71,7 @@ public class ViewProfileServlet extends HttpServlet {
         }
         try {
             age = Integer.parseInt(request.getParameter("age"));
-            if (age < 1 || age >+ 150) {
+            if (age < 1 || age >= 150) {
                 throw new RuntimeException("The input age is not a valid integer used for age");
             }
         } catch (NumberFormatException e) {

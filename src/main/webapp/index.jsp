@@ -18,10 +18,10 @@
                 <img src="/img/USLogo.png">
             </div>
         </section>
-        <div class="about medium-up-1 large-up-2">
+        <div class="about">
             <div class="row">
                <a href="/archive">
-                <div class="medium-4 columns text-center">
+                <div class="small-12 medium-4 large-4 columns text-center">
                     <div class="callout">
                         <h4>Let's Talk</h4>
                         <hr>
@@ -30,7 +30,7 @@
                 </div>
                </a>
                 <a href="/locator">
-                <div class="medium-4 columns text-center">
+                <div class="small-12 medium-4 large-4 columns text-center">
                     <div class="callout">
                         <h4>Your VA</h4>
                         <hr>
@@ -39,7 +39,7 @@
                 </div>
                 </a>
                 <a href="/events">
-                <div class="medium-4 columns text-center">
+                <div class="small-12 medium-4 large-4 columns text-center">
                     <div class="callout">
                         <h4>Events</h4>
                         <hr>

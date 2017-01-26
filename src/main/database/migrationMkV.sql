@@ -37,7 +37,9 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`users` (
   `about` VARCHAR(512) NULL,
   `birth` DATE NULL,
   `age` VARCHAR(3) NULL,
+
   `gender` VARCHAR(32) NULL DEFAULT 'N/A',
+
   `prof_img` VARCHAR(64) NULL,
   `creation_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `last_online` DATETIME NULL,

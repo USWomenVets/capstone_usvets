@@ -14,7 +14,7 @@
 
             <section class="main">
                 <div class="wrap">
-                    <div class="container">
+                    <div class="container form-text-color">
                         <h3>Welcome</h3>
                         <p><strong>Please log in</strong></p>
                         <br>
@@ -32,11 +32,11 @@
                         </c:if>
                         <form action="/login" method="POST">
                             <div class="form-group">
-                                <label for="username">Username</label>
+                                <label class="form-text-color" for="username">Username</label>
                                 <input id="username" name="username" class="form-control register_field" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label class="form-text-color" for="password">Password</label>
                                 <input id="password" name="password" class="form-control register_field" type="password">
                             </div>
                             <input type="submit" class="large button" value="Log In">

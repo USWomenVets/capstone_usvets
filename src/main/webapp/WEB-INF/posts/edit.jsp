@@ -15,7 +15,7 @@
         <section class="main">
             <div class="wrap">
                 <h1>Update</h1>
-                <form action="/posts/edit" method="POST">
+                <form action="/posts/edit" method="POST" class="form-text-color">
                     <c:forEach var="post" items="${posts}">
                         <h3>${post.getTitle()}</h3>
                         <h4>${post.getPostDate()}</h4>
@@ -37,7 +37,7 @@
                             <label for="content">Content</label>
                             <textarea id="content" name="content" class="form-control">${post.getContent()}</textarea>
                         </div>
-                        <button type="submit" class="btn btn-block btn-primary" name="id" value=${post.getId()}>Submit</button>
+                        <a class="button"><button type="submit" value=${post.getId()}>Submit</button></a>
                         <script>
                             var temp = "${post.getCategory()}";
                             var mySelect = document.getElementById('selCategory');

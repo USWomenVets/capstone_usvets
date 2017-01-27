@@ -26,13 +26,15 @@
 
                     <div class="map text-center" id="map"></div>
                     <div class="media-object">
-                        <div class="media-object-section">
-                            <img src="http://placeimg.com/200/200/people">
-                        </div>
-                        <div class="media-object-section">
-                            <h4>Dreams feel real while we're in them</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know.</p>
-                        </div>
+                        <a href="https://www.va.gov/womenvet/">
+                            <div class="media-object-section">
+                                <img src="http://placeimg.com/200/200/people">
+                            </div>
+                            <div class="media-object-section">
+                                <h4>Center for Women Veterans</h4>
+                                <p>U.S. Department of Veteran Affairs created this section especially for Women Veterans.  </p>
+                            </div>
+                        </a>
                     </div>
                     <br>
                     <div class="media-object">

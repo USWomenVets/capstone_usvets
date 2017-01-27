@@ -8,6 +8,11 @@ GENERAL
 *{
     font-family: 'Oswald', sans-serif;
 }
+.hr_comment{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
 .wrap{
     width: 90%;
@@ -24,7 +29,7 @@ GENERAL
  NAV-MOBILE
 ************************************************************************** */
 .title-bar{
-    background-color: #5AABC9;
+    background-color: #675682;
     height: 60px;
     padding-top: 17px;
 }
@@ -64,7 +69,7 @@ GENERAL
  NAV-DESKTOP
 ************************************************************************** */
 .nav-desktop{
-    background-color: #5AABC9;
+    background-color: #675682;
     height: 80px;
     padding: 0;
 }
@@ -88,42 +93,6 @@ GENERAL
 }
 .menu > li > a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-}
-.submenu_item{
-    display: block;
-    background-color: #5AABC9;
-    color: rgba(255, 255, 255, 0.9);
-    text-align: center;
-    border: none;
-}
-.submenu_item > a:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.submenu_item > a {
-    width: 100%;
-}
-
-/* **************************************************************************
-HERO
-************************************************************************** */
-.hero{
-    background: url("../img/women-veterans-air2.jpg") no-repeat;
-    background-size: 100%;
-    padding-bottom: 30%;
-    height: 80%;
-    margin-bottom: 2%;
-}
-
-.hero img{
-    height: 10%;
-    width: 10%;
-}
-
-.hero h1{
-    size: 35em;
-    color: white;
-
 }
 
 /* **************************************************************************
@@ -329,21 +298,108 @@ CUSTOM
 .sorting_buttons{
     background-color: #E52A6F;
 }
+/* **************************************************************************
+HOMEPAGE
+************************************************************************** */
 
 
-.statistics{
+.hero{
+    background: url("../img/women-veterans-air2.jpg") no-repeat;
+    background-size: 100%;
+    padding-bottom: 15%;
+    height: 80%;
+    margin-bottom: 2%;
+}
+
+.hero img{
+    height: 20%;
+    width: 20%;
+}
+
+.hero h1{
+    size: 35em;
+    color: white;
+}
+
+.statistics {
     background: url("../img/Springfield.jpeg") no-repeat;
     background-size: 100%;
     height: 100%;
     margin-top: 2%;
+    color: white;
+    opacity: 80;
+}
+.locator_heading{
+    color: white;
+}
+.form-text-color{
+    color: white;
 }
 
 .circle{
-    border: 5px solid darkred;
+    border: 5px solid white;
     height: 12em;
     width: 12em;
     margin: 22%;
     border-radius: 50%;
+    color: #67AECA;
+}
+
+.circle h1{
+    margin-top: 28%;
+    size: 30em;
+}
+
+.callout{
+    background-color: whitesmoke;
 
 }
+
+.callout h4{
+    background-color: #675682;
+    color: white;
+    padding: 3%;
+    margin: 0;
+}
+
+/* **************************************************************************
+CALENDAR
+************************************************************************** */
+
+@media (max-width: 550px) {
+    .big-container {
+        display: none;
+    }
+}
+@media (min-width: 550px) {
+    .small-container {
+        display: none;
+    }
+}
+/* Responsive iFrame */
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* **************************************************************************
+MAP
+************************************************************************** */
+.map {
+    align-content: center;
+}
+
 

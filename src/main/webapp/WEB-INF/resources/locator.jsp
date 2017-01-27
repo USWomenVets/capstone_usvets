@@ -18,7 +18,9 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="large-12 columns text-center">
+            <div class="panel">
             <h1>Your VA Map</h1>
+            </div>
         </div>
         <section class="locator">
             <div class="wrap">

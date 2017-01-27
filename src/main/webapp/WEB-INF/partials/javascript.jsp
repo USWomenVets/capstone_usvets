@@ -1,5 +1,6 @@
 
 <script src="/js/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/af.js"></script>
 <script src="/js/isotope-docs.min.js"></script>
 <script src="/js/foundation.js"></script>
 <script src="/js/what-input.js"></script>

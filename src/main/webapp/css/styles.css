@@ -115,26 +115,33 @@ MAIN
 FOOTER
 ************************************************************************** */
 footer{
-    background-color: #5AABC9;
-    padding: 80px 0;
-    margin-top: 60px;
+    background-color: #675682;
     font-weight: bold;
+    padding: 4%;
 }
 footer a{
     display: block;
     color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
+    text-align: center;
 }
 
 footer h4{
     color: rgba(255, 255, 255, 0.8);
-    font-size: 2em;
+    font-size: 1em;
     font-weight: bold;
+    text-align: center;
 }
 
 footer hr{
     color: rgba(255, 255, 255, 0.1);
     margin: 10px 0;
+}
+
+footer #footer-links{
+    color: red;
+    margin: 1.5em;
+    text-align: center;
 }
 
 /* **************************************************************************
@@ -157,7 +164,8 @@ SOCIAL MEDIA
 ************************************************************************** */
 
 .large{
-    font-size: 50px;
+    text-align: center;
+    font-size: 35px;
     line-height: 50px;
 }
 
@@ -369,7 +377,9 @@ CALENDAR
 @media (max-width: 550px) {
     .big-container {
         display: none;
+        margin-right: 60px;
     }
+
 }
 @media (min-width: 550px) {
     .small-container {

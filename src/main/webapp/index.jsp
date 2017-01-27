@@ -49,7 +49,7 @@
                             <h4>Events</h4>
                             <hr>
                             <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
-                            <button class="button sorting_buttons" data-sort-value="username">Events</button>
+                            <button>Events</button>
                         </div>
                     </div>
                 </a>
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="join-button">
-            <a href="/archive">
+            <a href="/register">
                 <div class="small-12 medium-12 large-12 columns text-center">
                     <div class="callout text-center">
 

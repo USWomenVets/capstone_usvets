@@ -16,7 +16,7 @@
             <!--Main Section-->
             <section class="main">
                 <div class="wrap">
-            <form action="/register" method="post">
+            <form action="/register" method="post" id="register_form">
                 <c:if test="${sessionScope.errorMessage != null}">
                     <div class="callout alert">
                         <h5>We must apologize...</h5>
@@ -31,36 +31,53 @@
                 </c:if>
                 <h3 class="form-text-color">Welcome</h3>
                 <p class="form-text-color"><strong>Please fill out your information</strong></p>
-                <br>
-                <div class="form-group form-text-color">
-                    <label for="first_name" class="form-text-color">First Name</label>
-                    <input id="first_name" name="first_name" class="form-control register_field" type="text">
-                </div>
-                <div class="form-group form-text-color">
-                    <label for="last_name" class="form-text-color">Last Name</label>
-                    <input id="last_name" name="last_name" class="form-control register_field" type="text">
-                </div>
-                <div class="form-group form-text-color">
-                    <label for="username" class="form-text-color">Username</label>
-                    <input id="username" name="username" class="form-control register_field" type="text" required>
-                    <span class="form-error">We apologize, but that username has been taken.</span>
-                </div>
-                <div class="form-group form-text-color">
-                    <label for="email" class="form-text-color">Email</label>
-                    <input id="email" name="email" class="form-control register_field" type="email" required>
-                </div>
-                <div class="form-group form-text-color">
-                    <label for="password" class="form-text-color">Password</label>
-                    <p><em>Must be at least six characters in length</em></p>
-                    <input id="password" name="password" class="form-control register_field" type="password" required>
-                    <span class="form-error">Password must be at least six characters in length!</span>
-                </div>
-                <div class="form-group form-text-color">
-                    <label for="confirm_password" class="form-text-color">Confirm Password</label>
-                    <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password" data-equalto="password" required>
-                    <span class="form-error">Hey, passwords are supposed to match!</span>
-                </div>
-                <input type="submit" class="large button" value="Sign up!">
+
+
+                            <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="text" id="first_name" name="first_name"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="first_name">
+						<span class="input__label-content input__label-content--hoshi">First Name</span>
+					</label>
+				</span>
+                    <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="text" id="last_name" name="last_name"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="last_name">
+						<span class="input__label-content input__label-content--hoshi">Last Name</span>
+					</label>
+				</span>
+
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="email" id="email" name="email" required/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
+						<span class="input__label-content input__label-content--hoshi">Email</span>
+					</label>
+				</span>
+
+                                <span class="input input--hoshi form-group form-text-color">
+					<input class="input__field input__field--hoshi text-center" type="text" id="username" name="username" required/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
+						<span class="input__label-content input__label-content--hoshi">Username</span>
+                        <span class="form-error">We apologize, but that username has been taken.</span>
+					</label>
+				</span>
+
+
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="password" name="password" required/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="password">
+						<span class="input__label-content input__label-content--hoshi">Password</span>
+					</label>
+				</span>
+
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confrim_password" data-equalto="password" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
+						<span class="input__label-content input__label-content--hoshi">Confrim Password</span>
+                        <span class="form-error">Hey, passwords are supposed to match!</span>
+					</label>
+				</span>
+
+                <input type="submit" class="medium button sorting_buttons" value="Sign up!">
 
             </form>
                 </div>

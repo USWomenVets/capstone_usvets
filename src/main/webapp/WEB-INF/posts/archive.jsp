@@ -31,7 +31,7 @@
                                     <span id="username_arch">${post.username}</span>
                                     <span id="date_arch">${post.postDate}</span>
                                 </div>
-                                <br />
+                                <hr />
                                 <h1 class="post_para title" id="title_arch">${post.title}</h1>
                                 <p class="post_para content truncate" id="content_arch">${post.content}</p>
                                 <h2 class="post_para category" id="category_arch">${post.stringCategory}</h2>

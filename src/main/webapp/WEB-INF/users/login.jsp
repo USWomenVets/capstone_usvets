@@ -17,7 +17,6 @@
                     <div class="container form-text-color">
                         <h3>Welcome</h3>
                         <p><strong>Please log in</strong></p>
-                        <br>
                         <c:if test="${sessionScope.errorMessageEmptyLogin != null}">
                             <div class="callout alert">
                                 <h5>We must apologize...</h5>
@@ -32,17 +31,25 @@
                         </c:if>
                         <form action="/login" method="POST">
                             <div class="form-group">
-                                <label class="form-text-color" for="username">Username</label>
-                                <input id="username" name="username" class="form-control register_field" type="text">
+                                <span class="input input--hoshi form-group form-text-color">
+					<input class="input__field input__field--hoshi text-center" type="text" id="username" name="username" required/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
+						<span class="input__label-content input__label-content--hoshi">Username</span>
+					</label>
+				</span>
                             </div>
                             <div class="form-group">
-                                <label class="form-text-color" for="password">Password</label>
-                                <input id="password" name="password" class="form-control register_field" type="password">
+                                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="password" name="password" required/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="password">
+						<span class="input__label-content input__label-content--hoshi">Password</span>
+					</label>
+				</span>
                             </div>
-                            <input type="submit" class="large button" value="Log In">
+                            <input type="submit" class="medium button sorting_buttons" value="Log In">
                         </form>
                         <br>
-                        <p>Don't have a profile, yet? <a href="/register">Join up!</a></p>
+                        <p>Don't have a profile, yet? <a href="/register" id="sign_up">Join US!</a></p>
                     </div>
                 </div>
             </section>

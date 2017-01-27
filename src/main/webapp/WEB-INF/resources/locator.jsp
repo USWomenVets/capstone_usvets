@@ -30,7 +30,7 @@
                             <img src="http://placeimg.com/200/200/people">
                         </div>
                         <div class="media-object-section">
-                            <h4>Dreams feel real while we're in them.</h4>
+                            <h4>Dreams feel real while we're in them</h4>
                             <p>I'm going to improvise. Listen, there's something you should know.</p>
                         </div>
                     </div>

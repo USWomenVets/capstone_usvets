@@ -80,9 +80,8 @@
         </div>
         <div class="join-button">
             <a href="/register">
-                <div class="small-12 medium-12 large-12 columns text-center">
-                    <div class="callout text-center">
-
+                <div class="radius panel large-4 small-4 columns medium-centered">
+                    <div class="callout">
                         <button class="button sorting_buttons text-center" data-sort-value="username">     <h3>Join US!</h3></button>
                     </div>
                 </div>

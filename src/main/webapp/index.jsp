@@ -20,39 +20,32 @@
         </section>
         <div class="about">
             <div class="row">
-                <a href="/archive">
                     <div class="small-12 medium-4 large-4 columns text-center">
                         <div class="callout">
                             <h4>Let's Talk</h4>
                             <hr>
                             <p>A discussion board for US to ask questions, give each other advice, and be
                                 supportive.</p>
-                            <button class="button sorting_buttons">Board</button>
+                            <a href="<c:url value="/archive"/>" class="button sorting_buttons">Events</a>
                         </div>
-
                     </div>
-                </a>
-                <a href="/locator">
                     <div class="small-12 medium-4 large-4 columns text-center">
                         <div class="callout">
                             <h4>Your VA</h4>
                             <hr>
                             <p>A map designed to locate your position to find your local VA facilities and a list of
                                 additional resources.</p>
-                            <button class="button sorting_buttons">Locator</button>
+                            <a href="<c:url value="/locator"/>" class="button sorting_buttons">Locator</a>
                         </div>
                     </div>
-                </a>
-                <a href="/events">
                     <div class="small-12 medium-4 large-4 columns text-center">
                         <div class="callout">
                             <h4>Events</h4>
                             <hr>
                             <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
-                            <button class="button sorting_buttons">Events</button>
+                            <a href="<c:url value="/events"/>" class="button sorting_buttons">Events</a>
                         </div>
                     </div>
-                </a>
             </div>
         </div>
         <div class="statistics text-center">

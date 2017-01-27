@@ -23,7 +23,6 @@
         <section class="locator">
             <div class="wrap">
                 <div class="container">
-
                     <div class="map text-center" id="map"></div>
                     <div class="media-object">
                         <a href="https://www.va.gov/womenvet/">

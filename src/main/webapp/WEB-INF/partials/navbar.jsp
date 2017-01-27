@@ -5,15 +5,16 @@
     <ul>
         <c:choose>
             <c:when test="${sessionScope.user != null}">
+                <div>
                 <li class="has-form">
                     <div class="row collapse">
-                        <div class="large-8 small-9 columns">
-                            <input type="text" placeholder="Search">
-                        </div>
-                        <div class="large-4 small-3 columns">
-                            <a href="/archive" class="alert button expand">Search</a>
-                        </div>
-                    </div>
+                        <%--<div class="large-8 small-9 columns">--%>
+                            <%--&lt;%&ndash;<input type="text" placeholder="Search">&ndash;%&gt;--%>
+                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                        <%--&lt;%&ndash;<div class="large-4 small-3 columns">&ndash;%&gt;--%>
+                            <%--&lt;%&ndash;<a href="/archive" class="alert button expand">Search</a>&ndash;%&gt;--%>
+                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                    <%--</div>--%>
                 </li>
                 <li><a href="/archive">Board</a></li>
                 <li><a href="/locator">Locator</a></li>
@@ -21,23 +22,26 @@
                 <li><a href="/create">Post</a></li>
                 <li><a href="/profile">Profile</a></li>
                 <li><a href="/logout">Logout</a></li>
+                </div>
             </c:when>
             <c:otherwise>
+                <div>
                 <li class="has-form">
                     <div class="row collapse">
-                        <div class="large-8 small-9 columns">
-                            <input type="text" placeholder="Search">
-                        </div>
-                        <div class="large-4 small-3 columns">
-                            <a href="/archive" class="alert button expand">Search</a>
-                        </div>
-                    </div>
+                        <%--<div class="large-8 small-9 columns">--%>
+                            <%--<input type="text" placeholder="Search">--%>
+                        <%--</div>--%>
+                        <%--<div class="large-4 small-3 columns">--%>
+                            <%--<a href="/archive" class="alert button expand">Search</a>--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
                 </li>
                 <li><a href="/archive">Board</a></li>
                 <li><a href="/locator">Locator</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="/register">Register</a></li>
                 <li><a href="/login">Login</a></li>
+                </div>
             </c:otherwise>
         </c:choose>
     </ul>
@@ -55,12 +59,13 @@
 
     <!--Navigation-->
     <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
-
+        <div>
         <div class="top-bar-left">
             <a href="/index"><h3 class="site-logo hvr-grow">USWOMENVETS || </h3></a>
         </div>
         <div class="top-bar-right">
             <ul class="menu menu-desktop nav-desktop dropdown menu" data-dropdown-menu>
+                <div></div>
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
                         <li><a href="/archive">Board</a></li>
@@ -69,7 +74,7 @@
                         <li><a href="/create">Post</a></li>
                         <li><a href="/profile">Profile</a></li>
                         <li><a href="/logout">Logout</a></li>
-                        <li><input type="search" placeholder="Search"></li>
+                        <%--<li><input type="search" placeholder="Search"></li>--%>
                     </c:when>
                     <c:otherwise>
                         <li><a href="/archive">Board</a></li>
@@ -77,10 +82,11 @@
                         <li><a href="/events">Events</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
-                        <li><input type="search" placeholder="Search"></li>
+                        <%--<li><input type="search" placeholder="Search"></li>--%>
                     </c:otherwise>
                 </c:choose>
             </ul>
+        </div>
         </div>
     </nav>
 </div>

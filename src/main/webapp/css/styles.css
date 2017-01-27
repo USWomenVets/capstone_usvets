@@ -369,7 +369,9 @@ CALENDAR
 @media (max-width: 550px) {
     .big-container {
         display: none;
+        margin-right: 60px;
     }
+
 }
 @media (min-width: 550px) {
     .small-container {

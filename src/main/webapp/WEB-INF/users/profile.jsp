@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <%--<div class="row">
                             <div class="form-group">
                                 <label for="gender" class="small-6 columns control-label name form-text-color">GENDER:</label>
                                 <div>
@@ -72,7 +72,7 @@
                                     <input id="birth" name="birth" value="${user.getBirth()}">
                                 </div>
                             </div>
-                        </div>
+                        </div>--%>
                         <div class="row">
                             <div class="form-group">
                                 <label for="current_password" class="small-6 columns control-label name form-text-color">CURRENT PASSWORD:</label>

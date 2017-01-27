@@ -25,7 +25,7 @@ public class ViewProfileServlet extends HttpServlet {
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         user = (User) request.getSession().getAttribute("user");
-        int age;
+
         if (user == null) {
             response.sendRedirect("/login");
             return;
@@ -69,28 +69,14 @@ public class ViewProfileServlet extends HttpServlet {
             response.sendRedirect("/profile");
             return;
         }
-        try {
-            age = Integer.parseInt(request.getParameter("age"));
-            if (age < 1 || age >= 150) {
-                throw new RuntimeException("The input age is not a valid integer used for age");
-            }
-        } catch (NumberFormatException e) {
-            response.sendRedirect("/profile");
-            request.getSession().setAttribute("errorMessageIncorrectAge", "age must be a valid integer");
-            throw new RuntimeException("The input age is not a valid integer used for age", e);
-        }
 
         User editUser = new User(
                 user.getId(),
                 password,
-                age,
                 request.getParameter("username"),
                 request.getParameter("email"),
                 request.getParameter("first_name"),
-                request.getParameter("last_name"),
-                request.getParameter("about"),
-                request.getParameter("birth"),
-                request.getParameter("gender")
+                request.getParameter("last_name")
         );
         DaoFactory.getUsersDao().editUser(editUser, user);
         User updatedUser = DaoFactory.getUsersDao().findByUsername(editUser.getUsername());

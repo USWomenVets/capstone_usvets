@@ -55,24 +55,20 @@
             </div>
             <div class="row">
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <h4>1st STAT</h4>
-                    <hr>
-                    <div class="circle"></div>
+                    <div class="circle"><h1>10%</h1></div>
+                    <h4>of US currently serve in the military</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <h4>1st STAT</h4>
-                    <hr>
-                    <div class="circle"></div>
+                    <div class="circle"><h1>20%</h1></div>
+                    <h4>of US have experience military sexual trauma</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <h4>1st STAT</h4>
-                    <hr>
-                    <div class="circle"></div>
+                    <div class="circle"><h1>11%</h1></div>
+                    <h4>of US are in the labor force</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <h4>4th STAT</h4>
-                    <hr>
-                    <div class="circle"></div>
+                    <div class="circle"><h1>80%</h1></div>
+                    <h4>of US use education benefits</h4>
                 </div>
             </div>
         </div>

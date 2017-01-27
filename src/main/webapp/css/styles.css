@@ -322,11 +322,12 @@ CUSTOM
 }
 
 
-.statistics{
+.statistics {
     background: url("../img/Springfield.jpeg") no-repeat;
     background-size: 100%;
     height: 100%;
     margin-top: 2%;
+}
 .locator_heading{
     color: white;
 }
@@ -334,16 +335,20 @@ CUSTOM
     color: white;
 }
 
-.circle{
+.circle {
     border: 5px solid darkred;
     height: 12em;
     width: 12em;
     margin: 22%;
     border-radius: 50%;
+}
 
 #map {
-    height: 35em;
-    width: 65em;
+    height: 600px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
 }
 #map_head{
     text-align: center;
@@ -352,4 +357,12 @@ input{
     border: none;
     background-color: transparent;
 }
-
+input:focus{
+    background-color: #E52A6F;
+}
+.text-center{
+    text-align: center;
+}
+.element-item{
+    transition:  opacity 0.5s, background-color 0.25s linear, border-color 0.25s linear;
+}

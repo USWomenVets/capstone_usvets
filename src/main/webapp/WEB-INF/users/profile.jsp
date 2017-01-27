@@ -21,8 +21,9 @@
                 <!-- edit form column -->
                 <div class="personal-info text-center">
                     <h3 class="text-center form-text-color">Personal info</h3>
-                    <p class="form-text-color">Use right column to edit your information</p>
-                    <form action="/profile" class="form-horizontal form-text-color" method="post">
+                    <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
+
+                    <form action="/profile" class="form-horizontal form-text-color profile_form" method="post">
 
                         <div class="row">
                             <div class="form-group">

@@ -6,25 +6,52 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page"/>
     </jsp:include>
+    <style>
+        @media (max-width: 550px) {
+            .big-container {
+                display: none;
+            }
+        }
+        @media (min-width: 550px) {
+            .small-container {
+                display: none;
+            }
+        }
+        /* Responsive iFrame */
+        .responsive-iframe-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .responsive-iframe-container iframe,
+        .vresponsive-iframe-container object,
+        .vresponsive-iframe-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
-
         <!--Calendar-->
-        <div class="wrap small-up-1 medium-up-2">
+        <div class="responsive-iframe-container big-container">
             <iframe src="https://calendar.google.com/calendar/embed?title=%20%20%20%20%20%20%20&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div>
-            <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics"
-               class="button tiny">iCal Button</a>
+        <div class="responsive-iframe-container small-container">
+            <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
+                    style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
-</div>
-<jsp:include page="/WEB-INF/partials/footer.jsp"/>
-<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
+    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

@@ -4,22 +4,16 @@ import com.codeup.uswomenvets.util.Password;
 
 public class User {
     private int id;
-    private int age;
     private String username;
     private String email;
     private String password;
     private String firstName;
     private String lastName;
-    private String about;
-    private String birth;
-    private String gender;
-    private String profileImg;
     private String creationDate;
     private String lastOnline;
 
 
-    public User() {
-    }
+    public User() { }
     //user creation in the register servlet
     public User(String username, String email, String password, String firstName, String lastName) {
         this.username = username;
@@ -30,7 +24,7 @@ public class User {
     }
 
     //user modification in the profile servlet
-    public User(int id, String password, int age, String username, String email, String firstName, String lastName, String about, String birth, String gender) {
+    public User(int id, String password, String username, String email, String firstName, String lastName) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -41,25 +35,16 @@ public class User {
         }
         this.firstName = firstName;
         this.lastName = lastName;
-        this.about = about;
-        this.birth = birth;
-        this.age = age;
-        this.gender = gender;
     }
 
     //user object creation to be sent to view
-    public User(int id, String username, String email, String password, String firstName, String lastName, String about, String birth, int age, String gender, String profileImg, String lastOnline, String creationDate) {
+    public User(int id, String username, String email, String password, String firstName, String lastName, String lastOnline, String creationDate) {
         this.id = id;
         this.username = username;
         this.email = email;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.about = about;
-        this.birth = birth;
-        this.age = age;
-        this.gender = gender;
-        this.profileImg = profileImg;
         this.creationDate = creationDate;
         this.lastOnline = lastOnline;
     }
@@ -87,26 +72,6 @@ public class User {
     public String getLastName() { return lastName; }
 
     public void setLastName(String lastName) { this.lastName = lastName; }
-
-    public String getAbout() { return about; }
-
-    public void setAbout(String about) { this.about = about; }
-
-    public String getBirth() { return birth; }
-
-    public void setBirth(String birth) { this.birth = birth; }
-
-    public int getAge() { return age; }
-
-    public void setAge(int age) { this.age = age; }
-
-    public String getGender() { return gender; }
-
-    public void setGender(String gender) { this.gender = gender; }
-
-    public String getProfileImg() { return profileImg; }
-
-    public void setProfileImg(String profileImg) { this.profileImg = profileImg; }
 
     public String getCreationDate() { return creationDate; }
 

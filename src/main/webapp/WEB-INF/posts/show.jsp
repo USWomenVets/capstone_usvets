@@ -33,8 +33,28 @@
                                 </c:otherwise>
                             </c:choose>
                         </div>
+                <hr class="hr_comment">
                     </c:forEach>
                 </form>
+                <div class="row wrap form-text-color">
+                <c:forEach items="${comments}" var="comment">
+                    <div class="wrap">
+                        <h2>${comment.getUsername()}</h2>
+                        <p>${comment.getContent()}</p>
+                        <h4>${comment.getPostDate()}</h4>
+                        <form action="/delete/comment">
+                            <input type="hidden" name="postId" value="${comment.getPostId()}"
+                            <c:choose>
+                                <c:when test="${sessionScope.user.getId() == comment.getUserId()}"> <!--LOGGED IN USER-->
+                                    <button name="commentId" value="${comment.getId()}" class="resources button">
+                                        Delete
+                                    </button>
+                                </c:when>
+                            </c:choose>
+                        </form>
+                    </div>
+                    <hr class="hr_comment">
+                    </c:forEach>
                 <br>
                 <hr class="hr_comment">
                 <br>

@@ -74,6 +74,33 @@
                     <button class="button sorting_buttons" type="submit">Update</button>
 
 
+                            <div class="form-group">
+                                <label for="last_name" class="small-6 columns control-label name form-text-color">LAST NAME:</label>
+                                <div>
+                                    <input id="last_name" name="last_name" value="${user.getLastName()}">
+                                </div>
+                            </div>
+                        </div>
+                        <%--<div class="row">
+                            <div class="form-group">
+                                <label for="gender" class="small-6 columns control-label name form-text-color">GENDER:</label>
+                                <div>
+                                    <input id="gender" name="gender" value="${user.getGender()}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="age" class="small-6 columns control-label name form-text-color">AGE:</label>
+                                <div>
+                                    <input id="age" name="age" value="${user.getAge()}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="birth" class="small-6 columns control-label name form-text-color">BIRTH:</label>
+                                <div>
+                                    <input id="birth" name="birth" value="${user.getBirth()}">
+                                </div>
+                            </div>
+                        </div>--%>
                         <div class="row">
                             <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="password" id="current_password" />

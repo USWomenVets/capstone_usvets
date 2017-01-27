@@ -9,9 +9,16 @@
             <div class="medium-6 columns">
                 <h4>Contact Info</h4>
                 <hr>
-                <a href="/contact"><span>Contact</span></a>
-                <a href="/about"><span>About</span></a><!--span is here to add a class for styling if possible-->
-            </div>
+                <div class="row" id="footer-links">
+                    <div class="small-6 columns">
+                        <a href="/contact"><span>Contact</span></a>
+                    </div>
+                    <div class="small-6 columns">
+                        <a href="/about"><span>About</span></a>
+                    </div>
+                </div>
+        </div>
+
             <div class="medium-6 columns">
                 <h4>Social Media</h4>
                 <hr>
@@ -31,6 +38,6 @@
             </div>
         </div>
         <hr>
-        <h4>&#xA9;Copyright 2017 Team Allies</h4>
-    </div>
+        <h4 class="text-center">&#xA9;Copyright 2017 Team Allies</h4>
+
 </footer>

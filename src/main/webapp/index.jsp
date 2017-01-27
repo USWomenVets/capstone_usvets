@@ -27,7 +27,7 @@
                             <hr>
                             <p>A discussion board for US to ask questions, give each other advice, and be
                                 supportive.</p>
-                            <button class="button sorting_buttons" data-sort-value="username">Board</button>
+                            <button class="button sorting_buttons">Board</button>
                         </div>
 
                     </div>
@@ -39,7 +39,7 @@
                             <hr>
                             <p>A map designed to locate your position to find your local VA facilities and a list of
                                 additional resources.</p>
-                            <button class="button sorting_buttons" data-sort-value="username">Locator</button>
+                            <button class="button sorting_buttons">Locator</button>
                         </div>
                     </div>
                 </a>
@@ -49,7 +49,7 @@
                             <h4>Events</h4>
                             <hr>
                             <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
-                            <button>Events</button>
+                            <button class="button sorting_buttons">Events</button>
                         </div>
                     </div>
                 </a>
@@ -82,7 +82,7 @@
             <a href="/register">
                 <div class="radius panel large-4 small-4 columns medium-centered">
                     <div class="callout">
-                        <button class="button sorting_buttons text-center" data-sort-value="username">     <h3>Join US!</h3></button>
+                        <button class="button sorting_buttons text-center" data-sort-value="username"><h3>Join US!</h3></button>
                     </div>
                 </div>
             </a>

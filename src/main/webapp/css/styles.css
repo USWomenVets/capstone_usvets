@@ -78,6 +78,7 @@ GENERAL
     line-height: 80px;
     font-size: 1.5em;
     font-weight: bold;
+    padding-left: 20px;
 }
 .nav-desktop .menu-desktop{
     line-height: 80px;
@@ -98,7 +99,7 @@ GENERAL
 /* **************************************************************************
 MAIN
 ************************************************************************** */
-.main{
+.main, .archive_post{
     padding: 80px 0;
     /*background-color: white;*/
 
@@ -207,15 +208,15 @@ ARCHIVE DIV FIELDS
 
 #username_arch{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 15px;
     text-align: left;
     text-transform: uppercase;
 }
 #date_arch{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 15px;
     text-align: right;
 }
 #category_arch{
@@ -236,6 +237,16 @@ ARCHIVE DIV FIELDS
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+/* **************************************************************************
+ISOTOPE FIX
+************************************************************************** */
+
+.element-item{
+    transition:  opacity 0.5s, background-color 0.25s linear, border-color 0.25s linear;
+}
+
 
 /* **************************************************************************
 CUSTOM
@@ -266,11 +277,12 @@ CUSTOM
     width: 30%;
 }
 .archive_post{
-    background-color: #67AECA;
+    /*background-color: #67AECA;*/
     text-align: center;
     margin: 30px;
     display: inline-block;
     width: 355px;
+    padding: 40px;
 }
 .show_anchor{
     color: black;
@@ -297,6 +309,12 @@ CUSTOM
 }
 .sorting_buttons{
     background-color: #E52A6F;
+}
+#sign_up{
+    color: #E52A6F;
+}
+#register_form{
+    width: 800px;
 }
 /* **************************************************************************
 HOMEPAGE

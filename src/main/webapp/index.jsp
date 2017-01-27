@@ -20,32 +20,38 @@
         </section>
         <div class="about">
             <div class="row">
-               <a href="/archive">
-                <div class="small-12 medium-4 large-4 columns text-center">
-                    <div class="callout">
-                        <h4>Let's Talk</h4>
-                        <hr>
-                        <p>A discussion board for US to ask questions, give each other advice, and be supportive.</p>
+                <a href="/archive">
+                    <div class="small-12 medium-4 large-4 columns text-center">
+                        <div class="callout">
+                            <h4>Let's Talk</h4>
+                            <hr>
+                            <p>A discussion board for US to ask questions, give each other advice, and be
+                                supportive.</p>
+                            <button class="button sorting_buttons" data-sort-value="username">Board</button>
+                        </div>
+
                     </div>
-                </div>
-               </a>
+                </a>
                 <a href="/locator">
-                <div class="small-12 medium-4 large-4 columns text-center">
-                    <div class="callout">
-                        <h4>Your VA</h4>
-                        <hr>
-                        <p>A map designed to locate your position to find your local VA facilities and a list of additional resources.</p>
+                    <div class="small-12 medium-4 large-4 columns text-center">
+                        <div class="callout">
+                            <h4>Your VA</h4>
+                            <hr>
+                            <p>A map designed to locate your position to find your local VA facilities and a list of
+                                additional resources.</p>
+                            <button class="button sorting_buttons" data-sort-value="username">Locator</button>
+                        </div>
                     </div>
-                </div>
                 </a>
                 <a href="/events">
-                <div class="small-12 medium-4 large-4 columns text-center">
-                    <div class="callout">
-                        <h4>Events</h4>
-                        <hr>
-                        <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
+                    <div class="small-12 medium-4 large-4 columns text-center">
+                        <div class="callout">
+                            <h4>Events</h4>
+                            <hr>
+                            <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
+                            <button class="button sorting_buttons" data-sort-value="username">Events</button>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
         </div>
@@ -71,6 +77,16 @@
                     <h4>of US use education benefits</h4>
                 </div>
             </div>
+        </div>
+        <div class="join-button">
+            <a href="/archive">
+                <div class="small-12 medium-12 large-12 columns text-center">
+                    <div class="callout text-center">
+
+                        <button class="button sorting_buttons text-center" data-sort-value="username">     <h3>Join US!</h3></button>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>

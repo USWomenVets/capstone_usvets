@@ -52,20 +52,14 @@ public class MySQLUsersDao implements Users {
                 currentUser.getEmail(),
                 currentUser.getPassword(),
                 currentUser.getFirstName(),
-                currentUser.getLastName(),
-                currentUser.getAbout(),
-                currentUser.getGender(),
-                currentUser.getBirth()
+                currentUser.getLastName()
         };
         String[] newUserInfo = {
                 newUser.getUsername(),
                 newUser.getEmail(),
                 newUser.getPassword(),
                 newUser.getFirstName(),
-                newUser.getLastName(),
-                newUser.getAbout(),
-                newUser.getGender(),
-                newUser.getBirth()
+                newUser.getLastName()
         };
 
         String[] dbColumns = {
@@ -73,14 +67,11 @@ public class MySQLUsersDao implements Users {
                 " email = ?",
                 " password = ?",
                 " first_name = ?",
-                " last_name = ?",
-                " about = ?",
-                " gender = ?",
-                " birth = ?"
+                " last_name = ?"
         };
 
 
-        for (int i = 0; i <= 7; i++) {
+        for (int i = 0; i < 5; i++) {
             try {
                 if (
                         newUserInfo[i] != null
@@ -102,7 +93,7 @@ public class MySQLUsersDao implements Users {
                 query += " WHERE id = ?;";
 
                 PreparedStatement stmt = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-                for (int i = 0; i < 8; i++) {
+                for (int i = 0; i < 5; i++) {
                     if (newUserInfo[i] != null && newUserInfo[i].trim() != "" && !(newUserInfo[i].trim().equals(oldUserInfo[i].trim()))) {
                         stmt.setString(columnIndex, newUserInfo[i]);
                         columnIndex++;
@@ -113,18 +104,6 @@ public class MySQLUsersDao implements Users {
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error editing user info", e);
-        }
-
-        if (newUser.getAge() != oldUser.getAge()) {
-            try {
-                String ageQuery = "UPDATE users SET users.age = ? WHERE users.id = ?";
-                PreparedStatement stmt = connection.prepareStatement(ageQuery, Statement.RETURN_GENERATED_KEYS);
-                stmt.setInt(1, newUser.getAge());
-                stmt.setInt(2, newUser.getId());
-                stmt.executeUpdate();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 
@@ -154,11 +133,6 @@ public class MySQLUsersDao implements Users {
                 rs.getString("password"),
                 rs.getString("first_name"),
                 rs.getString("last_name"),
-                rs.getString("about"),
-                rs.getString("birth"),
-                rs.getInt("age"),
-                rs.getString("gender"),
-                rs.getString("prof_img"),
                 rs.getString("last_online"),
                 rs.getString("creation_date")
         );

@@ -25,7 +25,7 @@
                     <div class="callout">
                         <h4>Let's Talk</h4>
                         <hr>
-                        <p>A discussion board for US to ask and give each other advice.</p>
+                        <p>A discussion board for US to ask questions, give each other advice, and be supportive.</p>
                     </div>
                 </div>
                </a>
@@ -34,7 +34,7 @@
                     <div class="callout">
                         <h4>Your VA</h4>
                         <hr>
-                        <p>A Google Map designed to geolocate your position and find your local VA facilities.</p>
+                        <p>A map designed to locate your position to find your local VA facilities and a list of additional resources.</p>
                     </div>
                 </div>
                 </a>
@@ -43,7 +43,7 @@
                     <div class="callout">
                         <h4>Events</h4>
                         <hr>
-                        <p>Find events and import events on your calendar.</p>
+                        <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
                     </div>
                 </div>
                 </a>

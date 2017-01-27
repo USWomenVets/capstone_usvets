@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="US Women Vets Home Page" />
+        <jsp:param name="title" value="US Women Vets Home Page"/>
     </jsp:include>
     <style>
         #map {
@@ -16,30 +16,25 @@
 <body>
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-
-        <section class="main">
-            <div class="wrap">
-                <div class="container row">
-                    <h2><strong>Resource Locator</strong></h2>
-                </div>
-                <div>
-                    <div id="map"></div>
-                </div>
-            </div>
-        </section>
-
+        <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
+        <div class="large-12 columns text-center">
+            <h1>Your VA Map</h1>
+        </div>
         <section class="locator">
             <div class="wrap">
                 <div class="container">
+
+                    <div class="map text-center" id="map"></div>
                     <div class="media-object">
-                        <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
-                        </div>
-                        <div class="media-object-section">
-                            <h4>Dreams feel real while we're in them.</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know.</p>
-                        </div>
+                        <a href="https://www.va.gov/womenvet/">
+                            <div class="media-object-section">
+                                <img src="http://placeimg.com/200/200/people">
+                            </div>
+                            <div class="media-object-section">
+                                <h4>Center for Women Veterans</h4>
+                                <p>U.S. Department of Veteran Affairs created this section especially for Women Veterans.  </p>
+                            </div>
+                        </a>
                     </div>
                     <br>
                     <div class="media-object">
@@ -48,13 +43,13 @@
                             <p>I'm going to improvise. Listen, there's something you should know.</p>
                         </div>
                         <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
+                            <img src="http://placeimg.com/200/200/people">
                         </div>
                     </div>
                     <br>
                     <div class="media-object">
                         <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
+                            <img src="http://placeimg.com/200/200/people">
                         </div>
                         <div class="media-object-section">
                             <h4>Dreams feel real while we're in them.</h4>

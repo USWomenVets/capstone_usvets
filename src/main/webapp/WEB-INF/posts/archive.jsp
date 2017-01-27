@@ -25,7 +25,7 @@
             <div class="grid">
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post container hvr-grow-shadow element-item" data-category="${post.stringCategory}">
+                <div class="archive_post container hvr-grow-shadow element-item shadow" data-category="${post.stringCategory}">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
                                 <div class="post_para username date">
                                     <span id="username_arch">${post.username}</span>

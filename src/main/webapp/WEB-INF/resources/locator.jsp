@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="US Women Vets Home Page"/>
+        <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
     <style>
         #map {

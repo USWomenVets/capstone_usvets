@@ -29,34 +29,34 @@
                         <p>The passwords you have entered do not match</p>
                     </div>
                 </c:if>
-                <h3>Welcome</h3>
-                <p><strong>Please fill out your information</strong></p>
+                <h3 class="form-text-color">Welcome</h3>
+                <p class="form-text-color"><strong>Please fill out your information</strong></p>
                 <br>
-                <div class="form-group">
-                    <label for="first_name">First Name</label>
+                <div class="form-group form-text-color">
+                    <label for="first_name" class="form-text-color">First Name</label>
                     <input id="first_name" name="first_name" class="form-control register_field" type="text">
                 </div>
-                <div class="form-group">
-                    <label for="last_name">Last Name</label>
+                <div class="form-group form-text-color">
+                    <label for="last_name" class="form-text-color">Last Name</label>
                     <input id="last_name" name="last_name" class="form-control register_field" type="text">
                 </div>
-                <div class="form-group">
-                    <label for="username">Username</label>
+                <div class="form-group form-text-color">
+                    <label for="username" class="form-text-color">Username</label>
                     <input id="username" name="username" class="form-control register_field" type="text" required>
                     <span class="form-error">We apologize, but that username has been taken.</span>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
+                <div class="form-group form-text-color">
+                    <label for="email" class="form-text-color">Email</label>
                     <input id="email" name="email" class="form-control register_field" type="email" required>
                 </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
+                <div class="form-group form-text-color">
+                    <label for="password" class="form-text-color">Password</label>
                     <p><em>Must be at least six characters in length</em></p>
                     <input id="password" name="password" class="form-control register_field" type="password" required>
                     <span class="form-error">Password must be at least six characters in length!</span>
                 </div>
-                <div class="form-group">
-                    <label for="confirm_password">Confirm Password</label>
+                <div class="form-group form-text-color">
+                    <label for="confirm_password" class="form-text-color">Confirm Password</label>
                     <input id="confirm_password" name="confirm_password" class="form-control register_field" type="password" data-equalto="password" required>
                     <span class="form-error">Hey, passwords are supposed to match!</span>
                 </div>

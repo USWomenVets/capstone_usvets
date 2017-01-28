@@ -127,7 +127,7 @@
             </div>
             <div class="row">
                 <div class="large-12 columns">
-                    <h3>*We do not affiliate ourselves with any organization listed.</h3>
+                    <h3>*We do not affiliate ourselves with any organization listed above.</h3>
                 </div>
             </div>
         </div>

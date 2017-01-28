@@ -1,4 +1,3 @@
-
 // Note: This example requires that you consent to location sharing when
 // prompted by your browser. If you see the error "The Geolocation service
 // failed.", it means you probably did not give permission for the browser to
@@ -7,8 +6,8 @@
 function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 30.2672, lng: 97.7431},
-        zoom: 10
+        center: {lat: 37.09024, lng: -95.712891},
+        zoom: 12
     });
     var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -52,7 +51,6 @@ function initMap() {
             position: place.geometry.location,
             id: place.place_id,
             animation: google.maps.Animation.DROP
-
         });
         var request = {
 
@@ -94,10 +92,21 @@ function initMap() {
     }
 }
 
-    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-            'Error: The Geolocation service failed.' :
-            'Error: Your browser doesn\'t support geolocation.');
-    }
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ?
+        'Error: The Geolocation service failed.' :
+        'Error: Your browser doesn\'t support geolocation.');
+}
 
+// function displayMapAt() {
+//     $("#map")
+//         .html(
+//             "<iframe id=\"map_frame\" "
+//             + "width=\"100%\" height=\"600px\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" "
+//             + "src=\"https://www.google.com/maps/api/js?key%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"
+//              + "></iframe>");
+//
+// }
+
+// displayMapAt();

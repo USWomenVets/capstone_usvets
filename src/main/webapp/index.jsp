@@ -15,44 +15,37 @@
         <section class="hero text-center">
             <h1 class="large-12 columns">A Rally Point for</h1>
             <div class="hero-logo">
-                <img src="/img/USLogo.png">
+                <img src="<c:url value="/img/USLogo.png"/>">
             </div>
         </section>
         <div class="about">
             <div class="row">
-                <a href="/archive">
-                    <div class="small-12 medium-4 large-4 columns text-center">
-                        <div class="callout">
-                            <h4>Let's Talk</h4>
-                            <hr>
-                            <p>A discussion board for US to ask questions, give each other advice, and be
-                                supportive.</p>
-                            <button class="button sorting_buttons" data-sort-value="username">Board</button>
-                        </div>
-
+                <div class="small-12 medium-4 large-4 columns text-center">
+                    <div class="callout">
+                        <h4>Let's Talk</h4>
+                        <hr>
+                        <p>A discussion board for US to ask questions, give each other advice, and be
+                            supportive.</p>
+                        <a href="<c:url value="/archive"/>" class="button sorting_buttons">Discuss</a>
                     </div>
-                </a>
-                <a href="/locator">
-                    <div class="small-12 medium-4 large-4 columns text-center">
-                        <div class="callout">
-                            <h4>Your VA</h4>
-                            <hr>
-                            <p>A map designed to locate your position to find your local VA facilities and a list of
-                                additional resources.</p>
-                            <button class="button sorting_buttons" data-sort-value="username">Locator</button>
-                        </div>
+                </div>
+                <div class="small-12 medium-4 large-4 columns text-center">
+                    <div class="callout">
+                        <h4>Your VA</h4>
+                        <hr>
+                        <p>A map designed to locate your position to find your local VA facilities and a list of
+                            additional resources.</p>
+                        <a href="<c:url value="/locator"/>" class="button sorting_buttons">Locator</a>
                     </div>
-                </a>
-                <a href="/events">
-                    <div class="small-12 medium-4 large-4 columns text-center">
-                        <div class="callout">
-                            <h4>Events</h4>
-                            <hr>
-                            <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
-                            <button>Events</button>
-                        </div>
+                </div>
+                <div class="small-12 medium-4 large-4 columns text-center">
+                    <div class="callout">
+                        <h4>Events</h4>
+                        <hr>
+                        <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
+                        <a href="<c:url value="/events"/>" class="button sorting_buttons">Events</a>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <div class="statistics text-center">
@@ -79,18 +72,18 @@
             </div>
         </div>
         <div class="join-button">
-            <a href="/register">
-                <div class="small-12 medium-12 large-12 columns text-center">
-                    <div class="callout text-center">
-
-                        <button class="button sorting_buttons text-center" data-sort-value="username">     <h3>Join US!</h3></button>
+            <a href="<c:url value="/register"/>">
+                <div class="radius panel large-4 small-4 columns medium-centered">
+                    <div class="callout">
+                        <button class="button sorting_buttons text-center" data-sort-value="username"><h3>Join US!</h3>
+                        </button>
                     </div>
                 </div>
             </a>
         </div>
     </div>
 </div>
-</div>
+
 
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <jsp:include page="/WEB-INF/partials/javascript.jsp"/>

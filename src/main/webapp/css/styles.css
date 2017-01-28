@@ -229,6 +229,9 @@ ARCHIVE DIV FIELDS
     text-align: right;
 }
 #category_arch{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
     text-align: left;
     text-transform: uppercase;
 }

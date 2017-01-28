@@ -28,10 +28,9 @@
             <div class="row">
                 <div class="large-10 small-10 columns large-centered small-centered">
                     <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
-                        <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Veteran Affairs</a>
+                        <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Conferences</a>
                         </li>
-                        <li class="tabs-title"><a href="#panel2d">Benefits and Compensation</a></li>
-                        <li class="tabs-title"><a href="#panel3d">Education and Training</a></li>
+                        <li class="tabs-title"><a href="#panel2d">Career Fairs</a></li>
                         <li class="tabs-title"><a href="#panel4d">Miscellaneous</a></li>
                     </ul>
 
@@ -39,20 +38,20 @@
                         <div class="tabs-panel is-active" id="panel1d">
                             <div class="wrap">
                                 <div class="media-object-section">
-                                    <img src="http://placeimg.com/200/200/people">
+                                    <img src="/img/summit.jpeg">
                                 </div>
                                 <div class="media-object-section">
-                                    <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w" target="_blank"><h4>Fourth Annual Women Veterans and Active Duty Women Warriors Resource </h4></a>
+                                    <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w" target="_blank"><h4>Fourth Annual Women Veterans and Active Duty Women Warriors Resource Summit</h4></a>
                                     <p>The summit will introduce the unique experiences of women Veterans and the need for tailored services that will allow them to find success in programs meant to serve them.</p>
                                 </div>
                                 <br>
                                 <div class="media-object">
                                     <div class="media-object-section">
-                                        <h4>Dreams feel real while we're in them.</h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <h4>Women Veterans Leadership and Diversity Conference</h4>
+                                        <p>This is the only conference in the country designed by women veterans for women veterans to Connect, Engage and Empower ALL women veterans and women in the military from around the nation, regardless to rank or branch of service.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/Famouswomen.jpeg">
+                                        <img src="/img/conf.jpeg">
                                     </div>
                                 </div>
                             </div>
@@ -105,65 +104,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tabs-panel" id="panel4d">
-                            <div class="wrap">
-                                <div class="media-object">
-                                    <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
-                                    </div>
-                                    <div class="media-object-section">
-                                        <h4>VWise </h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="media-object">
-                                    <div class="media-object-section">
-                                        <h4>Dreams feel real while we're in them.</h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <%--<section class="locator">--%>
-            <%--<div class="wrap">--%>
-                <%--<div class="container">--%>
-                    <%--<div class="map text-center" id="map"></div>--%>
-                    <%--<div class="media-object">--%>
-                        <%--<">--%>
-
-                        <%--</a>--%>
-                    <%--</div>--%>
-                    <%--<br>--%>
-                    <%--<div class="media-object">--%>
-                        <%--<div class="media-object-section">--%>
-                            <%--<h4>VWise </h4>--%>
-                            <%--<p>I'm going to improvise. Listen, there's something you should know.</p>--%>
-                        <%--</div>--%>
-                        <%--<div class="media-object-section">--%>
-                            <%--<img src="http://placeimg.com/200/200/people">--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<br>--%>
-                    <%--<div class="media-object">--%>
-                        <%--<div class="media-object-section">--%>
-                            <%--<img src="http://placeimg.com/200/200/people">--%>
-                        <%--</div>--%>
-                        <%--<div class="media-object-section">--%>
-                            <%--<h4>Dreams feel real while we're in them.</h4>--%>
-                            <%--<p>I'm going to improvise. Listen, there's something you should know.</p>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
-            <%--</div>--%>
-        <%--</section>--%>
     </div>
     <jsp:include page="/WEB-INF/partials/footer.jsp"/>
     <jsp:include page="/WEB-INF/partials/javascript.jsp"/>

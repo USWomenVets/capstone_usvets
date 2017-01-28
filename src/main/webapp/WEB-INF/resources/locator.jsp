@@ -12,22 +12,22 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-        <div class="header-panel large-12 columns text-center">
+        <div class="title large-12 columns text-center">
             <h1>Your VA Locator</h1>
         </div>
         <div class="map large-centered" id="map" style="height: 575px; width: 1200px;">
             <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
         </div>
         <section class="additional-resources">
-            <div class="header-panel text-center"><h2>Additional Resources</h2></div>
+            <div class="subTitle text-center"><h2>Additional Resources</h2></div>
                 <%--<div class="container text-center">--%>
             <div class="row">
                 <div class="large-10 small-10 columns large-centered small-centered">
                 <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
-                    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Tab 1</a></li>
-                    <li class="tabs-title"><a href="#panel2d">Tab 2</a></li>
-                    <li class="tabs-title"><a href="#panel3d">Tab 3</a></li>
-                    <li class="tabs-title"><a href="#panel4d">Tab 4</a></li>
+                    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Veteran Affairs</a></li>
+                    <li class="tabs-title"><a href="#panel2d">Benefits and Compensation</a></li>
+                    <li class="tabs-title"><a href="#panel3d">Education and Training</a></li>
+                    <li class="tabs-title"><a href="#panel4d">Miscellaneous</a></li>
                 </ul>
 
                 <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">

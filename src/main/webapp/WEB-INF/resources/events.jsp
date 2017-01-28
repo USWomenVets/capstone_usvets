@@ -22,105 +22,115 @@
             <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-        <section class="featured-events">
+        <div class="featured-events">
             <div class="subTitle text-center"><h2>Featured Events</h2></div>
-            <%--<div class="container text-center">--%>
-            <div class="row">
-                <div class="large-10 small-10 columns large-centered small-centered">
-                    <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
-                        <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Conferences</a>
-                        </li>
-                        <li class="tabs-title"><a href="#panel2d">Career Fairs</a></li>
-                        <li class="tabs-title"><a href="#panel3d">Miscellaneous</a></li>
-                    </ul>
 
-                    <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">
-                        <div class="tabs-panel is-active" id="panel1d">
-                            <div class="wrap">
-                                <div class="media-object-section">
-                                    <img src="<c:url value="/img/summit.jpeg"/>">
-                                </div>
-                                <div class="media-object-section">
-                                    <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w"
-                                       target="_blank"><h4>Fourth Annual Women Veterans and Active Duty Women Warriors
-                                        Resource Summit</h4></a>
-                                    <p>The summit will introduce the unique experiences of women Veterans and the need
-                                        for tailored services that will allow them to find success in programs meant to
-                                        serve them.</p>
-                                </div>
-                                <br>
-                                <div class="media-object">
-                                    <div class="media-object-section">
+            <div class="large-10 small-10 columns large-centered small-centered">
+                <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
+                    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Conferences</a>
+                    </li>
+                    <li class="tabs-title"><a href="#panel2d">Career Fairs</a></li>
+                    <li class="tabs-title"><a href="#panel3d">Miscellaneous</a></li>
+                </ul>
 
-                                        <a href=https://www.eventbrite.com/e/women-veterans-leadership-and-diversity-conference-tickets-30596453817"
-                                           target="_blank"><h4>Women Veterans Leadership and Diversity Conference</h4>
-                                        </a>
-                                        <p>This is the only conference in the country designed by women veterans for
-                                            women veterans to Connect, Engage and Empower ALL women veterans and women
-                                            in the military from around the nation, regardless to rank or branch of
-                                            service.</p>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <img src="<c:url value="/img/conf.jpeg"/>">
-                                    </div>
-                                </div>
+                <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">
+                    <div class="tabs-panel is-active" id="panel1d">
+                        <div class="wrap">
+                            <div class="media-object-section">
+                                <img src="<c:url value="/img/summit.jpeg"/>">
                             </div>
+                            <div class="media-object-section">
+                                <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w"
+                                   target="_blank"><h4>Fourth Annual Women Veterans and Active Duty Women Warriors
+                                    Resource Summit</h4></a>
+                                <p>The summit will introduce the unique experiences of women Veterans and the need
+                                    for tailored services that will allow them to find success in programs meant to
+                                    serve them.</p>
+                            </div>
+                            <br>
+                            <div class="media-object">
+                                <div class="media-object-section">
 
-                        </div>
-                        <div class="tabs-panel" id="panel2d">
-                            <div class="wrap">
-                                <div class="media-object">
-
-                                    <div class="media-object-section">
-                                        <img src="/img/Famouswomen.jpeg">
-                                    </div>
-                                    <div class="media-object-section">
-
-                                        <a href="https://www.uschamberfoundation.org/events/upcoming" target="_blank"><h4>Hiring Our Heroes Military Hiring Fair</h4></a>
-                                        <p>Hiring Our Heroes is a nationwide initiative to help veterans, transitioning
-                                            service members, and military spouses find meaningful employment
-                                            opportunities.</p>
-                                    </div>
+                                    <a href=https://www.eventbrite.com/e/women-veterans-leadership-and-diversity-conference-tickets-30596453817"
+                                       target="_blank"><h4>Women Veterans Leadership and Diversity Conference</h4>
+                                    </a>
+                                    <p>This is the only conference in the country designed by women veterans for
+                                        women veterans to Connect, Engage and Empower ALL women veterans and women
+                                        in the military from around the nation, regardless to rank or branch of
+                                        service.</p>
                                 </div>
-                                <br>
-                                <div class="media-object">
-                                    <div class="media-object-section">
-                                        <a href="https://events.recruitmilitary.com/events/san-antonio-veterans-job-fair-may-18-2017" target="_blank"><h4>San Antonio Veterans Job Fair</h4></a>
-                                        <p>A RecruitMilitary Opportunity Expo is an event where transitioning military, veterans, and their spouses can meet with recruiters from dozens of companies. These events are free for attendees.</p>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <img src="/img/Famouswomen.jpeg">
-                                    </div>
+                                <div class="media-object-section">
+                                    <img src="<c:url value="/img/conf.jpeg"/>">
                                 </div>
                             </div>
                         </div>
-                        <div class="tabs-panel" id="panel3d">
-                            <div class="wrap">
-                                <div class="media-object">
-                                    <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
-                                    </div>
-                                    <div class="media-object-section">
-                                        <a href="http://vwise.vets.syr.edu/calendar" target="_blank"><h4>V-Wise</h4></a>
-                                        <p>V-WISE helps women veterans and female military spouses/partners find their passion and learn the business savvy skills necessary to turn an idea or start-up into a growing venture.</p>
-                                    </div>
+
+                    </div>
+                    <div class="tabs-panel" id="panel2d">
+                        <div class="wrap">
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <img src="/img/Famouswomen.jpeg">
                                 </div>
-                                <br>
-                                <div class="media-object">
-                                    <div class="media-object-section">
-                                        <a href="https://www.meetup.com/Operation-Code-Austin/members/" target="_blank"><h4>Operation Code</h4></a>
-                                        <p> Operation Code is a nonprofit devoted to helping the military community learn software development, enter the tech industry, and code the future!</p>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
-                                    </div>
+                                <div class="media-object-section">
+                                    <a href="https://www.uschamberfoundation.org/events/upcoming" target="_blank">
+                                        <h4>Hiring Our Heroes Military Hiring Fair</h4></a>
+                                    <p>Hiring Our Heroes is a nationwide initiative to help veterans, transitioning
+                                        service members, and military spouses find meaningful employment
+                                        opportunities.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <a href="https://events.recruitmilitary.com/events/san-antonio-veterans-job-fair-may-18-2017"
+                                       target="_blank"><h4>San Antonio Veterans Job Fair</h4></a>
+                                    <p>A RecruitMilitary Opportunity Expo is an event where transitioning military,
+                                        veterans, and their spouses can meet with recruiters from dozens of
+                                        companies. These events are free for attendees.</p>
+                                </div>
+                                <div class="media-object-section">
+                                    <img src="/img/Famouswomen.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-panel" id="panel3d">
+                        <div class="wrap">
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <img src="http://placeimg.com/200/200/people">
+                                </div>
+                                <div class="media-object-section">
+                                    <a href="http://vwise.vets.syr.edu/calendar" target="_blank"><h4>V-Wise</h4></a>
+                                    <p>V-WISE helps women veterans and female military spouses/partners find their
+                                        passion and learn the business savvy skills necessary to turn an idea or
+                                        start-up into a growing venture.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <a href="https://www.meetup.com/Operation-Code-Austin/members/" target="_blank">
+                                        <h4>Operation Code</h4></a>
+                                    <p> Operation Code is a nonprofit devoted to helping the military community
+                                        learn software development, enter the tech industry, and code the
+                                        future!</p>
+                                </div>
+                                <div class="media-object-section">
+                                    <img src="http://placeimg.com/200/200/people">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3>*We do not affiliate ourselves with any organization listed.</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <jsp:include page="/WEB-INF/partials/footer.jsp"/>
     <jsp:include page="/WEB-INF/partials/javascript.jsp"/>

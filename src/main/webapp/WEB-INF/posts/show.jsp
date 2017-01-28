@@ -25,21 +25,41 @@
                             <h4>${post.getUsername()}</h4>
                             <c:choose>
                                 <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
-                                    <button id="id" name="id" value="${post.getId()}" class="resources button">Edit</button>
-                                    <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button">Delete</a>
+                                    <button id="id" name="id" value="${post.getId()}" class="resources button sorting_buttons">Edit</button>
+                                    <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button sorting_buttons">Delete</a>
                                 </c:when>
                                 <c:otherwise> <!--ANON USER-->
-                                    <a href="/login"><button class="resources button">Sign in to comment</button></a>
+                                    <a href="/login"><button class="resources button sorting_buttons">Sign in to comment</button></a>
                                 </c:otherwise>
                             </c:choose>
                         </div>
+                <hr class="hr_comment">
                     </c:forEach>
                 </form>
-                <br>
-                <hr class="hr_comment">
-                <br>
-                <hr class="hr_comment">
                 <div class="row wrap form-text-color">
+                <c:forEach items="${comments}" var="comment">
+                    <div class="wrap">
+                        <h2>${comment.getUsername()}</h2>
+                        <p>${comment.getContent()}</p>
+                        <h4>${comment.getPostDate()}</h4>
+                        <form action="/delete/comment">
+                            <input type="hidden" name="postId" value="${comment.getPostId()}"
+                            <c:choose>
+                                <c:when test="${sessionScope.user.getId() == comment.getUserId()}"> <!--LOGGED IN USER-->
+                                    <button name="commentId" value="${comment.getId()}" class="resources button">
+                                        Delete
+                                    </button>
+                                </c:when>
+                            </c:choose>
+                        </form>
+                    </div>
+                    <hr class="hr_comment">
+                    </c:forEach>
+                <br>
+                <hr class="hr_comment">
+                <br>
+                <hr class="hr_comment">
+                <div class="form-text-color">
                     <form action="/delete/comment">
                         <c:forEach items="${comments}" var="comment">
                             <div class="wrap">
@@ -49,7 +69,7 @@
                                 <input type="hidden" name="postId" value="${comment.getPostId()}"
                                 <c:choose>
                                     <c:when test="${sessionScope.user.getId() == comment.getUserId()}"> <!--LOGGED IN USER-->
-                                        <button name="commentId" value="${comment.getId()}" class="resources button">Delete</button>
+                                        <button name="commentId" value="${comment.getId()}" class="resources button sorting_buttons">Delete</button>
                                     </c:when>
                                 </c:choose>
                             </div>

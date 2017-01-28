@@ -229,18 +229,34 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- the PW for admin will need to be changed before website is hosted publicly
 INSERT INTO roles (id, role) VALUES (1, 'USER');
 INSERT INTO roles (id, role) VALUE  (2, 'ADMIN');
-INSERT INTO users(user_name, email, password, role_id, first_name, last_name, about, gender, age) VALUES ('admin', 'admin@email.com', '$2a$12$XA2t4QQrC3TS1.AtTf80l.octvZiqUisKqW1p2eBTnmvQqNTIu63W', '2','admin', 'admin', 'Quisque cursus semper fringilla. Sed iaculis, sapien interdum placerat mollis, ante eros vestibulum elit, fermentum elementum massa odio quis neque. Suspendisse potenti. Quisque cursus massa sed iaculis molestie. Aenean a pulvinar ex. Integer rhoncus orci quis ligula consectetur lacinia. Nulla ex magna, lobortis venenatis metus a, congue dapibus urna. Morbi nisi libero, cursus aliquam dolor vel, elementum rutrum ligula. Donec dapibus lacinia venenatis.', 'male', '21');
-INSERT INTO users(user_name, email, password, role_id, first_name, last_name, about, gender, age) VALUES ('user', 'user@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1', 'user', 'user', 'Suspendisse interdum tempor elit ultrices suscipit. Morbi consectetur nulla vel metus pellentesque gravida. Nunc congue, ante at condimentum vestibulum, ex velit dignissim elit, nec aliquet mi enim quis nunc. Suspendisse sollicitudin orci a placerat vulputate. In hac habitasse platea dictumst.', 'male', '24' );
-INSERT INTO posts(user_id, title, content, views, likes) VALUES ('1', 'lorem ipsum quis accumsan', 'Aliquam dignissim dui risus, quis accumsan diam aliquam pellentesque. Nulla viverra ipsum at orci tempor tincidunt. Curabitur egestas metus ex, vitae consectetur felis viverra at. Nullam consectetur eu massa eu lobortis. Cras iaculis dolor nunc, non vulputate orci viverra sit amet. Morbi vitae ornare nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum euismod metus a justo molestie facilisis. Morbi a sapien est. Morbi non metus vel justo pulvinar eleifend vel non enim. Nunc pulvinar libero at elementum tempor. Fusce luctus id nibh eu lobortis. Suspendisse et enim eu nulla condimentum vulputate. Etiam orci turpis, vehicula vel mollis in, fermentum id orci.', '24242', '234');
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('admin', 'admin@email.com', '$2a$12$XA2t4QQrC3TS1.AtTf80l.octvZiqUisKqW1p2eBTnmvQqNTIu63W', '2','admin', 'admin' );
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('user', 'user@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1', 'user', 'user' );
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('Jane', 'Jane@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1', 'Jane', 'Janey' );
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('Paula', 'Lannerson@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1', 'Paula', 'Lanner' );
+INSERT INTO users(user_name, email, password, role_id, first_name, last_name) VALUES ('Sandy', 'Wendy@email.com', '$2a$12$ILFkbN897jAyr5VjIOfr5ua5x65a3XyoHgbT5nvMeq9DXDFh0SICa', '1', 'Sandy', 'Wendy' );
+
+
+
+INSERT INTO posts(user_id, title, content, views, likes) VALUES ('2', 'the least known businesses that accept military discount', 'I have written a list of local businesses that offer military discounts that may you may not have known about', '433', '243');
+INSERT INTO posts(user_id, title, content, views, likes) VALUES ('1', 'Policy changes that may affect your benefits', 'Major changes to the county may have influence on your purchase decisions. please contact your local VA to find if you are qualified to apply for comensation.', '24242', '234');
+INSERT INTO posts(user_id, title, content, views, likes) VALUES ('2', 'the least known businesses that accept military discount', 'I have written a list of local businesses that offer military discounts that may you may not have known about', '434', '2432');
+INSERT INTO posts(user_id, title, content, views, likes) VALUES ('2', 'Hosting a picnic', 'We were hosting a get together at Mcalister park', '42', '43');
+
+
 INSERT INTO category (category) VALUE  ("general");
 INSERT INTO category (category) VALUE  ("events");
 INSERT INTO category (category) VALUE  ("employment");
 INSERT INTO category (category) VALUE  ("wellness");
+
 INSERT INTO category_post(post_id, category_id) VALUES ('1', '1');
-INSERT INTO comments (post_id, user_id, comment) VALUES (1, 1, "this is a comment on this post providing discussion");
-INSERT INTO comments (post_id, user_id, comment) VALUES (1, 2, "I completely dissagree, you are wrong");
-INSERT INTO comments (post_id, user_id, comment) VALUES (1, 1, "your incompetent");
-INSERT INTO comments (post_id, user_id, comment) VALUES (1, 2, " ''You're'' ");
+INSERT INTO category_post(post_id, category_id) VALUES ('2', '1');
+INSERT INTO category_post(post_id, category_id) VALUES ('3', '1');
+INSERT INTO category_post(post_id, category_id) VALUES ('4', '1');
+
+INSERT INTO comments (post_id, user_id, comment) VALUES (1, 3, "Ill Have to call in!");
+INSERT INTO comments (post_id, user_id, comment) VALUES (2, 4, "Thank you so much for the information");
+INSERT INTO comments (post_id, user_id, comment) VALUES (4, 5, "that sounds like a great time! Weather is going to be perfect");
+INSERT INTO comments (post_id, user_id, comment) VALUES (4, 4, "Ill meet yall there Ill bring some brisket.");
 
 
 

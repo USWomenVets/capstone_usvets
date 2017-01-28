@@ -18,34 +18,62 @@
         <h1 id="greeting" class="form-text-color"> ${sessionScope.user.username}!</h1>
         <div>
             <div class="row">
-                <!-- edit form column -->
                 <div class="personal-info text-center">
-                    <h3 class="text-center form-text-color">Personal info</h3>
-                    <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
-
-                    <form action="/profile" class="form-horizontal form-text-color profile_form" method="post">
-
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="username" class="small-6 columns control-label name form-text-color">USERNAME:</label>
-                                <div>
-                                    <input id="username" name="username" value="${user.getUsername()}">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="small-6 columns control-label form-text-color">EMAIL:</label>
-                                <div>
-                                    <input id="email" name="email" value="${user.getEmail()}">
-                                </div>
-                            </div>
+                    <c:if test="${sessionScope.errorMessageEmptyLogin != null}">
+                        <div class="callout alert">
+                            <h5>We must apologize...</h5>
+                            <p>Username or password cannot be blank</p>
                         </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="first_name" class="small-6 columns control-label name form-text-color">FIRST NAME:</label>
-                                <div>
-                                    <input id="first_name" name="first_name" value="${user.getFirstName()}">
-                                </div>
+                    </c:if>
+                    <c:if test="${sessionScope.errorMessageValidLogin != null}">
+                        <div class="callout alert">
+                            <h5>We must apologize...</h5>
+                            <p>Username or password is not valid</p>
+                        </div>
+                    </c:if>
+                    <h3 class="text-center form-text-color">Personal Information</h3>
+                    <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
+                    <button class="button sorting_buttons" type="submit">Edit</button>
+                    <button class="button sorting_buttons" type="submit">Save</button>
+
+                            <div class="row">
+                                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="text" id="username" value="${user.getUsername()}"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
+						<span class="input__label-content input__label-content--hoshi">Username</span>
+					</label>
+				</span>
+                <span class="input input--hoshi">
+
+					<input class="input__field input__field--hoshi text-center" type="email" id="email" value="${user.getEmail()}"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
+						<span class="input__label-content input__label-content--hoshi">Email</span>
+					</label>
+				</span>
                             </div>
+
+                            <div class="row">
+                            <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="text" id="first_name" value="${user.getFirstName()}"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="first_name">
+						<span class="input__label-content input__label-content--hoshi">First Name</span>
+					</label>
+				</span>
+                            <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="text" id="last_name" value="${user.getLastName()}"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="last_name">
+						<span class="input__label-content input__label-content--hoshi">Last Name</span>
+					</label>
+				</span>
+                        </div>
+
+
+
+                    <h3 class="text-center form-text-color">Password Information</h3>
+                    <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
+                    <button class="button sorting_buttons" type="submit">Update</button>
+
+
                             <div class="form-group">
                                 <label for="last_name" class="small-6 columns control-label name form-text-color">LAST NAME:</label>
                                 <div>
@@ -74,27 +102,26 @@
                             </div>
                         </div>--%>
                         <div class="row">
-                            <div class="form-group">
-                                <label for="current_password" class="small-6 columns control-label name form-text-color">CURRENT PASSWORD:</label>
-                                <div>
-                                    <input id="current_password" name="current_password" value="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="new_password" class="small-6 columns control-label name form-text-color">NEW PASSWORD:</label>
-                                <div>
-                                    <input id="new_password" name="new_password" value="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="confrim_password" class="small-6 columns control-label name form-text-color">CONFIRM PASSWORD:</label>
-                                <div>
-                                    <input id="confrim_password" name="confirm_password" value="">
-                                </div>
-                            </div>
+                            <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="current_password" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="current_password">
+						<span class="input__label-content input__label-content--hoshi">Current Password</span>
+					</label>
+				</span>
+                                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="new_password" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="new_password">
+						<span class="input__label-content input__label-content--hoshi">New Password</span>
+					</label>
+				</span>
+                                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
+						<span class="input__label-content input__label-content--hoshi">Confrim New Password</span>
+					</label>
+				</span>
+
                         </div>
-                        <button class="button" type="submit">Save</button>
-                    </form>
                 </div>
             </div>
         </div>

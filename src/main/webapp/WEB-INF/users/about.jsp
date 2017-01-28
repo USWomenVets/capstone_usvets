@@ -42,7 +42,7 @@
                         </div>
                         <div class="media-object-section">
                             <h4>Justin Armer</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            <p>I am a web developer who recently graduated from the Code Up Full-Stack-Java boot camp in San Antonio, TX. I decided to become a developer in order to form creative solutions to practical problems and to supplement intersections with digital music creation.</p>
                         </div>
                     </div>
                 </div>

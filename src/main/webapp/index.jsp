@@ -26,7 +26,7 @@
                         <hr>
                         <p>A discussion board for US to ask questions, give each other advice, and be
                             supportive.</p>
-                        <a href="<c:url value="/archive"/>" class="button sorting_buttons">Events</a>
+                        <a href="<c:url value="/archive"/>" class="button sorting_buttons">Discuss</a>
                     </div>
                 </div>
                 <div class="small-12 medium-4 large-4 columns text-center">

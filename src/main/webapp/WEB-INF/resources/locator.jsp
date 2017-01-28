@@ -12,14 +12,14 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-        <div class="panel large-12 columns text-center">
+        <div class="header-panel large-12 columns text-center">
             <h1>Your VA Locator</h1>
         </div>
-        <div class="map flex-video" id="map" style="height: 200px; width: 500px;">
+        <div class="map large-centered" id="map" style="height: 575px; width: 1200px;">
             <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
         </div>
         <section class="additional-resources">
-            <div class="header-panel"><h2>Additional Resources</h2></div>
+            <div class="header-panel text-center"><h2>Additional Resources</h2></div>
                 <%--<div class="container text-center">--%>
             <div class="row">
                 <div class="large-10 small-10 columns large-centered small-centered">

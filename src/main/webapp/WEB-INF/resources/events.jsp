@@ -38,7 +38,7 @@
                         <div class="tabs-panel is-active" id="panel1d">
                             <div class="wrap">
                                 <div class="media-object-section">
-                                    <img src="/img/summit.jpeg">
+                                    <img src="<c:url value="/img/summit.jpeg"/>">
                                 </div>
                                 <div class="media-object-section">
                                     <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w"
@@ -61,7 +61,7 @@
                                             service.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/conf.jpeg">
+                                        <img src="<c:url value="/img/conf.jpeg"/>">
                                     </div>
                                 </div>
                             </div>
@@ -85,9 +85,8 @@
                                 <br>
                                 <div class="media-object">
                                     <div class="media-object-section">
-                                        <a href="https://www.uschamberfoundation.org/events/upcoming" target="_blank"><h4>Hiring Our Heroes Military Hiring Fair</h4></a>
-
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="https://events.recruitmilitary.com/events/san-antonio-veterans-job-fair-may-18-2017" target="_blank"><h4>San Antonio Veterans Job Fair</h4></a>
+                                        <p>A RecruitMilitary Opportunity Expo is an event where transitioning military, veterans, and their spouses can meet with recruiters from dozens of companies. These events are free for attendees.</p>
                                     </div>
                                     <div class="media-object-section">
                                         <img src="/img/Famouswomen.jpeg">
@@ -109,7 +108,7 @@
                                 <br>
                                 <div class="media-object">
                                     <div class="media-object-section">
-                                        <a href="https://www.meetup.com/Operation-Code-Austin/members/" target="_blank"><<h4>Operation Code</h4>
+                                        <a href="https://www.meetup.com/Operation-Code-Austin/members/" target="_blank"><h4>Operation Code</h4></a>
                                         <p> Operation Code is a nonprofit devoted to helping the military community learn software development, enter the tech industry, and code the future!</p>
                                     </div>
                                     <div class="media-object-section">

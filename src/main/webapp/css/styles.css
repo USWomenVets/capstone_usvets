@@ -118,7 +118,7 @@ FOOTER
 footer{
     background-color: #675682;
     font-weight: bold;
-    padding: 4%;
+    padding: 2.5%;
 }
 footer a{
     display: block;
@@ -137,6 +137,7 @@ footer h4{
 footer hr{
     color: rgba(255, 255, 255, 0.1);
     margin: 10px 0;
+
 }
 
 footer #footer-links{
@@ -325,7 +326,7 @@ CUSTOM
     width: 800px;
 }
 /* **************************************************************************
-HOMEPAGE
+INDEX/HOMEPAGE
 ************************************************************************** */
 
 
@@ -369,12 +370,15 @@ HOMEPAGE
     margin: 22%;
     border-radius: 50%;
     color: #67AECA;
+
 }
 
 .circle h1{
     margin-top: 28%;
     size: 30em;
 }
+
+
 
 .callout{
     background-color: whitesmoke;
@@ -387,15 +391,23 @@ HOMEPAGE
     padding: 3%;
     margin: 0;
 }
+.join-button{
+    text-align: center;
+    margin-top: 2%;
+}
 
 /* **************************************************************************
-CALENDAR
+EVENTS PAGE
 ************************************************************************** */
 
 @media (max-width: 550px) {
     .big-container {
         display: none;
         margin-right: 60px;
+    }
+    #map{
+        width: 100%;
+        height: auto;
     }
 
 }
@@ -424,10 +436,13 @@ CALENDAR
 
 
 /* **************************************************************************
-MAP
+LOCATOR PAGE
 ************************************************************************** */
-.map {
-    align-content: center;
+.media-object-section img{
+    height: 111px;
 }
 
+.tabs-panel{
+    background: whitesmoke;
+}
 

@@ -11,13 +11,13 @@
                 <hr>
                 <div class="row" id="footer-links">
                     <div class="small-6 columns">
-                        <a href="/contact"><span>Contact</span></a>
+                        <a href="<c:url value="/contact"/>"><span>Contact</span></a>
                     </div>
                     <div class="small-6 columns">
-                        <a href="/about"><span>About</span></a>
+                        <a href="<c:url value="/about"/>"><span>About</span></a>
                     </div>
                 </div>
-        </div>
+            </div>
 
             <div class="medium-6 columns">
                 <h4>Social Media</h4>
@@ -39,5 +39,5 @@
         </div>
         <hr>
         <h4 class="text-center">&#xA9;Copyright 2017 Team Allies</h4>
-
+    </div>
 </footer>

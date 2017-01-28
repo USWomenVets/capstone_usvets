@@ -13,7 +13,7 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <h1 class="large-12 columns">A Rally Point for</h1>
+            <h1 class="large-12 columns sub_title">A Rally Point for</h1>
             <div class="hero-logo">
                 <img src="<c:url value="/img/USLogo.png"/>">
             </div>

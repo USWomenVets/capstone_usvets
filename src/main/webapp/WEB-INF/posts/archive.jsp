@@ -25,14 +25,14 @@
             <div class="grid">
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post container hvr-grow-shadow element-item shadow" data-category="${post.stringCategory}">
+                <div class="archive_post container hvr-grow element-item shadow" data-category="${post.stringCategory}">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
                                 <div class="post_para username date">
                                     <span id="username_arch">By || ${post.username}</span>
                                     <span id="date_arch">${post.postDate}</span>
                                 </div>
-                                <hr />
                                 <h1 class="post_para title" id="title_arch">${post.title}</h1>
+                                <hr />
                                 <p class="post_para content truncate" id="content_arch">${post.content}</p>
                                 <h2 class="post_para category" id="category_arch">${post.stringCategory}</h2>
                             </a>

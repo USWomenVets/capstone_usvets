@@ -101,3 +101,14 @@ function initMap() {
             'Error: Your browser doesn\'t support geolocation.');
     }
 
+// function displayMapAt() {
+//     $("#map")
+//         .html(
+//             "<iframe id=\"map_frame\" "
+//             + "width=\"100%\" height=\"600px\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" "
+//             + "src=\"https://www.google.com/maps/api/js?key%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"
+//              + "></iframe>");
+//
+// }
+
+// displayMapAt();

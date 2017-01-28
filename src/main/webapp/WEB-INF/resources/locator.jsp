@@ -6,12 +6,7 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page" />
     </jsp:include>
-    <style>
-        #map {
-            height: 400px;
-            width: 600px;
-        }
-    </style>
+
 </head>
 <body>
 <div class="off-canvas-wrapper">
@@ -19,13 +14,15 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="large-12 columns text-center">
             <div class="panel">
-            <h1>Your VA Map</h1>
+                <h1>Your VA Map</h1>
             </div>
         </div>
         <section class="locator">
             <div class="wrap">
-                <div class="container">
-                    <div class="map text-center" id="map"></div>
+                <%--<div class="container text-center">--%>
+                    <div class="map flex-video" id="map" style="height: 200px; width: 500px;">
+                        <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
+                    </div>
                     <div class="media-object">
                         <a href="https://www.va.gov/womenvet/">
                             <div class="media-object-section">
@@ -58,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <%--</div>--%>
         </section>
 
     </div>

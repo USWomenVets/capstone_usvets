@@ -352,12 +352,15 @@ INDEX/HOMEPAGE
     margin: 22%;
     border-radius: 50%;
     color: #67AECA;
+
 }
 
 .circle h1{
     margin-top: 28%;
     size: 30em;
 }
+
+
 
 .callout{
     background-color: whitesmoke;
@@ -383,6 +386,10 @@ CALENDAR
     .big-container {
         display: none;
         margin-right: 60px;
+    }
+    #map{
+        width: 100%;
+        height: auto;
     }
 
 }
@@ -413,8 +420,4 @@ CALENDAR
 /* **************************************************************************
 MAP
 ************************************************************************** */
-.map {
-    align-content: center;
-}
-
 

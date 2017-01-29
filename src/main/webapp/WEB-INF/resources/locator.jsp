@@ -34,9 +34,11 @@
                     <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">
                         <div class="tabs-panel is-active" id="panel1d">
                             <div class="wrap">
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <img src="/img/DepartmentofVeteransAffairs.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/DepartmentofVeteransAffairs.jpeg">
+                                        </div>
                                     </div>
                                     <div class="media-object-section">
                                         <a href="https://www.va.gov/womenvet/" target="_blank"><h4>Center for Women
@@ -46,13 +48,15 @@
                                     </div>
                                 </div>
                                 <br>
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <h4>Dreams feel real while we're in them.</h4>
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/index.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/index.jpeg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -60,9 +64,11 @@
                         </div>
                         <div class="tabs-panel" id="panel2d">
                             <div class="wrap">
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <img src="/img/Grace-Hopper-150x150.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/Grace-Hopper-150x150.jpeg">
+                                        </div>
                                     </div>
                                     <div class="media-object-section">
                                         <h4>VWise </h4>
@@ -70,22 +76,26 @@
                                     </div>
                                 </div>
                                 <br>
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <h4>Dreams feel real while we're in them.</h4>
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/programs-womeninmilitary-150x150.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/programs-womeninmilitary-150x150.jpeg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tabs-panel" id="panel3d">
                             <div class="wrap">
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <img src="/img/reading.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/reading.jpeg">
+                                        </div>
                                     </div>
                                     <div class="media-object-section">
                                         <h4>VWise </h4>
@@ -93,22 +103,26 @@
                                     </div>
                                 </div>
                                 <br>
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <h4>Dreams feel real while we're in them.</h4>
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/U.S.-Army-women-150x150.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/U.S.-Army-women-150x150.jpeg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tabs-panel" id="panel4d">
                             <div class="wrap">
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <img src="/img/womanpic-150x150.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/womanpic-150x150.jpeg">
+                                        </div>
                                     </div>
                                     <div class="media-object-section">
                                         <h4>VWise </h4>
@@ -116,13 +130,15 @@
                                     </div>
                                 </div>
                                 <br>
-                                <div class="media-object">
+                                <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <h4>Dreams feel real while we're in them.</h4>
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/Women-Ranger-School-150x150.jpeg">
+                                        <div class="thumbnail">
+                                            <img src="/img/Women-Ranger-School-150x150.jpeg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>

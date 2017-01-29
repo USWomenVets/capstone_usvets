@@ -41,7 +41,7 @@
                             <div class="media-object stack-for-small">
                                 <div class="media-object-section">
                                     <div class="thumbnail">
-                                        <img src="/img/fronthumb-wvhp.jpeg">
+                                        <img src="<c:url value="/img/fronthumb-wvhp.jpeg"/>">
                                     </div>
                                 </div>
                                 <div class="media-object-section">
@@ -56,7 +56,6 @@
                             <br>
                             <div class="media-object stack-for-small">
                                 <div class="media-object-section">
-
                                     <a href=https://www.eventbrite.com/e/women-veterans-leadership-and-diversity-conference-tickets-30596453817"
                                        target="_blank"><h4>Women Veterans Leadership and Diversity Conference</h4>
                                     </a>
@@ -67,12 +66,11 @@
                                 </div>
                                 <div class="media-object-section">
                                     <div class="thumbnail">
-                                        <img src="/img/conf150x150.jpeg">
+                                        <img src="<c:url value="/img/conf150x150.jpeg"/>">
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="tabs-panel" id="panel2d">
                         <div class="wrap">
@@ -81,77 +79,78 @@
                                     <div class="thumbnail">
                                         <img src="<c:url value="/img/Female-coastguard-150x150.jpeg"/>">
                                     </div>
-                                    <div class="media-object-section">
-                                        <a href="https://www.uschamberfoundation.org/events/upcoming" target="_blank">
-                                            <h4>Hiring Our Heroes Military Hiring Fair</h4></a>
-                                        <p>Hiring Our Heroes is a nationwide initiative to help veterans, transitioning
-                                            service members, and military spouses find meaningful employment
-                                            opportunities.</p>
-                                    </div>
                                 </div>
-                                <br>
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <a href="https://events.recruitmilitary.com/events/san-antonio-veterans-job-fair-may-18-2017"
-                                           target="_blank"><h4>San Antonio Veterans Job Fair</h4></a>
-                                        <p>A RecruitMilitary Opportunity Expo is an event where transitioning
-                                            military,
-                                            veterans, and their spouses can meet with recruiters from dozens of
-                                            companies. These events are free for attendees.</p>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <div class="thumbnail">
-                                            <img src="<c:url value="/img/milwoman-150x150.jpeg"/>">
-                                        </div>
-                                    </div>
+                                <div class="media-object-section">
+                                    <a href="https://www.uschamberfoundation.org/events/upcoming" target="_blank">
+                                        <h4>Hiring Our Heroes Military Hiring Fair</h4></a>
+                                    <p>Hiring Our Heroes is a nationwide initiative to help veterans, transitioning
+                                        service members, and military spouses find meaningful employment
+                                        opportunities.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="tabs-panel" id="panel3d">
-                            <div class="wrap">
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <div class="thumbnail">
-                                            <img src="<c:url value="/img/programs-womeninmilitary-150x150.jpeg"/>">
-                                        </div>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <a href="http://vwise.vets.syr.edu/calendar" target="_blank"><h4>V-Wise</h4>
-                                        </a>
-                                        <p>V-WISE helps women veterans and female military spouses/partners find
-                                            their
-                                            passion and learn the business savvy skills necessary to turn an idea or
-                                            start-up into a growing venture.</p>
-                                    </div>
+                            <br>
+                            <div class="media-object stack-for-small">
+                                <div class="media-object-section">
+                                    <a href="https://events.recruitmilitary.com/events/san-antonio-veterans-job-fair-may-18-2017"
+                                       target="_blank"><h4>San Antonio Veterans Job Fair</h4></a>
+                                    <p>A RecruitMilitary Opportunity Expo is an event where transitioning
+                                        military,
+                                        veterans, and their spouses can meet with recruiters from dozens of
+                                        companies. These events are free for attendees.</p>
                                 </div>
-                                <br>
-                                <div class="media-object stack-for-small">
-                                    <div class="media-object-section">
-                                        <a href="https://www.meetup.com/Operation-Code-Austin/members/"
-                                           target="_blank">
-                                            <h4>Operation Code</h4></a>
-                                        <p> Operation Code is a nonprofit devoted to helping the military community
-                                            learn software development, enter the tech industry, and code the
-                                            future!</p>
-                                    </div>
-                                    <div class="media-object-section">
-                                        <div class="thumbnail">
-                                            <img src="/img/women-veterans-150x150.jpeg">
-                                        </div>
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <img src="<c:url value="/img/milwoman-150x150.jpeg"/>">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="large-12 columns">
-                        <h3>*We do not affiliate ourselves with any organization listed above.</h3>
+                    <div class="tabs-panel" id="panel3d">
+                        <div class="wrap">
+                            <div class="media-object stack-for-small">
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <img src="<c:url value="/img/programs-womeninmilitary-150x150.jpeg"/>">
+                                    </div>
+                                </div>
+                                <div class="media-object-section">
+                                    <a href="http://vwise.vets.syr.edu/calendar" target="_blank"><h4>V-Wise</h4>
+                                    </a>
+                                    <p>V-WISE helps women veterans and female military spouses/partners find
+                                        their
+                                        passion and learn the business savvy skills necessary to turn an idea or
+                                        start-up into a growing venture.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="media-object stack-for-small">
+                                <div class="media-object-section">
+                                    <a href="https://www.meetup.com/Operation-Code-Austin/members/"
+                                       target="_blank">
+                                        <h4>Operation Code</h4></a>
+                                    <p> Operation Code is a nonprofit devoted to helping the military community
+                                        learn software development, enter the tech industry, and code the
+                                        future!</p>
+                                </div>
+                                <div class="media-object-section">
+                                    <div class="thumbnail">
+                                        <img src="<c:url value="/img/women-veterans-150x150.jpeg"/>">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3>*We do not affiliate ourselves with any organization listed above.</h3>
+                </div>
+            </div>
         </div>
-        <jsp:include page="/WEB-INF/partials/footer.jsp"/>
-        <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+    </div>
+    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
+    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

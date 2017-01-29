@@ -16,7 +16,7 @@
             <h1><strong>Your VA Locator</strong></h1>
         </div>
         <div class="row">
-            <div class="map large-6 medium-6 small-6 columns text-center" id="map">
+            <div class="map" id="map">
                 <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
             </div>
         </div>
@@ -170,7 +170,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <jsp:include page="/WEB-INF/partials/footer.jsp"/>
     <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
     <script async defer

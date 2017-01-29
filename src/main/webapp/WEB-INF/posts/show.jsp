@@ -15,7 +15,6 @@
         <!--Main Section-->
         <section class="main">
             <div class="show">
-                <form action="/posts/edit">
                     <c:forEach var="post" items="${posts}">
                         <div class="wrap form-text-color">
                             <h2>${post.getTitle()}</h2>
@@ -24,18 +23,39 @@
                             <p>${post.getContent()}</p>
                             <h4>${post.getUsername()}</h4>
                             <c:choose>
-                                <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
-                                    <button id="id" name="id" value="${post.getId()}" class="resources button sorting_buttons">Edit</button>
-                                    <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}" class="resources button sorting_buttons">Delete</a>
+                                <c:when test="${sessionScope.user != null && sessionScope.user.getId() == post.getUserId()}"> <!--LOGGED IN USER-->
+                                    <form action="/posts/edit">
+                                        <button id="id" name="id" value="${post.getId()}"
+                                                class="resources button sorting_buttons">Edit
+                                        </button>
+                                        <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}"
+                                           class="resources button sorting_buttons">Delete</a>
+                                    </form>
                                 </c:when>
                                 <c:otherwise> <!--ANON USER-->
-                                    <a href="/login"><button class="resources button sorting_buttons">Sign in to comment</button></a>
+                                    <a href="/login">
+                                        <button class="resources button sorting_buttons">Sign in to comment</button>
+                                    </a>
                                 </c:otherwise>
                             </c:choose>
                         </div>
                 <hr class="hr_comment">
                     </c:forEach>
-                </form>
+
+                <c:choose>
+                    <c:when test="${sessionScope.user != null}">
+                        <form action="/show" method="post">
+                            <div class="form-group row wrap">
+                                <div class="wrap">
+                                    <label for="content">Content</label>
+                                    <textarea id="content" name="content" class="form-control"></textarea>
+                                    <a class="button sorting_buttons hvr-grow"><button type="submit" name="id" value="${post.getId()}">Submit</button></a>
+                                </div>
+                            </div>
+                        </form>
+                    </c:when>
+                </c:choose>
+
                 <div class="row wrap form-text-color">
                 <c:forEach items="${comments}" var="comment">
                     <div class="wrap">

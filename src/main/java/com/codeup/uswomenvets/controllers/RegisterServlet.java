@@ -33,10 +33,11 @@ public class RegisterServlet extends HttpServlet {
             || (! password.equals(passwordConfirmation));
 
         if (inputHasErrors) {
-            request.getSession().setAttribute("errorMessageEmpty", "Passwords do not match");
+            request.getSession().setAttribute("errorMessageEmpty", "Information cannot be left blank");
             response.sendRedirect("/register");
             return;
         }
+
         User userExists = DaoFactory.getUsersDao().findByUsername(username);
 
         if ( userExists != null){

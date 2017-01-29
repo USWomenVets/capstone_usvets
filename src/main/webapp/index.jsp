@@ -26,7 +26,7 @@
                         <hr>
                         <p>A discussion board for US to ask questions, give each other advice, and be
                             supportive.</p>
-                        <a href="<c:url value="/archive"/>" class="button sorting_buttons">Discuss</a>
+                        <a href="<c:url value="/archive"/>" class="button sorting_buttons hvr-grow">Discuss</a>
                     </div>
                 </div>
                 <div class="small-12 medium-4 large-4 columns text-center">
@@ -35,7 +35,7 @@
                         <hr>
                         <p>A map designed to locate your position to find your local VA facilities and a list of
                             additional resources.</p>
-                        <a href="<c:url value="/locator"/>" class="button sorting_buttons">Locator</a>
+                        <a href="<c:url value="/locator"/>" class="button sorting_buttons hvr-grow">Locator</a>
                     </div>
                 </div>
                 <div class="small-12 medium-4 large-4 columns text-center">
@@ -43,7 +43,7 @@
                         <h4>Events</h4>
                         <hr>
                         <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
-                        <a href="<c:url value="/events"/>" class="button sorting_buttons">Events</a>
+                        <a href="<c:url value="/events"/>" class="button sorting_buttons hvr-grow">Events</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
             <a href="<c:url value="/register"/>">
                 <div class="radius panel large-4 small-4 columns medium-centered">
                     <div class="callout">
-                        <button class="button sorting_buttons text-center" data-sort-value="username"><h3>Join US!</h3>
+                        <button class="button sorting_buttons text-center hvr-grow" data-sort-value="username"><h3>Join US!</h3>
                         </button>
                     </div>
                 </div>

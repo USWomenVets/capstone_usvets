@@ -16,10 +16,10 @@
         <section class="locator sort_title">
             <h3><strong>Discussion Board</strong></h3>
                 <div class="button-group sort-by-button-group">
-                    <button class="button sorting_buttons" data-sort-value="username">Username</button>
-                    <button class="button sorting_buttons" data-sort-value="date">Date</button>
-                    <button class="button sorting_buttons" data-sort-value="title">Title</button>
-                    <button class="button sorting_buttons" data-sort-value="category">Category</button>
+                    <button class="button sorting_buttons hvr-grow" data-sort-value="username">Username</button>
+                    <button class="button sorting_buttons hvr-grow" data-sort-value="date">Date</button>
+                    <button class="button sorting_buttons hvr-grow" data-sort-value="title">Title</button>
+                    <button class="button sorting_buttons hvr-grow" data-sort-value="category">Category</button>
                     </div>
 
             <div class="grid">

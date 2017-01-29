@@ -8,13 +8,13 @@
                 <div>
                 <li class="has-form">
                     <div class="row collapse">
-                        <%--<div class="large-8 small-9 columns">--%>
-                            <%--&lt;%&ndash;<input type="text" placeholder="Search">&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;<div class="large-4 small-3 columns">&ndash;%&gt;--%>
-                            <%--&lt;%&ndash;<a href="/archive" class="alert button expand">Search</a>&ndash;%&gt;--%>
-                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                    <%--</div>--%>
+                        <div class="large-8 small-9 columns">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="large-4 small-3 columns">
+                            <a href="/archive" class="alert button expand">Search</a>
+                        </div>
+                    </div>
                 </li>
                 <li><a href="/archive">Board</a></li>
                 <li><a href="/locator">Locator</a></li>
@@ -28,13 +28,13 @@
                 <div>
                 <li class="has-form">
                     <div class="row collapse">
-                        <%--<div class="large-8 small-9 columns">--%>
-                            <%--<input type="text" placeholder="Search">--%>
-                        <%--</div>--%>
-                        <%--<div class="large-4 small-3 columns">--%>
-                            <%--<a href="/archive" class="alert button expand">Search</a>--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
+                        <div class="large-8 small-9 columns">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="large-4 small-3 columns">
+                            <a href="/archive" class="alert button expand">Search</a>
+                        </div>
+                    </div>
                 </li>
                 <li><a href="/archive">Board</a></li>
                 <li><a href="/locator">Locator</a></li>

@@ -16,7 +16,7 @@ function initMap() {
         navigator.geolocation.getCurrentPosition(function (position) {
             var pos = {
                 lat: position.coords.latitude,
-                lng: position.coords.longitude,
+                lng: position.coords.longitude
             };
 
             infoWindow.setPosition(pos);
@@ -99,6 +99,9 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         'Error: Your browser doesn\'t support geolocation.');
 }
 
+
+
+//Attempt to create iframe with google map so flex-video could be used for responsiveness
 // function displayMapAt() {
 //     $("#map")
 //         .html(
@@ -110,3 +113,46 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 // }
 
 // displayMapAt();
+
+
+//
+//
+//Attempt to create list
+// var current_marker;
+// google.maps.event.addListener( map, 'idle', function() {
+//
+//     // Read the bounds of the map being displayed.
+//     bounds = map.getBounds();
+//
+//     // Iterate through all of the markers that are displayed on the *entire* map.
+//     for ( i = 0, l = markers.length; i < l; i++ ) {
+//
+//         current_marker = markers[ i ];
+//
+//         /* If the current marker is visible within the bounds of the current map,
+//          * let's add it as a list item to #nearby-results that's located above
+//          * this script.
+//          */
+//         if ( bounds.contains( current_marker.getPosition() ) ) {
+//
+//             /* Only add a list item if it doesn't already exist. This is so that
+//              * if the browser is resized or the tablet or phone is rotated, we don't
+//              * have multiple results.
+//              */
+//             if ( 0 === $( '#map-marker-' + i ).length ) {
+//
+//                 $( '#results-list' ).append(
+//                     $( '<li />' )
+//                         .attr( 'id', 'map-marker-' + i )
+//                         .attr( 'class', 'depot-result' )
+//                         .html( current_marker.content )
+//                 );
+//
+//             }
+//
+//         }
+//
+//     }
+//
+// });
+

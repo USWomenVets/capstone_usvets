@@ -35,7 +35,7 @@
                         </div>
                         <div class="form-group">
                             <label for="content">Content</label>
-                            <textarea id="content" name="content" class="form-control">${post.getContent()}</textarea>
+                            <textarea id="content" name="content" class="form-control" rows="6">${post.getContent()}</textarea>
                         </div>
                         <a class="button"><button type="submit" name="id" value="${post.getId()}">Submit</button></a>
                         <script>

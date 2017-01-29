@@ -6,7 +6,6 @@
     <jsp:include page="/WEB-INF/partials/head.jsp">
         <jsp:param name="title" value="US Women Vets Home Page"/>
     </jsp:include>
-
 </head>
 <body>
 <div class="off-canvas-wrapper">
@@ -16,10 +15,17 @@
             <h1><strong>Your VA Locator</strong></h1>
         </div>
         <div class="row">
-            <div class="map large-6 medium-6 small-6 columns text-center" id="map">
+            <div class="map" id="map">
                 <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
             </div>
+
         </div>
+        <%--Attempt to create list--%>
+        <%--<div id="results-container">--%>
+            <%--<h3>Results</h3>--%>
+            <%--<ul id="results-list">--%>
+            <%--</ul><!-- #results-list -->--%>
+        <%--</div><!-- #results-container -->--%>
         <div class="additional-resources">
             <div class="subTitle text-center"><h2>Additional Resources</h2></div>
             <div class="row">
@@ -55,7 +61,6 @@
                                                 Affairs-Women Veterans</h4></a>
                                         <p>Women Veterans may be eligible for a wide-variety of benefits available to
                                             all U.S. military Veterans.</p>
-
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
@@ -64,7 +69,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <div class="tabs-panel" id="panel2d">
                             <div class="wrap">
@@ -170,7 +174,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <jsp:include page="/WEB-INF/partials/footer.jsp"/>
     <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
     <script async defer

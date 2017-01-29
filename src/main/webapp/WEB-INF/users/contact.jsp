@@ -14,8 +14,6 @@
         <div class="title large-12 columns text-center">
             <h1><strong>Contact US</strong></h1>
         </div>
-
-
             <section class="main">
                 <div class="wrap row">
                     <form action="https://www.elformo.com/forms/3e8e34bc-bf8d-4f42-8b8f-2cf90c44f4c5" method="post">

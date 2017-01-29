@@ -11,6 +11,9 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+        <div class="title large-12 columns text-center">
+            <h1><strong>Team Allies</strong></h1>
+        </div>
 
         <!--Main section-->
         <section class="main">

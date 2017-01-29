@@ -14,11 +14,13 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
 
         <!--Calendar-->
-        <div class="responsive-iframe-container big-container text-center">
+        <%--<div class="responsive-iframe-container big-container">--%>
+        <div class="flex-video big-container large-10 columns large-centered">
             <iframe src="https://calendar.google.com/calendar/embed?title=%20%20%20%20%20%20%20&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div class="responsive-iframe-container small-container text-center">
+        <%--<div class="flex-video ">--%>
+        <div class="flex-video small-container small-10 columns small-centered">
             <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
@@ -36,21 +38,22 @@
                 <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">
                     <div class="tabs-panel is-active" id="panel1d">
                         <div class="wrap">
-                            <div class="media-object-section">
-                                <img src="<c:url value="/img/summit.jpeg"/>">
-                            </div>
-                            <div class="media-object-section">
-                                <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w"
-                                   target="_blank"><h4>Fourth Annual Women Veterans and Active Duty Women Warriors
-                                    Resource Summit</h4></a>
-                                <p>The summit will introduce the unique experiences of women Veterans and the need
-                                    for tailored services that will allow them to find success in programs meant to
-                                    serve them.</p>
+                            <div class="media-object">
+                                <div class="media-object-section">
+                                    <img src="/img/fronthumb-wvhp.jpeg">
+                                </div>
+                                <div class="media-object-section">
+                                    <a href="https://www.eventbrite.com/e/the-fourth-annual-women-veterans-and-active-duty-women-warriors-resource-summit-tickets-30229252508?ref=enivtefor001&invite=MTEyMzQwMTAvYmV0dHkubW9zZWxleWJyb3duQHZhLmdvdi8w"
+                                       target="_blank"><h4>Fourth Annual Women Veterans and Active Duty Women Warriors
+                                        Resource Summit</h4></a>
+                                    <p>The summit will introduce the unique experiences of women Veterans and the need
+                                        for tailored services that will allow them to find success in programs meant to
+                                        serve them.</p>
+                                </div>
                             </div>
                             <br>
                             <div class="media-object">
                                 <div class="media-object-section">
-
                                     <a href=https://www.eventbrite.com/e/women-veterans-leadership-and-diversity-conference-tickets-30596453817"
                                        target="_blank"><h4>Women Veterans Leadership and Diversity Conference</h4>
                                     </a>
@@ -60,7 +63,7 @@
                                         service.</p>
                                 </div>
                                 <div class="media-object-section">
-                                    <img src="<c:url value="/img/conf.jpeg"/>">
+                                    <img src="/img/conf150x150.jpeg">
                                 </div>
                             </div>
                         </div>
@@ -70,7 +73,7 @@
                         <div class="wrap">
                             <div class="media-object">
                                 <div class="media-object-section">
-                                    <img src="/img/Famouswomen.jpeg">
+                                    <img src="<c:url value="/img/Female-coastguard-150x150.jpeg"/>">
                                 </div>
                                 <div class="media-object-section">
                                     <a href="https://www.uschamberfoundation.org/events/upcoming" target="_blank">
@@ -90,7 +93,7 @@
                                         companies. These events are free for attendees.</p>
                                 </div>
                                 <div class="media-object-section">
-                                    <img src="/img/Famouswomen.jpeg">
+                                    <img src="<c:url value="/img/milwoman-150x150.jpeg"/>">
                                 </div>
                             </div>
                         </div>
@@ -99,7 +102,7 @@
                         <div class="wrap">
                             <div class="media-object">
                                 <div class="media-object-section">
-                                    <img src="http://placeimg.com/200/200/people">
+                                    <img src="<c:url value="/img/programs-womeninmilitary-150x150.jpeg"/>">
                                 </div>
                                 <div class="media-object-section">
                                     <a href="http://vwise.vets.syr.edu/calendar" target="_blank"><h4>V-Wise</h4></a>
@@ -118,7 +121,7 @@
                                         future!</p>
                                 </div>
                                 <div class="media-object-section">
-                                    <img src="http://placeimg.com/200/200/people">
+                                    <img src="/img/women-veterans-150x150.jpeg">
                                 </div>
                             </div>
                         </div>

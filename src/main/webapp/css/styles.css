@@ -24,6 +24,10 @@ GENERAL
     margin-top: 10px;
 }
 
+button {
+    background-color: #E52A6F;
+}
+
 
 /* **************************************************************************
  NAV-MOBILE
@@ -322,6 +326,7 @@ CUSTOM
 .sorting_buttons{
     background-color: #E52A6F;
 }
+
 #sign_up{
     color: #E52A6F;
 }
@@ -406,7 +411,6 @@ EVENTS PAGE
 @media (max-width: 550px) {
     .big-container {
         display: none;
-        margin-right: 60px;
     }
     #map{
         width: 100%;
@@ -418,23 +422,6 @@ EVENTS PAGE
     .small-container {
         display: none;
     }
-}
-/* Responsive iFrame */
-.responsive-iframe-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-.responsive-iframe-container iframe,
-.vresponsive-iframe-container object,
-.vresponsive-iframe-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .featured-events{

@@ -13,7 +13,7 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
-            <h1>Your VA Locator</h1>
+            <h1><strong>Your VA Locator</strong></h1>
         </div>
         <div class="map large-centered" id="map" style="height: 575px; width: 1200px;">
             <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
@@ -36,7 +36,7 @@
                             <div class="wrap">
                                 <div class="media-object">
                                     <div class="media-object-section">
-                                        <img src="/img/salute-USVW.png">
+                                        <img src="/img/DepartmentofVeteransAffairs.jpeg">
                                     </div>
                                     <div class="media-object-section">
                                         <a href="https://www.va.gov/womenvet/" target="_blank"><h4>Center for Women
@@ -52,7 +52,7 @@
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/Famouswomen.jpeg">
+                                        <img src="/img/index.jpeg">
                                     </div>
                                 </div>
                             </div>
@@ -61,9 +61,8 @@
                         <div class="tabs-panel" id="panel2d">
                             <div class="wrap">
                                 <div class="media-object">
-
                                     <div class="media-object-section">
-                                        <img src="/img/Famouswomen.jpeg">
+                                        <img src="/img/Grace-Hopper-150x150.jpeg">
                                     </div>
                                     <div class="media-object-section">
                                         <h4>VWise </h4>
@@ -77,7 +76,7 @@
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="/img/Famouswomen.jpeg">
+                                        <img src="/img/programs-womeninmilitary-150x150.jpeg">
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +85,7 @@
                             <div class="wrap">
                                 <div class="media-object">
                                     <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
+                                        <img src="/img/reading.jpeg">
                                     </div>
                                     <div class="media-object-section">
                                         <h4>VWise </h4>
@@ -100,7 +99,7 @@
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
+                                        <img src="/img/U.S.-Army-women-150x150.jpeg">
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +108,7 @@
                             <div class="wrap">
                                 <div class="media-object">
                                     <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
+                                        <img src="/img/womanpic-150x150.jpeg">
                                     </div>
                                     <div class="media-object-section">
                                         <h4>VWise </h4>
@@ -123,7 +122,7 @@
                                         <p>I'm going to improvise. Listen, there's something you should know.</p>
                                     </div>
                                     <div class="media-object-section">
-                                        <img src="http://placeimg.com/200/200/people">
+                                        <img src="/img/Women-Ranger-School-150x150.jpeg">
                                     </div>
                                 </div>
                             </div>

@@ -423,6 +423,9 @@ EVENTS PAGE
         display: none;
     }
 }
+.flex-video{
+    height: 60%;
+}
 
 .featured-events{
     margin: 3%;

@@ -32,6 +32,9 @@ public class MySQLCommentsDao implements Comments{
     @Override
     public boolean insert(Comment comment, Post post){
         try {
+            if (comment.getContent() == null || comment.getContent().trim() == "") {
+                return false;
+            }
             String insertQuery = "INSERT INTO comments(post_id, user_id, comment) VALUES(?, ?, ?);";
             PreparedStatement stmt = connection.prepareStatement(insertQuery, Statement.RETURN_GENERATED_KEYS);
             stmt.setInt(1, post.getId());

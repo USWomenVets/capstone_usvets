@@ -13,15 +13,15 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <h1 class="large-12 columns sub_title">A Rally Point for</h1>
+            <h1 class="large-12 columns title">A Rally Point For</h1>
             <div class="hero-logo">
                 <img src="<c:url value="/img/USLogo.png"/>">
             </div>
         </section>
         <div class="about">
             <div class="row">
-                <div class="small-12 medium-4 large-4 columns text-center">
-                    <div class="callout">
+                <div class="small-12 medium-4 large-4 columns">
+                    <div class="callout text-center">
                         <h4>Let's Talk</h4>
                         <hr>
                         <p>A discussion board for US to ask questions, give each other advice, and be
@@ -50,7 +50,7 @@
         </div>
         <div class="statistics text-center">
             <div class="row">
-                <h1>Did you know...</h1>
+                <h1>Did You Know...</h1>
             </div>
             <div class="circles row">
                 <div class="small-12 medium-6 large-3 columns text-center">
@@ -71,59 +71,19 @@
                 </div>
             </div>
         </div>
-
-        <div class="item">
-
-            <h3 class="level-title">Javascript &amp; jQuery</h3>
-
-            <div class="level-bar">
-
-                <div class="level-bar-inner" data-level="70%">
-
-                </div>
-
-            </div><!--//level-bar-->
-
-        </div><!--//item-->
-        <script>jQuery(document).ready(function($) {
-
-
-            /*======= Skillset *=======*/
-
-
-            $('.level-bar-inner').css('width', '0');
-
-            $(window).on('load', function() {
-
-                $('.level-bar-inner').each(function() {
-
-                    var itemWidth = $(this).data('level');
-
-                    $(this).animate({
-                        width: itemWidth
-                    }, 800);
-
-                });
-
-            });
-
-            $('#resume-wrap').show('fold', 1000);
-
-        </script>
-
-        <div class="join-button">
-            <a href="<c:url value="/register"/>">
-                <div class="radius panel large-4 small-4 columns medium-centered">
+        <div class="join">
+            <div class="panel large-6 small-4 columns medium-centered">
                     <div class="callout">
-                        <button class="button sorting_buttons text-center" data-sort-value="username"><h3>Join US!</h3>
-                        </button>
+                        <h4>What Can We Do?</h4>
+                        <hr>
+                        <p>Let's create an environment where we can help each other out. Whether you are thinking about
+                            joining, currently in the military, or have been out for a while, let's talk about it.</p>
+                        <a href="<c:url value="/register"/>" class="button sorting_buttons">Join US!</a>
                     </div>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
-</div>
-<jsp:include page="/WEB-INF/partials/footer.jsp"/>
-<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
+    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

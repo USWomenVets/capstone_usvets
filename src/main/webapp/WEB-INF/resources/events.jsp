@@ -26,6 +26,11 @@
             <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
+        <div class="row">
+            <div class="large-12 columns text-center">
+            <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics" class="button sorting_buttons">Import iCal Calendar</a>
+            </div>
+        </div>
         <div class="featured-events">
             <div class="title large-12 columns text-center">
                 <h2><strong>Featured Events</strong></h2>
@@ -143,11 +148,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <h3>*We do not affiliate ourselves with any organization listed above.</h3>
                 </div>
             </div>
         </div>

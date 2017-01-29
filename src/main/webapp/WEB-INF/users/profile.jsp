@@ -10,7 +10,7 @@
 <body>
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <jsp:include page="/WEB-INF/partials/navbar.jsp" />
+        <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <section class="main row">
             <div class="container text-center">
                 <h1 id="greeting" class="form-text-color"> ${sessionScope.user.username}!</h1>
@@ -29,79 +29,84 @@
                                     <p>Username or password is not valid</p>
                                 </div>
                             </c:if>
-                            <h3 class="text-center form-text-color">Personal Information</h3>
-                            <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
-                            <button class="button sorting_buttons" type="submit">Edit</button>
-                            <button class="button sorting_buttons" type="submit">Save</button>
+                            <form action="/profile" class="form-horizontal form-text-color profile_form" method="post">
 
-                            <div class="row">
+                                <h3 class="text-center form-text-color">Personal Information</h3>
+                                <p class="form-text-color"><em>Use the column on the right to edit your information</em>
+                                </p>
+                                <button class="button sorting_buttons" type="submit" name="id">Edit</button>
+                                <button class="button sorting_buttons" type="submit">Save</button>
+
+                                <div class="row">
                                 <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="text" id="username"
+					<input class="input__field input__field--hoshi text-center" type="text" id="username" name="username"
                            value="${user.getUsername()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
 						<span class="input__label-content input__label-content--hoshi">Username</span>
 					</label>
 				</span>
-                                <span class="input input--hoshi">
+                                    <span class="input input--hoshi">
 
-					<input class="input__field input__field--hoshi text-center" type="email" id="email"
+					<input class="input__field input__field--hoshi text-center" type="email" id="email" name="email"
                            value="${user.getEmail()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
 						<span class="input__label-content input__label-content--hoshi">Email</span>
 					</label>
 				</span>
-                            </div>
+                                </div>
 
-                            <div class="row">
+                                <div class="row">
                             <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="text" id="first_name"
+					<input class="input__field input__field--hoshi text-center" type="text" id="first_name" name="first_name"
                            value="${user.getFirstName()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="first_name">
 						<span class="input__label-content input__label-content--hoshi">First Name</span>
 					</label>
 				</span>
-                                <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="text" id="last_name"
+                                    <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="text" id="last_name" name="last_name"
                            value="${user.getLastName()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="last_name">
 						<span class="input__label-content input__label-content--hoshi">Last Name</span>
 					</label>
 				</span>
-                            </div>
+                                </div>
 
 
-                            <h3 class="text-center form-text-color">Password Information</h3>
-                            <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
-                            <button class="button sorting_buttons" type="submit">Update</button>
+                                <h3 class="text-center form-text-color">Password Information</h3>
+                                <p class="form-text-color"><em>Use the column on the right to edit your information</em>
+                                </p>
+                                <button class="button sorting_buttons" type="submit">Update</button>
 
 
-                            <div class="row">
+                                <div class="row">
                             <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="current_password"/>
+					<input class="input__field input__field--hoshi text-center" type="password" id="current_password" name="current_password"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="current_password">
 						<span class="input__label-content input__label-content--hoshi">Current Password</span>
 					</label>
 				</span>
-                                <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="new_password"/>
+                                    <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="new_password" name="new_password"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="new_password">
 						<span class="input__label-content input__label-content--hoshi">New Password</span>
 					</label>
 				</span>
-                                <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password"/>
+                                    <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confirm_password"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
 						<span class="input__label-content input__label-content--hoshi">Confrim New Password</span>
 					</label>
 				</span>
-
-                            </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-</section>
     </div>
+    </section>
+</div>
 </div>
 
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

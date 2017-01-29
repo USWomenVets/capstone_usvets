@@ -423,12 +423,26 @@ EVENTS PAGE
         display: none;
     }
 }
-.flex-video{
-    height: 60%;
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
 }
 
 .featured-events{
-    margin: 3%;
+    margin-top: 0;
 }
 /* **************************************************************************
 LOCATOR PAGE

@@ -12,10 +12,12 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-
+        <div class="title large-12 columns text-center">
+            <h1><strong>Calendar of Events</strong></h1>
+        </div>
         <!--Calendar-->
         <%--<div class="responsive-iframe-container big-container">--%>
-        <div class="flex-video big-container large-10 columns large-centered">
+        <div class="responsive-iframe-container big-container large-10 medium-10 columns large-centered medium-centered">
             <iframe src="https://calendar.google.com/calendar/embed?title=%20%20%20%20%20%20&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>
         </div>
@@ -25,8 +27,9 @@
                     style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
         <div class="featured-events">
-            <div class="subTitle text-center"><h2>Featured Events</h2></div>
-
+            <div class="title large-12 columns text-center">
+                <h2><strong>Featured Events</strong></h2>
+            </div>
             <div class="large-10 small-10 columns large-centered small-centered">
                 <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
                     <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Conferences</a>
@@ -34,7 +37,6 @@
                     <li class="tabs-title"><a href="#panel2d">Career Fairs</a></li>
                     <li class="tabs-title"><a href="#panel3d">Miscellaneous</a></li>
                 </ul>
-
                 <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">
                     <div class="tabs-panel is-active" id="panel1d">
                         <div class="wrap">

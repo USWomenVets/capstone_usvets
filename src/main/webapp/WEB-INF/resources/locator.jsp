@@ -15,12 +15,13 @@
         <div class="title large-12 columns text-center">
             <h1><strong>Your VA Locator</strong></h1>
         </div>
-        <div class="map large-centered" id="map" style="height: 575px; width: 1200px;">
+        <div class="row">
+        <div class="map large-6 medium-6 small-6 columns text-center" id="map">
             <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
+        </div>
         </div>
         <section class="additional-resources">
             <div class="subTitle text-center"><h2>Additional Resources</h2></div>
-            <%--<div class="container text-center">--%>
             <div class="row">
                 <div class="large-10 small-10 columns large-centered small-centered">
                     <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
@@ -30,14 +31,13 @@
                         <li class="tabs-title"><a href="#panel3d">Education and Training</a></li>
                         <li class="tabs-title"><a href="#panel4d">Miscellaneous</a></li>
                     </ul>
-
                     <div class="tabs-content large-12 small-12 columns" data-tabs-content="deeplinked-tabs">
                         <div class="tabs-panel is-active" id="panel1d">
                             <div class="wrap">
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/DepartmentofVeteransAffairs.jpeg">
+                                            <img src="<c:url value="/img/DepartmentofVeteransAffairs.jpeg"/>">
                                         </div>
                                     </div>
                                     <div class="media-object-section">
@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/index.jpeg">
+                                            <img src="<c:url value="/img/index.jpeg"/>">
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/Grace-Hopper-150x150.jpeg">
+                                            <img src="<c:url value="/img/Grace-Hopper-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                     <div class="media-object-section">
@@ -83,7 +83,7 @@
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/programs-womeninmilitary-150x150.jpeg">
+                                            <img src="<c:url value="/img/programs-womeninmilitary-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/reading.jpeg">
+                                            <img src="<c:url value="/img/reading.jpeg"/>">
                                         </div>
                                     </div>
                                     <div class="media-object-section">
@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/U.S.-Army-women-150x150.jpeg">
+                                            <img src="<c:url value="/img/U.S.-Army-women-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/womanpic-150x150.jpeg">
+                                            <img src="<c:url value="/img/womanpic-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                     <div class="media-object-section">
@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="/img/Women-Ranger-School-150x150.jpeg">
+                                            <img src="<c:url value="/img/Women-Ranger-School-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                 </div>

@@ -323,9 +323,6 @@ CUSTOM
     text-align: center;
 }
 
-#map {
-    display: block;
-}
 
 .show {
     text-align: left;
@@ -438,11 +435,6 @@ EVENTS PAGE
         display: none;
     }
 
-    #map {
-        width: 100%;
-        height: auto;
-    }
-
 }
 
 @media (min-width: 550px) {
@@ -484,3 +476,10 @@ LOCATOR PAGE
     background: whitesmoke;
 }
 
+#map{
+    padding: 10%;
+    margin: 5%;
+    height: 400px;
+    width: 800px;
+
+}

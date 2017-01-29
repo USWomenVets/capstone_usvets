@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="join">
-            <div class="panel large-6 small-4 columns medium-centered">
+            <div class="panel large-6 small-6 columns medium-centered">
                     <div class="callout">
                         <h4>What Can We Do?</h4>
                         <hr>

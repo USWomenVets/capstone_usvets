@@ -419,13 +419,42 @@ EVENTS PAGE
     .big-container {
         display: none;
     }
+    #map{
+        /*padding: 10%;*/
+        margin-left: .75em;
+        /*margin-right: 1em;*/
+        height: 250px;
+        width: 325px;
 
+    }
 }
 
 @media (min-width: 550px) {
+    .big-container {
+        display: none;
+    }
+    #map{
+        /*padding: 10%;*/
+        margin-left: 4em;
+        /*margin-right: 1em;*/
+        height: 375px;
+        width: 600px;
+
+    }
+}
+@media (min-width: 990px) {
     .small-container {
         display: none;
     }
+    #map{
+        /*padding: 10%;*/
+        margin-left: 15em;
+        margin-right: 8em;
+        height: 575px;
+        width: 900px;
+
+    }
+
 }
 
 .responsive-iframe-container {
@@ -461,10 +490,3 @@ LOCATOR PAGE
     background: whitesmoke;
 }
 
-#map{
-    padding: 10%;
-    margin: 5%;
-    height: 400px;
-    width: 800px;
-
-}

@@ -15,12 +15,12 @@
 
         <!--Calendar-->
         <%--<div class="responsive-iframe-container big-container">--%>
-        <div class="flex-video big-container large-6 columns large-centered">
+        <div class="flex-video big-container large-10 columns large-centered">
             <iframe src="https://calendar.google.com/calendar/embed?title=%20%20%20%20%20%20&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>
         </div>
         <%--<div class="flex-video ">--%>
-        <div class="flex-video small-container small-6 columns small-centered">
+        <div class="flex-video small-container small-10 columns small-centered">
             <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
                     style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
         </div>

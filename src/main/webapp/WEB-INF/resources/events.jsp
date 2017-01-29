@@ -28,7 +28,7 @@
         </div>
         <div class="row">
             <div class="large-12 columns text-center">
-            <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics" class="button sorting_buttons">Import iCal Calendar</a>
+            <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics" class="sorting_buttons"><h6>Import iCal Calendar</h6></a>
             </div>
         </div>
         <div class="featured-events">

@@ -33,8 +33,8 @@
                     </c:if>
                     <h3 class="text-center form-text-color">Personal Information</h3>
                     <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
-                    <button class="button sorting_buttons" type="submit">Edit</button>
-                    <button class="button sorting_buttons" type="submit">Save</button>
+                    <button class="button sorting_buttons hvr-grow" type="submit">Edit</button>
+                    <button class="button sorting_buttons hvr-grow" type="submit">Save</button>
 
                             <div class="row">
                                 <span class="input input--hoshi">
@@ -71,7 +71,7 @@
 
                     <h3 class="text-center form-text-color">Password Information</h3>
                     <p class="form-text-color"><em>Use the column on the right to edit your information</em></p>
-                    <button class="button sorting_buttons" type="submit">Update</button>
+                    <button class="button sorting_buttons hvr-grow" type="submit">Update</button>
 
 
 

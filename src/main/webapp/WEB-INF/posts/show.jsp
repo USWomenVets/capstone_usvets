@@ -42,12 +42,19 @@
                 <hr class="hr_comment">
                     </c:forEach>
 
+                <c:if test="${sessionScope.commentError != null}">
+                    <div class="callout alert">
+                        <h5>We must apologize...</h5>
+                        <p>Comment cannot be blank</p>
+                    </div>
+                </c:if>
+
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
                         <form action="/show" method="post">
                             <div class="form-group row wrap">
                                 <div class="wrap">
-                                    <label for="content">Content</label>
+                                    <label for="content">Comment</label>
                                     <textarea id="content" name="content" class="form-control"></textarea>
                                     <a class="button sorting_buttons hvr-grow"><button type="submit" name="id" value="${post.getId()}">Submit</button></a>
                                 </div>

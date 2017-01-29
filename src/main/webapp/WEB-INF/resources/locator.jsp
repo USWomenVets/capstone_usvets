@@ -16,11 +16,11 @@
             <h1><strong>Your VA Locator</strong></h1>
         </div>
         <div class="row">
-        <div class="map large-6 medium-6 small-6 columns text-center" id="map">
-            <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
+            <div class="map large-6 medium-6 small-6 columns text-center" id="map">
+                <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
+            </div>
         </div>
-        </div>
-        <section class="additional-resources">
+        <div class="additional-resources">
             <div class="subTitle text-center"><h2>Additional Resources</h2></div>
             <div class="row">
                 <div class="large-10 small-10 columns large-centered small-centered">
@@ -50,8 +50,12 @@
                                 <br>
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <h4>Dreams feel real while we're in them.</h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="http://www.benefits.va.gov/persona/veteran-women.asp" target="_blank">
+                                            <h4>Department of Veteran
+                                                Affairs-Women Veterans</h4></a>
+                                        <p>Women Veterans may be eligible for a wide-variety of benefits available to
+                                            all U.S. military Veterans.</p>
+
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
@@ -67,19 +71,25 @@
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="<c:url value="/img/Grace-Hopper-150x150.jpeg"/>">
+                                            <img src="<c:url value="/img/U.S.-Army-women-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                     <div class="media-object-section">
-                                        <h4>VWise </h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="http://www.military.com/benefits/veterans-health-care/va-benefits-women-veterans-health-care.html"
+                                           target="_blank"><h4>VA Benefits: Women Veterans Health Care</h4></a>
+                                        <p>Women Veterans are eligible for the same VA benefits as male Veterans.
+                                            Comprehensive health services are available to women Veterans including
+                                            primary care, specialty care, mental health care, residential treatment and
+                                            reproductive health care services.</p>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <h4>Dreams feel real while we're in them.</h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href=https://www.va.gov/" target="_blank"><h4>Department of Veteran
+                                            Affairs</h4></a>
+                                        <p>General link to the Veteran Affairs site for further VA benefits and
+                                            compensation.</p>
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
@@ -94,23 +104,28 @@
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="<c:url value="/img/reading.jpeg"/>">
+                                            <img src="<c:url value="/img/Grace-Hopper-150x150.jpeg"/>">
                                         </div>
                                     </div>
                                     <div class="media-object-section">
-                                        <h4>VWise </h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="https://codeup.com" target="_blank"><h4>Codeup</h4></a>
+                                        <p>Codeup is a career accelerator that prepares you to become a software
+                                            developer, even if you have no prior coding experience (Accepts GI
+                                            Bill).</p>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <h4>Dreams feel real while we're in them.</h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="http://www.benefits.va.gov/gibill/index.asp" target="_blank"><h4>VA
+                                            Education and Training</h4></a>
+                                        <p>Find out how you can utilize your education benefits for higher education
+                                            and/or training.</p>
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
-                                            <img src="<c:url value="/img/U.S.-Army-women-150x150.jpeg"/>">
+                                            <img src="<c:url value="/img/reading.jpeg"/>">
+
                                         </div>
                                     </div>
                                 </div>
@@ -125,15 +140,22 @@
                                         </div>
                                     </div>
                                     <div class="media-object-section">
-                                        <h4>VWise </h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="http://vwise.vets.syr.edu/" target="_blank"><h4>V-Wise</h4></a>
+                                        <p>V-WISE is operated by the Institute for Veterans and Military Families at
+                                            Syracuse University (IVMF). V-WISE is funded
+                                            in part through a Cooperative Agreement with the U.S. Small Business
+                                            Administration.</p>
                                     </div>
                                 </div>
                                 <br>
                                 <div class="media-object stack-for-small">
                                     <div class="media-object-section">
-                                        <h4>Dreams feel real while we're in them.</h4>
-                                        <p>I'm going to improvise. Listen, there's something you should know.</p>
+                                        <a href="http://www.womenshealth.va.gov/" target="_blank"><h4>VA Womens Health
+                                            Care</h4></a>
+                                        <p>Did you know that women are the fastest growing group within the Veteran
+                                            population? Learn more about the changing face of women Veterans and what VA
+                                            is
+                                            doing to meet their health care needs.</p>
                                     </div>
                                     <div class="media-object-section">
                                         <div class="thumbnail">
@@ -146,13 +168,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
-</div>
-<jsp:include page="/WEB-INF/partials/footer.jsp"/>
-<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ&libraries=places&callback=initMap">
-</script>
+
+    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
+    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ&libraries=places&callback=initMap">
+    </script>
 </body>
 </html>

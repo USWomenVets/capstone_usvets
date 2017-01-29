@@ -52,7 +52,7 @@
             <div class="row">
                 <h1>Did you know...</h1>
             </div>
-            <div class="row">
+            <div class="circles row">
                 <div class="small-12 medium-6 large-3 columns text-center">
                     <div class="circle"><h1>10%</h1></div>
                     <h4>of US currently serve in the military</h4>
@@ -71,6 +71,46 @@
                 </div>
             </div>
         </div>
+
+        <div class="item">
+
+            <h3 class="level-title">Javascript &amp; jQuery</h3>
+
+            <div class="level-bar">
+
+                <div class="level-bar-inner" data-level="70%">
+
+                </div>
+
+            </div><!--//level-bar-->
+
+        </div><!--//item-->
+        <script>jQuery(document).ready(function($) {
+
+
+            /*======= Skillset *=======*/
+
+
+            $('.level-bar-inner').css('width', '0');
+
+            $(window).on('load', function() {
+
+                $('.level-bar-inner').each(function() {
+
+                    var itemWidth = $(this).data('level');
+
+                    $(this).animate({
+                        width: itemWidth
+                    }, 800);
+
+                });
+
+            });
+
+            $('#resume-wrap').show('fold', 1000);
+
+        </script>
+
         <div class="join-button">
             <a href="<c:url value="/register"/>">
                 <div class="radius panel large-4 small-4 columns medium-centered">
@@ -83,8 +123,6 @@
         </div>
     </div>
 </div>
-
-
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>
 <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>

@@ -8,7 +8,9 @@ resources, and find out about events.
                                    
                                    
 HTML/CSS:
-
+Colors - Our colors were chosen on https://designschool.canva.com/blog/website-color-schemes/.  We chose this color scheme
+because as the story goes, if all the branches of the military put all their colors together then it would make the color
+purple.
 Homepage - index.jsp, styles.css, Foundation framework, Adobe Photoshop (gradient images), a custom made logo created
 using Adobe Illustrator, and styles.css to welcome the user.  Callouts were used to allow a user to learn more and have
 easy access to links within the site.  Statistics section lists Veteran Affairs findings on Women Veterans, circles were

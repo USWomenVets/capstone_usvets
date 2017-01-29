@@ -370,6 +370,13 @@ INDEX/HOMEPAGE
     margin-top: 2%;
     color: white;
     opacity: 80;
+    padding:0;
+    margin-bottom: 0;
+}
+
+.circles{
+    margin-top: 10%;
+    padding: 0;
 }
 
 .locator_heading {

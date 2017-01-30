@@ -33,12 +33,15 @@
                             <c:choose>
                                 <c:when test="${sessionScope.user != null && sessionScope.user.getId() == post.getUserId()}"> <!--LOGGED IN USER-->
                                     <form action="/posts/edit">
-                                        <button id="id" name="id" value="${post.getId()}"
+                                        <button name="id" value="${post.getId()}"
                                                 class="resources button sorting_buttons">Edit
                                         </button>
                                         <a href="/delete?id=${post.getId()}" name="id" value="${post.getId()}"
                                            class="resources button sorting_buttons">Delete</a>
                                     </form>
+                                </c:when>
+                                <c:when test="${sessionScope.user != null}"> <!--LOGGED IN USER-->
+
                                 </c:when>
                                 <c:otherwise> <!--ANON USER-->
                                     <a href="/login">

@@ -7,14 +7,14 @@
     <div class="wrap medium-up-1 large-up-2">
         <div class="row">
             <div class="medium-6 columns">
-                <h4>Contact Info</h4>
+                <h4>US Women Vets Info</h4>
                 <hr>
                 <div class="row" id="footer-links">
                     <div class="small-6 columns">
-                        <a href="<c:url value="/contact"/>"><span>Contact</span></a>
+                        <a href="<c:url value="/about"/>"><span>About</span></a>
                     </div>
                     <div class="small-6 columns">
-                        <a href="<c:url value="/about"/>"><span>About</span></a>
+                        <a href="<c:url value="/contact"/>"><span>Contact</span></a>
                     </div>
                 </div>
             </div>

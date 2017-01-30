@@ -25,7 +25,6 @@ GENERAL
     margin-top: 10px;
 }
 
-
 /* **************************************************************************
  NAV-MOBILE
 ************************************************************************** */
@@ -88,7 +87,8 @@ GENERAL
     padding-left: 20px;
     font-family: 'Raleway', sans-serif;
 }
-.sub_title{
+
+.sub_title {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -159,6 +159,9 @@ footer #footer-links {
     text-align: center;
 }
 
+.copyright img{
+    background-size: 10%;
+}
 /* **************************************************************************
 MEDIA QUERIES
 ************************************************************************** */
@@ -255,7 +258,7 @@ ARCHIVE DIV FIELDS
 ISOTOPE FIX
 ************************************************************************** */
 
-.element-item{
+.element-item {
     transition: linear;
 }
 
@@ -305,7 +308,6 @@ CUSTOM
     text-align: center;
 }
 
-
 .show {
     text-align: left;
 }
@@ -337,8 +339,9 @@ CUSTOM
 #register_form {
     width: 800px;
 }
+
 .button_margin {
-    margin:0 10px;
+    margin: 0 10px;
 }
 
 /* **************************************************************************
@@ -370,6 +373,13 @@ INDEX/HOMEPAGE
     margin-top: 2%;
     color: white;
     opacity: 80;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+.circles {
+    margin-top: 8%;
+    padding: 0;
 }
 
 .locator_heading {
@@ -380,19 +390,50 @@ INDEX/HOMEPAGE
     color: white;
 }
 
+/*.circle {*/
+    /*border: 5px solid white;*/
+    /*height: 12em;*/
+    /*width: 12em;*/
+    /*margin: 20%;*/
+    /*border-radius: 50%;*/
+    /*color: #E52A6F;*/
+    /*transform-origin: 200% center;*/
+    /*position: relative;*/
+    /*animation: rotate 3s linear;*/
+/*}*/
+
+/*.circle:before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*!*border: 5px solid white;*!*/
+    /*!*height: 12em;*!*/
+    /*!*width: 12em;*!*/
+    /*!*margin: 20%;*!*/
+    /*!*border-radius: 50%;*!*/
+    /*!*color: #E52A6F;*!*/
+    /*animation: rotate s linear reverse;*/
+/*}*/
+
+/*@keyframes rotate {*/
+    /*100% {*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+
 .circle {
-    border: 5px solid white;
-    height: 12em;
-    width: 12em;
-    margin: 22%;
-    border-radius: 50%;
-    color: #67AECA;
+border: 5px solid white;
+height: 12em;
+width: 12em;
+margin-left: 20%;
+border-radius: 50%;
+color: #E52A6F;
 
 }
 
 .circle h1 {
-    margin-top: 28%;
-    size: 30em;
+    padding-top: 28%;
+    font-size: 3.5em;
 }
 
 .callout {
@@ -402,11 +443,12 @@ INDEX/HOMEPAGE
 .callout h4 {
     background-color: #675682;
     color: white;
-    padding: 3%;
+    padding-top: 0;
+    padding-left: 3%;
     margin: 0;
 }
 
-.join-button {
+.join {
     text-align: center;
     margin-top: 2%;
 }
@@ -419,7 +461,8 @@ EVENTS PAGE
     .big-container {
         display: none;
     }
-    #map{
+
+    #map {
         /*padding: 10%;*/
         margin-left: .75em;
         /*margin-right: 1em;*/
@@ -427,13 +470,24 @@ EVENTS PAGE
         width: 325px;
 
     }
+
+    .statistics {
+        background-image: none;
+        background-color: #67AECA;
+    }
+
+    .circles {
+        margin-top: 2%;
+        padding: 0;
+    }
 }
 
 @media (min-width: 550px) {
-    .big-container {
+    .small-container {
         display: none;
     }
-    #map{
+
+    #map {
         /*padding: 10%;*/
         margin-left: 4em;
         /*margin-right: 1em;*/
@@ -442,11 +496,13 @@ EVENTS PAGE
 
     }
 }
+
 @media (min-width: 990px) {
     .small-container {
         display: none;
     }
-    #map{
+
+    #map {
         /*padding: 10%;*/
         margin-left: 15em;
         margin-right: 8em;
@@ -490,3 +546,20 @@ LOCATOR PAGE
     background: whitesmoke;
 }
 
+
+
+#about h4{
+    color: white;
+
+}
+#about p{
+    color: white;
+
+}
+#about-title{
+    color: white;
+}
+
+.form{
+    margin-top: 2%;
+}

@@ -367,7 +367,9 @@ INDEX/HOMEPAGE
 }
 
 .statistics {
-    background: url("../img/Springfield.jpeg") no-repeat;
+    /*background: url("../img/Famouswomen.jpeg") no-repeat;*/
+    /*background*/
+    background-color: #67AECA;
     background-size: 100%;
     height: 100%;
     margin-top: 2%;
@@ -375,7 +377,11 @@ INDEX/HOMEPAGE
     opacity: 80;
     padding-bottom: 2%;
     margin-bottom: 2%;
+    text-shadow: #0a0a0a;
+
 }
+
+
 
 .circles {
     margin-top: 8%;
@@ -422,24 +428,29 @@ INDEX/HOMEPAGE
 
 
 .circle {
-border: 5px solid white;
+border: 6px solid white;
+background-size: 100%;
 height: 12em;
 width: 12em;
 margin-left: 20%;
+margin-bottom: 20%;
 border-radius: 50%;
 color: #E52A6F;
-    background-color: rgba(255, 255, 255, .1);
+background-color: rgba(255, 255, 255, .25);
+text-shadow: #0a0a0a;
 
 }
 
 .circle h1 {
     padding-top: 28%;
     font-size: 3.5em;
+
 }
 
 .callout {
     background-color: whitesmoke;
 }
+
 
 .callout h4 {
     background-color: #675682;
@@ -447,6 +458,7 @@ color: #E52A6F;
     padding-top: 0;
     padding-left: 3%;
     margin: 0;
+
 }
 
 .join {
@@ -469,7 +481,6 @@ EVENTS PAGE
         /*margin-right: 1em;*/
         height: 250px;
         width: 325px;
-
     }
 
     .statistics {

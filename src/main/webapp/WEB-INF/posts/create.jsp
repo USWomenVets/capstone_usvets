@@ -36,7 +36,7 @@
                     <p class="help-text" id="exampleHelpText">Please fill in the title of your post</p>
                     <label for="content">Content</label>
                     <textarea id="content" name="content" ></textarea>
-                    <button class="resources button" type="submit">Post!</button>
+                    <button class="resources button hvr-grow" type="submit">Post!</button>
                 </form>
 
             </div>

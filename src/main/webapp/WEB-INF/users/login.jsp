@@ -46,10 +46,10 @@
 					</label>
 				</span>
                             </div>
-                            <input type="submit" class="medium button sorting_buttons" value="Log In">
+                            <input type="submit" class="medium button sorting_buttons hvr-grow" value="Log In">
                         </form>
                         <br>
-                        <p>Don't have a profile, yet? <a href="/register" id="sign_up">Join US!</a></p>
+                        <p>Don't have a profile, yet? <a href="/register" id="sign_up" class="hvr-grow">Join US!</a></p>
                     </div>
                 </div>
             </section>

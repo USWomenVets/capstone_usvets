@@ -26,7 +26,12 @@ the site.
 
 Footer - social media icons are linked to US Women Vets social groups, icons are from foundation-icons directory.
 
+NavBar - Layout and mobile navigation menu all custom html and css with Foundation
 
+Profile, login, and register page - the forms used here I found via Codedrops' website--it's a form called 'hoshi' (see styles.css).  
+It had to be modified to function the way it needed to--I solved it by modifying the height the placeholder rises as well as centering the input text.
+
+Show page (individual post page) - all custom html and css with Foundation and also with JSTL implementation to retrieve the correct data from the database. 
 
 
 
@@ -39,10 +44,13 @@ markers so that when a user clicks on the marker, it will display the name of th
 
 Foundation.js - used for accessibility when needed.
 
+Isotope JS - used for the discussion board sorting animation.  
+There was a bug where it looked like the animation would try and activate twice--the solution for which is clearly labeled in styles.css
+
 Time of Day - timeOfDay.js was utilized to create a personalized feel for the user when logged in and editing their profile page on 
 create.jsp. Based on the time of day, it will render Good Morning/Afternoon/Evening, (username)!
 
-
+Hover JS - custom hover effects from Ian Lunn called .hvr-grow
 
 
 Java

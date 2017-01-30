@@ -130,7 +130,7 @@ footer {
     background-color: #675682;
     font-weight: bold;
     padding: 2.5%;
-    margin-top: 5%;
+    margin-top: 1px;
 }
 
 footer a {
@@ -428,6 +428,7 @@ width: 12em;
 margin-left: 20%;
 border-radius: 50%;
 color: #E52A6F;
+    background-color: rgba(255, 255, 255, .1);
 
 }
 

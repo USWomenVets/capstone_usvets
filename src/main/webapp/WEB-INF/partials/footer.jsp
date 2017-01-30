@@ -38,6 +38,6 @@
             </div>
         </div>
         <hr>
-        <h4 class="text-center">&#xA9;Copyright 2017 Team Allies</h4>
+        <h4 class="text-center">&#xA9;Copyright 2017 US Women Vets</h4>
     </div>
 </footer>

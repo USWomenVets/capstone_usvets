@@ -77,7 +77,8 @@ GENERAL
 .nav-desktop {
     background-color: #675682;
     height: 80px;
-    padding: 0;
+    padding-right: 30px;
+    padding-bottom: 10px;
 
 }
 
@@ -86,7 +87,7 @@ GENERAL
     line-height: 80px;
     font-size: 1.5em;
     font-weight: bold;
-    padding-left: 30px;
+    padding-left: 50px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -139,7 +140,7 @@ footer {
     background-color: #675682;
     font-weight: bold;
     padding: 2.5%;
-    margin-top: 5%;
+    margin-top: 1px;
 }
 
 footer a {
@@ -310,7 +311,13 @@ CUSTOM
     display: inline-block;
     width: 355px;
     padding: 40px;
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    /*transition: .5s;*/
+}
+
+.archive_post:hover {
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 .show_anchor {

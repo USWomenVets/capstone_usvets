@@ -48,6 +48,7 @@ GENERAL
     color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
     line-height: 2;
+    font-family: 'Raleway', sans-serif;
 }
 
 #mobile-menu a:hover {
@@ -66,11 +67,6 @@ GENERAL
 
 .js-off-canvas-exit {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-#photo {
-    text-align: center;
-    margin: auto;
 }
 
 /* **************************************************************************

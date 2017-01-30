@@ -1,23 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div class="off-canvas position-left show-for-medium" id="mobile-menu" data-off-canvas>
+
+<!--Mobile Navigation Small-->
+<div class="off-canvas position-left show-for-small-only" id="mobile-menu" data-off-canvas>
     <ul>
         <c:choose>
             <c:when test="${sessionScope.user != null}">
                 <div>
-                <li class="has-form">
-                    <div class="row collapse">
-                        <div class="large-8 small-9 columns">
-                            <input type="text" placeholder="Search">
-                        </div>
-                        <div class="large-4 small-3 columns">
-                            <a href="/archive" class="alert button expand">Search</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="/archive">Board</a></li>
-                <li><a href="/locator">Locator</a></li>
+                <li><a href="/archive">Discuss</a></li>
+                <li><a href="/locator">Your VA</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="/create">Post</a></li>
                 <li><a href="/profile">Profile</a></li>
@@ -26,18 +18,8 @@
             </c:when>
             <c:otherwise>
                 <div>
-                <li class="has-form">
-                    <div class="row collapse">
-                        <div class="large-8 small-9 columns">
-                            <input type="text" placeholder="Search">
-                        </div>
-                        <div class="large-4 small-3 columns">
-                            <a href="/archive" class="alert button expand">Search</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="/archive">Board</a></li>
-                <li><a href="/locator">Locator</a></li>
+                <li><a href="/archive">Discuss</a></li>
+                <li><a href="/locator">Your VA</a></li>
                 <li><a href="/events">Events</a></li>
                 <li><a href="/register">Register</a></li>
                 <li><a href="/login">Login</a></li>
@@ -48,9 +30,37 @@
 </div>
 
 
-<!--Mobile Navigation-->
+<!--Mobile Navigation Medium/Tablet-->
+<div class="off-canvas position-left show-for-medium" id="mobile-menu" data-off-canvas>
+    <ul>
+        <c:choose>
+            <c:when test="${sessionScope.user != null}">
+                <div>
+                    <li><a href="/archive">Discuss</a></li>
+                    <li><a href="/locator">Your VA</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/create">Post</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </div>
+            </c:when>
+            <c:otherwise>
+                <div>
+                    <li><a href="/archive">Discuss</a></li>
+                    <li><a href="/locator">Your VA</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                </div>
+            </c:otherwise>
+        </c:choose>
+    </ul>
+</div>
+
+
+<!--Mobile Navigation Area-->
 <div class="off-canvas-content" data-off-canvas-content>
-    <div class="title-bar show-for-small">
+    <div class="title-bar">
         <div class="title-bar-left">
             <button class="menu-icon" type="button" data-open="mobile-menu"></button>
             <span class="title-bar-title">MENU || <a href="/index">USWOMENVETS</a></span>
@@ -68,21 +78,19 @@
                 <div></div>
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
-                        <li><a href="/archive">Board</a></li>
-                        <li><a href="/locator">Locator</a></li>
+                        <li><a href="/archive">Discuss</a></li>
+                        <li><a href="/locator">Your VA</a></li>
                         <li><a href="/events">Events</a></li>
                         <li><a href="/create">Post</a></li>
                         <li><a href="/profile">Profile</a></li>
                         <li><a href="/logout">Logout</a></li>
-                        <%--<li><input type="search" placeholder="Search"></li>--%>
                     </c:when>
                     <c:otherwise>
-                        <li><a href="/archive">Board</a></li>
-                        <li><a href="/locator">Locator</a></li>
+                        <li><a href="/archive">Discuss</a></li>
+                        <li><a href="/locator">Your VA</a></li>
                         <li><a href="/events">Events</a></li>
                         <li><a href="/register">Register</a></li>
                         <li><a href="/login">Login</a></li>
-                        <%--<li><input type="search" placeholder="Search"></li>--%>
                     </c:otherwise>
                 </c:choose>
             </ul>

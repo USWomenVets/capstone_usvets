@@ -15,6 +15,14 @@
         <!--Main Section-->
         <section class="main">
             <div class="show">
+
+                <c:if test="${sessionScope.commentError != null}">
+                    <div class="callout alert">
+                        <h5>We must apologize...</h5>
+                        <p>Comment cannot be blank</p>
+                    </div>
+                </c:if>
+
                     <c:forEach var="post" items="${posts}">
                         <div class="wrap form-text-color">
                             <h2>${post.getTitle()}</h2>
@@ -42,12 +50,6 @@
                 <hr class="hr_comment">
                     </c:forEach>
 
-                <c:if test="${sessionScope.commentError != null}">
-                    <div class="callout alert">
-                        <h5>We must apologize...</h5>
-                        <p>Comment cannot be blank</p>
-                    </div>
-                </c:if>
 
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">

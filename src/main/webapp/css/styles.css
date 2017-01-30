@@ -25,7 +25,6 @@ GENERAL
     margin-top: 10px;
 }
 
-
 /* **************************************************************************
  NAV-MOBILE
 ************************************************************************** */
@@ -92,7 +91,8 @@ GENERAL
     padding-left: 20px;
     font-family: 'Raleway', sans-serif;
 }
-.sub_title{
+
+.sub_title {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -259,7 +259,7 @@ ARCHIVE DIV FIELDS
 ISOTOPE FIX
 ************************************************************************** */
 
-.element-item{
+.element-item {
     transition: linear;
 }
 
@@ -309,7 +309,6 @@ CUSTOM
     text-align: center;
 }
 
-
 .show {
     text-align: left;
 }
@@ -341,8 +340,9 @@ CUSTOM
 #register_form {
     width: 800px;
 }
+
 .button_margin {
-    margin:0 10px;
+    margin: 0 10px;
 }
 
 /* **************************************************************************
@@ -374,11 +374,11 @@ INDEX/HOMEPAGE
     margin-top: 2%;
     color: white;
     opacity: 80;
-    padding:0;
+    padding: 0;
     margin-bottom: 0;
 }
 
-.circles{
+.circles {
     margin-top: 8%;
     padding: 0;
 }
@@ -398,8 +398,40 @@ INDEX/HOMEPAGE
     margin: 20%;
     border-radius: 50%;
     color: #E52A6F;
-
+    transform-origin: 200% center;
+    position: relative;
+    animation: rotate 3s linear;
 }
+
+.circle:before {
+    content: '';
+    position: absolute;
+    /*border: 5px solid white;*/
+    /*height: 12em;*/
+    /*width: 12em;*/
+    /*margin: 20%;*/
+    /*border-radius: 50%;*/
+    /*color: #E52A6F;*/
+    animation: rotate 10s linear reverse;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*body { background:rgb(20,20,20); } !* The best color ever *!*/
+/*.circle {*/
+/*border: 5px solid white;*/
+/*height: 12em;*/
+/*width: 12em;*/
+/*margin: 20%;*/
+/*border-radius: 50%;*/
+/*color: #E52A6F;*/
+/*animation: rotate;*/
+
+/*}*/
 
 .circle h1 {
     padding-top: 28%;
@@ -431,7 +463,8 @@ EVENTS PAGE
     .big-container {
         display: none;
     }
-    #map{
+
+    #map {
         /*padding: 10%;*/
         margin-left: .75em;
         /*margin-right: 1em;*/
@@ -439,11 +472,13 @@ EVENTS PAGE
         width: 325px;
 
     }
-    .statistics{
+
+    .statistics {
         background-image: none;
         background-color: #67AECA;
     }
-    .circles{
+
+    .circles {
         margin-top: 2%;
         padding: 0;
     }
@@ -453,7 +488,8 @@ EVENTS PAGE
     .small-container {
         display: none;
     }
-    #map{
+
+    #map {
         /*padding: 10%;*/
         margin-left: 4em;
         /*margin-right: 1em;*/
@@ -462,11 +498,13 @@ EVENTS PAGE
 
     }
 }
+
 @media (min-width: 990px) {
     .small-container {
         display: none;
     }
-    #map{
+
+    #map {
         /*padding: 10%;*/
         margin-left: 15em;
         margin-right: 8em;

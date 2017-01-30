@@ -13,7 +13,7 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
-            <h1><strong>Calendar of Events</strong></h1>
+            <h1 class="locator_heading"><strong>Calendar of Events</strong></h1>
         </div>
         <!--Calendar-->
         <%--<div class="responsive-iframe-container big-container">--%>

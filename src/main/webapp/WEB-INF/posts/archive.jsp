@@ -15,7 +15,7 @@
 
         <section class="gradient sort_title">
             <div class="title large-12 columns text-center">
-                <h1><strong>Discuss</strong></h1>
+                <h1 class="locator_heading"><strong>Discuss</strong></h1>
             </div>
                 <div class="button-group sort-by-button-group button_margin">
                     <button class="button sorting_buttons hvr-grow" data-sort-value="username">Username</button>

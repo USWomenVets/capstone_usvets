@@ -36,7 +36,9 @@ GENERAL
 }
 
 #mobile-menu {
-    background-color: #5AABC9;
+    background: #B993D6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #B993D6, #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #B993D6, #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
 }
 
@@ -84,7 +86,7 @@ GENERAL
     line-height: 80px;
     font-size: 1.5em;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 30px;
     font-family: 'Raleway', sans-serif;
 }
 

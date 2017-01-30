@@ -13,7 +13,7 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <h1 class="large-12 columns sub_title">A Rally Point for</h1>
+            <h1 class="large-12 columns title">A Rally Point For</h1>
             <div class="hero-logo">
                 <img src="<c:url value="/img/USLogo.png"/>">
             </div>
@@ -26,7 +26,7 @@
                         <hr>
                         <p>A discussion board for US to ask questions, give each other advice, and be
                             supportive.</p>
-                        <a href="<c:url value="/archive"/>" class="button sorting_buttons">Discuss</a>
+                        <a href="<c:url value="/archive"/>" class="button sorting_buttons hvr-grow">Discuss</a>
                     </div>
                 </div>
                 <div class="small-12 medium-4 large-4 columns text-center">
@@ -35,7 +35,7 @@
                         <hr>
                         <p>A map designed to locate your position to find your local VA facilities and a list of
                             additional resources.</p>
-                        <a href="<c:url value="/locator"/>" class="button sorting_buttons">Locator</a>
+                        <a href="<c:url value="/locator"/>" class="button sorting_buttons hvr-grow">Locator</a>
                     </div>
                 </div>
                 <div class="small-12 medium-4 large-4 columns text-center">
@@ -43,26 +43,29 @@
                         <h4>Events</h4>
                         <hr>
                         <p>Find out about events for US and import it on your desktop or mobile calendar.</p>
-                        <a href="<c:url value="/events"/>" class="button sorting_buttons">Events</a>
+                        <a href="<c:url value="/events"/>" class="button sorting_buttons hvr-grow">Events</a>
                     </div>
                 </div>
             </div>
         </div>
+        <%--<canvas id="currentlyServe" height="128" width="128"></canvas>--%>
+        <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
+        <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
         <div class="statistics text-center">
             <div class="row">
-                <h1>Did you know...</h1>
+                <h1>Did You Know...</h1>
             </div>
-            <div class="row">
+            <div class="circles row">
                 <div class="small-12 medium-6 large-3 columns text-center">
                     <div class="circle"><h1>10%</h1></div>
                     <h4>of US currently serve in the military</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle"><h1>20%</h1></div>
+                    <div class="circle" ><h1>20%</h1></div>
                     <h4>of US have experience military sexual trauma</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle"><h1>11%</h1></div>
+                    <div class="circle" ><h1>11%</h1></div>
                     <h4>of US are in the labor force</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">
@@ -71,21 +74,19 @@
                 </div>
             </div>
         </div>
-        <div class="join-button">
-            <a href="<c:url value="/register"/>">
-                <div class="radius panel large-4 small-4 columns medium-centered">
+        <div class="join">
+            <div class="panel large-6 medium-6 small-12 columns medium-centered">
                     <div class="callout">
-                        <button class="button sorting_buttons text-center" data-sort-value="username"><h3>Join US!</h3>
-                        </button>
+                        <h4>What Can We Do?</h4>
+                        <hr>
+                        <p>Let's create an environment where we can help each other out. Whether you are thinking about
+                            joining, currently in the military, or have been out for a while, let's talk about it.</p>
+                        <a href="<c:url value="/register"/>" class="button sorting_buttons hvr-grow">Join US!</a>
                     </div>
-                </div>
-            </a>
+            </div>
         </div>
     </div>
-</div>
-
-
-<jsp:include page="/WEB-INF/partials/footer.jsp"/>
-<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
+    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
 </body>
 </html>

@@ -77,7 +77,7 @@
 					</label>
 				</span>
 
-                <input type="submit" class="medium button sorting_buttons" value="Sign up!">
+                <input type="submit" class="medium button sorting_buttons hvr-grow" value="Sign up!">
 
             </form>
                 </div>

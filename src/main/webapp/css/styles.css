@@ -450,7 +450,7 @@ EVENTS PAGE
 }
 
 @media (min-width: 550px) {
-    .big-container {
+    .small-container {
         display: none;
     }
     #map{

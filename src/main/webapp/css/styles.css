@@ -374,8 +374,8 @@ INDEX/HOMEPAGE
     margin-top: 2%;
     color: white;
     opacity: 80;
-    padding: 0;
-    margin-bottom: 0;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
 }
 
 .circles {
@@ -391,47 +391,46 @@ INDEX/HOMEPAGE
     color: white;
 }
 
-.circle {
-    border: 5px solid white;
-    height: 12em;
-    width: 12em;
-    margin: 20%;
-    border-radius: 50%;
-    color: #E52A6F;
-    transform-origin: 200% center;
-    position: relative;
-    animation: rotate 3s linear;
-}
-
-.circle:before {
-    content: '';
-    position: absolute;
+/*.circle {*/
     /*border: 5px solid white;*/
     /*height: 12em;*/
     /*width: 12em;*/
     /*margin: 20%;*/
     /*border-radius: 50%;*/
     /*color: #E52A6F;*/
-    animation: rotate 10s linear reverse;
-}
-
-@keyframes rotate {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/*body { background:rgb(20,20,20); } !* The best color ever *!*/
-/*.circle {*/
-/*border: 5px solid white;*/
-/*height: 12em;*/
-/*width: 12em;*/
-/*margin: 20%;*/
-/*border-radius: 50%;*/
-/*color: #E52A6F;*/
-/*animation: rotate;*/
-
+    /*transform-origin: 200% center;*/
+    /*position: relative;*/
+    /*animation: rotate 3s linear;*/
 /*}*/
+
+/*.circle:before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*!*border: 5px solid white;*!*/
+    /*!*height: 12em;*!*/
+    /*!*width: 12em;*!*/
+    /*!*margin: 20%;*!*/
+    /*!*border-radius: 50%;*!*/
+    /*!*color: #E52A6F;*!*/
+    /*animation: rotate s linear reverse;*/
+/*}*/
+
+/*@keyframes rotate {*/
+    /*100% {*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+
+.circle {
+border: 5px solid white;
+height: 12em;
+width: 12em;
+margin-left: 20%;
+border-radius: 50%;
+color: #E52A6F;
+
+}
 
 .circle h1 {
     padding-top: 28%;

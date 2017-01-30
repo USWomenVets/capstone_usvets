@@ -57,7 +57,7 @@
             </div>
             <div class="circles row">
                 <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle" ><h1>10%</h1></div>
+                    <div class="circle"><h1>10%</h1></div>
                     <h4>of US currently serve in the military</h4>
                 </div>
                 <div class="small-12 medium-6 large-3 columns text-center">

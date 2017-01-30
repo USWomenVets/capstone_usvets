@@ -1,7 +1,7 @@
-    __                                
-| |(_  \    /_ ._ _  _ ._  \  /__|_ _ 
-|_|__)  \/\/(_)| | |(/_| |  \/(/_|__> 
-                                   
+  |  |    __|     \ \      /                                  \ \   /          |         
+  |  |  \__ \      \ \ \  /     _ \    ` \     -_)     \       \ \ /     -_)    _|  (_-< 
+ \__/   ____/       \_/\_/    \___/  _|_|_|  \___|  _| _|       \_/    \___|  \__|  ___/ 
+                                                                                         
 US Women Vets is a website created by Team Allies.  Team Allies was formed to complete their capstone project at a coding
 school - CodeUp.  The website was designed to create a centralized location for Women Veterans to discuss, find nearby 
 resources, and find out about events.
@@ -28,7 +28,7 @@ Footer - social media icons are linked to US Women Vets social groups, icons are
 
 NavBar - Layout and mobile navigation menu all custom html and css with Foundation
 
-Profile, login, and register page - the forms used here I found via Codedrops' website--it's a form called 'hoshi' (see styles.css).  
+Profile, login, and register page - the forms used here I found via Codedrops' website--it's a form called 'hoshi' (see styles.css).
 It had to be modified to function the way it needed to--I solved it by modifying the height the placeholder rises as well as centering the input text.
 
 Show page (individual post page) - all custom html and css with Foundation and also with JSTL implementation to retrieve the correct data from the database. 

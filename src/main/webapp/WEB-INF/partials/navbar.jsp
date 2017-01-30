@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
-<!--Mobile Navigation-->
+<!--Mobile Navigation Small-->
 <div class="off-canvas position-left show-for-small-only" id="mobile-menu" data-off-canvas>
     <ul>
         <c:choose>
@@ -29,6 +29,8 @@
     </ul>
 </div>
 
+
+<!--Mobile Navigation Medium/Tablet-->
 <div class="off-canvas position-left show-for-medium" id="mobile-menu" data-off-canvas>
     <ul>
         <c:choose>
@@ -56,7 +58,7 @@
 </div>
 
 
-<!--Mobile Navigation-->
+<!--Mobile Navigation Area-->
 <div class="off-canvas-content" data-off-canvas-content>
     <div class="title-bar">
         <div class="title-bar-left">

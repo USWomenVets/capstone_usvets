@@ -70,7 +70,7 @@
 				</span>
 
                 <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confrim_password" data-equalto="password" required />
+					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confirm_password" data-equalto="password" required />
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
 						<span class="input__label-content input__label-content--hoshi">Confrim Password</span>
                         <span class="form-error">Hey, passwords are supposed to match!</span>

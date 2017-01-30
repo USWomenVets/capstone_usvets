@@ -39,7 +39,8 @@
 
                                 <div class="row">
                                 <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="text" id="username" name="username"
+					<input class="input__field input__field--hoshi text-center" type="text" id="username"
+                           name="username"
                            value="${user.getUsername()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
 						<span class="input__label-content input__label-content--hoshi">Username</span>
@@ -57,14 +58,16 @@
 
                                 <div class="row">
                             <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="text" id="first_name" name="first_name"
+					<input class="input__field input__field--hoshi text-center" type="text" id="first_name"
+                           name="first_name"
                            value="${user.getFirstName()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="first_name">
 						<span class="input__label-content input__label-content--hoshi">First Name</span>
 					</label>
 				</span>
                                     <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="text" id="last_name" name="last_name"
+					<input class="input__field input__field--hoshi text-center" type="text" id="last_name"
+                           name="last_name"
                            value="${user.getLastName()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="last_name">
 						<span class="input__label-content input__label-content--hoshi">Last Name</span>
@@ -81,19 +84,22 @@
 
                                 <div class="row">
                             <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="current_password" name="current_password"/>
+					<input class="input__field input__field--hoshi text-center" type="password" id="current_password"
+                           name="current_password"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="current_password">
 						<span class="input__label-content input__label-content--hoshi">Current Password</span>
 					</label>
 				</span>
                                     <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="new_password" name="new_password"/>
+					<input class="input__field input__field--hoshi text-center" type="password" id="new_password"
+                           name="new_password"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="new_password">
 						<span class="input__label-content input__label-content--hoshi">New Password</span>
 					</label>
 				</span>
                                     <span class="input input--hoshi">
-					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confirm_password"/>
+					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password"
+                           name="confirm_password"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
 						<span class="input__label-content input__label-content--hoshi">Confrim New Password</span>
 					</label>
@@ -104,8 +110,9 @@
                     </div>
                 </div>
             </div>
+        </section>
     </div>
-    </section>
+</section>
 </div>
 </div>
 

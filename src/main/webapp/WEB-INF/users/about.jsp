@@ -11,31 +11,31 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-        <div class="title large-12 columns text-center">
+        <div class="title large-12 columns text-center" id="about-title">
             <h1><strong>Team Allies</strong></h1>
         </div>
 
         <!--Main section-->
         <section class="main">
             <div class="wrap">
-                <div class="container">
-                    <div class="media-object">
+                <div class="container" id="about">
+                    <div class="media-object" >
                         <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
+                            <img src= "/img/EuniceHeymann2.jpg">
                         </div>
                         <div class="media-object-section">
                             <h4>Eunice Heymann</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            <p>A multi-talented, multi-tasking, diligent, determined, outside of the box thinker, who loves being back in the tech world.</p>
                         </div>
                     </div>
                     <br>
-                    <div class="media-object">
+                    <div class="media-object"><%----%>
                         <div class="media-object-section">
                             <h4>Kenneth Curtis</h4>
                             <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
                         </div>
                         <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
+                            <img src= "/img/KennethCurtis2.jpg">
                         </div>
                     </div>
                     <br>

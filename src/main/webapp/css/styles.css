@@ -78,8 +78,6 @@ GENERAL
     background-color: #675682;
     height: 80px;
     padding-right: 30px;
-    padding-bottom: 10px;
-
 }
 
 .site-logo {
@@ -102,7 +100,7 @@ GENERAL
 
 .menu > li > a {
     display: inline-block;
-    line-height: 80px;
+    line-height: 60px;
     padding-top: 0;
     padding-bottom: 0;
     color: rgba(255, 255, 255, 0.9);

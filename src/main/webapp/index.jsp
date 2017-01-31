@@ -13,8 +13,8 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <h1 class="large-12 columns title">A Rally Point For</h1>
-            <h1><em>US</em></h1>
+            <%--<h1 class="large-12 columns title">A Rally Point For</h1>--%>
+            <%--<h1><em>US</em></h1>--%>
             <%--<div class="hero-logo">--%>
             <%--<img src="<c:url value="/img/USLogo.png"/>">--%>
             <%--</div>--%>
@@ -52,7 +52,7 @@
         <%--<canvas id="currentlyServe" height="128" width="128"></canvas>--%>
         <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
         <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
-        <div class="statistics text-center">
+        <div class="statistics text-center gradient">
             <div class="row">
                 <h1>Did You Know...</h1>
             </div>

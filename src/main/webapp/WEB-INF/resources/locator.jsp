@@ -13,6 +13,7 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
             <h1 class="locator_heading"><strong>Your VA Locator</strong></h1>
+            <p class="locator_heading">Welcome!  Please select a tab for details</p>
         </div>
         <div class="row">
             <div class="map" id="map">

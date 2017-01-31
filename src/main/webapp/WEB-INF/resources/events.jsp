@@ -15,22 +15,25 @@
         <div class="title large-12 columns text-center">
             <h1 class="locator_heading"><strong>Calendar of Events</strong></h1>
         </div>
-        <!--Calendar-->
-        <%--<div class="responsive-iframe-container big-container">--%>
-        <div class="responsive-iframe-container big-container large-10 medium-10 columns large-centered medium-centered">
-            <iframe src="https://calendar.google.com/calendar/embed?title=%20%20%20%20%20%20&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
-                    style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <%--<div class="flex-video ">--%>
-        <div class="flex-video small-container small-10 columns small-centered">
-            <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"
-                    style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <%--<div class="row">--%>
-            <%--&lt;%&ndash;<div class="large-12 columns text-center">&ndash;%&gt;--%>
-            <%--&lt;%&ndash;&lt;%&ndash;<a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics" class="sorting_buttons"><h6>Import iCal Calendar</h6></a>&ndash;%&gt;&ndash;%&gt;--%>
-            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+        <div data-tockify-component="calendar" data-tockify-calendar="uswomenvets"></div>
+        <script data-cfasync="false" data-tockify-script="embed"
+                src="https://public.tockify.com/browser/embed.js"></script>
+        <%--<!--Calendar-->--%>
+        <%--&lt;%&ndash;<div class="responsive-iframe-container big-container">&ndash;%&gt;--%>
+        <%--<div class="responsive-iframe-container big-container large-10 medium-10 columns large-centered medium-centered">--%>
+        <%--<iframe src="https://calendar.google.com/calendar/embed?title=%20%20%20%20%20%20&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"--%>
+        <%--style="border-width:0" width="800" height="300" frameborder="0" scrolling="no"></iframe>--%>
         <%--</div>--%>
+        <%--&lt;%&ndash;<div class="flex-video ">&ndash;%&gt;--%>
+        <%--<div class="flex-video small-container small-10 columns small-centered">--%>
+        <%--<iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FChicago"--%>
+        <%--style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>--%>
+        <%--</div>--%>
+        <div class="row">
+            <div class="large-12 columns text-center">
+            <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics" class="sorting_buttons"><h6>Import iCal Calendar</h6></a>
+            </div>
+        </div>
         <div class="featured-events">
             <div class="title large-12 columns text-center">
                 <h2 class="locator_heading"><strong>Featured Events</strong></h2>

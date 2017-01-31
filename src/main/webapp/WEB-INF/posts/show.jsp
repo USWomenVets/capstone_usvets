@@ -46,7 +46,7 @@
                                 </c:when>
                                 <c:otherwise> <!--ANON USER-->
                                     <a href="/login">
-                                        <button class="resources button sorting_buttons">Sign in to comment</button>
+                                        <button class="resources button sorting_buttons hvr-grow">Sign in to comment</button>
                                     </a>
                                 </c:otherwise>
                             </c:choose>

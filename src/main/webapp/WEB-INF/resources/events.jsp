@@ -33,7 +33,7 @@
         <%--</div>--%>
         <div class="featured-events">
             <div class="title large-12 columns text-center">
-                <h2><strong>Featured Events</strong></h2>
+                <h2 class="locator_heading"><strong>Featured Events</strong></h2>
             </div>
             <div class="large-10 small-10 columns large-centered small-centered">
                 <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">

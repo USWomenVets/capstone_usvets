@@ -280,6 +280,10 @@ CUSTOM
     text-align: center;
 }
 
+/*.input{*/
+    /*width: 700px;*/
+/*}*/
+
 #sorting_buttons {
     text-align: center;
     margin: 2px;
@@ -354,10 +358,6 @@ CUSTOM
     color: #E52A6F;
 }
 
-#register_form {
-    width: 800px;
-}
-
 .button_margin {
     margin: 0 10px;
 }
@@ -372,6 +372,10 @@ INDEX/HOMEPAGE
     padding-bottom: 15%;
     height: 80%;
     margin-bottom: 2%;
+}
+
+.hero-logo{
+    z-index: 100;
 }
 
 .hero img {
@@ -498,6 +502,9 @@ EVENTS PAGE
         margin-top: 2%;
         padding: 0;
     }
+    /*.input{*/
+        /*max-width: 350px;*/
+    /*}*/
 }
 
 @media (min-width: 550px) {

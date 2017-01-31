@@ -32,7 +32,7 @@
                     <div class="row">
                         <label for="textArea" class="large-2 columns" >Message</label>
                         <div class="large-10 columns">
-                            <textarea class="form-control" rows="5" id="textArea" placeholder="Message"required></textarea>
+                            <textarea class="form-control" rows="5" id="textArea" placeholder="Message" required></textarea>
                         </div>
                     </div>
 

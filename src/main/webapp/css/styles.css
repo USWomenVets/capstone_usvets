@@ -367,21 +367,16 @@ INDEX/HOMEPAGE
 }
 
 .statistics {
-    /*background: url("../img/Famouswomen.jpeg") no-repeat;*/
-    /*background*/
-    background-color: #67AECA;
-    background-size: 100%;
+    background: url("../img/gracehopper.jpeg") no-repeat center;
+    background-size: 70%;
     height: 100%;
-    margin-top: 2%;
+    margin-top:40%;
     color: white;
     opacity: 80;
-    padding-bottom: 2%;
+    padding-bottom: 10%;
     margin-bottom: 2%;
     text-shadow: #0a0a0a;
-
 }
-
-
 
 .circles {
     margin-top: 8%;
@@ -425,25 +420,33 @@ INDEX/HOMEPAGE
         /*transform: rotate(360deg);*/
     /*}*/
 /*}*/
+.circles{
+    margin: 0;
+    padding: 0;
+}
 
-
+.info{
+    /*background-color: rgba(125, 125, 125, .35);*/
+    text-shadow: 1px 1px 1px black;
+}
 .circle {
 border: 6px solid white;
 background-size: 100%;
 height: 12em;
 width: 12em;
 margin-left: 20%;
-margin-bottom: 20%;
+margin-bottom: 0;
+margin-top: 20%;
 border-radius: 50%;
-color: #E52A6F;
-background-color: rgba(255, 255, 255, .25);
+color: #5F0F4E;
+background-color: rgba(255, 255, 255, .5);
 text-shadow: #0a0a0a;
-
 }
 
 .circle h1 {
     padding-top: 28%;
     font-size: 3.5em;
+    margin-bottom: 0;
 
 }
 
@@ -456,8 +459,10 @@ text-shadow: #0a0a0a;
     background-color: #675682;
     color: white;
     padding-top: 0;
+    padding-bottom: 0;
     padding-left: 3%;
     margin: 0;
+
 
 }
 
@@ -489,25 +494,33 @@ EVENTS PAGE
     }
 
     .circles {
-        margin-top: 2%;
+        margin:0;
         padding: 0;
     }
 }
-
+@media (max-width: 980px) {
+    .statistics {
+        background-image: none;
+        background-color: #67AECA;
+    }
+}
 @media (min-width: 550px) {
     .small-container {
         display: none;
     }
-
+    /*.statistics {*/
+        /*background-image: none;*/
+        /*background-color: #67AECA;*/
+    /*}*/
     #map {
         /*padding: 10%;*/
         margin-left: 4em;
         /*margin-right: 1em;*/
         height: 375px;
         width: 600px;
-
     }
 }
+
 
 @media (min-width: 990px) {
     .small-container {

@@ -140,6 +140,7 @@ footer {
     font-weight: bold;
     padding: 2.5%;
     margin-top: 1px;
+    margin-bottom: 0;
 }
 
 footer a {
@@ -159,7 +160,6 @@ footer h4 {
 footer hr {
     color: rgba(255, 255, 255, 0.1);
     margin: 10px 0;
-
 }
 
 footer #footer-links {

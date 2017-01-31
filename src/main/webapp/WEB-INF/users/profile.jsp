@@ -32,10 +32,7 @@
                             <form action="/profile" class="form-horizontal form-text-color profile_form" method="post">
 
                                 <h3 class="text-center form-text-color">Personal Information</h3>
-                                <p class="form-text-color"><em>Use the column on the right to edit your information</em>
-                                </p>
-                                <button class="button sorting_buttons" type="submit" name="id">Edit</button>
-                                <button class="button sorting_buttons" type="submit">Save</button>
+                                <button class="button sorting_buttons" type="submit">Update</button>
 
                                 <div class="row">
                                 <span class="input input--hoshi">
@@ -46,8 +43,9 @@
 						<span class="input__label-content input__label-content--hoshi">Username</span>
 					</label>
 				</span>
-                                    <span class="input input--hoshi">
 
+
+                                    <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="email" id="email" name="email"
                            value="${user.getEmail()}"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
@@ -77,10 +75,6 @@
 
 
                                 <h3 class="text-center form-text-color">Password Information</h3>
-                                <p class="form-text-color"><em>Use the column on the right to edit your information</em>
-                                </p>
-                                <button class="button sorting_buttons" type="submit">Update</button>
-
 
                                 <div class="row">
                             <span class="input input--hoshi">
@@ -112,7 +106,7 @@
             </div>
         </section>
     </div>
-</section>
+    </section>
 </div>
 </div>
 

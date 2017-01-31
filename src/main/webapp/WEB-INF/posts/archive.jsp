@@ -13,9 +13,11 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
 
 
-        <section class="locator sort_title">
-            <h3><strong>Discussion Board</strong></h3>
-                <div class="button-group sort-by-button-group">
+        <section class="gradient sort_title">
+            <div class="title large-12 columns text-center">
+                <h1 class="locator_heading"><strong>Discuss</strong></h1>
+            </div>
+                <div class="button-group sort-by-button-group button_margin">
                     <button class="button sorting_buttons hvr-grow" data-sort-value="username">Username</button>
                     <button class="button sorting_buttons hvr-grow" data-sort-value="date">Date</button>
                     <button class="button sorting_buttons hvr-grow" data-sort-value="title">Title</button>
@@ -25,10 +27,10 @@
             <div class="grid">
             <br>
                 <c:forEach var="post" items="${posts}">
-                <div class="archive_post container hvr-grow element-item shadow" data-category="${post.stringCategory}">
+                <div class="archive_post container hvr-grow element-item" data-category="${post.stringCategory}">
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
                                 <div class="post_para username date">
-                                    <span id="username_arch">By || ${post.username}</span>
+                                    <span id="username_arch">${post.username}</span>
                                     <span id="date_arch">${post.postDate}</span>
                                 </div>
                                 <h1 class="post_para title" id="title_arch">${post.title}</h1>

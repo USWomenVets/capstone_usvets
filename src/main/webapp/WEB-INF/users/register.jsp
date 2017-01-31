@@ -62,7 +62,7 @@
 						<span class="input__label-content input__label-content--hoshi">Email</span>
 					</label>
 				</span>
-                    </div>
+                </div>
 
                         <div class="form-group">
                                 <span class="input input--hoshi form-group form-text-color">
@@ -72,7 +72,7 @@
                         <span class="form-error">We apologize, but that username has been taken.</span>
 					</label>
 				</span>
-                        </div>
+                </div>
 
                             <div class="form-group">
                 <span class="input input--hoshi">
@@ -81,7 +81,7 @@
 						<span class="input__label-content input__label-content--hoshi">Password</span>
 					</label>
 				</span>
-                            </div>
+                </div>
 
                                 <div class="form-group">
                 <span class="input input--hoshi">
@@ -91,7 +91,7 @@
                         <span class="form-error">Hey, passwords are supposed to match!</span>
 					</label>
 				</span>
-                                </div>
+                </div>
 
                 <input type="submit" class="medium button sorting_buttons hvr-grow" value="Sign up!">
             </form>

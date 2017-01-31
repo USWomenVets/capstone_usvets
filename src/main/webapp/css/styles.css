@@ -281,7 +281,7 @@ CUSTOM
 }
 
 /*.input{*/
-    /*width: 700px;*/
+/*width: 700px;*/
 /*}*/
 
 #sorting_buttons {
@@ -374,7 +374,7 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
-.hero-logo{
+.hero-logo {
     z-index: 100;
 }
 
@@ -502,8 +502,9 @@ EVENTS PAGE
         margin-top: 2%;
         padding: 0;
     }
+
     /*.input{*/
-        /*max-width: 350px;*/
+    /*max-width: 350px;*/
     /*}*/
 }
 
@@ -586,6 +587,9 @@ LOCATOR PAGE
     margin-top: 2%;
 }
 
+.calendar {
+    margin: 2%;
+}
 /*.st-bg { background:black; }*/
 /*.st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }*/
 /*.st-dtitle { background:white; }*/

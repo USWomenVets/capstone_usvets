@@ -19,13 +19,14 @@
                     <div class="container form-text-color">
                         <div class="title large-12 columns text-center">
                             <h1 class="locator_heading"><strong>Registration</strong></h1>
-                            <p class="locator_heading">Welcome!  Please fill out your information</p>
+                            <p class="locator_heading">Welcome! Please fill out your information</p>
                         </div>
 
                         <c:if test="${sessionScope.errorMessage != null}">
                             <div class="callout alert">
                                 <h5>We must apologize...</h5>
-                                <p>The username or email you have entered is already in our system--please choose another</p>
+                                <p>The username or email you have entered is already in our system--please choose
+                                    another</p>
                             </div>
                         </c:if>
                         <c:if test="${sessionScope.errorMessageEmpty != null}">
@@ -35,9 +36,9 @@
                             </div>
                         </c:if>
 
-            <form action="/register" method="post">
+                        <form action="/register" method="post">
 
-                <div class="form-group">
+                            <div class="form-group">
                             <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="text" id="first_name" name="first_name"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="first_name">
@@ -46,7 +47,7 @@
 				</span>
                 </div>
 
-                <div class="form-group">
+                            <div class="form-group">
                     <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="text" id="last_name" name="last_name"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="last_name">
@@ -55,7 +56,7 @@
 				</span>
                 </div>
 
-                    <div class="form-group">
+                            <div class="form-group">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="email" id="email" name="email" required/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
@@ -64,7 +65,7 @@
 				</span>
                 </div>
 
-                        <div class="form-group">
+                            <div class="form-group">
                                 <span class="input input--hoshi form-group form-text-color">
 					<input class="input__field input__field--hoshi text-center" type="text" id="username" name="username" required/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
@@ -83,7 +84,7 @@
 				</span>
                 </div>
 
-                                <div class="form-group">
+                            <div class="form-group">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confirm_password" data-equalto="password" required />
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
@@ -96,7 +97,7 @@
                 <input type="submit" class="medium button sorting_buttons hvr-grow" value="Sign up!">
             </form>
 
-                </div>
+                    </div>
                 </div>
             </section>
     </div>

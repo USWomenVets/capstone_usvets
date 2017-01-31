@@ -8,15 +8,15 @@
     </jsp:include>
 </head>
 <body>
-<div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper gradient">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
-            <h1><strong>Your VA Locator</strong></h1>
+            <h1 class="locator_heading"><strong>Your VA Locator</strong></h1>
         </div>
         <div class="row">
             <div class="map" id="map">
-                <%--<iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>--%>
+                <iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>
             </div>
 
         </div>
@@ -27,7 +27,7 @@
             <%--</ul><!-- #results-list -->--%>
         <%--</div><!-- #results-container -->--%>
         <div class="additional-resources">
-            <div class="subTitle text-center"><h2>Additional Resources</h2></div>
+            <div class="subTitle text-center"><h2 class="locator_heading">Additional Resources</h2></div>
             <div class="row">
                 <div class="large-10 small-10 columns large-centered small-centered">
                     <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">

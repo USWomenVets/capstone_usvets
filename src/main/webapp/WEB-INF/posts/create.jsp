@@ -23,7 +23,7 @@
                 <%--</div>--%>
                 <%--</c:if>--%><!--NEED BACKEND HERE TO CHECK IF TITLE/BODY ARE EMPTY-->
                 <form action="/create" method="POST">
-                    <label>Select Meu
+                    <label>Select Menu
                         <select name="category">
                             <option value="1">General</option>
                             <option value="2">Events</option>

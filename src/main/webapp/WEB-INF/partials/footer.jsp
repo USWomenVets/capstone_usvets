@@ -10,10 +10,10 @@
                 <h4>US Women Vets Info</h4>
                 <hr>
                 <div class="row" id="footer-links">
-                    <div class="small-6 columns">
+                    <div class="small-6 columns hvr-grow">
                         <a href="<c:url value="/about"/>"><span>About</span></a>
                     </div>
-                    <div class="small-6 columns">
+                    <div class="small-6 columns hvr-grow">
                         <a href="<c:url value="/contact"/>"><span>Contact</span></a>
                     </div>
                 </div>
@@ -23,14 +23,14 @@
                 <h4>Social Media</h4>
                 <hr>
                 <div class="row" id="icons">
-                    <div class="small-4 columns">
+                    <div class="small-4 columns hvr-grow">
                         <a href="https://twitter.com/USWomenVets" target="_blank" class="fi-social-twitter large"></a>
                     </div>
-                    <div class="small-4 columns">
+                    <div class="small-4 columns hvr-grow">
                         <a href="https://www.linkedin.com/groups/12028850" target="_blank"
                            class="fi-social-linkedin large"></a>
                     </div>
-                    <div class="small-4 columns">
+                    <div class="small-4 columns hvr-grow">
                         <a href="https://www.facebook.com/groups/222014964872906/" target="_blank"
                            class="fi-social-facebook large"></a>
                     </div>
@@ -38,6 +38,6 @@
             </div>
         </div>
         <hr>
-        <h4 class="text-center">&#xA9;Copyright 2017 Team Allies</h4>
+        <h4 class="text-center">&#xA9;Copyright 2017 US Women Vets</h4>
     </div>
 </footer>

@@ -9,11 +9,11 @@
 
 </head>
 <body>
-<div class="off-canvas-wrapper">
+<div class="off-canvas-wrapper gradient">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
-            <h1><strong>Calendar of Events</strong></h1>
+            <h1 class="locator_heading"><strong>Calendar of Events</strong></h1>
         </div>
         <div data-tockify-component="calendar" data-tockify-calendar="uswomenvets"></div>
         <script data-cfasync="false" data-tockify-script="embed"
@@ -36,7 +36,7 @@
         </div>
         <div class="featured-events">
             <div class="title large-12 columns text-center">
-                <h2><strong>Featured Events</strong></h2>
+                <h2 class="locator_heading"><strong>Featured Events</strong></h2>
             </div>
             <div class="large-10 small-10 columns large-centered small-centered">
                 <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">

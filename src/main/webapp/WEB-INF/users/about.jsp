@@ -12,7 +12,7 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp" />
         <div class="title large-12 columns text-center" id="about-title">
-            <h1><strong>Team Allies</strong></h1>
+            <h1><strong>About US</strong></h1>
         </div>
 
         <!--Main section-->
@@ -32,7 +32,7 @@
                     <div class="media-object"><%----%>
                         <div class="media-object-section">
                             <h4>Kenneth Curtis</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            <p>Team oriented full-stack developer with a passion on the back end relation</p>
                         </div>
                         <div class="media-object-section">
                             <img src= "/img/KennethCurtis2.jpg">
@@ -41,11 +41,11 @@
                     <br>
                     <div class="media-object">
                         <div class="media-object-section">
-                            <img src= "http://placeimg.com/200/200/people">
+                            <img src= "/img/Justin_Armer_02.jpg">
                         </div>
                         <div class="media-object-section">
                             <h4>Justin Armer</h4>
-                            <p>I am a web developer who recently graduated from the Code Up Full-Stack-Java boot camp in San Antonio, TX. I decided to become a developer in order to form creative solutions to practical problems and to supplement intersections with digital music creation.</p>
+                            <p>I am a web developer who recently graduated from the Code Up Full-Stack-Java boot camp in San Antonio, TX. I decided to become a developer in order to form creative solutions to practical problems and to supplement intersections with <a href="http://soundcloud.com/ausgraveroyalty" target="_blank">my digital music creation.</a></p>
                         </div>
                     </div>
                 </div>

@@ -41,11 +41,15 @@
                     <br>
                     <div class="media-object">
                         <div class="media-object-section">
-                            <img src= "/img/Justin_Armer_02.jpg">
+                            <img src="/img/Justin_Armer_02.jpg">
                         </div>
                         <div class="media-object-section">
                             <h4>Justin Armer</h4>
-                            <p>I am a web developer who recently graduated from the Code Up Full-Stack-Java boot camp in San Antonio, TX. I decided to become a developer in order to form creative solutions to practical problems and to supplement intersections with <a href="http://soundcloud.com/ausgraveroyalty" target="_blank">my digital music creation.</a></p>
+                            <p>I am a web developer who recently graduated from the Code Up Full-Stack-Java boot camp in
+                                San Antonio, TX. I decided to become a developer in order to form creative solutions to
+                                practical problems and to supplement intersections with <a
+                                        href="http://soundcloud.com/ausgraveroyalty" target="_blank">my digital music
+                                    creation.</a></p>
                         </div>
                     </div>
                 </div>

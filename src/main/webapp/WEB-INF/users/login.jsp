@@ -15,8 +15,10 @@
             <section class="main">
                 <div class="wrap">
                     <div class="container form-text-color">
-                        <h3>Welcome</h3>
-                        <p><strong>Please log in</strong></p>
+                        <div class="title large-12 columns text-center">
+                            <h1 class="locator_heading"><strong>Login</strong></h1>
+                            <p class="locator_heading">Welcome!  Please fill out your information</p>
+                        </div>
                         <c:if test="${sessionScope.errorMessageEmptyLogin != null}">
                             <div class="callout alert">
                                 <h5>We must apologize...</h5>

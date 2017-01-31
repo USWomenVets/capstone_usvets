@@ -124,7 +124,7 @@ MAIN
 
 }
 
-.gradient{
+.gradient {
     background: #B993D6; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #B993D6, #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #B993D6, #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -280,6 +280,10 @@ CUSTOM
     text-align: center;
 }
 
+/*.input{*/
+    /*width: 700px;*/
+/*}*/
+
 #sorting_buttons {
     text-align: center;
     margin: 2px;
@@ -304,6 +308,7 @@ CUSTOM
 }
 
 .archive_post {
+    /*background-color: #67AECA;*/
     text-align: center;
     margin: 30px;
     display: inline-block;
@@ -353,10 +358,6 @@ CUSTOM
     color: #E52A6F;
 }
 
-#register_form {
-    width: 800px;
-}
-
 .button_margin {
     margin: 0 10px;
 }
@@ -373,6 +374,10 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
+.hero-logo{
+    z-index: 100;
+}
+
 .hero img {
     height: 20%;
     width: 20%;
@@ -384,7 +389,7 @@ INDEX/HOMEPAGE
 }
 
 .statistics {
-    background: url("../img/Springfield.jpeg") no-repeat;
+    /*background: url("../img/Springfield.jpeg") no-repeat;*/
     background-size: 100%;
     height: 100%;
     margin-top: 2%;
@@ -497,6 +502,9 @@ EVENTS PAGE
         margin-top: 2%;
         padding: 0;
     }
+    /*.input{*/
+        /*max-width: 350px;*/
+    /*}*/
 }
 
 @media (min-width: 550px) {
@@ -525,7 +533,6 @@ EVENTS PAGE
         margin-right: 8em;
         height: 575px;
         width: 900px;
-
     }
 
 }
@@ -563,8 +570,6 @@ LOCATOR PAGE
     background: whitesmoke;
 }
 
-
-
 #about h4{
     color: white;
 
@@ -580,3 +585,8 @@ LOCATOR PAGE
 .form{
     margin-top: 2%;
 }
+
+/*.st-bg { background:black; }*/
+/*.st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }*/
+/*.st-dtitle { background:white; }*/
+

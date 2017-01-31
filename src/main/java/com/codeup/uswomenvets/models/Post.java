@@ -18,7 +18,8 @@ public class Post {
     public String postDateMonth = "";
 
 
-    public Post(int userId, int category, String title, String content) { this.userId = userId;
+    public Post(int userId, int category, String title, String content) {
+        this.userId = userId;
         this.title = title;
         this.category = category;
         this.content = content;
@@ -105,21 +106,37 @@ public class Post {
 
     public String getPostDate() { return postDate; }
 
-    public void setPostDate(String postDate) { this.postDate = postDate; }
+    public void setPostDate(String postDate) {
+        this.postDate = postDate;
+    }
 
-    public String getPostDateTime() { return postDateTime; }
+    public String getPostDateTime() {
+        return postDateTime;
+    }
 
-    public void setPostDateTime(String postDateTime) { this.postDateTime = postDateTime; }
+    public void setPostDateTime(String postDateTime) {
+        this.postDateTime = postDateTime;
+    }
 
-    public String getPostTime() { return postTime; }
+    public String getPostTime() {
+        return postTime;
+    }
 
-    public void setPostTime(String postTime) { this.postTime = postTime; }
+    public void setPostTime(String postTime) {
+        this.postTime = postTime;
+    }
 
-    public String getPostDateMonth() { return postDateMonth; }
+    public String getPostDateMonth() {
+        return postDateMonth;
+    }
 
-    public void setPostDateMonth(String postDateMonth) { this.postDateMonth = postDateMonth; }
+    public void setPostDateMonth(String postDateMonth) {
+        this.postDateMonth = postDateMonth;
+    }
 
-    public String getUsername() { return username; }
+    public String getUsername() {
+        return username;
+    }
 
     public void setUsername(String username) { this.username = username; }
 

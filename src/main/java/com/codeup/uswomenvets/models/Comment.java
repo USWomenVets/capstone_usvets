@@ -13,7 +13,7 @@ public class Comment {
     public String commentDateTime = "";
     public String commentDate = "";
     public String commentTime = "";
-    public String commentDateMonth ="";
+    public String commentDateMonth = "";
 
     public Comment(int userId, int postId, String content) {
         this.userId = userId;
@@ -62,25 +62,41 @@ public class Comment {
 
     public void setContent(String content) { this.content = content; }
 
-    public String getCommentDateTime() { return commentDateTime; }
+    public String getCommentDateTime() {
+        return commentDateTime;
+    }
 
-    public void setCommentDateTime(String commentDateTime) { this.commentDateTime = commentDateTime; }
+    public void setCommentDateTime(String commentDateTime) {
+        this.commentDateTime = commentDateTime;
+    }
 
-    public String getCommentDate() { return commentDate; }
+    public String getCommentDate() {
+        return commentDate;
+    }
 
-    public void setCommentDate(String commentDate) { this.commentDate = commentDate; }
+    public void setCommentDate(String commentDate) {
+        this.commentDate = commentDate;
+    }
 
     public String getUsername() { return username; }
 
     public void setUsername(String username) { this.username = username; }
 
-    public String getCommentTime() { return commentTime; }
+    public String getCommentTime() {
+        return commentTime;
+    }
 
-    public void setCommentTime(String commentTime) { this.commentTime = commentTime; }
+    public void setCommentTime(String commentTime) {
+        this.commentTime = commentTime;
+    }
 
-    public String getCommentDateMonth() { return commentDateMonth; }
+    public String getCommentDateMonth() {
+        return commentDateMonth;
+    }
 
-    public void setCommentDateMonth(String commentDateMonth) { this.commentDateMonth = commentDateMonth; }
+    public void setCommentDateMonth(String commentDateMonth) {
+        this.commentDateMonth = commentDateMonth;
+    }
 
     private void formatCommentDateTime() {
         int i;

@@ -82,7 +82,7 @@ GENERAL
 
 .site-logo {
     color: white;
-    line-height: 80px;
+    line-height: 65px;
     font-size: 1.5em;
     font-weight: bold;
     padding-left: 50px;
@@ -94,13 +94,13 @@ GENERAL
 }
 
 .nav-desktop .menu-desktop {
-    line-height: 80px;
+    line-height: 65px;
     background-color: transparent;
 }
 
 .menu > li > a {
     display: inline-block;
-    line-height: 60px;
+    line-height: 65px;
     padding-top: 0;
     padding-bottom: 0;
     color: rgba(255, 255, 255, 0.9);

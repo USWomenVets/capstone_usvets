@@ -48,31 +48,40 @@
                 </div>
             </div>
         </div>
+        <div class="didyouknow">
+            <div class="panel large-6 medium-6 small-12 columns medium-centered">
+                <div class="callout text-center">
+                    <h1>Did You Know..</h1>
+                    <%--<hr>--%>
+                    <%--<p>Let's create an environment where we can help each other out. Whether you are thinking about--%>
+                        <%--joining, currently in the military, or have been out for a while, let's talk about it.</p>--%>
+                    <%--<a data-open="modal1" class="button sorting_buttons hvr-grow">Click here!</a>--%>
+                </div>
+            </div>
+        </div>
         <%--<canvas id="currentlyServe" height="128" width="128"></canvas>--%>
         <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
         <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
         <div class="statistics text-center">
-            <div class="row">
-                <h1>Did You Know...</h1>
-            </div>
+
             <div class="circles row">
                 <div class="small-12 medium-6 large-6 columns text-center">
                     <div class="circle" id="circle1"><h1>20%</h1></div>
-                    <%--<h4>of US have experienced military sexual trauma</h4>--%>
+                    <h4>of US experienced military sexual trauma</h4>
                 </div>
                 <div class="small-12 medium-6 large-6 columns text-center">
                     <div class="circle" id="circle2"><h1>80%</h1></div>
-                    <%--<h4>of US use education benefits</h4>--%>
+                    <h4>of US use education benefits</h4>
                 </div>
             </div>
             <div class="circles row">
                 <div class="small-12 medium-6 large-6 columns text-center">
                     <div class="circle" id="circle3"><h1>10%</h1></div>
-                    <%--<h4>of US currently serve in the military</h4>--%>
+                    <h4>of US currently serve in the military</h4>
                 </div>
                 <div class="small-12 medium-6 large-6 columns text-center">
                     <div class="circle" id="circle4"><h1>11%</h1></div>
-                    <%--<h4>of US are in the labor force</h4>--%>
+                    <h4>of US are in the labor force</h4>
                 </div>
             </div>
 

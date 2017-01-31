@@ -382,11 +382,11 @@ INDEX/HOMEPAGE
     background: url("../img/gracehopper.png") no-repeat center;
     background-size: 100%;
     height: 80%;
-    margin-top:2%;
+    /*margin-top:2%;*/
     color: white;
     opacity: 80;
     padding-bottom: 10%;
-    margin-bottom: 2%;
+    /*margin-bottom: 2%;*/
     text-shadow: #0a0a0a;
 }
 
@@ -404,15 +404,15 @@ INDEX/HOMEPAGE
 }
 
 .circle {
-    border: 6px solid #5F0F4E;
+    border: 6px solid black;
     height: 12em;
     width: 12em;
     /*margin: 20%;*/
     border-radius: 10%;
-    color: #E52A6F;
+    color: black
     transform-origin: 50% center;
     position: relative;
-    animation: rotate 30s linear;
+    animation: rotate 5s linear;
 }
 
 .circle:before {
@@ -424,7 +424,7 @@ INDEX/HOMEPAGE
     /*margin: 20%;*/
     /*border-radius: 50%;*/
     /*color: #E52A6F;*/
-    animation: rotate 10s linear reverse;
+    animation: rotate 8s linear;
 }
 
 @keyframes rotate {
@@ -446,20 +446,21 @@ INDEX/HOMEPAGE
 /*background-size: 100%;*/
 height: 12em;
 width: 12em;
-margin-left: 20%;
-/*margin-bottom: 0;*/
-/*margin-top: 20%;*/
-border-radius: 50%;
+margin-left: 35%;
+/*margin-bottom: 15%;*/
+margin-top: 20%;
+border-radius: 180%;
 color: #5F0F4E;
 background-color: rgba(255, 255, 255, .5);
 
 }
 
+
 .circle h1 {
     padding-top: 28%;
     font-size: 3.5em;
-    /*margin-bottom: 0;*/
-    /*padding-bottom: 0;*/
+    margin-bottom: 0;
+    padding-bottom: 0;
 
 }
 .circle h4{

@@ -77,13 +77,13 @@
         </div>
         <div class="join">
             <div class="panel large-6 medium-6 small-12 columns medium-centered">
-                    <div class="callout">
-                        <h4>What Can We Do?</h4>
-                        <hr>
-                        <p>Let's create an environment where we can help each other out. Whether you are thinking about
-                            joining, currently in the military, or have been out for a while, let's talk about it.</p>
-                        <a href="<c:url value="/register"/>" class="button sorting_buttons hvr-grow">Join US!</a>
-                    </div>
+                <div class="callout">
+                    <h4>What Can We Do?</h4>
+                    <hr>
+                    <p>Let's create an environment where we can help each other out. Whether you are thinking about
+                        joining, currently in the military, or have been out for a while, let's talk about it.</p>
+                    <a href="<c:url value="/register"/>" class="button sorting_buttons hvr-grow">Join US!</a>
+                </div>
             </div>
         </div>
     </div>

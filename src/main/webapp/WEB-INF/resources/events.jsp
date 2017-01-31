@@ -14,11 +14,13 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
             <h1 class="locator_heading"><strong>Your VA Events</strong></h1>
-            <p class="locator_heading">Welcome!  Check out what's happening</p>
+            <p class="locator_heading">Welcome! Check out what's happening</p>
         </div>
-        <div data-tockify-component="calendar" data-tockify-calendar="uswomenvets"></div>
-        <script data-cfasync="false" data-tockify-script="embed"
-                src="https://public.tockify.com/browser/embed.js"></script>
+        <div class="calendar">
+            <div data-tockify-component="calendar" data-tockify-calendar="uswomenvets"></div>
+            <script data-cfasync="false" data-tockify-script="embed"
+                    src="https://public.tockify.com/browser/embed.js"></script>
+        </div>
         <%--<!--Calendar-->--%>
         <%--&lt;%&ndash;<div class="responsive-iframe-container big-container">&ndash;%&gt;--%>
         <%--<div class="responsive-iframe-container big-container large-10 medium-10 columns large-centered medium-centered">--%>
@@ -32,7 +34,8 @@
         <%--</div>--%>
         <div class="row">
             <div class="large-12 columns text-center">
-            <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics" class="sorting_buttons"><h6>Import iCal Calendar</h6></a>
+                <a href="https://calendar.google.com/calendar/ical/01lq9ra7c9dck3otfogmtgk7bo%40group.calendar.google.com/public/basic.ics"
+                   class="sorting_buttons"><h6>Import iCal Calendar</h6></a>
             </div>
         </div>
         <div class="featured-events">

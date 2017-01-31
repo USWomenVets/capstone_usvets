@@ -32,7 +32,7 @@
                     <div class="media-object"><%----%>
                         <div class="media-object-section">
                             <h4>Kenneth Curtis</h4>
-                            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+                            <p>Team oriented full-stack developer with a passion on the back end relation</p>
                         </div>
                         <div class="media-object-section">
                             <img src= "/img/KennethCurtis2.jpg">

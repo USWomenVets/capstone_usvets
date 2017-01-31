@@ -29,7 +29,7 @@
                             <h3>${post.getTitle()}</h3>
                             <h4>${post.getContent()}</h4>
 
-                            <p>${post.getPostDate()}</p>
+                            <p>${post.getPostDateMonth()}</p>
                             <h5>${post.getStringCategory()}</h5>
                             <c:choose>
                                 <c:when test="${sessionScope.user != null && sessionScope.user.getId() == post.getUserId()}"> <!--LOGGED IN USER-->
@@ -74,7 +74,7 @@
                     <div class="wrap">
                         <h2>${comment.getUsername()}</h2>
                         <h4>${comment.getContent()}</h4>
-                        <p>${comment.getPostDate()}</p>
+                        <p>${comment.getCommentDateMonth()}</p>
                         <form action="/delete/comment">
                             <input type="hidden" name="postId" value="${comment.getPostId()}"
                             <c:choose>

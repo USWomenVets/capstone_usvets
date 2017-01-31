@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`posts` (
   `user_id` INT UNSIGNED NOT NULL,
   `title` VARCHAR(64) NOT NULL,
   `content` VARCHAR(1024) NOT NULL,
-  `post_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `post_date` DATETIME NOT NULL DEFAULT current_timestamp,
   `views` INT NULL,
   `likes` INT NULL,
   `comment_count` INT NULL,

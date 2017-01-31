@@ -380,9 +380,9 @@ INDEX/HOMEPAGE
 
 .statistics {
     background: url("../img/gracehopper.png") no-repeat center;
-    background-size: 70%;
-    height: 100%;
-    margin-top:40%;
+    background-size: 100%;
+    height: 80%;
+    margin-top:2%;
     color: white;
     opacity: 80;
     padding-bottom: 10%;
@@ -390,10 +390,10 @@ INDEX/HOMEPAGE
     text-shadow: #0a0a0a;
 }
 
-.circles {
-    margin-top: 8%;
-    padding: 0;
-}
+/*.circles {*/
+    /*margin-top: 8%;*/
+    /*padding: 0;*/
+/*}*/
 
 .locator_heading {
     color: white;
@@ -403,63 +403,67 @@ INDEX/HOMEPAGE
     color: white;
 }
 
-/*.circle {*/
+.circle {
+    border: 6px solid #5F0F4E;
+    height: 12em;
+    width: 12em;
+    /*margin: 20%;*/
+    border-radius: 10%;
+    color: #E52A6F;
+    transform-origin: 50% center;
+    position: relative;
+    animation: rotate 30s linear;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
     /*border: 5px solid white;*/
     /*height: 12em;*/
     /*width: 12em;*/
     /*margin: 20%;*/
     /*border-radius: 50%;*/
     /*color: #E52A6F;*/
-    /*transform-origin: 200% center;*/
-    /*position: relative;*/
-    /*animation: rotate 3s linear;*/
-/*}*/
-
-/*.circle:before {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*!*border: 5px solid white;*!*/
-    /*!*height: 12em;*!*/
-    /*!*width: 12em;*!*/
-    /*!*margin: 20%;*!*/
-    /*!*border-radius: 50%;*!*/
-    /*!*color: #E52A6F;*!*/
-    /*animation: rotate s linear reverse;*/
-/*}*/
-
-/*@keyframes rotate {*/
-    /*100% {*/
-        /*transform: rotate(360deg);*/
-    /*}*/
-/*}*/
-.circles{
-    margin: 0;
-    padding: 0;
+    animation: rotate 10s linear reverse;
 }
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+/*.circles{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
 
 .info{
     /*background-color: rgba(125, 125, 125, .35);*/
     text-shadow: 1px 1px 1px black;
 }
 .circle {
-border: 6px solid white;
-background-size: 100%;
+/*border: 6px solid #5F0F4E;*/
+/*background-size: 100%;*/
 height: 12em;
 width: 12em;
 margin-left: 20%;
-margin-bottom: 0;
-margin-top: 20%;
+/*margin-bottom: 0;*/
+/*margin-top: 20%;*/
 border-radius: 50%;
 color: #5F0F4E;
 background-color: rgba(255, 255, 255, .5);
-text-shadow: #0a0a0a;
+
 }
 
 .circle h1 {
     padding-top: 28%;
     font-size: 3.5em;
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
+    /*padding-bottom: 0;*/
 
+}
+.circle h4{
+    text-shadow: 1px 1px 1px #5F0F4E;
 }
 
 .callout {
@@ -487,6 +491,11 @@ text-shadow: #0a0a0a;
 EVENTS PAGE
 ************************************************************************** */
 
+.flex-video{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 @media (max-width: 550px) {
     .big-container {
         display: none;
@@ -505,10 +514,10 @@ EVENTS PAGE
         background-color: #67AECA;
     }
 
-    .circles {
-        margin:0;
-        padding: 0;
-    }
+    /*.circles {*/
+        /*margin:0;*/
+        /*padding: 0;*/
+    /*}*/
 }
 @media (max-width: 980px) {
     .statistics {
@@ -570,6 +579,10 @@ EVENTS PAGE
 
 .featured-events {
     margin-top: 0;
+}
+.title h2{
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* **************************************************************************

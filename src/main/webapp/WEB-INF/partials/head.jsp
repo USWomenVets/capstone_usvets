@@ -6,4 +6,5 @@
 <link href="../../css/foundation-icons/webicons-master/webicons/webicons.css" rel="stylesheet" type="text/css" />
 <link href="../../css/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css" />
 <link href="../../css/set1.css" rel="stylesheet" type="text/css" />
+<link href="../../css/animate.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">

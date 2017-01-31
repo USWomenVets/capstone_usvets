@@ -13,8 +13,8 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
         <section class="hero text-center">
-            <h1 class="large-12 columns title">A Rally Point For</h1>
-            <h1><em>US</em></h1>
+            <%--<h1 class="large-12 columns title">A Rally Point For</h1>--%>
+            <%--<h1><em>US</em></h1>--%>
             <%--<div class="hero-logo">--%>
             <%--<img src="<c:url value="/img/USLogo.png"/>">--%>
             <%--</div>--%>
@@ -52,27 +52,61 @@
         <%--<canvas id="currentlyServe" height="128" width="128"></canvas>--%>
         <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
         <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
-        <div class="statistics text-center">
+        <div class="statistics text-center gradient">
             <div class="row">
                 <h1>Did You Know...</h1>
             </div>
-            <div class="circles row">
-                <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle"><h1>10%</h1></div>
-                    <h4>of US currently serve in the military</h4>
-                </div>
-                <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle"><h1>20%</h1></div>
-                    <h4>of US have experience military sexual trauma</h4>
-                </div>
-                <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle"><h1>11%</h1></div>
-                    <h4>of US are in the labor force</h4>
-                </div>
-                <div class="small-12 medium-6 large-3 columns text-center">
-                    <div class="circle"><h1>80%</h1></div>
-                    <h4>of US use education benefits</h4>
-                </div>
+            <div><
+            <ul class="ca-menu">
+                <li>
+                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <div class="ca-content">
+                            <h2 class="ca-main">Exceptional Service</h2>
+                        </div>
+                </li>
+                <li>
+                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <div class="ca-content">
+                            <h2 class="ca-main">Creative Storytelling</h2>
+                        </div>
+                </li>
+                <li>
+                        <span class="ca-icon fi-magnifying-glass medium" id="heart"></span>
+                        <div class="ca-content">
+                            <h2 class="ca-main">Infographical Education</h2>
+                        </div>
+                </li>
+                <li>
+                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <div class="ca-content">
+                            <h2 class="ca-main">Sophisticated Team</h2>
+                        </div>
+                </li>
+                <li>
+                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <div class="ca-content">
+                            <h2 class="ca-main">Unconditional Support</h2>
+                        </div>
+                </li>
+            </ul>
+        </div><!-- content -->
+            <%--<div class="circles row">--%>
+                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
+                    <%--<div class="circle"><h1>10%</h1></div>--%>
+                    <%--<h4>of US currently serve in the military</h4>--%>
+                <%--</div>--%>
+                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
+                    <%--<div class="circle"><h1>20%</h1></div>--%>
+                    <%--<h4>of US have experience military sexual trauma</h4>--%>
+                <%--</div>--%>
+                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
+                    <%--<div class="circle"><h1>11%</h1></div>--%>
+                    <%--<h4>of US are in the labor force</h4>--%>
+                <%--</div>--%>
+                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
+                    <%--<div class="circle"><h1>80%</h1></div>--%>
+                    <%--<h4>of US use education benefits</h4>--%>
+                <%--</div>--%>
             </div>
         </div>
         <div class="join">

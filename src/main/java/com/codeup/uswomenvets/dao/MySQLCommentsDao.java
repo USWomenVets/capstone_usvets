@@ -13,7 +13,8 @@ import java.util.List;
 /**
  * Created by KJCurtis on 1/26/17.
  */
-public class MySQLCommentsDao implements Comments{
+
+public class MySQLCommentsDao implements Comments {
     private Connection connection;
 
     public MySQLCommentsDao(Config config) {

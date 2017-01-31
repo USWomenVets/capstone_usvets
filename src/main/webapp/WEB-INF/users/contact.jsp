@@ -15,24 +15,24 @@
             <h1><strong>Contact US</strong></h1>
         </div>
         <div class="wrap">
-            <form class="form">
+            <form class="form" action="/contact">
                 <fieldset>
                     <div class="row">
                         <label for="inputName" class="large-2 columns control-label">Name</label>
                         <div class="large-10 columns">
-                            <input class="form-control" id="inputName" placeholder="Name" type="text" required>
+                            <input value="${user.getFullName()}" name="name" class="form-control" id="inputName" placeholder="Name" type="text" required>
                         </div>
                     </div>
                     <div class="row">
                         <label for="inputEmail" class="large-2 columns control-label">Email</label>
                         <div class="large-10 columns">
-                            <input class="form-control" id="inputEmail" placeholder="Email" type="text" required>
+                            <input value="${user.getEmail()}" name="email" class="form-control" id="inputEmail" placeholder="Email" type="text" required>
                         </div>
                     </div>
                     <div class="row">
                         <label for="textArea" class="large-2 columns" >Message</label>
                         <div class="large-10 columns">
-                            <textarea class="form-control" rows="5" id="textArea" placeholder="Message"required></textarea>
+                            <textarea name="content" class="form-control" rows="5" id="textArea" placeholder="Message"required></textarea>
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@
                         </button>
                     </div>
                     <div class="row text-center">
-                    <p><a data-open="modal" action="mailto:contactme@euniceheymann.com" class="button sorting_buttons hvr-grow">Submit</a></p>
+                    <p><button type="submit" data-open="modal" action="mailto:contactme@euniceheymann.com" class="button sorting_buttons hvr-grow">Submit</button></p>
                     </div>
                 </fieldset>
             </form>

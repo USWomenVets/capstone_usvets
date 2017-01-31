@@ -33,26 +33,34 @@
                 <p class="form-text-color"><strong>Please fill out your information</strong></p>
 
 
+                <div class="small-12">
                             <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="text" id="first_name" name="first_name"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="first_name">
 						<span class="input__label-content input__label-content--hoshi">First Name</span>
 					</label>
 				</span>
+                </div>
+
+                <div class="small-12">
                     <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="text" id="last_name" name="last_name"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="last_name">
 						<span class="input__label-content input__label-content--hoshi">Last Name</span>
 					</label>
 				</span>
+                </div>
 
+                    <div class="small-12">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="email" id="email" name="email" required/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="email">
 						<span class="input__label-content input__label-content--hoshi">Email</span>
 					</label>
 				</span>
+                    </div>
 
+                        <div class="small-12">
                                 <span class="input input--hoshi form-group form-text-color">
 					<input class="input__field input__field--hoshi text-center" type="text" id="username" name="username" required/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="username">
@@ -60,22 +68,26 @@
                         <span class="form-error">We apologize, but that username has been taken.</span>
 					</label>
 				</span>
+                        </div>
 
-
+                            <div class="small-12">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="password" id="password" name="password" required/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="password">
 						<span class="input__label-content input__label-content--hoshi">Password</span>
 					</label>
 				</span>
+                            </div>
 
+                                <div class="small-12">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="password" id="confirm_password" name="confirm_password" data-equalto="password" required />
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="confirm_password">
-						<span class="input__label-content input__label-content--hoshi">Confrim Password</span>
+						<span class="input__label-content input__label-content--hoshi">Confirm Password</span>
                         <span class="form-error">Hey, passwords are supposed to match!</span>
 					</label>
 				</span>
+                                </div>
 
                 <input type="submit" class="medium button sorting_buttons hvr-grow" value="Sign up!">
 

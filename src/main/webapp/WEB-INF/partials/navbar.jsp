@@ -78,19 +78,19 @@
                 <div></div>
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
-                        <li><a href="/archive">Discuss</a></li>
-                        <li><a href="/locator">Your VA</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="/create">Post</a></li>
-                        <li><a href="/profile">Profile</a></li>
-                        <li><a href="/logout">Logout</a></li>
+                        <li class="hvr-grow"><a href="/archive">Discuss</a></li>
+                        <li class="hvr-grow"><a href="/locator">Your VA</a></li>
+                        <li class="hvr-grow"><a href="/events">Events</a></li>
+                        <li class="hvr-grow"><a href="/create">Post</a></li>
+                        <li class="hvr-grow"><a href="/profile">Profile</a></li>
+                        <li class="hvr-grow"><a href="/logout">Logout</a></li>
                     </c:when>
                     <c:otherwise>
-                        <li><a href="/archive">Discuss</a></li>
-                        <li><a href="/locator">Your VA</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="/register">Register</a></li>
-                        <li><a href="/login">Login</a></li>
+                        <li class="hvr-grow"><a href="/archive">Discuss</a></li>
+                        <li class="hvr-grow"><a href="/locator">Your VA</a></li>
+                        <li class="hvr-grow"><a href="/events">Events</a></li>
+                        <li class="hvr-grow"><a href="/register">Register</a></li>
+                        <li class="hvr-grow"><a href="/login">Login</a></li>
                     </c:otherwise>
                 </c:choose>
             </ul>

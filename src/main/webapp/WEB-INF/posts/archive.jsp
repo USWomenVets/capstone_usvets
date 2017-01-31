@@ -29,7 +29,7 @@
                             <a href="/show?id=${post.getId()}" class="archive_post_button" name="id">
                                 <div class="post_para username date">
                                     <span id="username_arch">By || ${post.username}</span>
-                                    <span id="date_arch">${post.postDate}</span>
+                                    <span id="date_arch">${post.getPostDateMonth()}</span>
                                 </div>
                                 <h1 class="post_para title" id="title_arch">${post.title}</h1>
                                 <hr />

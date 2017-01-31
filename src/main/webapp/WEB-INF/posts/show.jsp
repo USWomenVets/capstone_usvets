@@ -27,7 +27,7 @@
                         <div class="wrap form-text-color">
                             <h2>${post.getTitle()}</h2>
                             <h3>${post.getStringCategory()}</h3>
-                            <h4>${post.getPostDate()}</h4>
+                            <h4>${post.getPostDateMonth()}</h4>
                             <p>${post.getContent()}</p>
                             <h4>${post.getUsername()}</h4>
                             <c:choose>
@@ -73,7 +73,7 @@
                     <div class="wrap">
                         <h2>${comment.getUsername()}</h2>
                         <p>${comment.getContent()}</p>
-                        <h4>${comment.getPostDate()}</h4>
+                        <h4>${comment.getCommentDateMonth()}</h4>
                         <form action="/delete/comment">
                             <input type="hidden" name="postId" value="${comment.getPostId()}"
                             <c:choose>

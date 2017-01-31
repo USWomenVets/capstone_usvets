@@ -8,39 +8,28 @@ public class Post {
     private int likes;
     private int commentCount;
     private int isDeleted;
-    private String stringCategory;
-    private String title;
-    private String content;
-    private String postDate;
     private String username;
+    private String title;
+    private String stringCategory;
+    private String content;
+    public String postDateTime;
+    public String postDate = "";
+    public String postTime = "";
+    public String postDateMonth = "";
 
-    public Post() {
-        this.id = 0;
-        this.userId = 0;
-        this.category = 1;
-        this.views = 0;
-        this.likes = 0;
-        this.commentCount = 0;
-        this.isDeleted = 1;
-        this.title = "This post does not exist";
-        this.content = "I apologize, but this post no longer exists. The post has either been deleted.";
-        this.postDate = "";
-        this.username = "System";
-        this.stringCategory = "";
-    }
-    public Post(int userId, int category, String title, String content) {
-        this.userId = userId;
+
+    public Post(int userId, int category, String title, String content) { this.userId = userId;
         this.title = title;
         this.category = category;
         this.content = content;
     }
 
-    public Post(int id, int userId, String title, String content, String postDate, String username, String stringCategory,int category, int views, int likes, int commentCount, int isDeleted) {
+    public Post(int id, int userId, String title, String content, String postDateTime, String username, String stringCategory, int category, int views, int likes, int commentCount, int isDeleted) {
         this.id = id;
         this.userId = userId;
         this.title = title;
         this.content = content;
-        this.postDate = postDate;
+        this.postDateTime = postDateTime;
         this.username = username;
         this.stringCategory = stringCategory;
         this.category = category;
@@ -48,6 +37,8 @@ public class Post {
         this.likes = likes;
         this.commentCount = commentCount;
         this.isDeleted = isDeleted;
+        formatPostDateTime();
+        convertPostDate();
     }
 
     public Post(int userId, int id, String title, String content, int category) {
@@ -114,10 +105,90 @@ public class Post {
 
     public String getPostDate() { return postDate; }
 
-    public void setPostDate(String postDate) {this.postDate = postDate;}
+    public void setPostDate(String postDate) { this.postDate = postDate; }
 
-    public String getUsername() { return username;}
+    public String getPostDateTime() { return postDateTime; }
+
+    public void setPostDateTime(String postDateTime) { this.postDateTime = postDateTime; }
+
+    public String getPostTime() { return postTime; }
+
+    public void setPostTime(String postTime) { this.postTime = postTime; }
+
+    public String getPostDateMonth() { return postDateMonth; }
+
+    public void setPostDateMonth(String postDateMonth) { this.postDateMonth = postDateMonth; }
+
+    public String getUsername() { return username; }
 
     public void setUsername(String username) { this.username = username; }
 
+    private void formatPostDateTime() {
+        int i;
+        for (i = 0; i < this.postDateTime.length(); i++) {
+            if (i < 10) {
+                this.postDate += this.postDateTime.charAt(i);
+            } else if (i > 10) {
+                this.postTime += this.postDateTime.charAt(i);
+            }
+        }
+    }
+
+    private void convertPostDate() {
+        int i;
+        String day = "";
+        String month = "";
+        String year = "";
+
+        for (i = 0; i < this.postDateTime.length(); i++) {
+            if (i > 1 && i < 4) {
+                year += this.postDateTime.charAt(i);
+            } else if (i > 4 && i < 7) {
+                month += this.postDateTime.charAt(i);
+            } else if (i > 7 && i < 10) {
+                day += this.postDateTime.charAt(i);
+            }
+        }
+        switch (month) {
+            case "01":
+                month = " Jan ";
+                break;
+            case "02":
+                month = " Feb ";
+                break;
+            case "03":
+                month = " Mar ";
+                break;
+            case "04":
+                month = " Apr ";
+                break;
+            case "05":
+                month = " May ";
+                break;
+            case "06":
+                month = " Jun ";
+                break;
+            case "07":
+                month = " Jul ";
+                break;
+            case "08":
+                month = " Aug ";
+                break;
+            case "09":
+                month = " Sept ";
+                break;
+            case "10":
+                month = " Oct ";
+                break;
+            case "11":
+                month = " Nov ";
+                break;
+            case "12":
+                month = " Dec ";
+                break;
+        }
+        this.postDateMonth = day + month + year;
+    }
 }
+
+

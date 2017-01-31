@@ -20,7 +20,7 @@ public class DaoFactory {
         return usersDao;
     }
     public static Comments getCommentsDao() {
-        if (commentsDao ==null) {
+        if (commentsDao == null) {
             commentsDao = new MySQLCommentsDao(config);
         }
         return commentsDao;

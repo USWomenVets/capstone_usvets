@@ -1,11 +1,9 @@
 package com.codeup.uswomenvets.models;
 
-import com.codeup.uswomenvets.dao.DateTimeDao;
-
 /**
  * Created by KJCurtis on 1/26/17.
  */
-public class Comment extends DateTimeDao {
+public class Comment {
     private int id;
     private int userId;
     private int postId;

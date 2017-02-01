@@ -53,10 +53,10 @@
         <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
         <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
         <div class="statistics text-center gradient">
-            <div class="row">
+            <div class="row circle_list">
                 <h1>Did You Know...</h1>
             </div>
-            <div class="row" id="circle_list">
+            <div class="row circle_list">
             <ul class="ca-menu">
                 <li>
                         <span class="ca-icon medium">10%</span>

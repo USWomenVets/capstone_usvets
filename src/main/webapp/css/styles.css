@@ -173,9 +173,23 @@ footer #footer-links {
 /* **************************************************************************
 MEDIA QUERIES
 ************************************************************************** */
+
+
 @media (max-width: 844px) {
     .nav-desktop {
         display: none;
+    }
+    .circle_list{
+        display: none;
+    }
+    #table_test {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin: 1em;
+        max-width: 650px;
+        width: calc(100% - 2em);
+        vertical-align: top;
     }
 }
 
@@ -183,7 +197,10 @@ MEDIA QUERIES
     .title-bar {
         display: none;
     }
+
 }
+
+
 
 /* **************************************************************************
 SOCIAL MEDIA
@@ -280,13 +297,8 @@ CUSTOM
     text-align: center;
 }
 
-/*.input{*/
-/*width: 700px;*/
-/*}*/
-
-#sorting_buttons {
-    text-align: center;
-    margin: 2px;
+.grid_fit {
+    /*margin-left: 20px;*/
 }
 
 #file_format {
@@ -308,14 +320,12 @@ CUSTOM
 }
 
 .archive_post {
-    /*background-color: #67AECA;*/
     text-align: center;
     margin: 30px;
     display: inline-block;
     width: 355px;
     padding: 40px;
     background-color: whitesmoke;
-    /*transition: .5s;*/
 }
 
 .archive_post:hover {
@@ -351,8 +361,14 @@ CUSTOM
 
 .sorting_buttons {
     background-color: #E52A6F;
-    margin: 0;
+    text-align: center;
+    /*margin: 2px;*/
 }
+
+
+/*#horizontal_list > button{*/
+    /*display: inline;*/
+/*}*/
 
 #sign_up {
     color: #E52A6F;
@@ -399,8 +415,8 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
-#circle_list{
-    margin-left: 3%;
+.circle_list{
+    margin-left: 2.5%;
 }
 
 .circles {
@@ -499,7 +515,10 @@ EVENTS PAGE
 
     .statistics {
         background-image: none;
-        background-color: #67AECA;
+        background: #B993D6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #B993D6, #8CA6DB); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #B993D6, #8CA6DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     }
 
     .circles {

@@ -11,6 +11,7 @@ public class User {
     private String lastName;
     private String creationDate;
     private String lastOnline;
+    private String fullName;
 
 
     public User() { }
@@ -47,6 +48,7 @@ public class User {
         this.lastName = lastName;
         this.creationDate = creationDate;
         this.lastOnline = lastOnline;
+        this.fullName = firstName + " " + lastName;
     }
 
     public int getId() { return id; }
@@ -72,6 +74,10 @@ public class User {
     public String getLastName() { return lastName; }
 
     public void setLastName(String lastName) { this.lastName = lastName; }
+
+    public String getFullName() { return fullName; }
+
+    public void setFullName(String fullName) { this.fullName = fullName; }
 
     public String getCreationDate() { return creationDate; }
 

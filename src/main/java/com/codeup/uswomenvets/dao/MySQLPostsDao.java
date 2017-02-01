@@ -25,7 +25,7 @@ public class MySQLPostsDao implements Posts {
     }
 
     public List<Post> userPost(int user_id) {
-        PreparedStatement stmt = null;
+        PreparedStatement stmt;
         try {
             stmt = connection.prepareStatement("SELECT posts.* , users.user_name, category.category, category_post.category_id, posts.is_deleted FROM posts JOIN users ON users.id = posts.user_id JOIN category_post ON category_post.post_id = posts.id JOIN category On category_post.category_id = category.id where posts.user_id = ?;");
             stmt.setInt(1, user_id);

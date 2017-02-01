@@ -391,9 +391,6 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
-/*.hero-logo {*/
-/*z-index: 100;*/
-/*}*/
 
 .hero img {
     height: 20%;
@@ -504,7 +501,6 @@ EVENTS PAGE
     .big-container {
         display: none;
     }
-
     #map {
         /*padding: 10%;*/
         /*margin-left: .75em;*/
@@ -541,7 +537,7 @@ EVENTS PAGE
         /*padding: 10%;*/
         /*margin-left: 4em;*/
         /*margin-right: 1em;*/
-        height: 375px;
+        height: 300px;
         /*width: 600px;*/
 
     }
@@ -552,11 +548,12 @@ EVENTS PAGE
         display: none;
     }
 
+
     #map {
-        /*padding: 10%;*/
+        padding: 10%;
         /*margin-left: 15em;*/
         /*margin-right: 8em;*/
-        height: 575px;
+        height: 550px;
         /*width: 900px;*/
     }
 

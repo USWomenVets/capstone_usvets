@@ -12,26 +12,26 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
-            <h1><strong>Contact US</strong></h1>
+            <h1 class="locator_heading"><strong>Contact US</strong></h1>
+            <p class="locator_heading">We'd love to hear from you!</p>
         </div>
+        <section class="main">
         <div class="wrap">
-            <form class="form">
+
+                <div class="container text-center" id="contact_page">
                 <fieldset>
                     <div class="row">
-                        <label for="inputName" class="large-2 columns control-label">Name</label>
-                        <div class="large-10 columns">
+                        <div class="large-12 columns">
                             <input class="form-control" id="inputName" placeholder="Name" type="text" required>
                         </div>
                     </div>
                     <div class="row">
-                        <label for="inputEmail" class="large-2 columns control-label">Email</label>
-                        <div class="large-10 columns">
+                        <div class="large-12 columns">
                             <input class="form-control" id="inputEmail" placeholder="Email" type="text" required>
                         </div>
                     </div>
                     <div class="row">
-                        <label for="textArea" class="large-2 columns" >Message</label>
-                        <div class="large-10 columns">
+                        <div class="large-12 columns">
                             <textarea class="form-control" rows="5" id="textArea" placeholder="Message"required></textarea>
                         </div>
                     </div>
@@ -44,10 +44,11 @@
                         </button>
                     </div>
                     <div class="row text-center">
-                    <p><a data-open="modal" action="mailto:contactme@euniceheymann.com" class="button sorting_buttons hvr-grow">Submit</a></p>
+                    <a data-open="modal" class="button sorting_buttons hvr-grow text-center">Submit</a>
+
                     </div>
                 </fieldset>
-            </form>
+
             <%--<section class="main">--%>
             <%--<div class="wrap">--%>
             <%--<form action="https://www.elformo.com/forms/3e8e34bc-bf8d-4f42-8b8f-2cf90c44f4c5" method="post">--%>
@@ -70,6 +71,8 @@
             <%--</form>--%>
             <%--</div>--%>
             <%--</section>--%>
+        </section>
+    </div>
         </div>
     </div>
 </div>

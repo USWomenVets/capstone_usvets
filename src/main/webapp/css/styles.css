@@ -620,6 +620,12 @@ LOCATOR PAGE
 
 .sort-button {
     /*width: 8em;*/
-    /*margin: .5%;*/
+    /*margin-top: 1%;*/
+    margin-bottom: 1%;
     /*padding: %;*/
 }
+
+/*.grid main {*/
+/*margin-top: 0;*/
+/*padding-top: 0;*/
+/*}*/

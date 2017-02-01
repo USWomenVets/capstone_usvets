@@ -53,45 +53,45 @@
         <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
         <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
         <div class="statistics text-center gradient">
-            <div class="row">
+            <div class="row circle_list">
                 <h1>Did You Know...</h1>
             </div>
-            <div><
+            <div class="row circle_list">
             <ul class="ca-menu">
                 <li>
-                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <span class="ca-icon medium">10%</span>
                         <div class="ca-content">
-                            <h2 class="ca-main">Exceptional Service</h2>
+                            <h3 class="ca-main">of US currently serve in the military</h3>
                         </div>
                 </li>
                 <li>
-                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <span class="ca-icon medium">20%</span>
                         <div class="ca-content">
-                            <h2 class="ca-main">Creative Storytelling</h2>
+                            <h3 class="ca-main">of US have military sexual trauma</h3>
                         </div>
                 </li>
                 <li>
-                        <span class="ca-icon fi-magnifying-glass medium" id="heart"></span>
+                        <span class="ca-icon medium">11%</span>
                         <div class="ca-content">
-                            <h2 class="ca-main">Infographical Education</h2>
+                            <h3 class="ca-main">of US are in the labor force</h3>
                         </div>
                 </li>
                 <li>
-                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <span class="ca-icon medium">80%</span>
                         <div class="ca-content">
-                            <h2 class="ca-main">Sophisticated Team</h2>
+                            <h3 class="ca-main">of US use education benefits</h3>
                         </div>
                 </li>
                 <li>
-                        <span class="ca-icon fi-magnifying-glass medium"></span>
+                        <span class="ca-icon medium">10%</span>
                         <div class="ca-content">
-                            <h2 class="ca-main">Unconditional Support</h2>
+                            <h3 class="ca-main">of US live below poverty level</h3>
                         </div>
                 </li>
             </ul>
+            </div>
         </div><!-- content -->
-            <%--<div class="circles row">--%>
-                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
+
                     <%--<div class="circle"><h1>10%</h1></div>--%>
                     <%--<h4>of US currently serve in the military</h4>--%>
                 <%--</div>--%>

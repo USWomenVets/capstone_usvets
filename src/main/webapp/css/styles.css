@@ -392,7 +392,7 @@ INDEX/HOMEPAGE
 }
 
 /*.hero-logo {*/
-    /*z-index: 100;*/
+/*z-index: 100;*/
 /*}*/
 
 .hero img {
@@ -401,7 +401,7 @@ INDEX/HOMEPAGE
 }
 
 .hero h1 {
-    size: 35em;
+    size: 40px;
     color: white;
 }
 
@@ -507,10 +507,10 @@ EVENTS PAGE
 
     #map {
         /*padding: 10%;*/
-        margin-left: .75em;
+        /*margin-left: .75em;*/
         /*margin-right: 1em;*/
         height: 250px;
-        width: 325px;
+        /*width: 325px;*/
 
     }
 
@@ -539,10 +539,10 @@ EVENTS PAGE
 
     #map {
         /*padding: 10%;*/
-        margin-left: 4em;
+        /*margin-left: 4em;*/
         /*margin-right: 1em;*/
         height: 375px;
-        width: 600px;
+        /*width: 600px;*/
 
     }
 }
@@ -554,10 +554,10 @@ EVENTS PAGE
 
     #map {
         /*padding: 10%;*/
-        margin-left: 15em;
-        margin-right: 8em;
+        /*margin-left: 15em;*/
+        /*margin-right: 8em;*/
         height: 575px;
-        width: 900px;
+        /*width: 900px;*/
     }
 
 }

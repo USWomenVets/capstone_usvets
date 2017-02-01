@@ -30,10 +30,7 @@
                                 </div>
                             </c:if>
                             <form action="/profile" class="form-horizontal form-text-color profile_form" method="post">
-
                                 <h3 class="text-center form-text-color">Personal Information</h3>
-                                <button class="button sorting_buttons" type="submit">Update</button>
-
                                 <div class="row">
                                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi text-center" type="text" id="username"
@@ -98,9 +95,11 @@
 						<span class="input__label-content input__label-content--hoshi">Confrim New Password</span>
 					</label>
 				</span>
+
                                 </div>
                             </form>
                         </div>
+                        <button class="button sorting_buttons input" type="submit">Update</button>
                     </div>
                 </div>
             </div>

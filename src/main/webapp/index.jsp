@@ -57,58 +57,45 @@
                 <h1>Did You Know...</h1>
             </div>
             <div class="row circle_list">
-            <ul class="ca-menu">
-                <li>
+                <ul class="ca-menu">
+                    <li>
                         <span class="ca-icon medium">10%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US currently serve in the military</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">20%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US have military sexual trauma</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">11%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US are in the labor force</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">80%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US use education benefits</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">10%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US live below poverty level</h3>
                         </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
             </div>
         </div><!-- content -->
 
-                    <%--<div class="circle"><h1>10%</h1></div>--%>
-                    <%--<h4>of US currently serve in the military</h4>--%>
+        <%--<div class="circle"><h1>10%</h1></div>--%>
+        <%--<h4>of US currently serve in the military</h4>--%>
                 <%--</div>--%>
-                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
-                    <%--<div class="circle"><h1>20%</h1></div>--%>
-                    <%--<h4>of US have experience military sexual trauma</h4>--%>
                 <%--</div>--%>
-                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
-                    <%--<div class="circle"><h1>11%</h1></div>--%>
-                    <%--<h4>of US are in the labor force</h4>--%>
-                <%--</div>--%>
-                <%--<div class="small-12 medium-6 large-3 columns text-center">--%>
-                    <%--<div class="circle"><h1>80%</h1></div>--%>
-                    <%--<h4>of US use education benefits</h4>--%>
-                <%--</div>--%>
-            </div>
-        </div>
         <div class="join">
             <div class="panel large-6 medium-6 small-12 columns medium-centered">
                 <div class="callout">

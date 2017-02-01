@@ -30,7 +30,7 @@
     });
 
     // bind sort button click
-    $('.sort-by-button-group').on('click', 'button', function () {
+    $('.sort-button').on('click', 'button', function () {
         var sortValue = $(this).attr('data-sort-value');
         $grid.isotope({sortBy: sortValue});
     });

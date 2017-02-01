@@ -13,13 +13,12 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
             <h1 class="locator_heading"><strong>Your VA Locator</strong></h1>
-            <p class="locator_heading">Welcome! Please select a tab for details</p>
+            <%--<p class="locator_heading">Welcome! Please select a tab for details</p>--%>
         </div>
         <div class="row">
             <div class="map" id="map">
                 <iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>
             </div>
-
         </div>
         <%--Attempt to create list--%>
         <%--<div id="results-container">--%>

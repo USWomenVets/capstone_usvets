@@ -16,7 +16,7 @@
             <h1 class="large-12 columns title">A Rally Point For</h1>
             <%--<h1><em>US</em></h1>--%>
             <div class="hero-logo">
-                <img src="<c:url value="/img/US2logo.png"/>">
+                <img src="<c:url value="/img/USLogo.png"/>">
             </div>
         </section>
         <div class="about">
@@ -57,43 +57,43 @@
                 <h1>Did You Know...</h1>
             </div>
             <div class="row circle_list">
-            <ul class="ca-menu">
-                <li>
+                <ul class="ca-menu">
+                    <li>
                         <span class="ca-icon medium">10%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US currently serve in the military</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">20%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US have military sexual trauma</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">11%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US are in the labor force</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">80%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US use education benefits</h3>
                         </div>
-                </li>
-                <li>
+                    </li>
+                    <li>
                         <span class="ca-icon medium">10%</span>
                         <div class="ca-content">
                             <h3 class="ca-main">of US live below poverty level</h3>
                         </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
             </div>
         </div><!-- content -->
 
-                    <%--<div class="circle"><h1>10%</h1></div>--%>
-                    <%--<h4>of US currently serve in the military</h4>--%>
+        <%--<div class="circle"><h1>10%</h1></div>--%>
+        <%--<h4>of US currently serve in the military</h4>--%>
                 <%--</div>--%>
                 <%--</div>--%>
         <div class="join">

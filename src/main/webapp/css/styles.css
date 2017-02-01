@@ -174,14 +174,15 @@ footer #footer-links {
 MEDIA QUERIES
 ************************************************************************** */
 
-
 @media (max-width: 844px) {
     .nav-desktop {
         display: none;
     }
-    .circle_list{
+
+    .circle_list {
         display: none;
     }
+
     #table_test {
         position: relative;
         z-index: 1;
@@ -199,8 +200,6 @@ MEDIA QUERIES
     }
 
 }
-
-
 
 /* **************************************************************************
 SOCIAL MEDIA
@@ -365,9 +364,8 @@ CUSTOM
     /*margin: 2px;*/
 }
 
-
 /*#horizontal_list > button{*/
-    /*display: inline;*/
+/*display: inline;*/
 /*}*/
 
 #sign_up {
@@ -415,7 +413,7 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
-.circle_list{
+.circle_list {
     margin-left: 2.5%;
 }
 
@@ -617,3 +615,8 @@ LOCATOR PAGE
 /*.st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }*/
 /*.st-dtitle { background:white; }*/
 
+.sort-button {
+    /*width: 8em;*/
+    /*margin: .5%;*/
+    /*padding: %;*/
+}

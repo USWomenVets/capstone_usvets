@@ -66,7 +66,6 @@
             <span class="title-bar-title">MENU || <a href="/index">USWOMENVETS</a></span>
         </div>
     </div>
-
     <!--Navigation-->
     <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
         <div>

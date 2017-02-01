@@ -94,13 +94,13 @@ GENERAL
 }
 
 .nav-desktop .menu-desktop {
-    line-height: 65px;
+    line-height: 70px;
     background-color: transparent;
 }
 
 .menu > li > a {
     display: inline-block;
-    line-height: 65px;
+    line-height: 70px;
     padding-top: 0;
     padding-bottom: 0;
     color: rgba(255, 255, 255, 0.9);
@@ -187,7 +187,7 @@ MEDIA QUERIES
         z-index: 1;
         display: inline-block;
         margin: 1em;
-        max-width: 650px;
+        max-width: 1000px;
         width: calc(100% - 2em);
         vertical-align: top;
     }
@@ -210,6 +210,9 @@ SOCIAL MEDIA
     text-align: center;
     font-size: 35px;
     line-height: 50px;
+}
+.medium_nav{
+    font-size: 20px;
 }
 
 /* **************************************************************************

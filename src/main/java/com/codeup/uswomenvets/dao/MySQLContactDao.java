@@ -1,10 +1,14 @@
 package com.codeup.uswomenvets.dao;
 
 
+import com.codeup.uswomenvets.controllers.Config;
 import com.codeup.uswomenvets.models.Contact;
 import com.mysql.cj.jdbc.Driver;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 /**
  * Created by KJCurtis on 1/31/17.
@@ -32,9 +36,9 @@ public class MySQLContactDao implements Contacts {
         boolean isLoggedUser = false;
         if (contact.getUserId() == 0) {
             insertQuery = "INSERT INTO Contact (name, email, content) VALUES (?, ?, ?);";
-            isLoggedUser = true;
         } else {
             insertQuery = "INSERT INTO Contact (name, email, content, user_id) VALUES (?, ?, ?, ?);";
+            isLoggedUser = true;
         }
         try {
             PreparedStatement stmt = connection.prepareStatement(insertQuery, java.sql.Statement.RETURN_GENERATED_KEYS);

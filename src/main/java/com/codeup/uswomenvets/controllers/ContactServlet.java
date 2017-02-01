@@ -31,7 +31,7 @@ public class ContactServlet extends HttpServlet {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String content = request.getParameter("content");
-        if (user == null) {
+        if (user != null) {
             contact = new Contact(
                     user.getId(),
                     name,

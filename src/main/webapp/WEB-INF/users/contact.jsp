@@ -15,7 +15,7 @@
             <h1><strong>Contact US</strong></h1>
         </div>
         <div class="wrap">
-            <form class="form" action="/contact">
+            <form class="form" action="/contact" method="post">
                 <fieldset>
                     <div class="row">
                         <label for="inputName" class="large-2 columns control-label">Name</label>
@@ -44,7 +44,7 @@
                         </button>
                     </div>
                     <div class="row text-center">
-                    <p><button type="submit" data-open="modal" action="mailto:contactme@euniceheymann.com" class="button sorting_buttons hvr-grow">Submit</button></p>
+                    <p><button type="submit" data-open="modal" class="button sorting_buttons hvr-grow">Submit</button></p>
                     </div>
                 </fieldset>
             </form>

@@ -1,5 +1,7 @@
 package com.codeup.uswomenvets.dao;
 
+import com.codeup.uswomenvets.controllers.Config;
+
 public class DaoFactory {
     private static Posts postsDao;
     private static Users usersDao;

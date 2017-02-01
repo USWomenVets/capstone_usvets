@@ -1,5 +1,6 @@
 package com.codeup.uswomenvets.dao;
 
+import com.codeup.uswomenvets.controllers.Config;
 import com.codeup.uswomenvets.models.Comment;
 import com.codeup.uswomenvets.models.Post;
 import com.mysql.cj.api.jdbc.Statement;

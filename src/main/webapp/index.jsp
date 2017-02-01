@@ -12,10 +12,10 @@
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <!--Hero Section-->
-        <section class="hero text-center">
+        <section class="row hero text-center">
             <h1 class="large-12 columns title">A Rally Point For</h1>
             <%--<h1><em>US</em></h1>--%>
-            <div class="hero-logo">
+            <div class="hero-logo large-12 columns">
                 <img src="<c:url value="/img/USLogo.png"/>">
             </div>
         </section>

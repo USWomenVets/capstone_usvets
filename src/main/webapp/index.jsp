@@ -14,7 +14,7 @@
         <!--Hero Section-->
         <section class="hero text-center">
             <h1 class="large-12 columns title">A Rally Point For</h1>
-            <%--<h1><em>US</em></h1>--%>
+            <h1><em>US</em></h1>
             <div class="hero-logo">
                 <img src="<c:url value="/img/USLogo.jpg"/>">
             </div>

@@ -14,7 +14,6 @@
         <div class="title large-12 columns text-center" id="about-title">
             <h1><strong>About US</strong></h1>
         </div>
-
         <!--Main section-->
         <section class="main">
             <div class="wrap">

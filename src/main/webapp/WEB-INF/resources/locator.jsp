@@ -16,15 +16,15 @@
             <%--<p class="locator_heading">Welcome! Please select a tab for details</p>--%>
         </div>
         <div class="row">
-            <div class="map" id="map">
+            <div class="large-12 medium-12 small-12 columns map" id="map">
                 <iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>
             </div>
         </div>
         <%--Attempt to create list--%>
         <%--<div id="results-container">--%>
-            <%--<h3>Results</h3>--%>
-            <%--<ul id="results-list">--%>
-            <%--</ul><!-- #results-list -->--%>
+        <%--<h3>Results</h3>--%>
+        <%--<ul id="results-list">--%>
+        <%--</ul><!-- #results-list -->--%>
         <%--</div><!-- #results-container -->--%>
         <div class="additional-resources">
             <div class="subTitle text-center"><h2 class="locator_heading">Additional Resources</h2></div>
@@ -175,10 +175,10 @@
         </div>
     </div>
 </div>
-    <jsp:include page="/WEB-INF/partials/footer.jsp"/>
-    <jsp:include page="/WEB-INF/partials/javascript.jsp"/>
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ&libraries=places&callback=initMap">
-    </script>
+<jsp:include page="/WEB-INF/partials/footer.jsp"/>
+<jsp:include page="/WEB-INF/partials/javascript.jsp"/>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ&libraries=places&callback=initMap">
+</script>
 </body>
 </html>

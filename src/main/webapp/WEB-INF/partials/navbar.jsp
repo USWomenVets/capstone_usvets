@@ -71,7 +71,7 @@
     <nav class="top-bar nav-desktop"> <!--nav-desktop specific style as opposed to mobile-->
         <div>
         <div class="top-bar-left">
-            <a href="/index"><h3 class="site-logo hvr-grow">USWOMENVETS || </h3></a>
+            <a href="/index"><h3 class="site-logo hvr-grow">USWOMENVETS</h3></a>
         </div>
         <div class="top-bar-right">
             <ul class="menu menu-desktop nav-desktop dropdown menu" data-dropdown-menu>

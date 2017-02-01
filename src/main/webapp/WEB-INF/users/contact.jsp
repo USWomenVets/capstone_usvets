@@ -18,7 +18,7 @@
         <section class="main">
         <div class="wrap">
 
-                <div class="container text-center" id="contact_page">
+            <div class="container text-center" id="contact_page">
                 <fieldset>
                     <div class="row">
                         <div class="large-12 columns">
@@ -44,7 +44,7 @@
                         </button>
                     </div>
                     <div class="row text-center">
-                    <a data-open="modal" class="button sorting_buttons hvr-grow text-center">Submit</a>
+                        <a data-open="modal" class="button sorting_buttons hvr-grow text-center">Submit</a>
 
                     </div>
                 </fieldset>

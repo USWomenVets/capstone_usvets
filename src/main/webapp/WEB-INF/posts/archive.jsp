@@ -17,12 +17,20 @@
             <div class="title large-12 columns text-center">
                 <h1 class="locator_heading"><strong>Discuss</strong></h1>
             </div>
-            <div class="row">
-                <div class="large-12 columns button-group sort-by-button-group">
-                    <button class="button sorting_buttons button_margin hvr-grow" data-sort-value="username">Username</button>
-                    <button class="button sorting_buttons button_margin hvr-grow" data-sort-value="date">Date</button>
-                    <button class="button sorting_buttons button_margin hvr-grow" data-sort-value="title">Title</button>
-                    <button class="button sorting_buttons button_margin hvr-grow" data-sort-value="category">Category</button>
+            <div class="row sort-button">
+                <div class="large-12 columns sort-button">
+                    <button class=" sort-button button sorting_buttons button_margin hvr-grow"
+                            data-sort-value="username">Username
+                    </button>
+                    <button class="sort-button button sorting_buttons button_margin hvr-grow" data-sort-value="date">
+                        Date
+                    </button>
+                    <button class=" sort-button button sorting_buttons button_margin hvr-grow" data-sort-value="title">
+                        Title
+                    </button>
+                    <button class=" sort-button button sorting_buttons button_margin hvr-grow"
+                            data-sort-value="category">Category
+                    </button>
                 </div>
             </div>
             <div class="grid main">
@@ -30,7 +38,8 @@
                     <div class="container">
                 <c:forEach var="post" items="${posts}">
                     <div class="row">
-                    <div class="archive_post hvr-grow element-item" id="table_test" data-category="${post.stringCategory}">
+                        <div class="archive_post hvr-grow element-item" id="table_test"
+                             data-category="${post.stringCategory}">
                             <a href="/show?id=${post.getId()}" name="id">
                                 <div class="post_para username date">
                                     <span id="username_arch">${post.username}</span>

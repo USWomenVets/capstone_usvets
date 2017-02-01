@@ -46,7 +46,7 @@
     position: relative;
 }
 .ca-icon{
-    font-family: 'WebSymbolsRegular', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     color: #f6f6f6;;
     line-height: 60px;
@@ -73,6 +73,7 @@
     opacity: 0.8;
     text-align: center;
     color: #555;
+    font-family: 'Raleway', sans-serif;
 }
 .ca-sub{
     display: none;

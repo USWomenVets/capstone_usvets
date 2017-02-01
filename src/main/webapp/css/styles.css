@@ -280,6 +280,10 @@ CUSTOM
     text-align: center;
 }
 
+/*.input{*/
+/*width: 700px;*/
+/*}*/
+
 #sorting_buttons {
     text-align: center;
     margin: 2px;
@@ -365,12 +369,12 @@ INDEX/HOMEPAGE
 .hero {
     background: url("../img/women-veterans-air2.jpg") no-repeat;
     background-size: 100%;
-    padding-bottom: 30%;
+    padding-bottom: 15%;
     height: 80%;
     margin-bottom: 2%;
 }
 
-.hero-logo{
+.hero-logo {
     z-index: 100;
 }
 
@@ -393,6 +397,10 @@ INDEX/HOMEPAGE
     opacity: 80;
     padding-bottom: 2%;
     margin-bottom: 2%;
+}
+
+#circle_list{
+    margin-left: 3%;
 }
 
 .circles {
@@ -498,8 +506,9 @@ EVENTS PAGE
         margin-top: 2%;
         padding: 0;
     }
+
     /*.input{*/
-        /*max-width: 350px;*/
+    /*max-width: 350px;*/
     /*}*/
 }
 
@@ -582,6 +591,9 @@ LOCATOR PAGE
     margin-top: 2%;
 }
 
+.calendar {
+    margin: 2%;
+}
 /*.st-bg { background:black; }*/
 /*.st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }*/
 /*.st-dtitle { background:white; }*/

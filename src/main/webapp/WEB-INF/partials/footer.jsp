@@ -10,7 +10,7 @@
                 <h4>US Women Vets Info</h4>
                 <hr>
                 <div class="row" id="footer-links">
-                    <div class="small-12 columns hvr-grow">
+                    <div class="small-6 columns hvr-grow">
                         <a href="<c:url value="/about"/>"><span>About</span></a>
                     </div>
                     <div class="small-6 columns hvr-grow">

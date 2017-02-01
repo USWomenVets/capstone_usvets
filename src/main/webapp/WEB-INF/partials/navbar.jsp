@@ -37,7 +37,7 @@
             <c:when test="${sessionScope.user != null}">
                 <div>
                     <li><a href="/archive">Discuss</a></li>
-                    <li><a href="/locator">Your VA</a></li>
+                    <li><a href="/locator">Locator</a></li>
                     <li><a href="/events">Events</a></li>
                     <li><a href="/create">Post</a></li>
                     <li><a href="/profile">Profile</a></li>
@@ -47,7 +47,7 @@
             <c:otherwise>
                 <div>
                     <li><a href="/archive">Discuss</a></li>
-                    <li><a href="/locator">Your VA</a></li>
+                    <li><a href="/locator">Locator</a></li>
                     <li><a href="/events">Events</a></li>
                     <li><a href="/register">Register</a></li>
                     <li><a href="/login">Login</a></li>
@@ -78,7 +78,7 @@
                 <c:choose>
                     <c:when test="${sessionScope.user != null}">
                         <li class="hvr-grow medium_nav"><a href="/archive">Discuss</a></li>
-                        <li class="hvr-grow medium_nav"><a href="/locator">Your VA</a></li>
+                        <li class="hvr-grow medium_nav"><a href="/locator">Locator</a></li>
                         <li class="hvr-grow medium_nav"><a href="/events">Events</a></li>
                         <li class="hvr-grow medium_nav"><a href="/create">Post</a></li>
                         <li class="hvr-grow medium_nav"><a href="/profile">Profile</a></li>
@@ -86,7 +86,7 @@
                     </c:when>
                     <c:otherwise>
                         <li class="hvr-grow medium_nav"><a href="/archive">Discuss</a></li>
-                        <li class="hvr-grow medium_nav"><a href="/locator">Your VA</a></li>
+                        <li class="hvr-grow medium_nav"><a href="/locator">Locator</a></li>
                         <li class="hvr-grow medium_nav"><a href="/events">Events</a></li>
                         <li class="hvr-grow medium_nav"><a href="/register">Register</a></li>
                         <li class="hvr-grow medium_nav"><a href="/login">Login</a></li>

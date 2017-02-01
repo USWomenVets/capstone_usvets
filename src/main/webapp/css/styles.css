@@ -391,9 +391,9 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
-.hero-logo {
-    z-index: 100;
-}
+/*.hero-logo {*/
+/*z-index: 100;*/
+/*}*/
 
 .hero img {
     height: 20%;

@@ -94,7 +94,7 @@
 				</span>
                 </div>
 
-                <input type="submit" class="medium button sorting_buttons hvr-grow" value="Sign up!">
+                <input type="submit" class="medium button sorting_buttons hvr-grow text-center input" value="Join US!">
             </form>
 
                     </div>

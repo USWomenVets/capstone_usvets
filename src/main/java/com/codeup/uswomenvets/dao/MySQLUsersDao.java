@@ -1,5 +1,6 @@
 package com.codeup.uswomenvets.dao;
 
+import com.codeup.uswomenvets.controllers.Config;
 import com.codeup.uswomenvets.models.User;
 import com.mysql.cj.jdbc.Driver;
 

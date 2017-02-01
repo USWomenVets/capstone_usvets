@@ -11,8 +11,8 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- Schema uswomenvets
 -- -----------------------------------------------------
 DROP SCHEMA uswomenvets;
-CREATE SCHEMA IF NOT EXISTS `uswomenvets` DEFAULT CHARACTER SET utf8 ;
-USE `uswomenvets` ;
+CREATE SCHEMA IF NOT EXISTS `uswomenvets` DEFAULT CHARACTER SET utf8;
+USE `uswomenvets`;
 
 -- -----------------------------------------------------
 -- Table `uswomenvets`.`roles`
@@ -52,19 +52,39 @@ CREATE TABLE IF NOT EXISTS `uswomenvets`.`users` (
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
 
+
+-- -----------------------------------------------------
+-- Table `uswomenvets`.`contact`
+-- -----------------------------------------------------
+   CREATE TABLE IF NOT EXISTS `uswomenvets`.`contact` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` INT UNSIGNED NULL,
+  `name` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `content` VARCHAR(1024) NOT NULL,
+  `creation` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  INDEX `cont_user_id_idx` (`user_id` ASC),
+  CONSTRAINT `cont_user_id`
+  FOREIGN KEY (`user_id`)
+  REFERENCES `uswomenvets`.`users` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
 -- -----------------------------------------------------
 -- Table `uswomenvets`.`posts`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `uswomenvets`.`posts` (
-  `id`            INT UNSIGNED  NOT NULL AUTO_INCREMENT,
-  `user_id`       INT UNSIGNED  NOT NULL,
-  `title`         VARCHAR(64)   NOT NULL,
-  `content`       VARCHAR(1024) NOT NULL,
-  `post_date`     DATETIME      NOT NULL DEFAULT current_timestamp,
-  `views`         INT           NULL,
-  `likes`         INT           NULL,
-  `comment_count` INT           NULL,
-  `is_deleted`    TINYINT(1)    NOT NULL DEFAULT 0,
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` INT UNSIGNED NOT NULL,
+  `title` VARCHAR(64) NOT NULL,
+  `content` VARCHAR(1024) NOT NULL,
+  `post_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `views` INT NULL,
+  `likes` INT NULL,
+  `comment_count` INT NULL,
+  `is_deleted` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   INDEX `user_id_idx` (`user_id` ASC),
   CONSTRAINT `user_id`

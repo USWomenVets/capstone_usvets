@@ -13,19 +13,16 @@
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
         <div class="title large-12 columns text-center">
             <h1 class="locator_heading"><strong>Your VA Locator</strong></h1>
-            <%--<p class="locator_heading">Welcome! Please select a tab for details</p>--%>
         </div>
+
+        <!--GMAP API-->
         <div class="row">
             <div class="large-12 medium-12 small-12 columns map" id="map">
                 <iframe src="https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fjs%3Fkey%3DAIzaSyBnHCBaScm62QavXo3nx0DqKhhCMWLM-wQ%26libraries%3Dplaces%26callback%3DinitMap"></iframe>
             </div>
         </div>
-        <%--Attempt to create list--%>
-        <%--<div id="results-container">--%>
-        <%--<h3>Results</h3>--%>
-        <%--<ul id="results-list">--%>
-        <%--</ul><!-- #results-list -->--%>
-        <%--</div><!-- #results-container -->--%>
+
+        <!--ADDITIONAL RESOURCES-->
         <div class="additional-resources">
             <div class="subTitle text-center"><h2 class="locator_heading">Additional Resources</h2></div>
             <div class="row">

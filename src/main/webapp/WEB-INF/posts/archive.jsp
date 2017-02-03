@@ -33,10 +33,14 @@
                     </button>
                 </div>
             </div>
+
+        <!--"GRID MAIN" TELLS ISOTOPE WHERE THE GRID IS LOCATED SO THAT IT CAN MANIPULATE IT-->
             <div class="grid main">
                 <div class="wrap">
                     <div class="container">
-                <c:forEach var="post" items="${posts}">
+
+                        <!--POPULATES THE DISCUSSION SQUARES AS WELL AS THE LAYOUT OF INFORMATION ON THEM-->
+                        <c:forEach var="post" items="${posts}">
                     <div class="row">
                         <div class="archive_post hvr-grow element-item" id="table_test"
                              data-category="${post.stringCategory}">

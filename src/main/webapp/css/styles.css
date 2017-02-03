@@ -25,6 +25,12 @@ GENERAL
     margin-top: 10px;
 }
 
+.row {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
 /* **************************************************************************
  NAV-MOBILE
 ************************************************************************** */
@@ -283,6 +289,20 @@ ARCHIVE DIV FIELDS
     text-overflow: ellipsis;
 }
 
+.archive_post {
+    text-align: center;
+    margin: 30px;
+    display: inline-block;
+    width: 355px;
+    padding: 40px;
+    background-color: whitesmoke;
+}
+
+.archive_post:hover {
+    transition: .5s;
+    transform: scale(1.1);
+}
+
 /* **************************************************************************
 ISOTOPE FIX
 ************************************************************************** */
@@ -299,18 +319,8 @@ CUSTOM
     text-align: center;
 }
 
-.grid_fit {
-    /*margin-left: 20px;*/
-}
-
 #file_format {
     width: 17%;
-}
-
-.row {
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
 }
 
 .personal-info {
@@ -319,20 +329,6 @@ CUSTOM
 
 #sort {
     width: 30%;
-}
-
-.archive_post {
-    text-align: center;
-    margin: 30px;
-    display: inline-block;
-    width: 355px;
-    padding: 40px;
-    background-color: whitesmoke;
-}
-
-.archive_post:hover {
-    transition: .5s;
-    transform: scale(1.1);
 }
 
 .show_anchor {
@@ -364,12 +360,7 @@ CUSTOM
 .sorting_buttons {
     background-color: #E52A6F;
     text-align: center;
-    /*margin: 2px;*/
 }
-
-/*#horizontal_list > button{*/
-/*display: inline;*/
-/*}*/
 
 #sign_up {
     color: #E52A6F;
@@ -391,10 +382,6 @@ INDEX/HOMEPAGE
     margin-bottom: 2%;
 }
 
-/*.hero-logo {*/
-/*z-index: 100;*/
-/*}*/
-
 .hero img {
     height: 20%;
     width: 20%;
@@ -406,7 +393,6 @@ INDEX/HOMEPAGE
 }
 
 .statistics {
-    /*background: url("../img/Springfield.jpeg") no-repeat;*/
     background-size: 100%;
     height: 100%;
     margin-top: 2%;
@@ -433,44 +419,13 @@ INDEX/HOMEPAGE
     color: white;
 }
 
-/*.circle {*/
-    /*border: 5px solid white;*/
-    /*height: 12em;*/
-    /*width: 12em;*/
-    /*margin: 20%;*/
-    /*border-radius: 50%;*/
-    /*color: #E52A6F;*/
-    /*transform-origin: 200% center;*/
-    /*position: relative;*/
-    /*animation: rotate 3s linear;*/
-/*}*/
-
-/*.circle:before {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*!*border: 5px solid white;*!*/
-    /*!*height: 12em;*!*/
-    /*!*width: 12em;*!*/
-    /*!*margin: 20%;*!*/
-    /*!*border-radius: 50%;*!*/
-    /*!*color: #E52A6F;*!*/
-    /*animation: rotate s linear reverse;*/
-/*}*/
-
-/*@keyframes rotate {*/
-    /*100% {*/
-        /*transform: rotate(360deg);*/
-    /*}*/
-/*}*/
-
-
 .circle {
-border: 5px solid white;
-height: 12em;
-width: 12em;
-margin-left: 20%;
-border-radius: 50%;
-color: #E52A6F;
+    border: 5px solid white;
+    height: 12em;
+    width: 12em;
+    margin-left: 20%;
+    border-radius: 50%;
+    color: #E52A6F;
 
 }
 
@@ -506,12 +461,7 @@ EVENTS PAGE
     }
 
     #map {
-        /*padding: 10%;*/
-        /*margin-left: .75em;*/
-        /*margin-right: 1em;*/
         height: 250px;
-        /*width: 325px;*/
-
     }
 
     .statistics {
@@ -526,10 +476,6 @@ EVENTS PAGE
         margin-top: 2%;
         padding: 0;
     }
-
-    /*.input{*/
-    /*max-width: 350px;*/
-    /*}*/
 }
 
 @media (min-width: 550px) {
@@ -538,12 +484,7 @@ EVENTS PAGE
     }
 
     #map {
-        /*padding: 10%;*/
-        /*margin-left: 4em;*/
-        /*margin-right: 1em;*/
         height: 100px;
-        /*width: 600px;*/
-
     }
 }
 
@@ -553,11 +494,7 @@ EVENTS PAGE
     }
 
     #map {
-        /*padding: 10%;*/
-        /*margin-left: 15em;*/
-        /*margin-right: 8em;*/
         height: 575px;
-        /*width: 900px;*/
     }
 
 }
@@ -614,18 +551,7 @@ LOCATOR PAGE
 .calendar {
     margin: 2%;
 }
-/*.st-bg { background:black; }*/
-/*.st-bg-today { background:yellow; border-left:1px solid yellow; border-right:1px solid yellow; }*/
-/*.st-dtitle { background:white; }*/
 
 .sort-button {
-    /*width: 8em;*/
-    /*margin-top: 1%;*/
     margin-bottom: 1%;
-    /*padding: %;*/
 }
-
-/*.grid main {*/
-/*margin-top: 0;*/
-/*padding-top: 0;*/
-/*}*/

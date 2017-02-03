@@ -11,10 +11,10 @@
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
-        <!--Hero Section-->
+
+        <!--HERO SECTION-->
         <section class="row hero text-center">
             <h1 class="large-12 columns title">A Rally Point For</h1>
-            <%--<h1><em>US</em></h1>--%>
             <div class="hero-logo large-12 columns">
                 <img src="<c:url value="/img/USLogo.png"/>">
             </div>
@@ -49,9 +49,7 @@
                 </div>
             </div>
         </div>
-        <%--<canvas id="currentlyServe" height="128" width="128"></canvas>--%>
-        <%--<canvas id="militaryST" height="128" width="128"></canvas>--%>
-        <%--<canvas id="laborForce" height="128" width="128"></canvas>--%>
+
         <div class="statistics text-center gradient">
             <div class="row circle_list">
                 <h1>Did You Know...</h1>
@@ -90,12 +88,8 @@
                     </li>
                 </ul>
             </div>
-        </div><!-- content -->
+        </div>
 
-        <%--<div class="circle"><h1>10%</h1></div>--%>
-        <%--<h4>of US currently serve in the military</h4>--%>
-                <%--</div>--%>
-                <%--</div>--%>
         <div class="join">
             <div class="panel large-6 medium-6 small-12 columns medium-centered">
                 <div class="callout">

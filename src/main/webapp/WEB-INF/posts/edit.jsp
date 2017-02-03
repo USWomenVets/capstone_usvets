@@ -4,18 +4,19 @@
 <html lang="en">
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="US Women Vets Home Page" />
+        <jsp:param name="title" value="US Women Vets Home Page"/>
     </jsp:include>
 </head>
 <body>
 <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <jsp:include page="/WEB-INF/partials/navbar.jsp" />
-            <!--Hero Section-->
+        <jsp:include page="/WEB-INF/partials/navbar.jsp"/>
+        <!--Hero Section-->
         <section class="main">
             <div class="wrap">
                 <h1>Update</h1>
                 <form action="/posts/edit" method="POST" class="form-text-color">
+                    <!--POPULATES THE INFORMATION OF THE POST WHICH WAS SELECTED FOR EDITING-->
                     <c:forEach var="post" items="${posts}">
                         <h3>${post.getTitle()}</h3>
                         <h4>${post.getPostDate()}</h4>
@@ -35,24 +36,30 @@
                         </div>
                         <div class="form-group">
                             <label for="content">Content</label>
-                            <textarea id="content" name="content" class="form-control" rows="6">${post.getContent()}</textarea>
+                            <textarea id="content" name="content" class="form-control"
+                                      rows="6">${post.getContent()}</textarea>
                         </div>
-                        <a class="button"><button type="submit" name="id" value="${post.getId()}">Submit</button></a>
+                        <a class="button">
+                            <button type="submit" name="id" value="${post.getId()}">Submit</button>
+                        </a>
+
+                        <!--JS WHICH REPLACES THE CATEGORY-->
                         <script>
                             var temp = "${post.getCategory()}";
                             var mySelect = document.getElementById('selCategory');
 
-                            for(var i, j = 0; i = mySelect.options[j]; j++) {
-                                if(i.value == temp) {
+                            for (var i, j = 0; i = mySelect.options[j]; j++) {
+                                if (i.value == temp) {
                                     mySelect.selectedIndex = j;
                                     break;
                                 }
                             }
                         </script>
+
                     </c:forEach>
                 </form>
-                </div>
-            </section>
+            </div>
+        </section>
     </div>
 </div>
 <jsp:include page="/WEB-INF/partials/footer.jsp"/>

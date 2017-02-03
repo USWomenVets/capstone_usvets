@@ -48,28 +48,6 @@
                     </div>
                 </fieldset>
             </form>
-            <%--<section class="main">--%>
-            <%--<div class="wrap">--%>
-            <%--<form action="https://www.elformo.com/forms/3e8e34bc-bf8d-4f42-8b8f-2cf90c44f4c5" method="post">--%>
-            <%--<div class="contact form line">--%>
-            <%--<div class="mail">--%>
-            <%--<label>EMAIL: <input type="email" id="email" name="email" value="justin.armer@gmail.com"></label>--%>
-            <%--</div>--%>
-            <%--<div class="contact form line">--%>
-            <%--<div class="message">--%>
-            <%--<label>MESSAGE: <textarea id="comment" name="comment" placeholder="Outgoing message through ElFormo"></textarea>--%>
-            <%--</label>--%>
-            <%--</div>--%>
-            <%--</div>--%>
-            <%--<div class="contact form line">--%>
-            <%--<div class="submit">--%>
-            <%--<input type="submit" class="button">--%>
-            <%--</div>--%>
-            <%--</div>--%>
-            <%--</div>--%>
-            <%--</form>--%>
-            <%--</div>--%>
-            <%--</section>--%>
         </div>
     </div>
 </div>

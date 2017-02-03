@@ -459,7 +459,6 @@ EVENTS PAGE
     .big-container {
         display: none;
     }
-
     #map {
         height: 250px;
     }
@@ -484,7 +483,7 @@ EVENTS PAGE
     }
 
     #map {
-        height: 100px;
+        height: 300px;
     }
 }
 
@@ -493,10 +492,11 @@ EVENTS PAGE
         display: none;
     }
 
-    #map {
-        height: 575px;
-    }
 
+    #map {
+        padding: 10%;
+        height: 550px;
+    }
 }
 
 .responsive-iframe-container {
